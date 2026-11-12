@@ -1,16 +1,11 @@
 {
   "main_pages": 144,
-  "designed_routes": 945,
+  "designed_routes": 1001,
+  "separated_topics": 56,
   "documents": 507,
   "source_empty": [
     "/en/about",
     "/th/about",
-    "/en/about/board-of-directors",
-    "/th/about/board-of-directors",
-    "/en/about/management-team",
-    "/th/about/management-team",
-    "/en/about/awards",
-    "/th/about/awards",
     "/en/corporate-governance/corporate-governance-policy-and-code-of-business-conduct",
     "/th/corporate-governance/corporate-governance-policy-and-code-of-business-conduct",
     "/en/corporate-governance/charters-and-definition-of-independent-directors",
@@ -125,28 +120,28 @@
       "source": "/en/about/board-of-directors",
       "route": "/en/about/board-of-directors/",
       "status": "ok",
-      "characters": 0,
+      "characters": 1755,
       "document": false
     },
     {
       "source": "/th/about/board-of-directors",
       "route": "/th/about/board-of-directors/",
       "status": "ok",
-      "characters": 0,
+      "characters": 1459,
       "document": false
     },
     {
       "source": "/en/about/management-team",
       "route": "/en/about/management-team/",
       "status": "ok",
-      "characters": 0,
+      "characters": 72,
       "document": false
     },
     {
       "source": "/th/about/management-team",
       "route": "/th/about/management-team/",
       "status": "ok",
-      "characters": 0,
+      "characters": 69,
       "document": false
     },
     {
@@ -167,14 +162,14 @@
       "source": "/en/about/awards",
       "route": "/en/about/awards/",
       "status": "ok",
-      "characters": 0,
+      "characters": 147,
       "document": false
     },
     {
       "source": "/th/about/awards",
       "route": "/th/about/awards/",
       "status": "ok",
-      "characters": 0,
+      "characters": 150,
       "document": false
     },
     {
@@ -377,14 +372,14 @@
       "source": "/en/contact",
       "route": "/en/contact/",
       "status": "ok",
-      "characters": 1093,
+      "characters": 540,
       "document": false
     },
     {
       "source": "/th/contact",
       "route": "/th/contact/",
       "status": "ok",
-      "characters": 998,
+      "characters": 470,
       "document": false
     },
     {
@@ -685,14 +680,14 @@
       "source": "/en/investor-relations/financial-information/debt-information",
       "route": "/en/investor-relations/financial-information/debt-information/",
       "status": "ok",
-      "characters": 3114,
+      "characters": 196,
       "document": false
     },
     {
       "source": "/th/investor-relations/financial-information/debt-information",
       "route": "/th/investor-relations/financial-information/debt-information/",
       "status": "ok",
-      "characters": 3501,
+      "characters": 200,
       "document": false
     },
     {
@@ -755,14 +750,14 @@
       "source": "/en/investor-relations/shareholder-information/debentures-information",
       "route": "/en/investor-relations/shareholder-information/debentures-information/",
       "status": "ok",
-      "characters": 3114,
+      "characters": 196,
       "document": false
     },
     {
       "source": "/th/investor-relations/shareholder-information/debentures-information",
       "route": "/th/investor-relations/shareholder-information/debentures-information/",
       "status": "ok",
-      "characters": 3501,
+      "characters": 200,
       "document": false
     },
     {
@@ -2673,7 +2668,7 @@
       "source": "/th/awards",
       "route": "/th/awards/",
       "status": "ok",
-      "characters": 39993,
+      "characters": 150,
       "document": false
     },
     {
@@ -2750,7 +2745,7 @@
       "source": "/th/management-structure/management",
       "route": "/th/management-structure/management/",
       "status": "ok",
-      "characters": 1203,
+      "characters": 69,
       "document": false
     },
     {
@@ -3009,7 +3004,7 @@
       "source": "/th/management-structure/director",
       "route": "/th/management-structure/director/",
       "status": "ok",
-      "characters": 12400,
+      "characters": 1459,
       "document": false
     },
     {
@@ -3086,21 +3081,21 @@
       "source": "/en/awards",
       "route": "/en/awards/",
       "status": "ok",
-      "characters": 39880,
+      "characters": 147,
       "document": false
     },
     {
       "source": "/en/management-structure/management",
       "route": "/en/management-structure/management/",
       "status": "ok",
-      "characters": 1181,
+      "characters": 72,
       "document": false
     },
     {
       "source": "/en/management-structure/director",
       "route": "/en/management-structure/director/",
       "status": "ok",
-      "characters": 13939,
+      "characters": 1755,
       "document": false
     },
     {
@@ -6651,6 +6646,398 @@
       "status": "document",
       "characters": 0,
       "document": true
+    },
+    {
+      "source": "/en/contact/departments/company-secretary",
+      "route": "/en/contact/departments/company-secretary/",
+      "status": "ok",
+      "characters": 168,
+      "document": false
+    },
+    {
+      "source": "/en/contact/departments/internal-audit",
+      "route": "/en/contact/departments/internal-audit/",
+      "status": "ok",
+      "characters": 155,
+      "document": false
+    },
+    {
+      "source": "/en/contact/departments/investor-relations",
+      "route": "/en/contact/departments/investor-relations/",
+      "status": "ok",
+      "characters": 160,
+      "document": false
+    },
+    {
+      "source": "/en/contact/departments/sustainability",
+      "route": "/en/contact/departments/sustainability/",
+      "status": "ok",
+      "characters": 86,
+      "document": false
+    },
+    {
+      "source": "/th/contact/departments/company-secretary",
+      "route": "/th/contact/departments/company-secretary/",
+      "status": "ok",
+      "characters": 157,
+      "document": false
+    },
+    {
+      "source": "/th/contact/departments/internal-audit",
+      "route": "/th/contact/departments/internal-audit/",
+      "status": "ok",
+      "characters": 144,
+      "document": false
+    },
+    {
+      "source": "/th/contact/departments/investor-relations",
+      "route": "/th/contact/departments/investor-relations/",
+      "status": "ok",
+      "characters": 146,
+      "document": false
+    },
+    {
+      "source": "/th/contact/departments/sustainability",
+      "route": "/th/contact/departments/sustainability/",
+      "status": "ok",
+      "characters": 97,
+      "document": false
+    },
+    {
+      "source": "/en/investor-relations/financial-information/debt-information/views/btsg",
+      "route": "/en/investor-relations/financial-information/debt-information/views/btsg/",
+      "status": "ok",
+      "characters": 2431,
+      "document": false
+    },
+    {
+      "source": "/en/investor-relations/financial-information/debt-information/views/btsc",
+      "route": "/en/investor-relations/financial-information/debt-information/views/btsc/",
+      "status": "ok",
+      "characters": 495,
+      "document": false
+    },
+    {
+      "source": "/th/investor-relations/financial-information/debt-information/views/btsg",
+      "route": "/th/investor-relations/financial-information/debt-information/views/btsg/",
+      "status": "ok",
+      "characters": 2748,
+      "document": false
+    },
+    {
+      "source": "/th/investor-relations/financial-information/debt-information/views/btsc",
+      "route": "/th/investor-relations/financial-information/debt-information/views/btsc/",
+      "status": "ok",
+      "characters": 561,
+      "document": false
+    },
+    {
+      "source": "/en/investor-relations/shareholder-information/debentures-information/views/btsg",
+      "route": "/en/investor-relations/shareholder-information/debentures-information/views/btsg/",
+      "status": "ok",
+      "characters": 2431,
+      "document": false
+    },
+    {
+      "source": "/en/investor-relations/shareholder-information/debentures-information/views/btsc",
+      "route": "/en/investor-relations/shareholder-information/debentures-information/views/btsc/",
+      "status": "ok",
+      "characters": 495,
+      "document": false
+    },
+    {
+      "source": "/th/investor-relations/shareholder-information/debentures-information/views/btsg",
+      "route": "/th/investor-relations/shareholder-information/debentures-information/views/btsg/",
+      "status": "ok",
+      "characters": 2748,
+      "document": false
+    },
+    {
+      "source": "/th/investor-relations/shareholder-information/debentures-information/views/btsc",
+      "route": "/th/investor-relations/shareholder-information/debentures-information/views/btsc/",
+      "status": "ok",
+      "characters": 561,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2568-69",
+      "route": "/th/awards/years/2568-69/",
+      "status": "ok",
+      "characters": 3938,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2567-68",
+      "route": "/th/awards/years/2567-68/",
+      "status": "ok",
+      "characters": 4246,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2566-67",
+      "route": "/th/awards/years/2566-67/",
+      "status": "ok",
+      "characters": 2130,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2565-66",
+      "route": "/th/awards/years/2565-66/",
+      "status": "ok",
+      "characters": 2519,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2564-65",
+      "route": "/th/awards/years/2564-65/",
+      "status": "ok",
+      "characters": 4187,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2563-64",
+      "route": "/th/awards/years/2563-64/",
+      "status": "ok",
+      "characters": 3951,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2562-63",
+      "route": "/th/awards/years/2562-63/",
+      "status": "ok",
+      "characters": 5955,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2561-62",
+      "route": "/th/awards/years/2561-62/",
+      "status": "ok",
+      "characters": 4029,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2560-61",
+      "route": "/th/awards/years/2560-61/",
+      "status": "ok",
+      "characters": 2282,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2559-60",
+      "route": "/th/awards/years/2559-60/",
+      "status": "ok",
+      "characters": 3863,
+      "document": false
+    },
+    {
+      "source": "/th/awards/years/2558-59",
+      "route": "/th/awards/years/2558-59/",
+      "status": "ok",
+      "characters": 2787,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/management/teams/executives",
+      "route": "/th/management-structure/management/teams/executives/",
+      "status": "ok",
+      "characters": 995,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/management/teams/company-secretary",
+      "route": "/th/management-structure/management/teams/company-secretary/",
+      "status": "ok",
+      "characters": 38,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/management/teams/internal-audit-director",
+      "route": "/th/management-structure/management/teams/internal-audit-director/",
+      "status": "ok",
+      "characters": 113,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/board-of-directors",
+      "route": "/th/management-structure/director/committees/board-of-directors/",
+      "status": "ok",
+      "characters": 8379,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/audit",
+      "route": "/th/management-structure/director/committees/audit/",
+      "status": "ok",
+      "characters": 231,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/nomination-remuneration",
+      "route": "/th/management-structure/director/committees/nomination-remuneration/",
+      "status": "ok",
+      "characters": 581,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/sustainability",
+      "route": "/th/management-structure/director/committees/sustainability/",
+      "status": "ok",
+      "characters": 582,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/executive",
+      "route": "/th/management-structure/director/committees/executive/",
+      "status": "ok",
+      "characters": 685,
+      "document": false
+    },
+    {
+      "source": "/th/management-structure/director/committees/risk-management",
+      "route": "/th/management-structure/director/committees/risk-management/",
+      "status": "ok",
+      "characters": 507,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2025-26",
+      "route": "/en/awards/years/2025-26/",
+      "status": "ok",
+      "characters": 3880,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2024-25",
+      "route": "/en/awards/years/2024-25/",
+      "status": "ok",
+      "characters": 3918,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2023-24",
+      "route": "/en/awards/years/2023-24/",
+      "status": "ok",
+      "characters": 2176,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2022-23",
+      "route": "/en/awards/years/2022-23/",
+      "status": "ok",
+      "characters": 2519,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2021-22",
+      "route": "/en/awards/years/2021-22/",
+      "status": "ok",
+      "characters": 3895,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2020-21",
+      "route": "/en/awards/years/2020-21/",
+      "status": "ok",
+      "characters": 3352,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2019-20",
+      "route": "/en/awards/years/2019-20/",
+      "status": "ok",
+      "characters": 5997,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2018-19",
+      "route": "/en/awards/years/2018-19/",
+      "status": "ok",
+      "characters": 4004,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2017-18",
+      "route": "/en/awards/years/2017-18/",
+      "status": "ok",
+      "characters": 2335,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2016-17",
+      "route": "/en/awards/years/2016-17/",
+      "status": "ok",
+      "characters": 4414,
+      "document": false
+    },
+    {
+      "source": "/en/awards/years/2015-16",
+      "route": "/en/awards/years/2015-16/",
+      "status": "ok",
+      "characters": 3287,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/management/teams/executives",
+      "route": "/en/management-structure/management/teams/executives/",
+      "status": "ok",
+      "characters": 971,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/management/teams/company-secretary",
+      "route": "/en/management-structure/management/teams/company-secretary/",
+      "status": "ok",
+      "characters": 43,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/management/teams/internal-audit-director",
+      "route": "/en/management-structure/management/teams/internal-audit-director/",
+      "status": "ok",
+      "characters": 107,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/board-of-directors",
+      "route": "/en/management-structure/director/committees/board-of-directors/",
+      "status": "ok",
+      "characters": 9300,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/audit",
+      "route": "/en/management-structure/director/committees/audit/",
+      "status": "ok",
+      "characters": 314,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/nomination-remuneration",
+      "route": "/en/management-structure/director/committees/nomination-remuneration/",
+      "status": "ok",
+      "characters": 670,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/sustainability",
+      "route": "/en/management-structure/director/committees/sustainability/",
+      "status": "ok",
+      "characters": 606,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/executive",
+      "route": "/en/management-structure/director/committees/executive/",
+      "status": "ok",
+      "characters": 675,
+      "document": false
+    },
+    {
+      "source": "/en/management-structure/director/committees/risk-management",
+      "route": "/en/management-structure/director/committees/risk-management/",
+      "status": "ok",
+      "characters": 643,
+      "document": false
     }
   ]
 }

@@ -2,6 +2,7 @@ import json,re,hashlib,html
 from pathlib import Path
 from urllib.parse import urlsplit,unquote,urljoin
 from bs4 import BeautifulSoup
+from inner_design import split_pages,layout_kind,chapter_art,decorate
 ROOT=Path(__file__).parent;DIST=ROOT/'dist';CACHE=ROOT/'.cache-bts'
 data=json.loads((CACHE/'pages-extended.json').read_text(encoding='utf8'))
 pages={p['path']:p for p in data['pages']}
@@ -48,6 +49,7 @@ def footer(lang):
  th=lang=='th';labels=['เกี่ยวกับเรา','ธุรกิจของเรา','นักลงทุนสัมพันธ์','ความยั่งยืน','ข่าวและกิจกรรม','ติดต่อเรา'] if th else ['About BTS Group','Our Businesses','Investor Relations','Sustainability','News & Media','Contact']
  paths=['about/our-ambition','our-business/business-overview','investor-relations/home','sustainability/at-a-glance','corporate-communications/news-event','contact']
  return f'''<footer class="footer full-site-footer"><div class="footer-main"><a class="brand brand-foot" href="/{lang}/home/"><img class="bts-logo" src="/assets/bts-logo.svg" alt="BTS Group"/></a><div class="footer-tag">BORDERLESS<br/>TRANSFORM<br/><em>SOLUTIONS.</em></div><div class="footer-links"><span>{'สำรวจ BTS Group' if th else 'Explore BTS Group'}</span>{''.join(f'<a href="/{lang}/{p}/">{label} ↗</a>' for p,label in zip(paths[:3],labels[:3]))}</div><div class="footer-links"><span>{'เชื่อมต่อกับเรา' if th else 'Stay Connected'}</span>{''.join(f'<a href="/{lang}/{p}/">{label} ↗</a>' for p,label in zip(paths[3:],labels[3:]))}<a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'} ↗</a></div></div><div class="footer-bottom"><span>© 2026 BTS Group Holdings PCL · {'แนวคิดการออกแบบเว็บไซต์' if th else 'Website design concept'}</span><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/terms-and-conditions/">{'ข้อตกลงและเงื่อนไข' if th else 'Terms & Conditions'}</a></div></footer>'''
+split_count=split_pages(pages,route)
 catalog=[]
 for path,p in pages.items():
  if p.get('status')=='error':continue
@@ -120,10 +122,12 @@ def make_page(p):
  siblings=list({x['title']:x for x in siblings}.values())
  side=''.join('<a '+('aria-current="page" ' if s['path']==path else '')+'href="'+s['href']+'">'+html.escape(s['title'])+'<span>↗</span></a>' for s in siblings)
  image=p.get('image') or p.get('banner','');use_image=image and 'opengraph' not in image
- hero_image=f'<div class="page-hero-image"><img src="{html.escape(image,quote=True)}" alt=""/><span>BTS GROUP / {g.replace("-"," ").upper()}</span></div>' if use_image else '<div class="page-hero-art" aria-hidden="true"><i></i><i></i><i></i><b>↗</b></div>'
+ hero_image=chapter_art(layout_kind(p),p,image)
  related=[x for x in siblings if x['path']!=path][:3]
- body=content(p)
- return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{html.escape(name)} | BTS Group</title><meta name="description" content="{html.escape(text(p.get('index',{}).get('description',''))[:150] or name,quote=True)}"/><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/redesign.css"/><link rel="stylesheet" href="/pages.css"/></head><body class="inner-page" data-path="{html.escape(path,quote=True)}">{header(lang)}<main><section class="page-hero"><div class="page-hero-copy"><a class="page-breadcrumb" href="/{lang}/home/">{'หน้าหลัก' if th else 'Home'} / {section_name(path,lang)}</a><span class="page-eyebrow">{g.replace('-',' ').upper()}</span><h1>{html.escape(name)}</h1><a class="page-scroll" href="#page-content">{'สำรวจเนื้อหา' if th else 'Explore this page'} <span>↓</span></a></div>{hero_image}</section><div class="page-layout" id="page-content"><aside class="page-sidebar"><span>{section_name(path,lang)}</span>{side}</aside><article class="source-body" data-category="{g}">{body}<div class="source-attribution"><a href="{html.escape(p['source'],quote=True)}" target="_blank" rel="noreferrer">{'ข้อมูลต้นฉบับจาก BTS Group' if th else 'Original information from BTS Group'} ↗</a></div></article></div>{('<section class="related-pages"><span class="section-kicker">EXPLORE MORE</span>'+cards(related)+'</section>') if related else ''}</main>{footer(lang)}<script src="/navigation.js" type="module"></script></body></html>'''
+ kind,body=decorate(p,content(p))
+ if p.get('parent_path'):
+  body='<a class="chapter-back" href="'+route(p['parent_path'])+'">← '+('กลับไปหน้ารวม' if th else 'Back to overview')+'</a>'+body
+ return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{html.escape(name)} | BTS Group</title><meta name="description" content="{html.escape(text(p.get('index',{}).get('description',''))[:150] or name,quote=True)}"/><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/redesign.css"/><link rel="stylesheet" href="/pages.css"/><link rel="stylesheet" href="/chapters.css"/></head><body class="inner-page layout-{kind}" data-path="{html.escape(path,quote=True)}">{header(lang)}<main><section class="page-hero"><div class="page-hero-copy"><a class="page-breadcrumb" href="/{lang}/home/">{'หน้าหลัก' if th else 'Home'} / {section_name(path,lang)}</a><span class="page-eyebrow">{g.replace('-',' ').upper()}</span><h1>{html.escape(name)}</h1><a class="page-scroll" href="#page-content">{'สำรวจเนื้อหา' if th else 'Explore this page'} <span>↓</span></a></div>{hero_image}</section><div class="chapter-navigation"><span>{section_name(path,lang)}</span><details class="chapter-picker"><summary>{'เลือกหน้าในหมวดนี้' if th else 'Explore this chapter'} <span>⌄</span></summary><nav>{side}</nav></details></div><div class="page-layout" id="page-content"><article class="source-body" data-category="{g}">{body}<div class="source-attribution"><a href="{html.escape(p['source'],quote=True)}" target="_blank" rel="noreferrer">{'ข้อมูลต้นฉบับจาก BTS Group' if th else 'Original information from BTS Group'} ↗</a></div></article></div>{('<section class="related-pages"><span class="section-kicker">EXPLORE MORE</span>'+cards(related)+'</section>') if related else ''}</main>{footer(lang)}<script src="/navigation.js" type="module"></script><script src="/chapter-motion.js" type="module"></script></body></html>'''
 out=[]
 for path,p in pages.items():
  if path not in by_path or path in ('/th/home','/en/home'):continue
@@ -154,6 +158,6 @@ for lang in ['th','en']:
   h=h.replace('/th/','/en/');h=h.replace('<head>','<head><style>.hero h1{font:400 clamp(55px,6.3vw,94px)/1 Mulish;letter-spacing:-.065em}.hero h1 span:nth-child(4){font-size:.9em}.hero h1 span:nth-child(2){padding-left:5%}@media(max-width:650px){.hero h1{font-size:clamp(44px,11vw,70px)}}</style>')
  target=DIST/lang/'home'/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(h,encoding='utf8')
 # The reports expose source availability without presenting guessed content as fact.
-report={'main_pages':data['seed_count'],'designed_routes':len(out)+2,'documents':sum(x['document'] for x in out),'source_empty':[x['source'] for x in out if not x['document'] and x['characters']<15],'routes':out}
+report={'main_pages':data['seed_count'],'designed_routes':len(out)+2,'separated_topics':split_count,'documents':sum(x['document'] for x in out),'source_empty':[x['source'] for x in out if not x['document'] and x['characters']<15],'routes':out}
 (ROOT/'site-build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps({k:v for k,v in report.items() if k!='routes' and k!='source_empty'},ensure_ascii=True))
