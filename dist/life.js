@@ -1,0 +1,19 @@
+export function animateCity(T,world,train,renderer,camera){
+ const color=c=>new T.MeshStandardMaterial({color:c,roughness:.55});const dark=color(0x183448),red=color(0xdd293c),white=color(0xf5eee1),skin=color(0xd1a88b);
+ function box(w,h,d,m,x,y,z,p){const a=new T.Mesh(new T.BoxGeometry(w,h,d),m);a.position.set(x,y,z);a.castShadow=true;a.receiveShadow=true;p.add(a);return a}
+ function ball(r,m,x,y,z,p){const a=new T.Mesh(new T.SphereGeometry(r,8,6),m);a.position.set(x,y,z);a.castShadow=true;p.add(a);return a}
+ train.scale.setScalar(1.16);renderer.localClippingEnabled=true;
+ const clipA=new T.Plane(new T.Vector3(1,0,0),3.72),clipB=new T.Plane(new T.Vector3(-1,0,0),3.72),localA=clipA.clone(),localB=clipB.clone();
+ train.traverse(a=>{if(a.isMesh){a.material=a.material.clone();a.material.clippingPlanes=[clipA,clipB];a.material.clipShadows=true}});
+ const cars=[];for(let i=0;i<5;i++){const g=new T.Group();world.add(g);g.position.y=.22;g.position.z=-.9+(i%2?-.18:.18);const paint=color([0xc22d3b,0xe5c049,0xe4e8e5,0x28729b,0xc8ccd2][i]);box(.35,.1,.16,paint,0,.06,0,g);box(.18,.08,.145,dark,0,.15,0,g);for(const x of [-.105,.105])for(const z of [-.087,.087])ball(.033,dark,x,.015,z,g);cars.push(g)}
+ const people=[];for(let i=0;i<7;i++){const g=new T.Group();world.add(g);g.position.set(-2.6+i*.29,1.83,1.17);ball(.047,skin,0,.28,0,g);box(.075,.14,.055,i%2?red:dark,0,.16,0,g);const legs=[];for(const x of [-.022,.022])legs.push(box(.025,.1,.035,dark,x,.045,0,g));const arm=box(.023,.12,.026,skin,.052,.15,0,g);people.push({g,legs,arm})}
+ const boat=new T.Group();world.add(boat);box(.55,.095,.19,white,0,0,0,boat);box(.35,.13,.16,dark,0,.09,0,boat);box(.42,.025,.23,red,0,.17,0,boat);const wake=box(1.1,.003,.09,new T.MeshBasicMaterial({color:0xe2f0eb,transparent:true,opacity:.4}),-.7,-.035,0,boat);boat.position.y=.27;boat.position.z=2.35;
+ const birds=[];for(let i=0;i<3;i++){const g=new T.Group();world.add(g);const l=box(.16,.012,.055,dark,-.065,0,0,g),r=box(.16,.012,.055,dark,.065,0,0,g);birds.push({g,l,r})}
+ const status=document.querySelector('#train-status'),view=document.querySelector('#scene-view');let targetZoom=1.15;camera.zoom=targetZoom;camera.updateProjectionMatrix();view?.addEventListener('click',()=>{targetZoom=targetZoom>1.1?.9:1.3;view.textContent=targetZoom>1.1?'↙ ภาพรวม':'↗ ดูรถไฟใกล้ๆ';view.setAttribute('aria-pressed',String(targetZoom>1.1))});let lastState='';
+ const ease=v=>v*v*(3-2*v);
+ return {update(t){const p=t%24;let label;if(p<6){train.position.x=-7+6.5*ease(p/6);label='กำลังเข้าสถานี'}else if(p<12){train.position.x=-.5;label='จอดรับผู้โดยสาร'}else if(p<19){train.position.x=-.5+7.5*ease((p-12)/7);label='ออกจากสถานี'}else{train.position.x=7;label='ขบวนถัดไปกำลังมา'}if(lastState!==label){if(status)status.textContent=label;lastState=label}world.updateMatrixWorld(true);clipA.copy(localA).applyMatrix4(world.matrixWorld);clipB.copy(localB).applyMatrix4(world.matrixWorld);
+ for(let i=0;i<cars.length;i++){const direction=i%2?1:-1;cars[i].position.x=((t*(.22+i*.035)+i*1.5)%7.1-3.55)*direction;cars[i].rotation.y=direction<0?Math.PI:0}
+ for(let i=0;i<people.length;i++){const person=people[i];const walk=p>6&&p<11;person.g.position.x=-2.65+i*.29+(walk?Math.sin((p-6)*.6+i)*.14:0);person.g.position.z=1.17+(walk?Math.sin((p-6)*.6+i)*.05:0);person.legs[0].rotation.x=walk?Math.sin(t*7+i)*.35:0;person.legs[1].rotation.x=-person.legs[0].rotation.x;person.arm.rotation.z=Math.sin(t*1.5+i)*.12}
+ boat.position.x=((t*.13)%7)-3.5;boat.position.y=.27+Math.sin(t*1.3)*.008;boat.rotation.z=Math.sin(t*.8)*.015;wake.scale.x=1+Math.sin(t*3)*.1;
+ for(let i=0;i<birds.length;i++){const b=birds[i];b.g.position.set(Math.sin(t*.15+i)*3,3.5+i*.17+Math.cos(t*.4+i)*.2,-1+Math.cos(t*.15+i));b.l.rotation.z=Math.sin(t*4+i)*.5;b.r.rotation.z=-b.l.rotation.z}camera.zoom+=(targetZoom-camera.zoom)*.04;camera.updateProjectionMatrix();}};
+}
