@@ -1,6 +1,7 @@
 import * as T from './assets/three.module.js';
 import { enrich } from './details.js';
 import { animateCity } from './life.js';
+import { orbitScene } from './orbit.js';
 const canvas=document.querySelector('#bts-world');
 const scene=new T.Scene();
 const renderer=new T.WebGLRenderer({canvas,antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.setClearColor(0x000000,0);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
@@ -36,6 +37,6 @@ box(.12,.9,.1,red,2.8,.55,1.28);box(.5,.29,.09,red,2.8,.94,1.28);
 for(let i=0;i<6;i++)box(.7,.12,.2,concrete,-3.1,.15+i*.12,.55+i*.17);
 const shadow=new T.Mesh(new T.PlaneGeometry(40,40),new T.ShadowMaterial({opacity:.13}));shadow.rotation.x=-Math.PI/2;shadow.position.y=-1.2;shadow.receiveShadow=true;scene.add(shadow);
 let pointer={x:0,y:0},running=!matchMedia('(prefers-reduced-motion: reduce)').matches;canvas.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();pointer.x=(e.clientX-r.left)/r.width-.5;pointer.y=(e.clientY-r.top)/r.height-.5});canvas.addEventListener('pointerleave',()=>pointer={x:0,y:0});document.querySelector('#scene-toggle').onclick=e=>{running=!running;e.currentTarget.textContent=running?'Ⅱ':'▶';e.currentTarget.setAttribute('aria-label',running?'หยุดการเคลื่อนไหว':'เล่นการเคลื่อนไหว')};
-const detail=enrich(T,world,train,scene,renderer); const city=animateCity(T,world,train,renderer,camera); city.update(8);
-function resize(){const r=canvas.parentElement.getBoundingClientRect();renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(canvas.parentElement);resize();let t=0,last=performance.now();function frame(now){requestAnimationFrame(frame);const dt=Math.min((now-last)/1000,.04);last=now;if(running){t+=dt;detail.update(t,dt);city.update(t)}world.rotation.y+=(pointer.x*.15+Math.sin(t*.12)*.025-world.rotation.y)*.025;world.position.y=Math.sin(t*.45)*.025;camera.position.y=9.5+pointer.y*.22;camera.lookAt(0,1,0);renderer.render(scene,camera)}requestAnimationFrame(frame);
+const detail=enrich(T,world,train,scene,renderer); const city=animateCity(T,world,train,renderer,camera); city.update(8); const orbit=orbitScene(canvas,world,camera);
+function resize(){const r=canvas.parentElement.getBoundingClientRect();renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(canvas.parentElement);resize();let t=0,last=performance.now();function frame(now){requestAnimationFrame(frame);const dt=Math.min((now-last)/1000,.04);last=now;if(running){t+=dt;detail.update(t,dt);city.update(t)}orbit.update();city.syncClip();world.position.y=Math.sin(t*.45)*.025;camera.position.y=9.5+pointer.y*.22;camera.lookAt(0,1,0);renderer.render(scene,camera)}requestAnimationFrame(frame);
 function time(){document.querySelector('#bangkok-time').textContent=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Bangkok'}).format(new Date())}time();setInterval(time,60000);

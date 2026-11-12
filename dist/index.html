@@ -1,77 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#fffaf8" />
-  <meta name="description" content="BTS Group Holdings — Borderless Transform Solutions. เชื่อมต่อเมือง ผู้คน และโอกาส เพื่อคุณภาพชีวิตที่ดีขึ้น" />
-  <title>BTS Group | เชื่อมต่อทุกโอกาส</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" /><link rel="stylesheet" href="./redesign.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fffaf8" name="theme-color"/>
+<meta content="BTS Group Holdings — Borderless Transform Solutions. เชื่อมต่อเมือง ผู้คน และโอกาส เพื่อคุณภาพชีวิตที่ดีขึ้น" name="description"/>
+<title>BTS Group | เชื่อมต่อทุกโอกาส</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="/styles.css" rel="stylesheet"/><link href="/redesign.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/></head>
 <body>
-  <div class="topline"><span>บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)</span><div><a href="https://www.btsgroup.co.th/th/investor-relations" target="_blank" rel="noreferrer">นักลงทุนสัมพันธ์ ↗</a><span class="top-divider"></span><a href="https://www.btsgroup.co.th/en/home" target="_blank" rel="noreferrer">EN</a></div></div>
-  <header class="header">
-    <a class="brand" href="#home" aria-label="BTS Group หน้าแรก"><img class="bts-logo" src="./assets/bts-logo.svg" alt="BTS Group" /></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="เปิดเมนู"><span></span><span></span></button>
-    <nav id="main-nav" class="nav">
-      <a href="#about">รู้จักเรา</a><a href="#business">ธุรกิจของเรา</a><a href="#news">ข่าวสาร</a><a href="#investor">นักลงทุนสัมพันธ์</a><a href="#sustainability">ความยั่งยืน</a>
-    </nav><a class="header-cta" href="#investor">นักลงทุนสัมพันธ์ ↗</a>
-    <a class="search" href="https://www.btsgroup.co.th/th/home" aria-label="ค้นหา" title="ค้นหาบนเว็บไซต์ทางการ"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"></circle><path d="m16 16 4.3 4.3"></path></svg></a>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> BORDERLESS TRANSFORM SOLUTIONS</div>
-        <h1><span>เชื่อมเมือง.</span><span>เชื่อมชีวิต.</span><span>เปิดทุก</span><span>ความเป็นไปได้.</span></h1>
-        <p class="hero-desc">ทุกเส้นทางเชื่อมผู้คนเข้าหากัน<br class="desktop-only" /> และทุกการเดินทางพาเราไปสู่โอกาสใหม่</p>
-        <div class="hero-actions"><a class="button button-dark" href="#about">รู้จัก BTS Group <span>↗</span></a><a class="text-link" href="#business">สำรวจธุรกิจของเรา <span>↓</span></a></div>
-        <div class="hero-foot"><span class="scroll-mark">01 <i></i> 03</span><span>MOVE THE CITY FORWARD</span></div>
-      </div>
-      <figure class="hero-art webgl-scene"><canvas id="bts-world" aria-label="ฉากสามมิติรถไฟฟ้าบีทีเอสบนทางยกระดับในเมือง"></canvas><div class="world-clock"><span>●</span> <time id="bangkok-time">BANGKOK</time> &nbsp; BANGKOK IN MOTION</div><button class="scene-control" id="scene-toggle" aria-label="หยุดการเคลื่อนไหว">Ⅱ</button><span class="world-label" id="train-status">กำลังเข้าสถานี</span><button id="scene-view" class="scene-view" aria-pressed="true">↙ ภาพรวม</button><span class="world-bottom">BTS GROUP · BORDERLESS TRANSFORM SOLUTIONS</span></figure>
-      <div class="hero-index">BTS GROUP <span>·</span> THAILAND</div>
-    </section>
-
-    <section class="ticker" aria-label="แนวคิดของ BTS Group"><span>MOVE THE CITY</span><i>✳</i><span>CONNECT EVERY DAY</span><i>✳</i><span>OPEN NEW ROUTES</span><i>✳</i><span class="ticker-light">BORDERLESS TRANSFORM SOLUTIONS</span></section>
-
-    <section class="city-film" aria-labelledby="film-title">
- <div class="film-heading"><span class="section-kicker">BTS GROUP IN MOTION / 02</span><h2 id="film-title">มากกว่าเส้นทาง<br /><em>คือทุกโอกาสของชีวิต.</em></h2><p>จากการเดินทางในแต่ละวัน สู่เมืองที่เชื่อมถึงกัน</p></div>
- <div class="film-frame"><video id="city-film" src="https://www.btsgroup.co.th/storage/bilboard/video-banner.mp4" preload="none" muted playsinline loop aria-label="วิดีโอแนะนำ BTS Group"></video><div class="film-shade"></div><span class="film-caption">BORDERLESS<br />TRANSFORM<br /><strong>SOLUTIONS.</strong></span><div class="film-tools"><button id="film-toggle">▶ เล่นวิดีโอ</button><button id="film-sound" aria-pressed="false">เปิดเสียง ↗</button><a href="https://www.youtube.com/watch?v=R4d-wIxII7I" target="_blank" rel="noreferrer">ชมวิดีโอเต็ม ↗</a></div><div class="film-error" hidden>ชมวิดีโอจาก <a href="https://www.youtube.com/watch?v=R4d-wIxII7I" target="_blank" rel="noreferrer">BTS Group บน YouTube ↗</a></div></div>
- <div class="motion-type" aria-hidden="true"><div>MOVE FORWARD. TOGETHER. &nbsp; MOVE FORWARD. TOGETHER. &nbsp;</div></div>
+<div class="topline"><span>บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)</span><div><a href="/th/investor-relations/home/" rel="noreferrer" target="_blank">นักลงทุนสัมพันธ์ ↗</a><span class="top-divider"></span><a href="/en/home/" rel="noreferrer" target="_blank">EN</a></div></div>
+<header class="site-header"><a aria-label="BTS Group" class="site-brand" href="/th/home/"><img alt="BTS Group" height="76" src="/assets/bts-logo.svg" width="63"/></a><nav aria-label="เมนูหลัก" class="site-nav"><button class="site-nav-link" data-menu-group="about">เกี่ยวกับบีทีเอสกรุ๊ป<span>⌄</span></button><button class="site-nav-link" data-menu-group="our-business">ธุรกิจของเรา<span>⌄</span></button><button class="site-nav-link" data-menu-group="investor-relations">นักลงทุนสัมพันธ์<span>⌄</span></button><button class="site-nav-link" data-menu-group="corporate-governance">การกำกับดูแลกิจการ<span>⌄</span></button><button class="site-nav-link" data-menu-group="sustainability">ความยั่งยืน<span>⌄</span></button></nav><div class="site-utilities"><a class="site-lang" href="/en/home/" id="language-switch">EN</a><button aria-label="ค้นหา" class="site-search-button" data-search-open="">⌕</button><button aria-controls="site-menu" aria-expanded="false" class="site-menu-toggle">เมนู<span>☰</span></button></div></header><div class="site-menu" hidden="" id="site-menu"><div class="menu-top"><span>BTS GROUP · EXPLORE</span><button aria-label="ปิดเมนู" data-menu-close="">×</button></div><div class="menu-groups"></div></div><div class="search-overlay" hidden="" id="site-search"><div class="search-shell"><button aria-label="Close" data-search-close="">×</button><label for="global-search">ค้นพบทุกเรื่องราวของ BTS Group</label><input autocomplete="off" id="global-search" placeholder="ค้นหาหน้า ข่าว หรือเอกสาร" type="search"/><div aria-live="polite" id="global-results"></div></div></div>
+<main id="home">
+<section class="hero">
+<div class="hero-copy">
+<div class="eyebrow"><span class="eyebrow-line"></span> BORDERLESS TRANSFORM SOLUTIONS</div>
+<h1><span>เชื่อมเมือง.</span><span>เชื่อมชีวิต.</span><span>เปิดทุก</span><span>ความเป็นไปได้.</span></h1>
+<p class="hero-desc">ทุกเส้นทางเชื่อมผู้คนเข้าหากัน<br class="desktop-only"/> และทุกการเดินทางพาเราไปสู่โอกาสใหม่</p>
+<div class="hero-actions"><a class="button button-dark" href="#about">รู้จัก BTS Group <span>↗</span></a><a class="text-link" href="#business">สำรวจธุรกิจของเรา <span>↓</span></a></div>
+<div class="hero-foot"><span class="scroll-mark">01 <i></i> 03</span><span>MOVE THE CITY FORWARD</span></div>
+</div>
+<figure class="hero-art webgl-scene"><canvas aria-label="ฉากสามมิติรถไฟฟ้าบีทีเอสบนทางยกระดับในเมือง" id="bts-world"></canvas><div class="world-clock"><span>●</span> <time id="bangkok-time">BANGKOK</time>   BANGKOK IN MOTION</div><button aria-label="หยุดการเคลื่อนไหว" class="scene-control" id="scene-toggle">Ⅱ</button><span class="world-label" id="train-status">กำลังเข้าสถานี</span><button aria-pressed="true" class="scene-view" id="scene-view">↙ ภาพรวม</button><div class="orbit-help">ลากหมุนได้ 360° · ใช้สองนิ้วเพื่อซูม</div><button aria-label="รีเซ็ตมุมมองโมเดล" class="scene-reset" id="scene-reset">↺</button><span class="world-bottom">BTS GROUP · BORDERLESS TRANSFORM SOLUTIONS</span></figure>
+<div class="hero-index">BTS GROUP <span>·</span> THAILAND</div>
 </section>
-<section id="about" class="intro section-wrap">
-      <div class="section-kicker">WHO WE ARE <span>01</span></div>
-      <div class="intro-main"><h2>เราเชื่อว่า<br />เมืองที่ดีเริ่มต้นจาก<br /><em>การเชื่อมต่อที่ดี</em></h2><div class="intro-text"><p>BTS Group Holdings มุ่งพัฒนาโซลูชันที่เชื่อมต่อการเดินทาง ธุรกิจ และผู้คนเข้าด้วยกัน ด้วยแนวคิด <strong>Borderless Transform Solutions</strong></p><a class="arrow-link" href="https://www.btsgroup.co.th/th/our-purpose" target="_blank" rel="noreferrer">อ่านจุดมุ่งหมายของเรา <span>↗</span></a></div></div>
-      <div class="values"><div><span class="value-num">01</span><h3>เชื่อมโยง</h3><p>สร้างการเข้าถึงที่ทำให้เมืองเดินหน้า</p></div><div><span class="value-num">02</span><h3>เปลี่ยนผ่าน</h3><p>มองหาแนวทางใหม่ที่ตอบโจทย์อนาคต</p></div><div><span class="value-num">03</span><h3>เติบโตไปด้วยกัน</h3><p>ส่งต่อคุณค่าร่วมให้ผู้คนและสังคม</p></div></div>
-    </section>
-
-    <section id="business" class="business">
-      <div class="section-wrap business-wrap"><div class="section-kicker">OUR ECOSYSTEM <span>02</span></div><div class="business-head"><h2>หนึ่งระบบนิเวศ<br /><em>หลายโอกาสเติบโต</em></h2><p>สำรวจบริษัทในกลุ่มและโซลูชันที่ร่วมเชื่อมต่อเมือง<br />ในมิติต่าง ๆ ของชีวิตประจำวัน</p></div>
-        <div class="business-grid">
-          <a class="business-card card-move" href="https://www.btsgroup.co.th/th/subsidiaries-associates" target="_blank" rel="noreferrer"><span class="card-index">01 / MOBILITY</span><div class="card-graphic move-graphic"><div class="route route-a"></div><div class="route route-b"></div><div class="station s1"></div><div class="station s2"></div><div class="station s3"></div><span class="mini-train">BTS</span></div><div class="card-bottom"><div><h3>การเดินทาง</h3><p>เชื่อมต่อผู้คนกับจุดหมายทั่วเมือง</p></div><span class="circle-arrow">↗</span></div></a>
-          <a class="business-card card-mix" href="https://www.btsgroup.co.th/th/subsidiaries-associates" target="_blank" rel="noreferrer"><span class="card-index">02 / EXPERIENCES</span><div class="card-graphic mix-graphic"><div class="mix-shape shape-a"></div><div class="mix-shape shape-b"></div><div class="mix-shape shape-c"></div><span>Ideas<br />in motion</span></div><div class="card-bottom"><div><h3>ประสบการณ์และสื่อ</h3><p>สร้างการสื่อสารที่เชื่อมแบรนด์กับผู้คน</p></div><span class="circle-arrow">↗</span></div></a>
-          <a class="business-card card-match" href="https://www.btsgroup.co.th/th/subsidiaries-associates" target="_blank" rel="noreferrer"><span class="card-index">03 / CONNECTIONS</span><div class="card-graphic match-graphic"><div class="match-building"><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="match-sun"></div><span class="match-dot"></span></div><div class="card-bottom"><div><h3>โอกาสและการเติบโต</h3><p>ต่อยอดความร่วมมือสู่คุณค่าระยะยาว</p></div><span class="circle-arrow">↗</span></div></a>
-        </div><p class="fineprint">ภาพรวมธุรกิจในหน้านี้เป็นแนวทางนำเสนอเบื้องต้น ดูรายชื่อบริษัทย่อยและบริษัทร่วมฉบับทางการ <a href="https://www.btsgroup.co.th/th/subsidiaries-associates" target="_blank" rel="noreferrer">ที่นี่ ↗</a></p>
-      </div>
-    </section>
-
-    <section id="investor" class="investor section-wrap"><div class="section-kicker">INVESTOR RELATIONS <span>03</span></div><div class="investor-header"><div><h2>ข้อมูลสำคัญ<br /><em>สำหรับนักลงทุน</em></h2><p>ติดตามผลการดำเนินงานและข้อมูลล่าสุดของ BTS Group</p></div><a class="button button-outline" href="https://www.btsgroup.co.th/th/investor-relations" target="_blank" rel="noreferrer">ไปยังนักลงทุนสัมพันธ์ <span>↗</span></a></div>
-      <div class="financial-label"><span>ข้อมูลสำคัญทางการเงิน</span><span>ไตรมาส 1 ปี 2569/70 · หน่วย: ล้านบาท</span></div>
-      <div class="financial-grid"><div class="financial-item"><span>รายได้รวม</span><strong>7,492</strong><small>ล้านบาท</small></div><div class="financial-item"><span>EBITDA</span><strong>2,822</strong><small>ล้านบาท</small></div><div class="financial-item loss"><span>กำไร (ขาดทุน) สุทธิส่วนที่เป็นของผู้ถือหุ้น</span><strong>(388)</strong><small>ล้านบาท</small></div><a class="financial-more" href="https://www.btsgroup.co.th/th/financial-information" target="_blank" rel="noreferrer"><span>ดูข้อมูลการเงิน<br />และเอกสารเผยแพร่</span><b>↗</b></a></div>
-      <div class="data-note">ข้อมูลตามหน้าเว็บไซต์ BTS Group ที่ตรวจสอบ ณ วันที่ 12 พฤศจิกายน 2569 · โปรดดูเอกสารทางการสำหรับข้อมูลล่าสุด</div>
-    </section>
-
-    <section id="news" class="news"><div class="section-wrap"><div class="section-kicker">LATEST UPDATES <span>04</span></div><div class="news-head"><h2>เรื่องราวที่กำลัง<br /><em>ขับเคลื่อนเรา</em></h2><div class="news-tabs" role="tablist" aria-label="หมวดข่าว"><button class="active" role="tab" aria-selected="true" data-news="company">ข่าวบริษัท</button><button role="tab" aria-selected="false" data-news="market">ข่าวตลาดหลักทรัพย์</button></div></div>
-      <div class="news-list" data-panel="company"><a class="news-item" href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer"><time>09 NOV 2026 <span>ข่าวบริษัท</span></time><h3>บีทีเอส กรุ๊ปฯ ร่วมงานคอนเสิร์ตการกุศลรอบพิเศษ “มูลนิธิพลังน้ำใจไทย Power of Thai Foundation รวมน้ำใจปีที่ 16”</h3><b>↗</b></a><a class="news-item" href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer"><time>03 NOV 2026 <span>ข่าวบริษัท</span></time><h3>กลุ่มบริษัทบีทีเอสลงพื้นที่ชุมชนเขตหนองจอก ส่งมอบกำลังใจและถุงยังชีพแก่ผู้ประสบอุทกภัย</h3><b>↗</b></a></div>
-      <div class="news-list hidden" data-panel="market"><a class="news-item" href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer"><time>22 OCT 2026 <span>ข่าวตลาดหลักทรัพย์</span></time><h3>กำหนดวันซื้อขายวันสุดท้ายของ BTS-W8</h3><b>↗</b></a><a class="news-item" href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer"><time>19 OCT 2026 <span>ข่าวตลาดหลักทรัพย์</span></time><h3>แจ้งการห้ามซื้อขายและการพ้นสภาพจากการเป็นหลักทรัพย์จดทะเบียนของ BTS-W8</h3><b>↗</b></a></div>
-      <a class="arrow-link all-news" href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer">ดูข่าวทั้งหมด <span>↗</span></a></div></section>
-
-    <section id="sustainability" class="sustainability"><div class="section-wrap sustain-wrap"><div><div class="section-kicker">BETTER TOGETHER <span>05</span></div><h2>เติบโตอย่างรับผิดชอบ<br /><em>ไปพร้อมกับสังคม</em></h2><p>ความยั่งยืนคือส่วนหนึ่งของการสร้างคุณค่าระยะยาว<br />ให้กับธุรกิจ ผู้คน และสิ่งแวดล้อม</p><a class="button button-light" href="https://www.btsgroup.co.th/th/sustainability" target="_blank" rel="noreferrer">สำรวจความยั่งยืน <span>↗</span></a></div><div class="sustain-art"><div class="sun-ring"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="leaf leaf-c"></div><div class="sustain-word">GROW<br /><span>WITH</span><br />CARE</div><span class="sustain-caption">PEOPLE · PLANET · PROGRESS</span></div></div></section>
-  </main>
-  <footer class="footer"><div class="footer-main"><a class="brand brand-foot" href="#home"><img class="bts-logo" src="./assets/bts-logo.svg" alt="BTS Group" /></a><div class="footer-tag">BORDERLESS<br />TRANSFORM<br /><em>SOLUTIONS</em></div><div class="footer-links"><span>สำรวจเพิ่มเติม</span><a href="https://www.btsgroup.co.th/th/about-us" target="_blank" rel="noreferrer">เกี่ยวกับเรา ↗</a><a href="https://www.btsgroup.co.th/th/investor-relations" target="_blank" rel="noreferrer">นักลงทุนสัมพันธ์ ↗</a><a href="https://www.btsgroup.co.th/th/contact-us" target="_blank" rel="noreferrer">ติดต่อเรา ↗</a></div><div class="footer-links"><span>ติดตาม BTS Group</span><a href="https://www.btsgroup.co.th/th/newsroom" target="_blank" rel="noreferrer">ข่าวสารและกิจกรรม ↗</a><a href="https://www.btsgroup.co.th/th/sustainability" target="_blank" rel="noreferrer">ความยั่งยืน ↗</a></div></div><div class="footer-bottom"><span>© 2569 บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)</span><a href="https://www.btsgroup.co.th/th/home" target="_blank" rel="noreferrer">เว็บไซต์ทางการ ↗</a><span>หน้าแนวคิดการออกแบบ · ข้อมูลอ้างอิงจากเว็บไซต์ทางการ</span></div></footer>
-  <script src="./app.js"></script><script type="module" src="./motion.js"></script><script type="module" src="./scene.js"></script>
-</body>
+<section aria-label="แนวคิดของ BTS Group" class="ticker"><span>MOVE THE CITY</span><i>✳</i><span>CONNECT EVERY DAY</span><i>✳</i><span>OPEN NEW ROUTES</span><i>✳</i><span class="ticker-light">BORDERLESS TRANSFORM SOLUTIONS</span></section>
+<section aria-labelledby="film-title" class="city-film">
+<div class="film-heading"><span class="section-kicker">BTS GROUP IN MOTION / 02</span><h2 id="film-title">มากกว่าเส้นทาง<br/><em>คือทุกโอกาสของชีวิต.</em></h2><p>จากการเดินทางในแต่ละวัน สู่เมืองที่เชื่อมถึงกัน</p></div>
+<div class="film-frame"><video aria-label="วิดีโอแนะนำ BTS Group" id="city-film" loop="" muted="" playsinline="" preload="none" src="https://www.btsgroup.co.th/storage/bilboard/video-banner.mp4"></video><div class="film-shade"></div><span class="film-caption">BORDERLESS<br/>TRANSFORM<br/><strong>SOLUTIONS.</strong></span><div class="film-tools"><button id="film-toggle">▶ เล่นวิดีโอ</button><button aria-pressed="false" id="film-sound">เปิดเสียง ↗</button><a href="https://www.youtube.com/watch?v=R4d-wIxII7I" rel="noreferrer" target="_blank">ชมวิดีโอเต็ม ↗</a></div><div class="film-error" hidden="">ชมวิดีโอจาก <a href="https://www.youtube.com/watch?v=R4d-wIxII7I" rel="noreferrer" target="_blank">BTS Group บน YouTube ↗</a></div></div>
+<div aria-hidden="true" class="motion-type"><div>MOVE FORWARD. TOGETHER.   MOVE FORWARD. TOGETHER.  </div></div>
+</section>
+<section class="intro section-wrap" id="about">
+<div class="section-kicker">WHO WE ARE <span>01</span></div>
+<div class="intro-main"><h2>เราเชื่อว่า<br/>เมืองที่ดีเริ่มต้นจาก<br/><em>การเชื่อมต่อที่ดี</em></h2><div class="intro-text"><p>BTS Group Holdings มุ่งพัฒนาโซลูชันที่เชื่อมต่อการเดินทาง ธุรกิจ และผู้คนเข้าด้วยกัน ด้วยแนวคิด <strong>Borderless Transform Solutions</strong></p><a class="arrow-link" href="/th/about/our-ambition/" rel="noreferrer" target="_blank">อ่านจุดมุ่งหมายของเรา <span>↗</span></a></div></div>
+<div class="values"><div><span class="value-num">01</span><h3>เชื่อมโยง</h3><p>สร้างการเข้าถึงที่ทำให้เมืองเดินหน้า</p></div><div><span class="value-num">02</span><h3>เปลี่ยนผ่าน</h3><p>มองหาแนวทางใหม่ที่ตอบโจทย์อนาคต</p></div><div><span class="value-num">03</span><h3>เติบโตไปด้วยกัน</h3><p>ส่งต่อคุณค่าร่วมให้ผู้คนและสังคม</p></div></div>
+</section>
+<section class="business" id="business">
+<div class="section-wrap business-wrap"><div class="section-kicker">OUR ECOSYSTEM <span>02</span></div><div class="business-head"><h2>หนึ่งระบบนิเวศ<br/><em>หลายโอกาสเติบโต</em></h2><p>สำรวจบริษัทในกลุ่มและโซลูชันที่ร่วมเชื่อมต่อเมือง<br/>ในมิติต่าง ๆ ของชีวิตประจำวัน</p></div>
+<div class="business-grid">
+<a class="business-card card-move" href="/th/about/subsidiaries-and-associated/" rel="noreferrer" target="_blank"><span class="card-index">01 / MOBILITY</span><div class="card-graphic move-graphic"><div class="route route-a"></div><div class="route route-b"></div><div class="station s1"></div><div class="station s2"></div><div class="station s3"></div><span class="mini-train">BTS</span></div><div class="card-bottom"><div><h3>การเดินทาง</h3><p>เชื่อมต่อผู้คนกับจุดหมายทั่วเมือง</p></div><span class="circle-arrow">↗</span></div></a>
+<a class="business-card card-mix" href="/th/about/subsidiaries-and-associated/" rel="noreferrer" target="_blank"><span class="card-index">02 / EXPERIENCES</span><div class="card-graphic mix-graphic"><div class="mix-shape shape-a"></div><div class="mix-shape shape-b"></div><div class="mix-shape shape-c"></div><span>Ideas<br/>in motion</span></div><div class="card-bottom"><div><h3>ประสบการณ์และสื่อ</h3><p>สร้างการสื่อสารที่เชื่อมแบรนด์กับผู้คน</p></div><span class="circle-arrow">↗</span></div></a>
+<a class="business-card card-match" href="/th/about/subsidiaries-and-associated/" rel="noreferrer" target="_blank"><span class="card-index">03 / CONNECTIONS</span><div class="card-graphic match-graphic"><div class="match-building"><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="match-sun"></div><span class="match-dot"></span></div><div class="card-bottom"><div><h3>โอกาสและการเติบโต</h3><p>ต่อยอดความร่วมมือสู่คุณค่าระยะยาว</p></div><span class="circle-arrow">↗</span></div></a>
+</div><p class="fineprint">ภาพรวมธุรกิจในหน้านี้เป็นแนวทางนำเสนอเบื้องต้น ดูรายชื่อบริษัทย่อยและบริษัทร่วมฉบับทางการ <a href="/th/about/subsidiaries-and-associated/" rel="noreferrer" target="_blank">ที่นี่ ↗</a></p>
+</div>
+</section>
+<section class="investor section-wrap" id="investor"><div class="section-kicker">INVESTOR RELATIONS <span>03</span></div><div class="investor-header"><div><h2>ข้อมูลสำคัญ<br/><em>สำหรับนักลงทุน</em></h2><p>ติดตามผลการดำเนินงานและข้อมูลล่าสุดของ BTS Group</p></div><a class="button button-outline" href="/th/investor-relations/home/" rel="noreferrer" target="_blank">ไปยังนักลงทุนสัมพันธ์ <span>↗</span></a></div>
+<div class="financial-label"><span>ข้อมูลสำคัญทางการเงิน</span><span>ไตรมาส 1 ปี 2569/70 · หน่วย: ล้านบาท</span></div>
+<div class="financial-grid"><div class="financial-item"><span>รายได้รวม</span><strong>7,492</strong><small>ล้านบาท</small></div><div class="financial-item"><span>EBITDA</span><strong>2,822</strong><small>ล้านบาท</small></div><div class="financial-item loss"><span>กำไร (ขาดทุน) สุทธิส่วนที่เป็นของผู้ถือหุ้น</span><strong>(388)</strong><small>ล้านบาท</small></div><a class="financial-more" href="/th/investor-relations/financial-information/key-financial-data/" rel="noreferrer" target="_blank"><span>ดูข้อมูลการเงิน<br/>และเอกสารเผยแพร่</span><b>↗</b></a></div>
+<div class="data-note">ข้อมูลตามหน้าเว็บไซต์ BTS Group ที่ตรวจสอบ ณ วันที่ 12 พฤศจิกายน 2569 · โปรดดูเอกสารทางการสำหรับข้อมูลล่าสุด</div>
+</section>
+<section class="news" id="news"><div class="section-wrap"><div class="section-kicker">LATEST UPDATES <span>04</span></div><div class="news-head"><h2>เรื่องราวที่กำลัง<br/><em>ขับเคลื่อนเรา</em></h2><div aria-label="หมวดข่าว" class="news-tabs" role="tablist"><button aria-selected="true" class="active" data-news="company" role="tab">ข่าวบริษัท</button><button aria-selected="false" data-news="market" role="tab">ข่าวตลาดหลักทรัพย์</button></div></div>
+<div class="news-list" data-panel="company"><a class="news-item" href="/th/corporate-communications/news-event/" rel="noreferrer" target="_blank"><time>09 NOV 2026 <span>ข่าวบริษัท</span></time><h3>บีทีเอส กรุ๊ปฯ ร่วมงานคอนเสิร์ตการกุศลรอบพิเศษ “มูลนิธิพลังน้ำใจไทย Power of Thai Foundation รวมน้ำใจปีที่ 16”</h3><b>↗</b></a><a class="news-item" href="/th/corporate-communications/news-event/" rel="noreferrer" target="_blank"><time>03 NOV 2026 <span>ข่าวบริษัท</span></time><h3>กลุ่มบริษัทบีทีเอสลงพื้นที่ชุมชนเขตหนองจอก ส่งมอบกำลังใจและถุงยังชีพแก่ผู้ประสบอุทกภัย</h3><b>↗</b></a></div>
+<div class="news-list hidden" data-panel="market"><a class="news-item" href="/th/corporate-communications/news-event/" rel="noreferrer" target="_blank"><time>22 OCT 2026 <span>ข่าวตลาดหลักทรัพย์</span></time><h3>กำหนดวันซื้อขายวันสุดท้ายของ BTS-W8</h3><b>↗</b></a><a class="news-item" href="/th/corporate-communications/news-event/" rel="noreferrer" target="_blank"><time>19 OCT 2026 <span>ข่าวตลาดหลักทรัพย์</span></time><h3>แจ้งการห้ามซื้อขายและการพ้นสภาพจากการเป็นหลักทรัพย์จดทะเบียนของ BTS-W8</h3><b>↗</b></a></div>
+<a class="arrow-link all-news" href="/th/corporate-communications/news-event/" rel="noreferrer" target="_blank">ดูข่าวทั้งหมด <span>↗</span></a></div></section>
+<section class="sustainability" id="sustainability"><div class="section-wrap sustain-wrap"><div><div class="section-kicker">BETTER TOGETHER <span>05</span></div><h2>เติบโตอย่างรับผิดชอบ<br/><em>ไปพร้อมกับสังคม</em></h2><p>ความยั่งยืนคือส่วนหนึ่งของการสร้างคุณค่าระยะยาว<br/>ให้กับธุรกิจ ผู้คน และสิ่งแวดล้อม</p><a class="button button-light" href="/th/sustainability/at-a-glance/" rel="noreferrer" target="_blank">สำรวจความยั่งยืน <span>↗</span></a></div><div class="sustain-art"><div class="sun-ring"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="leaf leaf-c"></div><div class="sustain-word">GROW<br/><span>WITH</span><br/>CARE</div><span class="sustain-caption">PEOPLE · PLANET · PROGRESS</span></div></div></section>
+</main>
+<footer class="footer full-site-footer"><div class="footer-main"><a class="brand brand-foot" href="/th/home/"><img alt="BTS Group" class="bts-logo" src="/assets/bts-logo.svg"/></a><div class="footer-tag">BORDERLESS<br/>TRANSFORM<br/><em>SOLUTIONS.</em></div><div class="footer-links"><span>สำรวจ BTS Group</span><a href="/th/about/our-ambition/">เกี่ยวกับเรา ↗</a><a href="/th/our-business/business-overview/">ธุรกิจของเรา ↗</a><a href="/th/investor-relations/home/">นักลงทุนสัมพันธ์ ↗</a></div><div class="footer-links"><span>เชื่อมต่อกับเรา</span><a href="/th/sustainability/at-a-glance/">ความยั่งยืน ↗</a><a href="/th/corporate-communications/news-event/">ข่าวและกิจกรรม ↗</a><a href="/th/contact/">ติดต่อเรา ↗</a><a href="/th/sitemap/">แผนผังเว็บไซต์ ↗</a></div></div><div class="footer-bottom"><span>© 2026 BTS Group Holdings PCL · แนวคิดการออกแบบเว็บไซต์</span><a href="/th/privacy-statement/">นโยบายความเป็นส่วนตัว</a><a href="/th/cookies-policy/">นโยบายคุกกี้</a><a href="/th/terms-and-conditions/">ข้อตกลงและเงื่อนไข</a></div></footer>
+<script src="/app.js"></script><script src="/motion.js" type="module"></script><script src="/scene.js" type="module"></script>
+<script src="/navigation.js" type="module"></script></body>
 </html>
