@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
-const output = path.join(root, '.pages-build');
+const output = path.resolve(process.env.SITE_OUTPUT_DIR || path.join(root, '.pages-build'));
 const base = (process.env.SITE_BASE_PATH ?? '/bts-test-website').replace(/\/$/, '');
 if (!/^(\/[a-zA-Z0-9_.-]+)*$/.test(base)) throw new Error('Invalid Pages base path');
 await mkdir(output, { recursive: true });
@@ -16,7 +16,7 @@ async function prepare(dir) {
     if (entry.name.endsWith('.html')) {
       let html = await readFile(file, 'utf8');
       html = html.replace(/\b(href|src|poster|action)=(['"])(\/(?!\/)[^'"<>]*)\2/g,
-        (_, attr, quote, url) => `${attr}=${quote}${base}${url}${quote}`);
+        (_, attr, quote, url) => `${attr}=${quote}${url.startsWith('/storage/') ? 'https://www.btsgroup.co.th' : base}${url}${quote}`);
       await writeFile(file, html);
       htmlCount++;
     } else if (entry.name.endsWith('.css')) {
@@ -40,4 +40,4 @@ const detailFile = path.join(output, 'details.js');
 await writeFile(detailFile, (await readFile(detailFile, 'utf8'))
   .replace("'/assets/bts-logo.svg'", `'${base}/assets/bts-logo.svg'`));
 await writeFile(path.join(output, '.nojekyll'), '');
-console.log(`Prepared ${htmlCount} pages for ${base || '/'} in .pages-build`);
+console.log(`Prepared ${htmlCount} pages for ${base || '/'}`);
