@@ -83,7 +83,7 @@ def history(p):
 
 
 def chapter_art(kind,p,image):
- if kind in ('profile','article','news','career') and image and 'opengraph' not in image:
+ if kind not in ('journey','document','legal','directory') and image and 'opengraph' not in image:
   return f'<div class="chapter-visual visual-{kind}"><img src="{html.escape(image,quote=True)}" alt=""/><span class="visual-caption">BTS GROUP / {kind.upper()}</span><i class="visual-frame"></i></div>'
  if kind=='journey':return f'<div class="chapter-visual visual-journey"><div class="hero-rail"></div><div class="hero-mini-train">{train_svg()}</div><span class="visual-word">ON<br/>TRACK.</span><span class="visual-caption">OUR STORY IN MOTION</span></div>'
  if kind in ('library','document','legal'):
