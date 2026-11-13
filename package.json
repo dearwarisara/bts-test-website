@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "BTS Group website redesign with a scroll-driven 3D railway history.",
+  "description": "BTS Group corporate website with shared BTS typography, theme and local navigation.",
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
     "build:pages": "node build-pages.mjs",
-    "test": "node --test tests/history-motion.test.mjs tests/navigation.test.mjs"
+    "test": "node --test tests/history-motion.test.mjs tests/navigation.test.mjs",
+    "build:site": "python unify_bts_site.py",
+    "audit:site": "python audit_bts_site.py"
   },
   "engines": {
     "node": ">=18"
