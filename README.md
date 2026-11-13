@@ -33,6 +33,8 @@ npm start
 - `dist/history-world.css` เลย์เอาต์หน้าความเป็นมาสำหรับคอมและมือถือ
 - `dist/details.js` โมเดลรถไฟที่ใช้ร่วมกับหน้าแรก
 - `server.mjs` เซิร์ฟเวอร์สำหรับรันในเครื่อง
+- `navigation-tree.json` ลำดับหมวดและเมนูย่อยจาก sitemap ทางการ ใช้ร่วมกันทั้งเมนูหลัก เมนูในหมวด และหน้า sitemap
+- `extract_navigation.py` เครื่องมือดึงโครงสร้างเมนูจากไฟล์ sitemap ใน `.cache-bts/`
 - `build_pages.py`, `inner_design.py`, `collect_pages.py` เครื่องมือรวบรวมและสร้างหน้าเว็บไซต์จากข้อมูลต้นฉบับ
 
 ไฟล์ใน `dist/` สร้างไว้แล้ว การรันเว็บไซต์ไม่ต้องใช้ Python หรือข้อมูล cache ส่วนการสร้างหน้าจากต้นฉบับใหม่ต้องมี Python, Beautiful Soup และข้อมูลจาก `collect_pages.py` ใน `.cache-bts/`

@@ -13,7 +13,9 @@ for p in pages.values():
    source=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
    a=source.find('a',href=lambda h:bool(h and urljoin('https://www.btsgroup.co.th',h)==p['source']))
    if a:p['title']=a.get_text(' ',strip=True);break
-groups=[('about','เกี่ยวกับบีทีเอสกรุ๊ป','About BTS Group'),('our-business','ธุรกิจของเรา','Our Businesses'),('investor-relations','นักลงทุนสัมพันธ์','Investor Relations'),('corporate-governance','การกำกับดูแลกิจการ','Corporate Governance'),('sustainability','ความยั่งยืน','Sustainability'),('corporate-communications','ข่าวสารองค์กร','News & Media'),('career','ร่วมงานกับเรา','Careers'),('contact','ติดต่อเรา','Contact')]
+navigation=json.loads((ROOT/'navigation-tree.json').read_text(encoding='utf8'))['navigation']
+en_navigation={n['key']:n for n in navigation['en']}
+groups=[(n['key'],n['label'],en_navigation[n['key']]['label']) for n in navigation['th'] if n['key']!='home']
 aliases={'our-purpose':'about/our-ambition','subsidiaries-associates':'about/subsidiaries-and-associated','investor-relations':'investor-relations/home','financial-information':'investor-relations/financial-information/key-financial-data','newsroom':'corporate-communications/news-event','sustainability':'sustainability/at-a-glance','about-us':'about/our-ambition','contact-us':'contact'}
 def group(path):
  if '/management-structure/' in path or re.search('/awards$',path):return 'about'
@@ -41,14 +43,37 @@ def href(url,lang='th'):
  tail=path[4:] if re.match('^/(th|en)/',path) else path.strip('/')
  if tail in aliases:return f'/{lang}/{aliases[tail]}/'
  return url
+def resolve_navigation(nodes):
+ for node in nodes:
+  if node.get('path'):node['href']=route(node['path'])
+  resolve_navigation(node.get('children',[]))
+for nodes in navigation.values():resolve_navigation(nodes)
+
+def first_link(node):
+ return node.get('href') or next((first_link(child) for child in node.get('children',[]) if first_link(child)),None)
+
+def navigation_links(nodes,current=''):
+ rows=[]
+ for node in nodes:
+  label=html.escape(node['label']);children=node.get('children',[])
+  if node.get('href'):
+   head='<a '+('aria-current="page" ' if node.get('path')==current else '')+'href="'+html.escape(node['href'],quote=True)+'"><span>'+label+'</span><span aria-hidden="true">↗</span></a>'
+  else:head='<span class="nav-branch-label">'+label+'</span>'
+  rows.append('<li>'+head+(navigation_links(children,current) if children else '')+'</li>')
+ return '<ul class="nav-tree">'+''.join(rows)+'</ul>'
+
+def sitemap_content(lang):
+ return '<nav class="sitemap-tree" aria-label="'+('แผนผังเว็บไซต์' if lang=='th' else 'Sitemap')+'">'+''.join('<section><h2>'+('<a href="'+n['href']+'">'+html.escape(n['label'])+' ↗</a>' if n.get('href') else html.escape(n['label']))+'</h2>'+navigation_links(n.get('children',[]))+'</section>' for n in navigation[lang])+'</nav>'
+
 def header(lang):
  th=lang=='th';search='ค้นหา' if th else 'Search';menu='เมนู' if th else 'Menu'
  links=''.join(f'<button class="site-nav-link" data-menu-group="{key}">{thai if th else en}<span>⌄</span></button>' for key,thai,en in groups[:5])
  return f'''<header class="site-header"><a class="site-brand" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="63" height="76" /></a><nav class="site-nav" aria-label="{'เมนูหลัก' if th else 'Main navigation'}">{links}</nav><div class="site-utilities"><a class="site-lang" id="language-switch" href="/{'en' if th else 'th'}/home/">{'EN' if th else 'TH'}</a><button class="site-search-button" data-search-open aria-label="{search}">⌕</button><button class="site-menu-toggle" aria-controls="site-menu" aria-expanded="false">{menu}<span>☰</span></button></div></header><div class="site-menu" id="site-menu" hidden><div class="menu-top"><span>BTS GROUP · EXPLORE</span><button data-menu-close aria-label="{'ปิดเมนู' if th else 'Close menu'}">×</button></div><div class="menu-groups"></div></div><div class="search-overlay" id="site-search" hidden><div class="search-shell"><button data-search-close aria-label="Close">×</button><label for="global-search">{'ค้นพบทุกเรื่องราวของ BTS Group' if th else 'Explore BTS Group'}</label><input id="global-search" type="search" placeholder="{'ค้นหาหน้า ข่าว หรือเอกสาร' if th else 'Search pages, news and documents'}" autocomplete="off"/><div id="global-results" aria-live="polite"></div></div></div>'''
 def footer(lang):
- th=lang=='th';labels=['เกี่ยวกับเรา','ธุรกิจของเรา','นักลงทุนสัมพันธ์','ความยั่งยืน','ข่าวและกิจกรรม','ติดต่อเรา'] if th else ['About BTS Group','Our Businesses','Investor Relations','Sustainability','News & Media','Contact']
- paths=['about/our-ambition','our-business/business-overview','investor-relations/home','sustainability/at-a-glance','corporate-communications/news-event','contact']
- return f'''<footer class="footer full-site-footer"><div class="footer-main"><a class="brand brand-foot" href="/{lang}/home/"><img class="bts-logo" src="/assets/bts-logo.svg" alt="BTS Group"/></a><div class="footer-tag">BORDERLESS<br/>TRANSFORM<br/><em>SOLUTIONS.</em></div><div class="footer-links"><span>{'สำรวจ BTS Group' if th else 'Explore BTS Group'}</span>{''.join(f'<a href="/{lang}/{p}/">{label} ↗</a>' for p,label in zip(paths[:3],labels[:3]))}</div><div class="footer-links"><span>{'เชื่อมต่อกับเรา' if th else 'Stay Connected'}</span>{''.join(f'<a href="/{lang}/{p}/">{label} ↗</a>' for p,label in zip(paths[3:],labels[3:]))}<a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'} ↗</a></div></div><div class="footer-bottom"><span>© 2026 BTS Group Holdings PCL · {'แนวคิดการออกแบบเว็บไซต์' if th else 'Website design concept'}</span><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/terms-and-conditions/">{'ข้อตกลงและเงื่อนไข' if th else 'Terms & Conditions'}</a></div></footer>'''
+ th=lang=='th';nodes=[n for n in navigation[lang] if n['key']!='home']
+ def links(items):return ''.join('<a href="'+first_link(n)+'">'+html.escape(n['label'])+' ↗</a>' for n in items)
+ return f'''<footer class="footer full-site-footer"><div class="footer-main"><a class="brand brand-foot" href="/{lang}/home/"><img class="bts-logo" src="/assets/bts-logo.svg" alt="BTS Group"/></a><div class="footer-tag">BORDERLESS<br/>TRANSFORM<br/><em>SOLUTIONS.</em></div><div class="footer-links"><span>{'สำรวจ BTS Group' if th else 'Explore BTS Group'}</span>{links(nodes[:4])}</div><div class="footer-links"><span>{'เชื่อมต่อกับเรา' if th else 'Stay Connected'}</span>{links(nodes[4:])}<a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'} ↗</a></div></div><div class="footer-bottom"><span>© 2026 BTS Group Holdings PCL · {'แนวคิดการออกแบบเว็บไซต์' if th else 'Website design concept'}</span><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/terms-and-conditions/">{'ข้อตกลงและเงื่อนไข' if th else 'Terms & Conditions'}</a></div></footer>'''
+
 split_count=split_pages(pages,route)
 catalog=[]
 for path,p in pages.items():
@@ -83,7 +108,7 @@ def content(p):
  if '/document/viewer/' in path:
   d=text(p.get('index',{}).get('description',''))
   return f'<div class="document-view"><span class="document-symbol">↗</span><h2>{html.escape(title(p))}</h2><p>{html.escape(d)}</p><a class="official-action" href="{html.escape(p["source"],quote=True)}" target="_blank" rel="noreferrer">{("เปิดเอกสารต้นฉบับ" if th else "Open original document")} ↗</a><p class="source-note">{("เอกสารเผยแพร่โดย BTS Group" if th else "Published by BTS Group")}</p></div>'
- if path.endswith('/sitemap'):return '<div class="directory-page" data-directory="all"></div>'
+ if path.endswith('/sitemap'):return sitemap_content(lang)
  if path.endswith('/corporate-vdo'):
   return '<div class="corporate-video"><video src="https://www.btsgroup.co.th/storage/bilboard/video-banner.mp4" controls playsinline preload="none" aria-label="BTS Group Corporate Video"></video><a class="official-action" href="https://www.youtube.com/watch?v=R4d-wIxII7I" target="_blank" rel="noreferrer">'+('ชมวิดีโอฉบับเต็ม' if th else 'Watch the full corporate video')+' ↗</a></div>'
  if path.endswith('/advance-search'):return '<div class="page-search"><label for="page-query">'+('ค้นหาภายในเว็บไซต์' if th else 'Search the website')+'</label><input type="search" id="page-query" placeholder="'+('ค้นหาหน้า ข่าว หรือเอกสาร' if th else 'Search pages, news or documents')+'"/><div class="archive-results" aria-live="polite"></div></div>'
@@ -120,14 +145,15 @@ def make_page(p):
  path=p['path'];lang=path.split('/')[1];th=lang=='th';name=title(p);g=group(path)
  siblings=[x for x in catalog if x['lang']==lang and x['group']==g and x['navigable'] and x['path'] not in ('/th/home','/en/home')]
  siblings=list({x['title']:x for x in siblings}.values())
- side=''.join('<a '+('aria-current="page" ' if s['path']==path else '')+'href="'+s['href']+'">'+html.escape(s['title'])+'<span>↗</span></a>' for s in siblings)
+ section=next((n for n in navigation[lang] if n['key']==g),None)
+ side=navigation_links(section.get('children') or [section],path) if section else ''
  image=p.get('image') or p.get('banner','');use_image=image and 'opengraph' not in image
  hero_image=chapter_art(layout_kind(p),p,image)
  related=[x for x in siblings if x['path']!=path][:3]
  kind,body=decorate(p,content(p))
  if p.get('parent_path'):
   body='<a class="chapter-back" href="'+route(p['parent_path'])+'">← '+('กลับไปหน้ารวม' if th else 'Back to overview')+'</a>'+body
- return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{html.escape(name)} | BTS Group</title><meta name="description" content="{html.escape(text(p.get('index',{}).get('description',''))[:150] or name,quote=True)}"/><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/redesign.css"/><link rel="stylesheet" href="/pages.css"/><link rel="stylesheet" href="/chapters.css"/>{'<link rel="stylesheet" href="/history-world.css?v=boundary-1"/>' if kind=='journey' else ''}</head><body class="inner-page layout-{kind}" data-path="{html.escape(path,quote=True)}">{header(lang)}<main><section class="page-hero"><div class="page-hero-copy"><a class="page-breadcrumb" href="/{lang}/home/">{'หน้าหลัก' if th else 'Home'} / {section_name(path,lang)}</a><span class="page-eyebrow">{g.replace('-',' ').upper()}</span><h1>{html.escape(name)}</h1><a class="page-scroll" href="#page-content">{'สำรวจเนื้อหา' if th else 'Explore this page'} <span>↓</span></a></div>{hero_image}</section><div class="chapter-navigation"><span>{section_name(path,lang)}</span><details class="chapter-picker"><summary>{'เลือกหน้าในหมวดนี้' if th else 'Explore this chapter'} <span>⌄</span></summary><nav>{side}</nav></details></div><div class="page-layout" id="page-content"><article class="source-body" data-category="{g}">{body}<div class="source-attribution"><a href="{html.escape(p['source'],quote=True)}" target="_blank" rel="noreferrer">{'ข้อมูลต้นฉบับจาก BTS Group' if th else 'Original information from BTS Group'} ↗</a></div></article></div>{('<section class="related-pages"><span class="section-kicker">EXPLORE MORE</span>'+cards(related)+'</section>') if related else ''}</main>{footer(lang)}<script src="/navigation.js" type="module"></script><script src="/chapter-motion.js" type="module"></script></body></html>'''
+ return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{html.escape(name)} | BTS Group</title><meta name="description" content="{html.escape(text(p.get('index',{}).get('description',''))[:150] or name,quote=True)}"/><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/redesign.css"/><link rel="stylesheet" href="/pages.css"/><link rel="stylesheet" href="/chapters.css"/><link rel="stylesheet" href="/navigation.css?v=sitemap-1"/>{'<link rel="stylesheet" href="/history-world.css?v=boundary-1"/>' if kind=='journey' else ''}</head><body class="inner-page layout-{kind}" data-path="{html.escape(path,quote=True)}">{header(lang)}<main><section class="page-hero"><div class="page-hero-copy"><a class="page-breadcrumb" href="/{lang}/home/">{'หน้าหลัก' if th else 'Home'} / {section_name(path,lang)}</a><span class="page-eyebrow">{g.replace('-',' ').upper()}</span><h1>{html.escape(name)}</h1><a class="page-scroll" href="#page-content">{'สำรวจเนื้อหา' if th else 'Explore this page'} <span>↓</span></a></div>{hero_image}</section><div class="chapter-navigation"><span>{section_name(path,lang)}</span><details class="chapter-picker"><summary>{'เลือกหน้าในหมวดนี้' if th else 'Explore this chapter'} <span>⌄</span></summary><nav>{side}</nav></details></div><div class="page-layout" id="page-content"><article class="source-body" data-category="{g}">{body}<div class="source-attribution"><a href="{html.escape(p['source'],quote=True)}" target="_blank" rel="noreferrer">{'ข้อมูลต้นฉบับจาก BTS Group' if th else 'Original information from BTS Group'} ↗</a></div></article></div>{('<section class="related-pages"><span class="section-kicker">EXPLORE MORE</span>'+cards(related)+'</section>') if related else ''}</main>{footer(lang)}<script src="/navigation.js?v=sitemap-1" type="module"></script><script src="/chapter-motion.js" type="module"></script></body></html>'''
 out=[]
 for path,p in pages.items():
  if path not in by_path or path in ('/th/home','/en/home'):continue
@@ -135,7 +161,7 @@ for path,p in pages.items():
 # Shared catalogue powers every menu, search and archive view.
 for p in pages.values():
  if p['path'] in by_path and '/document/viewer/' not in p['path'] and len(text(p.get('html','')))<15 and not re.search(r'/\d+/',p['path']):by_path[p['path']]['resources']=[x['path'] for x in resources(p)]
-(DIST/'site-catalog.json').write_text(json.dumps({'groups':[{'key':a,'th':b,'en':c} for a,b,c in groups],'pages':catalog},ensure_ascii=False),encoding='utf8')
+(DIST/'site-catalog.json').write_text(json.dumps({'groups':[{'key':a,'th':b,'en':c} for a,b,c in groups],'pages':catalog,'navigation':navigation},ensure_ascii=False),encoding='utf8')
 # Keep the authored home experience; apply the complete shared navigation.
 home=(DIST/'index.html').read_text(encoding='utf8')
 home=re.sub(r'<header class="header">.*?</header>',lambda m:header('th'),home,flags=re.S)
@@ -145,6 +171,12 @@ home=home.replace('href="./styles.css"','href="/styles.css"').replace('href="./r
 if '/pages.css' not in home:home=home.replace('</head>','<link rel="stylesheet" href="/pages.css"/></head>')
 if '/navigation.js' not in home:home=home.replace('</body>','<script type="module" src="/navigation.js"></script></body>')
 bs=BeautifulSoup(home,'html.parser')
+for script in bs.select('script[src]'):
+ if urlsplit(script['src']).path=='/navigation.js':script['src']='/navigation.js?v=sitemap-1'
+nav_style=next((n for n in bs.select('link[href]') if urlsplit(n['href']).path=='/navigation.css'),None)
+if not nav_style:
+ nav_style=bs.new_tag('link',rel='stylesheet');bs.head.append(nav_style)
+nav_style['href']='/navigation.css?v=sitemap-1' 
 for a in bs.select('a[href]'):a['href']=href(a['href'])
 home=str(bs);(DIST/'index.html').write_text(home,encoding='utf8')
 for lang in ['th','en']:

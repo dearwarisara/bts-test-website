@@ -1,0 +1,613 @@
+{
+  "source": "https://www.btsgroup.co.th/th/sitemap",
+  "navigation": {
+    "th": [
+      {
+        "label": "หน้าหลัก",
+        "path": "/th/home",
+        "key": "home"
+      },
+      {
+        "label": "เกี่ยวกับบีทีเอสกรุ๊ป",
+        "children": [
+          {
+            "label": "จุดมุ่งหมายของเรา",
+            "path": "/th/about/our-ambition"
+          },
+          {
+            "label": "ความเป็นมาของบริษัท",
+            "path": "/th/about/our-history"
+          },
+          {
+            "label": "สารจากประธานกรรมการ",
+            "path": "/th/about/message-from-the-chairman"
+          },
+          {
+            "label": "แผนผังโครงสร้างองค์กร",
+            "path": "/th/about/organization-chart"
+          },
+          {
+            "label": "คณะกรรมการ",
+            "path": "/th/management-structure/director"
+          },
+          {
+            "label": "ผู้บริหาร เลขานุการบริษัท และผู้อำนวยการสำนักตรวจสอบภายใน",
+            "path": "/th/management-structure/management"
+          },
+          {
+            "label": "บริษัทย่อยและบริษัทร่วม",
+            "path": "/th/about/subsidiaries-and-associated"
+          },
+          {
+            "label": "รางวัลแห่งความภูมิใจ",
+            "path": "/th/awards"
+          }
+        ],
+        "key": "about"
+      },
+      {
+        "label": "ธุรกิจของเรา",
+        "children": [
+          {
+            "label": "ภาพรวมธุรกิจ",
+            "path": "/th/our-business/business-overview"
+          },
+          {
+            "label": "MOVE",
+            "path": "/th/our-business/move"
+          },
+          {
+            "label": "MIX",
+            "path": "/th/our-business/mix"
+          },
+          {
+            "label": "MATCH",
+            "path": "/th/our-business/match"
+          }
+        ],
+        "key": "our-business"
+      },
+      {
+        "label": "นักลงทุนสัมพันธ์",
+        "children": [
+          {
+            "label": "หน้าหลักนักลงทุนสัมพันธ์",
+            "path": "/th/investor-relations/home"
+          },
+          {
+            "label": "ข้อมูลทางการเงิน",
+            "children": [
+              {
+                "label": "ข้อมูลสำคัญทางการเงิน",
+                "path": "/th/investor-relations/financial-information/key-financial-data"
+              },
+              {
+                "label": "อัตราส่วนทางการเงินที่สำคัญ",
+                "path": "/th/investor-relations/financial-information/key-financial-ratios"
+              },
+              {
+                "label": "งบการเงิน",
+                "path": "/th/investor-relations/document/financial-statements"
+              },
+              {
+                "label": "คำอธิบายและวิเคราะห์ของฝ่ายจัดการ",
+                "path": "/th/investor-relations/document/mdna"
+              },
+              {
+                "label": "ข้อมูลหุ้นกู้กลุ่มบริษัท บีทีเอส กรุ๊ป",
+                "path": "/th/investor-relations/financial-information/debt-information"
+              },
+              {
+                "label": "อันดับความน่าเชื่อถือ",
+                "path": "/th/investor-relations/financial-information/credit-rating"
+              }
+            ]
+          },
+          {
+            "label": "ข้อมูลราคาหลักทรัพย์",
+            "children": [
+              {
+                "label": "BTS",
+                "path": "/th/investor-relations/stock-quote/bts"
+              },
+              {
+                "label": "BTS-W8",
+                "path": "/th/investor-relations/stock-quote/bts-w8"
+              },
+              {
+                "label": "เครื่องคำนวณการลงทุน",
+                "path": "/th/investor-relations/investment-calculator"
+              }
+            ]
+          },
+          {
+            "label": "ข้อมูลใบสำคัญแสดงสิทธิ",
+            "children": [
+              {
+                "label": "BTS-W8",
+                "path": "/th/investor-relations/warrants-information/bts-w8"
+              }
+            ]
+          },
+          {
+            "label": "ข้อมูลสำหรับผู้ถือหุ้น",
+            "children": [
+              {
+                "label": "ข้อมูลบริษัท",
+                "path": "/th/investor-relations/shareholder-information/corporate-information"
+              },
+              {
+                "label": "ผู้ถือหุ้นรายใหญ่",
+                "path": "/th/investor-relations/shareholder-information/shareholder-structure"
+              },
+              {
+                "label": "การประชุมผู้ถือหุ้น",
+                "path": "/th/investor-relations/document/shareholder-meetings"
+              },
+              {
+                "label": "นโยบายการจ่ายเงินปันผล",
+                "path": "/th/investor-relations/shareholder-information/dividend-information"
+              },
+              {
+                "label": "ข้อมูลหุ้นกู้กลุ่มบริษัท บีทีเอส กรุ๊ป",
+                "path": "/th/investor-relations/shareholder-information/debentures-information"
+              },
+              {
+                "label": "ติดต่อนายทะเบียนหุ้นของเรา",
+                "path": "/th/investor-relations/shareholder-information/contact-our-registrar"
+              }
+            ]
+          },
+          {
+            "label": "ห้องข่าว",
+            "children": [
+              {
+                "label": "ข่าวแจ้งตลาดหลักทรัพย์",
+                "path": "/th/investor-relations/newsroom/set-announcements"
+              },
+              {
+                "label": "ข่าวและกิจกรรม",
+                "path": "/th/update/news-event"
+              }
+            ]
+          },
+          {
+            "label": "ปฏิทินหลักทรัพย์",
+            "path": "/th/investor-relations/events-calendar"
+          },
+          {
+            "label": "เอกสารเผยแพร่",
+            "children": [
+              {
+                "label": "สรุปข้อสนเทศบริษัท",
+                "path": "/th/investor-relations/document/fact-sheet"
+              },
+              {
+                "label": "เอกสารนำเสนอบริษัท",
+                "path": "/th/investor-relations/document/investor-presentation"
+              },
+              {
+                "label": "วารสารนักลงทุน",
+                "path": "/th/investor-relations/document/newsletters"
+              },
+              {
+                "label": "รายงานประจำปี",
+                "path": "/th/investor-relations/document/yearly-reports"
+              },
+              {
+                "label": "ชุดข้อมูลบริษัทสำหรับนักลงทุน",
+                "path": "/th/investor-relations/resource-center"
+              }
+            ]
+          },
+          {
+            "label": "เว็บแคสต์และเอกสารนำเสนอ",
+            "path": "/th/investor-relations/document/webcasts"
+          },
+          {
+            "label": "ติดต่อนักวิเคราะห์",
+            "path": "/th/investor-relations/analyst-contact"
+          },
+          {
+            "label": "สอบถามข้อมูลนักลงทุน",
+            "children": [
+              {
+                "label": "อีเมล์รับข่าวสาร",
+                "path": "/th/investor-relations/information-inquiry/news-subscription"
+              },
+              {
+                "label": "ติดต่อนักลงทุนสัมพันธ์",
+                "path": "/th/investor-relations/information-inquiry/ir-contact"
+              }
+            ]
+          },
+          {
+            "label": "คำถามที่พบบ่อย",
+            "path": "/th/investor-relations/faqs"
+          }
+        ],
+        "key": "investor-relations"
+      },
+      {
+        "label": "การกำกับดูแลกิจการ",
+        "children": [
+          {
+            "label": "At a Glance",
+            "path": "/th/corporate-governance/at-a-glance"
+          },
+          {
+            "label": "นโยบายการกำกับดูแลกิจการและจริยธรรมทางธุรกิจ",
+            "path": "/th/download/corporate-governance-policy-and-code-of-business-conduct"
+          },
+          {
+            "label": "กฎบัตรและนิยามของกรรมการอิสระ",
+            "path": "/th/download/charters"
+          },
+          {
+            "label": "เอกสารสำคัญขององค์กร",
+            "path": "/th/download/corporate-documents"
+          },
+          {
+            "label": "รายงานการเปลี่ยนแปลงการถือครองหลักทรัพย์ของกรรมการและผู้บริหาร",
+            "path": "/th/corporate-governance/report-the-securities-holding-of-directors-and-executives"
+          },
+          {
+            "label": "ช่องทางการร้องเรียน",
+            "path": "/th/corporate-governance/complaint-channels"
+          }
+        ],
+        "key": "corporate-governance"
+      },
+      {
+        "label": "ความยั่งยืน",
+        "children": [
+          {
+            "label": "กลุ่มบริษัทบีทีเอสกับความยั่งยืน",
+            "path": "/th/sustainability/sustainability-at-bts-group"
+          },
+          {
+            "label": "ความยั่งยืนด้านสิ่งแวดล้อม",
+            "path": "/th/sustainability/environmental-sustainability"
+          },
+          {
+            "label": "ความยั่งยืนด้านสังคม",
+            "path": "/th/sustainability/social-sustainability"
+          },
+          {
+            "label": "ความยั่งยืนด้านเศรษฐกิจ",
+            "path": "/th/sustainability/economic-sustainability"
+          },
+          {
+            "label": "ศูนย์รวมข้อมูล ESG",
+            "path": "/th/download/sustainability-report"
+          }
+        ],
+        "key": "sustainability"
+      },
+      {
+        "label": "ข่าวสารองค์กร",
+        "path": "/th/update/news-event",
+        "key": "corporate-communications"
+      },
+      {
+        "label": "สมัครงาน",
+        "children": [
+          {
+            "label": "ทำไมต้องบีทีเอสกรุ๊ป",
+            "path": "/th/career/why-bts-group"
+          }
+        ],
+        "key": "career"
+      },
+      {
+        "label": "ติดต่อบีทีเอสกรุ๊ป",
+        "path": "/th/contact",
+        "key": "contact"
+      }
+    ],
+    "en": [
+      {
+        "label": "Home",
+        "path": "/en/home",
+        "key": "home"
+      },
+      {
+        "label": "About BTS Group",
+        "children": [
+          {
+            "label": "Our Ambition",
+            "path": "/en/about/our-ambition"
+          },
+          {
+            "label": "Our History",
+            "path": "/en/about/our-history"
+          },
+          {
+            "label": "Message from the Chairman",
+            "path": "/en/about/message-from-the-chairman"
+          },
+          {
+            "label": "Organisation Chart",
+            "path": "/en/about/organization-chart"
+          },
+          {
+            "label": "Board of Directors",
+            "path": "/en/management-structure/director"
+          },
+          {
+            "label": "Executives, Company Secretary and Internal Audit Director",
+            "path": "/en/management-structure/management"
+          },
+          {
+            "label": "Subsidiaries and Associated Companies",
+            "path": "/en/about/subsidiaries-and-associated"
+          },
+          {
+            "label": "Awards and Recognition",
+            "path": "/en/awards"
+          }
+        ],
+        "key": "about"
+      },
+      {
+        "label": "Our Business",
+        "children": [
+          {
+            "label": "Business Overview",
+            "path": "/en/our-business/business-overview"
+          },
+          {
+            "label": "MOVE",
+            "path": "/en/our-business/move"
+          },
+          {
+            "label": "MIX",
+            "path": "/en/our-business/mix"
+          },
+          {
+            "label": "MATCH",
+            "path": "/en/our-business/match"
+          }
+        ],
+        "key": "our-business"
+      },
+      {
+        "label": "Investor Relations",
+        "children": [
+          {
+            "label": "IR Home",
+            "path": "/en/investor-relations/home"
+          },
+          {
+            "label": "Financial Information",
+            "children": [
+              {
+                "label": "Key Financial Data",
+                "path": "/en/investor-relations/financial-information/key-financial-data"
+              },
+              {
+                "label": "Key Financial Ratios",
+                "path": "/en/investor-relations/financial-information/key-financial-ratios"
+              },
+              {
+                "label": "Financial Statements",
+                "path": "/en/investor-relations/document/financial-statements"
+              },
+              {
+                "label": "MD&A",
+                "path": "/en/investor-relations/document/mdna"
+              },
+              {
+                "label": "BTS Group Debentures Information",
+                "path": "/en/investor-relations/financial-information/debt-information"
+              },
+              {
+                "label": "Credit Rating",
+                "path": "/en/investor-relations/financial-information/credit-rating"
+              }
+            ]
+          },
+          {
+            "label": "Stock Information",
+            "children": [
+              {
+                "label": "BTS",
+                "path": "/en/investor-relations/stock-quote/bts"
+              },
+              {
+                "label": "BTS-W8",
+                "path": "/en/investor-relations/stock-quote/bts-w8"
+              },
+              {
+                "label": "Investment Calculator",
+                "path": "/en/investor-relations/investment-calculator"
+              }
+            ]
+          },
+          {
+            "label": "Warrants Information",
+            "children": [
+              {
+                "label": "BTS-W8",
+                "path": "/en/investor-relations/warrants-information/bts-w8"
+              }
+            ]
+          },
+          {
+            "label": "Shareholder Information",
+            "children": [
+              {
+                "label": "Corporate Information",
+                "path": "/en/investor-relations/shareholder-information/corporate-information"
+              },
+              {
+                "label": "Shareholder Structure",
+                "path": "/en/investor-relations/shareholder-information/shareholder-structure"
+              },
+              {
+                "label": "Shareholder's Meeting",
+                "path": "/en/investor-relations/document/shareholder-meetings"
+              },
+              {
+                "label": "Dividend Information",
+                "path": "/en/investor-relations/shareholder-information/dividend-information"
+              },
+              {
+                "label": "BTS Group Debentures Information",
+                "path": "/en/investor-relations/shareholder-information/debentures-information"
+              },
+              {
+                "label": "Contact Our Registrar",
+                "path": "/en/investor-relations/shareholder-information/contact-our-registrar"
+              }
+            ]
+          },
+          {
+            "label": "News & Announcements",
+            "children": [
+              {
+                "label": "SET Announcements",
+                "path": "/en/investor-relations/newsroom/set-announcements"
+              },
+              {
+                "label": "News &  Events",
+                "path": "/en/update/news-event"
+              }
+            ]
+          },
+          {
+            "label": "Events Calendar",
+            "path": "/en/investor-relations/events-calendar"
+          },
+          {
+            "label": "Publications & Downloads",
+            "children": [
+              {
+                "label": "Factsheet",
+                "path": "/en/investor-relations/document/fact-sheet"
+              },
+              {
+                "label": "Investor Presentation",
+                "path": "/en/investor-relations/document/investor-presentation"
+              },
+              {
+                "label": "IR Newsletter",
+                "path": "/en/investor-relations/document/newsletters"
+              },
+              {
+                "label": "Yearly Report",
+                "path": "/en/investor-relations/document/yearly-reports"
+              },
+              {
+                "label": "Resource Centre",
+                "path": "/en/investor-relations/resource-center"
+              }
+            ]
+          },
+          {
+            "label": "Webcasts & Presentations",
+            "path": "/en/investor-relations/document/webcasts"
+          },
+          {
+            "label": "Analyst Contact",
+            "path": "/en/investor-relations/analyst-contact"
+          },
+          {
+            "label": "Information Inquiry",
+            "children": [
+              {
+                "label": "News Subscription",
+                "path": "/en/investor-relations/information-inquiry/news-subscription"
+              },
+              {
+                "label": "IR Contact",
+                "path": "/en/investor-relations/information-inquiry/ir-contact"
+              }
+            ]
+          },
+          {
+            "label": "FAQs",
+            "path": "/en/investor-relations/faqs"
+          }
+        ],
+        "key": "investor-relations"
+      },
+      {
+        "label": "Corporate Governance",
+        "children": [
+          {
+            "label": "At a Glance",
+            "path": "/en/corporate-governance/at-a-glance"
+          },
+          {
+            "label": "Corporate Governance Policy and Code of Business Conduct",
+            "path": "/en/download/corporate-governance-policy-and-code-of-business-conduct"
+          },
+          {
+            "label": "Charters and Definition of Independent Directors",
+            "path": "/en/download/charters"
+          },
+          {
+            "label": "Corporate Documents",
+            "path": "/en/download/corporate-documents"
+          },
+          {
+            "label": "Report of Changes in the Securities Holding of Directors and Executives",
+            "path": "/en/corporate-governance/report-the-securities-holding-of-directors-and-executives"
+          },
+          {
+            "label": "Complaint Channels",
+            "path": "/en/corporate-governance/complaint-channels"
+          }
+        ],
+        "key": "corporate-governance"
+      },
+      {
+        "label": "Sustainability",
+        "children": [
+          {
+            "label": "Sustainability at BTS Group",
+            "path": "/en/sustainability/sustainability-at-bts-group"
+          },
+          {
+            "label": "Environmental Sustainability",
+            "path": "/en/sustainability/environmental-sustainability"
+          },
+          {
+            "label": "Social Sustainability",
+            "path": "/en/sustainability/social-sustainability"
+          },
+          {
+            "label": "Economic Sustainability",
+            "path": "/en/sustainability/economic-sustainability"
+          },
+          {
+            "label": "ESG Resource Centre",
+            "path": "/en/download/sustainability-report"
+          }
+        ],
+        "key": "sustainability"
+      },
+      {
+        "label": "Corporate News",
+        "path": "/en/update/news-event",
+        "key": "corporate-communications"
+      },
+      {
+        "label": "Careers",
+        "children": [
+          {
+            "label": "Why BTS Group",
+            "path": "/en/career/why-bts-group"
+          }
+        ],
+        "key": "career"
+      },
+      {
+        "label": "Contact Us",
+        "path": "/en/contact",
+        "key": "contact"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+/* The official sitemap is the single hierarchy used by menus and page navigation. */
+.site-menu .menu-top{position:sticky;top:0;background:#f4f4eff5;backdrop-filter:blur(12px);z-index:4}
+.site-menu .menu-groups{display:grid;grid-template-columns:minmax(230px,27%) minmax(0,1fr);gap:5vw;padding:35px 4vw 65px;align-items:start}
+.menu-index{position:sticky;top:105px;min-width:0}
+.menu-utility{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:25px;padding-bottom:20px;border-bottom:1px solid #ccd5dc}
+.menu-utility a{font:400 21px/1.1 OzoneX;color:#607c8d;text-decoration:none}
+.menu-sections{display:flex;flex-direction:column}
+.menu-sections>button,.menu-sections>a{display:grid;grid-template-columns:20px minmax(0,1fr) 15px;gap:12px;align-items:center;width:100%;padding:17px 0;text-align:left;border:0;border-bottom:1px solid #d1d9dd;background:transparent;color:#24475e;font:400 29px/1.12 OzoneX;text-decoration:none;cursor:pointer}
+.menu-section-number{font:700 8px Mulish;color:#8a9ba6;align-self:center}
+.menu-sections>button>span:last-child,.menu-sections>a>span:last-child{font:400 17px Mulish;color:#a2b3bd}
+.menu-sections .is-selected,.menu-sections>button:hover,.menu-sections>a:hover{color:#df2735}
+.menu-sections .is-selected>span:last-child{color:#df2735}
+.menu-panels{min-width:0;min-height:450px}
+.menu-panel[hidden]{display:none}
+.menu-panel-index{font:700 8px Mulish;letter-spacing:.14em;color:#bb3040}
+.menu-panel>h2{font:400 clamp(38px,4.5vw,65px)/1 OzoneX;letter-spacing:-.025em;color:#183b52;margin:20px 0 35px}
+.menu-content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 35px;align-items:start}
+[data-menu-panel="investor-relations"] .menu-content-grid>.menu-page-link:first-child{grid-column:1/-1;margin-bottom:8px}
+.menu-page-link{display:flex;justify-content:space-between;gap:20px;color:#24465a;font:400 27px/1.15 OzoneX;padding:16px 0;border-bottom:1px solid #d5dcde;text-decoration:none;min-height:59px}
+.menu-page-link>span:last-child,.menu-subgroup a>span:last-child{font:400 15px Mulish;color:#dd3041;flex-shrink:0}
+.menu-page-link:hover,.menu-subgroup a:hover{color:#df2735}
+.menu-subgroup{margin-bottom:15px;padding:20px 22px 10px;background:#e9eeeb;border:1px solid #d6e0dd;border-radius:16px}
+.menu-subgroup h3{font:500 27px/1.1 OzoneX;color:#193f55;margin:0 0 12px}
+.menu-subgroup ul{list-style:none;padding:0;margin:0}
+.menu-subgroup li{margin:0}
+.menu-subgroup li>a{display:flex;justify-content:space-between;gap:18px;font:400 24px/1.15 OzoneX;color:#507184;text-decoration:none;border-top:1px solid #ccd8d8;padding:12px 0}
+.menu-branch-label{display:block;font:500 24px OzoneX;color:#193f55;padding:12px 0 6px}
+.menu-subgroup li ul{padding-left:13px;border-left:1px solid #bdced0}
+.menu-sections>button:focus-visible,.menu-sections>a:focus-visible,.menu-page-link:focus-visible,.menu-subgroup a:focus-visible{outline:2px solid #df2735;outline-offset:4px}
+.chapter-picker nav{max-height:min(70vh,650px);overflow:auto}
+.chapter-picker .nav-tree,.sitemap-tree .nav-tree{list-style:none;margin:0;padding:0}
+.chapter-picker .nav-tree li,.sitemap-tree .nav-tree li{margin:0}
+.chapter-picker .nav-tree ul{padding-left:15px;border-left:1px solid #ced9dd}
+.chapter-picker .nav-tree a{align-items:flex-start}
+.chapter-picker .nav-branch-label{display:block;font:500 24px/1.1 OzoneX;color:#24485e;padding:20px 0 7px}
+.sitemap-tree>section{margin:0 0 45px;padding:0 0 35px;border-bottom:1px solid #d0dbe0}
+.source-body .sitemap-tree h2{margin:0 0 22px;font:400 42px/1.1 OzoneX}
+.sitemap-tree>section>.nav-tree{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 35px}
+.sitemap-tree a{display:flex;justify-content:space-between;gap:20px;color:#284e65;padding:12px 0;border-bottom:1px solid #dae2e6;font:400 25px/1.25 OzoneX;text-decoration:none}
+.source-body .sitemap-tree h2>a{font:inherit;border:0;color:inherit;padding:0}
+.sitemap-tree .nav-branch-label{display:block;font:500 28px/1.1 OzoneX;padding:12px 0;color:#b63042}
+.sitemap-tree .nav-tree .nav-tree{padding-left:16px;border-left:1px solid #c8d6de}
+html[lang=en] .menu-sections>button,html[lang=en] .menu-sections>a{font:400 16px/1.4 Mulish}
+html[lang=en] .menu-panel>h2{font:400 clamp(32px,3.5vw,50px)/1.1 Mulish}
+html[lang=en] .menu-subgroup h3{font:700 17px/1.3 Mulish}
+html[lang=en] .menu-page-link{font:400 17px/1.5 Mulish}
+html[lang=en] .menu-subgroup li>a{font:400 14px/1.5 Mulish}
+html[lang=en] .menu-utility a{font:400 12px Mulish}
+html[lang=en] .chapter-picker .nav-branch-label{font:700 13px/1.4 Mulish}
+html[lang=en] .sitemap-tree a{font:400 15px/1.5 Mulish}
+html[lang=en] .sitemap-tree .nav-branch-label{font:700 18px/1.4 Mulish}
+@media(min-width:1450px){.menu-content-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.site-menu .menu-groups{grid-template-columns:minmax(245px,23%) minmax(0,1fr)}}
+@media(max-width:850px){
+ .site-menu .menu-top{padding:20px 23px}
+ .site-menu .menu-groups{display:block;padding:0 23px 50px}
+ .menu-index{position:sticky;top:86px;background:#f4f4eff5;backdrop-filter:blur(12px);z-index:3;margin:0 -23px 25px;padding:17px 23px 0;border-bottom:1px solid #ccd6dc}
+ .menu-utility{padding:0;margin:0 0 13px;border:0;gap:22px}
+ .menu-sections{flex-direction:row;gap:8px;overflow-x:auto;padding:0 0 15px;scrollbar-width:thin}
+ .menu-sections>button,.menu-sections>a{display:flex;align-items:center;gap:10px;width:auto;flex-shrink:0;white-space:nowrap;border:1px solid #bdcbd2;padding:9px 13px;border-radius:25px;font-size:24px}
+ .menu-sections .menu-section-number{display:none}
+ .menu-sections .is-selected{color:white;background:#193f55;border-color:#193f55}
+ .menu-sections .is-selected>span:last-child{color:#fff}
+ .menu-panel>h2{font-size:44px;margin:15px 0 24px}
+ .menu-content-grid{gap:12px 24px}
+ html[lang=en] .menu-sections>button,html[lang=en] .menu-sections>a{font-size:12px}
+}
+@media(max-width:550px){
+ .menu-content-grid{grid-template-columns:1fr;gap:5px}
+ .menu-panel>h2{font-size:41px}
+ .menu-page-link{font-size:28px;padding:16px 0;min-height:57px}
+ .menu-subgroup{padding:20px 20px 8px;margin-bottom:16px}
+ .menu-subgroup h3{font-size:29px}
+ .menu-subgroup li>a{font-size:25px;padding:14px 0}
+ .sitemap-tree>section>.nav-tree{grid-template-columns:1fr;gap:8px}
+ .source-body .sitemap-tree h2{font-size:37px}
+}

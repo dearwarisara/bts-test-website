@@ -1,14 +1,30 @@
 const lang=document.documentElement.lang==='en'?'en':'th';let catalogue;
-const getCatalog=()=>catalogue??=fetch('/site-catalog.json').then(r=>{if(!r.ok)throw Error('catalogue');return r.json()});
+const getCatalog=()=>catalogue??=fetch('/site-catalog.json?v=sitemap-1').then(r=>{if(!r.ok)throw Error('catalogue');return r.json()});
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const menu=document.querySelector('#site-menu'),search=document.querySelector('#site-search'),toggle=document.querySelector('.site-menu-toggle');
 function lock(){document.body.classList.toggle('overlay-open',Boolean(menu&&!menu.hidden||search&&!search.hidden))}
-async function openMenu(key){const data=await getCatalog();menu.querySelector('.menu-groups').innerHTML=data.groups.map((g,i)=>`<section class="menu-group ${key===g.key?'menu-highlight':''}"><h2><span>0${i+1}</span>${esc(g[lang])}</h2><div>${[...new Map(data.pages.filter(p=>p.lang===lang&&p.navigable&&p.group===g.key&&!['/th/home','/en/home'].includes(p.path)).map(p=>[p.title,p])).values()].map(p=>`<a href="${esc(p.href)}">${esc(p.title)}<span>↗</span></a>`).join('')}</div></section>`).join('');menu.hidden=false;toggle?.setAttribute('aria-expanded','true');lock();menu.querySelector('[data-menu-close]').focus();if(key)menu.querySelector('.menu-highlight')?.scrollIntoView({block:'nearest'})}
+let menuReady=false,returnFocus;
+function menuLinks(nodes){return '<ul>'+nodes.map(n=>'<li>'+(n.href?`<a href="${esc(n.href)}"><span>${esc(n.label)}</span><span aria-hidden="true">↗</span></a>`:`<span class="menu-branch-label">${esc(n.label)}</span>`)+(n.children?.length?menuLinks(n.children):'')+'</li>').join('')+'</ul>'}
+function buildMenu(data){
+ const tree=data.navigation[lang],groups=tree.filter(n=>n.key!=='home'),home=tree.find(n=>n.key==='home'),map=data.pages.find(p=>p.path===`/${lang}/sitemap`);
+ menu.querySelector('.menu-groups').innerHTML=`<div class="menu-index"><div class="menu-utility"><a href="${esc(home.href)}">${esc(home.label)} ↗</a><a href="${esc(map.href)}">${lang==='th'?'แผนผังเว็บไซต์':'Sitemap'} ↗</a></div><nav class="menu-sections" aria-label="${lang==='th'?'หมวดหลัก':'Main sections'}">${groups.map((n,i)=>n.children?.length?`<button data-menu-section="${n.key}" aria-controls="menu-panel-${n.key}" aria-expanded="false"><span class="menu-section-number">0${i+1}</span><span>${esc(n.label)}</span><span aria-hidden="true">↗</span></button>`:`<a href="${esc(n.href)}"><span class="menu-section-number">0${i+1}</span><span>${esc(n.label)}</span><span aria-hidden="true">↗</span></a>`).join('')}</nav></div><div class="menu-panels">${groups.filter(n=>n.children?.length).map(n=>`<section class="menu-panel" id="menu-panel-${n.key}" data-menu-panel="${n.key}" hidden><span class="menu-panel-index">BTS GROUP / ${n.key.toUpperCase().replaceAll('-',' ')}</span><h2>${esc(n.label)}</h2><div class="menu-content-grid">${n.children.map(child=>child.children?.length?`<section class="menu-subgroup"><h3>${esc(child.label)}</h3>${menuLinks(child.children)}</section>`:`<a class="menu-page-link" href="${esc(child.href)}"><span>${esc(child.label)}</span><span aria-hidden="true">↗</span></a>`).join('')}</div></section>`).join('')}</div>`;
+ menuReady=true;
+}
+function selectMenu(key){
+ if(!menu.querySelector(`[data-menu-panel="${key}"]`))key='about';
+ menu.querySelectorAll('[data-menu-panel]').forEach(p=>p.hidden=p.dataset.menuPanel!==key);
+ menu.querySelectorAll('[data-menu-section]').forEach(b=>{const selected=b.dataset.menuSection===key;b.classList.toggle('is-selected',selected);b.setAttribute('aria-expanded',String(selected))});
+ menu.scrollTop=0;
+ if(innerWidth<=850)menu.querySelector(`[data-menu-section="${key}"]`)?.scrollIntoView({block:'nearest',inline:'center'});
+}
+async function openMenu(key){const data=await getCatalog();returnFocus=document.activeElement;if(!menuReady)buildMenu(data);const page=data.pages.find(p=>p.href.replace(/\/$/,'')===location.pathname.replace(/\/$/,''));menu.hidden=false;selectMenu(key||page?.group||'about');toggle?.setAttribute('aria-expanded','true');lock();menu.scrollTop=0;menu.querySelector('[data-menu-close]').focus();}
+menu.querySelector('.menu-groups').addEventListener('click',e=>{const button=e.target.closest('[data-menu-section]');if(button)selectMenu(button.dataset.menuSection)});
+
 document.querySelectorAll('[data-menu-group]').forEach(b=>b.addEventListener('click',()=>openMenu(b.dataset.menuGroup)));
 toggle?.addEventListener('click',()=>menu.hidden?openMenu():close());
-function close(){if(menu)menu.hidden=true;if(search)search.hidden=true;toggle?.setAttribute('aria-expanded','false');lock()}
+function close(){if(menu)menu.hidden=true;if(search)search.hidden=true;toggle?.setAttribute('aria-expanded','false');lock();returnFocus?.focus({preventScroll:true})}
 document.querySelector('[data-menu-close]')?.addEventListener('click',close);document.querySelector('[data-search-close]')?.addEventListener('click',close);
-document.querySelector('[data-search-open]')?.addEventListener('click',()=>{search.hidden=false;lock();document.querySelector('#global-search').focus()});
+document.querySelector('[data-search-open]')?.addEventListener('click',()=>{returnFocus=document.activeElement;search.hidden=false;lock();document.querySelector('#global-search').focus()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close();if(e.key==='Tab'&&(!menu?.hidden||!search?.hidden)){const panel=!search?.hidden?search:menu;const nodes=[...panel.querySelectorAll('button,a[href],input')].filter(n=>n.offsetParent!==null);if(!nodes.length)return;const first=nodes[0],last=nodes.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
 function resultCards(items){return `<div class="page-card-grid">${items.map(p=>`<a class="page-card" href="${esc(p.href)}">${p.image&&!p.image.includes('opengraph')?`<div class="page-card-image"><img src="${esc(p.image)}" alt="" loading="lazy"/></div>`:''}<span class="page-card-kicker">${p.document?'DOCUMENT':esc(p.group.replaceAll('-',' ').toUpperCase())}</span><h3>${esc(p.title)}</h3><p>${esc(p.description.slice(0,170))}</p><span class="page-card-arrow">↗</span></a>`).join('')}</div>`}
 async function query(input,target){const data=await getCatalog(),q=input.value.trim().toLocaleLowerCase();const all=data.pages.filter(p=>p.lang===lang&&(q?(p.title+' '+p.description).toLocaleLowerCase().includes(q):p.primary));target.innerHTML=`<p class="result-count">${lang==='th'?'พบ':'Found'} ${all.length} ${lang==='th'?'รายการ':'results'}</p>`+resultCards(all.slice(0,60));}

@@ -30,10 +30,12 @@ await prepare(output);
 const catalogueFile = path.join(output, 'site-catalog.json');
 const catalogue = JSON.parse(await readFile(catalogueFile, 'utf8'));
 for (const page of catalogue.pages) if (page.href?.startsWith('/')) page.href = base + page.href;
+function rebaseNavigation(nodes){for(const node of nodes){if(node.href?.startsWith('/'))node.href=base+node.href;if(node.children)rebaseNavigation(node.children);}}
+for(const nodes of Object.values(catalogue.navigation||{}))rebaseNavigation(nodes);
 await writeFile(catalogueFile, JSON.stringify(catalogue));
 const navFile = path.join(output, 'navigation.js');
 let nav = await readFile(navFile, 'utf8');
-nav = nav.replace("fetch('/site-catalog.json')", `fetch('${base}/site-catalog.json')`)
+nav = nav.replace("fetch('/site-catalog.json", `fetch('${base}/site-catalog.json`)
   .replace('||`/${lang===', '||`'+base+'/${lang===');
 await writeFile(navFile, nav);
 const detailFile = path.join(output, 'details.js');
