@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
-    "build:pages": "node build-pages.mjs"
+    "build:pages": "node build-pages.mjs",
+    "test": "node --test tests/history-motion.test.mjs"
   },
   "engines": {
     "node": ">=18"

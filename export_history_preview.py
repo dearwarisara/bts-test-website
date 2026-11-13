@@ -33,6 +33,8 @@ three=data((dist/'assets/three.module.js').read_bytes(),'text/javascript')
 details=(dist/'details.js').read_text(encoding='utf8').replace("'/assets/bts-logo.svg'",repr(logo))
 details=data(details.encode(),'text/javascript')
 code=(dist/'history-world.js').read_text(encoding='utf8').replace("'./assets/three.module.js'",repr(three)).replace("'./details.js'",repr(details))
+for name in ('history-motion.js','history-batch.js','history-life.js'):
+ code=code.replace(repr('./'+name),repr(data((dist/name).read_bytes(),'text/javascript')))
 script=soup.new_tag('script',type='module');script.string=code;soup.body.append(script)
 target.write_text(str(soup),encoding='utf8')
 print(f'Created standalone preview: {target.name} ({target.stat().st_size:,} bytes)')

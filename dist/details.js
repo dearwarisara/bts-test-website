@@ -36,8 +36,8 @@ export function enrich(T,world,train,scene,renderer,{trainOnly=false}={}){
  }
  }
  // Official logo decals on the car side and on the driving cab.
- new T.TextureLoader().load('/assets/bts-logo.svg',texture=>{texture.colorSpace=T.SRGBColorSpace;for(const car of train.children){const m=new T.MeshStandardMaterial({map:texture,transparent:true,roughness:.6});mesh(new T.PlaneGeometry(.095,.12),m,.04,.37,.338,car)}});
- if(trainOnly)return {update(t,dt,speed=0,open=0){for(const w of wheels)w.rotation.y+=speed*dt/.085;for(const d of doors)d.panel.position.x=d.base+d.dir*.095*open;}};
+ new T.TextureLoader().load('/assets/bts-logo.svg',texture=>{texture.colorSpace=T.SRGBColorSpace;for(const car of train.children){const m=new T.MeshStandardMaterial({map:texture,transparent:true,roughness:.6});for(const side of [-1,1]){const decal=mesh(new T.PlaneGeometry(.095,.12),m,.04,.37,side*.338,car);if(side<0)decal.rotation.y=Math.PI;}}});
+ if(trainOnly)return {wheels,update(t,dt,speed=0,open=0){for(const w of wheels)w.rotation.y+=speed*dt/.085;for(const d of doors)d.panel.position.x=d.base+d.dir*.095*open;}};
  // Guideway safety parapets, cable ducts and warm station lighting.
  const cement=new T.MeshStandardMaterial({map:stone,roughness:.9});for(const z of [-.18,.88]){box(7.5,.15,.055,cement,0,1.85,z);box(7.5,.035,.06,steel,0,1.95,z)}
  for(let x=-3.5;x<3.6;x+=.28)for(const z of [.07,.63])box(.055,.018,.11,steel,x,1.81,z);
