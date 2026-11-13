@@ -1,6 +1,6 @@
 # BTS Group website
 
-เว็บไซต์ BTS Group ที่จัดหน้าใหม่ตามโครงสร้างของ Metro Systems โดยใช้โลโก้ เนื้อหา ภาพ และวิดีโอจากเว็บไซต์ BTS Group
+เว็บไซต์ BTS Group ที่ใช้เอกลักษณ์เส้นรางและจุดเชื่อมต่อ พร้อมสีขาว–น้ำเงิน–แดง ฟอนต์ OzoneX สำหรับภาษาไทย และ Mulish สำหรับหัวข้ออังกฤษ ตามเว็บไซต์ BTS Group ต้นฉบับ
 
 ## เปิดเว็บไซต์
 
@@ -24,7 +24,7 @@ npm start
 - ค้นหาจากข้อมูลหน้าเว็บไซต์ใน site-catalog.json
 - รองรับการตั้งค่าลดการเคลื่อนไหวของอุปกรณ์
 
-ไฟล์หน้าแรกคือ dist/index.html และ dist/th/home/index.html โดยใช้ dist/metro.css และ dist/metro.js
+ไฟล์หน้าแรกคือ dist/index.html และ dist/th/home/index.html โดยใช้ dist/metro.css, dist/bts-brand.css และ dist/metro.js
 
 สร้างหน้าแรกใหม่จากข้อมูลที่กำหนดใน build_metro_home.py ด้วย Python:
 
@@ -46,3 +46,4 @@ npm run build:pages
 
 - ข้อมูลและสื่อ: https://www.btsgroup.co.th/th/home
 - ต้นแบบเลย์เอาต์: https://www.metrosystems.co.th/en/home
+
