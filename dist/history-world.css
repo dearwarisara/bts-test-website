@@ -4,7 +4,8 @@
 .layout-journey .source-body{max-width:none}
 .layout-journey .source-attribution{padding:30px 6%;margin:0}
 .history-cinema{position:relative;width:100%;color:#173148;background:var(--sky,#e8dec7);isolation:isolate}
-.history-stage{position:sticky;top:0;height:100svh;min-height:620px;margin-bottom:-100svh;overflow:hidden;isolation:isolate;z-index:2;pointer-events:none}
+.history-run{display:grid;grid-template-columns:minmax(0,1fr);position:relative;isolation:isolate;overflow:clip}
+.history-stage{grid-area:1/1;align-self:start;position:sticky;top:0;height:100svh;min-height:620px;overflow:hidden;isolation:isolate;z-index:2;pointer-events:none}
 .history-atmosphere{position:absolute;inset:0;width:61%;z-index:-1;background:radial-gradient(ellipse at 30% 10%,#fff9e4b0,transparent 60%),linear-gradient(90deg,transparent 50%,#f2f3ecbb 90%);pointer-events:none}
 .history-world-wrap:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,var(--sky,#e8dec7) 0%,var(--sky,#e8dec7) 22%,transparent 43%)}
 .history-world-wrap{position:absolute;left:0;top:0;bottom:0;width:61%;background:var(--sky,#e8dec7);mask-image:linear-gradient(90deg,#000 88%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent)}
@@ -25,7 +26,7 @@
 .history-stage .history-years button.is-current{color:white;background:#153c56;border-color:#153c56}
 .history-route-progress{position:absolute;height:2px;bottom:76px;left:5%;right:5%;background:#8fa2a12b}
 .history-route-progress i{display:block;background:#dc2d40;width:100%;height:100%;transform:scaleX(0);transform-origin:left}
-.history-cinema .history-journey{position:relative;z-index:1;padding:0 5% 0 61%;pointer-events:none;isolation:auto}
+.history-cinema .history-journey{grid-area:1/1;position:relative;z-index:1;padding:0 5% 0 61%;pointer-events:none;isolation:auto}
 .history-cinema .history-station{min-height:100svh;padding:20svh 0 22svh;align-items:center;scroll-margin-top:0}
 .history-cinema .history-event,.history-cinema .history-station:nth-of-type(even) .history-event{width:100%;padding:32px 30px;margin:0;background:#f9faf2db;border:1px solid #ffffffb3;border-radius:26px;box-shadow:0 18px 75px #1b3a4c0a;pointer-events:auto;transition:background .6s,border-color .6s,transform .6s,opacity .6s;opacity:.5}
 .history-cinema .history-station.is-active .history-event{color:#16364f;background:#f9faf2f5;border-color:#fff;transform:translateY(-5px);opacity:1;box-shadow:0 20px 80px #16364f16}
@@ -54,7 +55,7 @@ html[lang=en] .history-signal,html[lang=en] #history-pause{font:400 10px Mulish,
 @media(min-width:1500px){.history-cinema .history-event{padding:42px}.history-cinema .history-event-copy{font-size:30px}.history-scene-heading{top:9%}}
 @media(max-width:1000px) and (min-width:700px){.history-cinema .history-journey{padding-left:55%}.history-world-wrap{width:66%}.history-cinema .history-event{padding:25px 22px}.history-cinema .history-event-copy{font-size:25px}#history-current{font-size:105px}.history-scene-bottom{width:45%}}
 @media(max-width:699px){
- .history-stage{height:100svh;min-height:600px;margin-bottom:-100svh}
+ .history-stage{height:100svh;min-height:600px}
  .history-world-wrap{width:100%;height:60svh;min-height:350px;bottom:auto;top:1svh;mask-image:linear-gradient(#000 94%,transparent);-webkit-mask-image:linear-gradient(#000 94%,transparent)}
  .history-atmosphere{width:100%;height:56svh;background:var(--sky,#e8dec7)}
  .history-scene-heading{left:6%;top:24px;width:88%}

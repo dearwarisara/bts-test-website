@@ -16,7 +16,7 @@ soup=BeautifulSoup((dist/'th/about/our-history/index.html').read_text(encoding='
 for script in soup.select('script'):script.decompose()
 for block in soup.select('.page-hero,.chapter-navigation,.related-pages'):block.decompose()
 for link in soup.select('link[rel="stylesheet"]'):
- css=(dist/link['href'].lstrip('/')).read_text(encoding='utf8')
+ css=(dist/link['href'].split('?',1)[0].lstrip('/')).read_text(encoding='utf8')
  css=re.sub(r'''url\(['"]?(\.?/assets/[^'"\)]+)['"]?\)''',lambda m:'url('+asset(m[1])+')',css)
  style=soup.new_tag('style');style.string=css;link.replace_with(style)
 logo=asset('assets/bts-logo.svg')

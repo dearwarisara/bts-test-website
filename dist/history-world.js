@@ -142,7 +142,7 @@ if(canvas) {
  buttons.forEach((b,i)=>b.addEventListener('click',()=>{const target=cardCenter(cards[i])-innerHeight*(innerWidth<700?.82:.5);window.scrollTo({top:target,behavior:reduced?'instant':'smooth'});cards[i].querySelector('h2').focus({preventScroll:true})}));
  pause.addEventListener('click',()=>{paused=!paused;updatePause()});function updatePause(){pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?(en?'▶ Play motion':'▶ เล่นการเคลื่อนไหว'):(en?'Ⅱ Pause motion':'Ⅱ พักการเคลื่อนไหว')};updatePause();
  host.addEventListener('pointermove',e=>{pointerX=(e.clientX/innerWidth-.5)*.5});host.addEventListener('pointerleave',()=>pointerX=0);
- new IntersectionObserver(es=>visible=es[0].isIntersecting,{rootMargin:'150px'}).observe(host);
+ new IntersectionObserver(es=>visible=es[0].isIntersecting).observe(host.querySelector('.history-run')||journey);
  const sky=new T.Color(),targetColor=new T.Color();
  function frame(now){requestAnimationFrame(frame);const elapsed=(now-last)/1000,dt=Math.min(elapsed,.1);last=now;if(!visible||document.hidden)return;
   if(!paused)clock+=dt;
