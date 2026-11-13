@@ -1,0 +1,55 @@
+/* BTS Group home: business ecosystem gallery */
+.business{position:relative;overflow:hidden;background:#e8edf0;padding-top:104px;padding-bottom:100px}
+.business:before{content:"";position:absolute;inset:0 0 auto;height:440px;background:radial-gradient(ellipse at 15% 40%,#fff9 0,transparent 43%),radial-gradient(ellipse at 80% 5%,#d9e2e8 0,transparent 48%);pointer-events:none}
+.business-wrap{position:relative}
+.business-head{align-items:end;margin-bottom:50px}
+.business-head h2{max-width:760px}
+.business-head p{max-width:330px;color:#667381}
+.business-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:22px}
+.business-card,.business-card:nth-child(2),.business-card:nth-child(3){margin:0;min-width:0;display:grid;grid-template-rows:auto 290px 1fr;align-self:stretch;border:1px solid #ffffffc9;border-radius:24px;background:#f7f7f2;box-shadow:0 16px 46px #1429410b;overflow:hidden;transform-style:preserve-3d;transition:box-shadow .4s,border-color .4s}
+.business-card:hover{border-color:#fff;box-shadow:0 25px 60px #1429411b}
+.card-index{position:relative;z-index:2;display:flex;align-items:center;min-height:46px;padding:0 22px;background:#f7f7f2;color:#687582;font-size:9px;letter-spacing:.14em}
+.card-graphic{position:relative;isolation:isolate;height:290px;overflow:hidden;margin:0}
+.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:116px;padding:20px 22px;background:#f7f7f2}
+.card-bottom h3{margin:0 0 8px;color:#12243b;font-size:29px;line-height:1.12}
+.card-bottom p{margin:0;color:#77818a;font-size:17px;line-height:1.45}
+.circle-arrow{flex:none;width:40px;height:40px;display:grid;place-items:center;border:1px solid #d8dedf;border-radius:50%;color:#df2735;transition:background .25s,color .25s,transform .35s}
+.business-card:hover .circle-arrow{background:#df2735;color:#fff;transform:rotate(45deg)}
+/* Mobility: a warm Bangkok skyline, twin elevated tracks and a passing train. */
+.move-graphic{background:linear-gradient(180deg,#efd5c4 0%,#f5e5d8 47%,#e4e7df 100%)}
+.move-graphic:before{content:"";position:absolute;inset:20% 0 19%;opacity:.95;background:linear-gradient(180deg,transparent 65%,#d4ddd7 65%),repeating-linear-gradient(90deg,transparent 0 2.6%,#687980 2.7% 3.1%,transparent 3.2% 4.9%),linear-gradient(180deg,#647981 0 100%);clip-path:polygon(0 21%,5% 17%,5% 78%,12% 78%,12% 34%,18% 30%,18% 78%,25% 78%,25% 9%,32% 9%,32% 78%,40% 78%,40% 26%,47% 26%,47% 78%,55% 78%,55% 4%,63% 4%,63% 78%,71% 78%,71% 19%,79% 19%,79% 78%,87% 78%,87% 30%,95% 30%,95% 78%,100% 78%,100% 100%,0 100%);mask-image:linear-gradient(180deg,#000 50%,transparent 100%);transform:translateY(14%)}
+.move-graphic:after{content:"";position:absolute;left:-14%;right:-14%;bottom:-73%;height:111%;border:11px solid #f3f1e8;border-radius:50%;transform:rotate(-15deg);box-shadow:0 -3px 0 #82999a,0 -9px 0 #acb8b2,0 -12px 0 #f6f5ed;animation:rail-glide 11s ease-in-out infinite alternate}
+.route{position:absolute;z-index:2;left:-18%;width:140%;height:6px;top:60%;border-radius:9px;background:#8a9b9a;box-shadow:0 6px 0 #f8f6ef,0 10px 0 #b6c0bb,0 13px 0 #f8f6ef;transform:rotate(-14deg)}
+.route-b{top:calc(60% + 21px);height:3px;background:#f9f6ec;box-shadow:0 4px 0 #71888a,0 9px 0 #f9f6ec,0 12px 0 #aab7b3}
+.route-a{background:#a0adaa}
+.station{position:absolute;z-index:3;left:18%;top:46%;width:9px;height:9px;border:3px solid #df2735;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #fff7;animation:station-pulse 3s ease-in-out infinite}
+.station.s2{left:51%;top:38%;animation-delay:.7s}.station.s3{left:81%;top:30%;animation-delay:1.4s}
+.mini-train{position:absolute;z-index:4;top:52%;left:54%;padding:7px 18px;border-radius:22px 22px 9px 9px;background:linear-gradient(180deg,#fff 0 68%,#df2735 69% 80%,#f6f5ef 81%);color:#df2735;font:700 9px var(--latin);box-shadow:0 9px 20px #172b4033;animation:train-glide 8s cubic-bezier(.4,0,.2,1) infinite alternate}
+.mini-train:after{content:"";position:absolute;left:10px;right:10px;bottom:-3px;height:3px;border-radius:5px;background:#344b5c;box-shadow:18px 0 #344b5c}
+/* Media & experiences: illuminated city screens framed by floating colour. */
+.mix-graphic{background:linear-gradient(145deg,#18374a 0%,#234c5a 48%,#bd766d 100%)}
+.mix-graphic:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 57%,#102435 57%),repeating-linear-gradient(90deg,transparent 0 8%,#e0be8150 8.3% 8.7%,transparent 9% 15%);opacity:.78;clip-path:polygon(0 38%,12% 22%,23% 31%,36% 6%,50% 25%,66% 10%,78% 28%,89% 16%,100% 34%,100% 100%,0 100%)}
+.mix-shape{position:absolute;z-index:2;border-radius:50%;mix-blend-mode:normal;opacity:1;filter:drop-shadow(0 18px 16px #07182c40);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.shape-a{left:11%;top:29%;width:120px;height:120px;background:radial-gradient(circle at 33% 27%,#f4b1a0,#d17b70 67%,#a6545d)}
+.shape-b{left:39%;top:25%;width:142px;height:142px;background:radial-gradient(circle at 36% 25%,#f4d69a,#d8ae6a 70%,#a47d50)}
+.shape-c{right:9%;top:43%;width:105px;height:105px;background:radial-gradient(circle at 35% 27%,#a6c8c0,#76a09f 68%,#4b7379)}
+.mix-graphic>span{position:absolute;z-index:3;left:39%;top:25%;width:142px;height:142px;display:grid;place-content:center;text-align:center;color:white;font:700 16px/1.25 var(--latin);text-shadow:0 2px 10px #6339;pointer-events:none}
+.business-card:hover .shape-a{transform:translate(13px,-10px) scale(1.04)}.business-card:hover .shape-b{transform:translateY(-13px) scale(1.06)}.business-card:hover .shape-c{transform:translate(-10px,-8px) scale(1.05)}
+/* Connections: distinct city blocks around a shared horizon and a growing link. */
+.match-graphic{background:linear-gradient(180deg,#e9d6bd 0%,#f4e8d8 43%,#c2d2cb 44%,#91aaa5 100%)}
+.match-graphic:before{content:"";position:absolute;left:0;right:0;bottom:0;height:39%;background:linear-gradient(180deg,#f5f2e8 0 9%,#a4b8b0 10% 17%,#344f5b 18% 20%,#e4e8de 21% 24%,#718b8a 25% 100%);clip-path:polygon(0 0,20% 0,20% 22%,35% 22%,35% 0,56% 0,56% 24%,70% 24%,70% 0,100% 0,100% 100%,0 100%);opacity:.92}
+.match-building{position:absolute;z-index:2;inset:16% 10% 18%;display:flex;align-items:flex-end;gap:3%;perspective:550px}
+.match-building b{position:relative;display:block;flex:1;height:47%;border-radius:3px 3px 0 0;background:linear-gradient(100deg,#81989a,#d0d3c4 47%,#6e8a8d);box-shadow:8px 13px 0 #586e7340;transform:skewY(-5deg);transform-origin:bottom}
+.match-building b:after{content:"";position:absolute;inset:10px 7px;background:repeating-linear-gradient(180deg,#f3d58f 0 3px,transparent 3px 13px),repeating-linear-gradient(90deg,transparent 0 9px,#ffffff66 9px 12px);opacity:.8}
+.match-building b:nth-child(2){height:69%;background:linear-gradient(90deg,#d8d5c4,#899ea0)}.match-building b:nth-child(3){height:92%;background:linear-gradient(90deg,#91a9a6,#e1d8c5)}.match-building b:nth-child(4){height:61%}.match-building b:nth-child(5){height:78%;background:linear-gradient(90deg,#768e92,#d2cbb6)}.match-building b:nth-child(6){height:53%}
+.match-sun{position:absolute;z-index:1;top:13%;right:17%;width:60px;height:60px;border-radius:50%;background:#fff1ce;box-shadow:0 0 55px 18px #ffe6ad70;animation:sun-drift 8s ease-in-out infinite alternate}
+.match-dot{position:absolute;z-index:3;left:19%;top:57%;width:63%;height:2px;background:#df2735;transform:rotate(-9deg);transform-origin:left;box-shadow:0 0 14px #df273577}
+.match-dot:after{content:"";position:absolute;right:-2px;top:-4px;width:10px;height:10px;border-radius:50%;background:#df2735;box-shadow:0 0 0 5px #fff7}
+.fineprint{margin-top:26px;color:#6c7781;font-size:15px}
+@keyframes rail-glide{from{transform:rotate(-15deg) translateX(-5px)}to{transform:rotate(-13deg) translateX(15px)}}
+@keyframes train-glide{from{transform:translate(-65px,12px)}to{transform:translate(65px,-22px)}}
+@keyframes station-pulse{50%{box-shadow:0 0 0 9px #fff3,0 0 22px #df273566}}
+@keyframes sun-drift{to{transform:translate(-16px,9px)}}
+@media(max-width:1050px){.business{padding-top:86px;padding-bottom:82px}.business-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.business-card:nth-child(3){grid-column:1/-1;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr}.business-card:nth-child(3) .card-index{grid-column:1/-1}.business-card:nth-child(3) .card-graphic{height:270px;grid-row:2}.business-card:nth-child(3) .card-bottom{grid-row:2;align-self:stretch}.business-card,.business-card:nth-child(2){grid-template-rows:auto 260px 1fr}.card-graphic{height:260px}.business-head{gap:22px}}
+@media(max-width:650px){.business{padding-top:70px;padding-bottom:65px}.business-head{display:block;margin-bottom:28px}.business-head p{margin-top:20px}.business-grid{grid-template-columns:1fr;gap:15px}.business-card,.business-card:nth-child(2),.business-card:nth-child(3){grid-column:auto;grid-template-columns:1fr;grid-template-rows:auto 220px auto;border-radius:19px}.business-card:nth-child(3) .card-index{grid-column:auto}.business-card:nth-child(3) .card-graphic{grid-row:auto;height:220px}.business-card:nth-child(3) .card-bottom{grid-row:auto}.card-graphic{height:220px}.card-bottom{min-height:94px;padding:16px 18px}.card-bottom h3{font-size:27px}.card-bottom p{font-size:16px}.shape-a{width:88px;height:88px;left:8%;top:31%}.shape-b,.mix-graphic>span{width:112px;height:112px;left:38%;top:27%}.shape-c{width:80px;height:80px;right:8%;top:47%}.match-building{inset:18% 7% 18%}.match-sun{width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){.move-graphic:after,.mini-train,.station,.match-sun{animation:none!important}.business-card,.mix-shape,.circle-arrow{transition:none!important}}

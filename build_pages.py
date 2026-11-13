@@ -169,6 +169,7 @@ home=re.sub(r'<header class="site-header">.*?(?=<main)',lambda m:header('th')+'\
 home=re.sub(r'<footer class="footer[^>]*>.*?</footer>',lambda m:footer('th'),home,flags=re.S)
 home=home.replace('href="./styles.css"','href="/styles.css"').replace('href="./redesign.css"','href="/redesign.css"').replace('src="./assets/','src="/assets/').replace('src="./app.js"','src="/app.js"').replace('src="./scene.js"','src="/scene.js"').replace('src="./motion.js"','src="/motion.js"')
 if '/pages.css' not in home:home=home.replace('</head>','<link rel="stylesheet" href="/pages.css"/></head>')
+if '/ecosystem.css' not in home:home=home.replace('</head>','<link rel="stylesheet" href="/ecosystem.css?v=1"/></head>')
 if '/navigation.js' not in home:home=home.replace('</body>','<script type="module" src="/navigation.js"></script></body>')
 bs=BeautifulSoup(home,'html.parser')
 for script in bs.select('script[src]'):
