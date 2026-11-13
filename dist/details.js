@@ -1,5 +1,5 @@
-export function enrich(T,world,train,scene,renderer){
- const wheels=[],waterWaves=[],trees=[];
+export function enrich(T,world,train,scene,renderer,{trainOnly=false}={}){
+ const wheels=[],waterWaves=[],trees=[],doors=[];
  const material=(color,roughness=.6,metalness=0)=>new T.MeshStandardMaterial({color,roughness,metalness});
  const white=material(0xe4e8e7,.3,.5),steel=material(0x727e88,.3,.8),rubber=material(0x17232d,.85),navy=material(0x163e66,.38,.45),red=material(0xd92d3d,.4,.3),glass=material(0x183440,.12,.5);
  function mesh(geo,mat,x,y,z,parent=world){let a=new T.Mesh(geo,mat);a.position.set(x,y,z);a.castShadow=true;a.receiveShadow=true;parent.add(a);return a}
@@ -18,7 +18,7 @@ export function enrich(T,world,train,scene,renderer){
  rounded(1.55,.58,.62,.085,white,0,.39,0,car);rounded(1.5,.08,.57,.035,white,0,.71,0,car);
  box(1.55,.045,.68,red,0,.22,0,car);box(1.55,.063,.685,navy,0,.15,0,car);box(1.28,.1,.4,rubber,0,.035,0,car);
  for(const side of [-1,1]){const z=side*.326;for(let j=0;j<4;j++){const x=-.55+j*.36;rounded(.235,.215,.008,.026,steel,x,.47,z,car);rounded(.209,.188,.011,.02,glass,x,.475,z+side*.006,car);box(.006,.17,.008,steel,x,.47,z+side*.014,car);box(.18,.04,.05,navy,x,.32,side*.22,car)}
- for(const x of [-.32,.4]){rounded(.205,.42,.012,.019,material(0xd0d9db,.4,.55),x,.39,z+side*.014,car);for(const dx of [-.047,.047])rounded(.073,.17,.014,.015,glass,x+dx,.48,z+side*.025,car);box(.008,.39,.018,steel,x,.39,z+side*.026,car);box(.018,.035,.025,rubber,x+.018,.31,z+side*.028,car);box(.21,.014,.04,steel,x,.18,z+side*.01,car)}
+ for(const x of [-.32,.4]){rounded(.21,.425,.008,.017,rubber,x,.39,z+side*.009,car);for(const dir of [-1,1]){const panel=new T.Group();panel.position.x=x+dir*.052;car.add(panel);rounded(.102,.42,.012,.011,material(0xd0d9db,.4,.55),0,.39,z+side*.014,panel);rounded(.073,.17,.014,.015,glass,0,.48,z+side*.025,panel);box(.005,.39,.018,steel,-dir*.047,.39,z+side*.026,panel);box(.018,.035,.025,rubber,-dir*.025,.31,z+side*.028,panel);doors.push({panel,base:panel.position.x,dir});}box(.21,.014,.04,steel,x,.18,z+side*.01,car)}
  box(1.42,.012,.016,steel,0,.61,z,car);box(1.4,.012,.016,steel,0,.09,z,car);
  // A small carriage identifier and the official BTS emblem.
  const id=mesh(new T.PlaneGeometry(.13,.035),textMap(String(880+n),'#30404c','#e6e8e6'),-.6,.25,z+side*.02,car);if(side===-1)id.rotation.y=Math.PI;
@@ -36,7 +36,8 @@ export function enrich(T,world,train,scene,renderer){
  }
  }
  // Official logo decals on the car side and on the driving cab.
- new T.TextureLoader().load('./assets/bts-logo.svg',texture=>{texture.colorSpace=T.SRGBColorSpace;for(const car of train.children){const m=new T.MeshStandardMaterial({map:texture,transparent:true,roughness:.6});mesh(new T.PlaneGeometry(.095,.12),m,.04,.37,.338,car)}});
+ new T.TextureLoader().load('/assets/bts-logo.svg',texture=>{texture.colorSpace=T.SRGBColorSpace;for(const car of train.children){const m=new T.MeshStandardMaterial({map:texture,transparent:true,roughness:.6});mesh(new T.PlaneGeometry(.095,.12),m,.04,.37,.338,car)}});
+ if(trainOnly)return {update(t,dt,speed=0,open=0){for(const w of wheels)w.rotation.y+=speed*dt/.085;for(const d of doors)d.panel.position.x=d.base+d.dir*.095*open;}};
  // Guideway safety parapets, cable ducts and warm station lighting.
  const cement=new T.MeshStandardMaterial({map:stone,roughness:.9});for(const z of [-.18,.88]){box(7.5,.15,.055,cement,0,1.85,z);box(7.5,.035,.06,steel,0,1.95,z)}
  for(let x=-3.5;x<3.6;x+=.28)for(const z of [.07,.63])box(.055,.018,.11,steel,x,1.81,z);

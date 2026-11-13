@@ -1,6 +1,6 @@
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const journey=document.querySelector('.history-journey');
-if(journey){
+if(journey&&!document.querySelector('#history-world')){
  const stations=[...journey.querySelectorAll('.history-station')],svg=journey.querySelector('.history-track'),paths=[...svg.querySelectorAll('path')],train=journey.querySelector('.history-train'),years=[...document.querySelectorAll('[data-year-target]')],current=document.querySelector('#history-current');
  let length=0,points=[],progress=0,target=0,pending=false,animating=false,active=-1;
  function draw(){const width=journey.clientWidth,height=journey.scrollHeight,mobile=innerWidth<=650,x=mobile?28:width/2;svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',String(height));points=stations.map(s=>({x,y:s.offsetTop+(mobile?60:63)}));let d=`M ${x} 0`;let y=0;for(let i=0;i<points.length;i++){const p=points[i],bend=mobile?6:14;d+=` C ${x+(i%2?bend:-bend)} ${y+(p.y-y)*.35}, ${x+(i%2?-bend:bend)} ${y+(p.y-y)*.7}, ${x} ${p.y}`;y=p.y}d+=` L ${x} ${height-35}`;paths.forEach(p=>p.setAttribute('d',d));svg.querySelector('.track-left').setAttribute('transform',`translate(${mobile?-10:-12} 0)`);svg.querySelector('.track-right').setAttribute('transform',`translate(${mobile?10:12} 0)`);length=paths[0].getTotalLength();const trace=svg.querySelector('.track-progress');trace.style.strokeDasharray=String(length);onScroll()}

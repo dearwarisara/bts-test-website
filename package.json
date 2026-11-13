@@ -1,0 +1,14 @@
+{
+  "name": "bts-test-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BTS Group website redesign with a scroll-driven 3D railway history.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

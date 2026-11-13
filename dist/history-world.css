@@ -1,0 +1,80 @@
+/* A scroll-driven cinematic chapter: the model and scenery share the homepage's train. */
+.layout-journey .page-hero,.layout-journey .chapter-navigation{display:none}
+.layout-journey .page-layout{padding:0;max-width:none;display:block}
+.layout-journey .source-body{max-width:none}
+.layout-journey .source-attribution{padding:30px 6%;margin:0}
+.history-cinema{position:relative;width:100%;color:#173148;background:var(--sky,#e8dec7);isolation:isolate}
+.history-stage{position:sticky;top:0;height:100svh;min-height:620px;margin-bottom:-100svh;overflow:hidden;isolation:isolate;z-index:2;pointer-events:none}
+.history-atmosphere{position:absolute;inset:0;width:61%;z-index:-1;background:radial-gradient(ellipse at 30% 10%,#fff9e4b0,transparent 60%),linear-gradient(90deg,transparent 50%,#f2f3ecbb 90%);pointer-events:none}
+.history-world-wrap:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,var(--sky,#e8dec7) 0%,var(--sky,#e8dec7) 33%,transparent 60%)}
+.history-world-wrap{position:absolute;left:0;top:0;bottom:0;width:61%;background:var(--sky,#e8dec7);mask-image:linear-gradient(90deg,#000 88%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent)}
+#history-world{display:block;width:100%;height:100%;touch-action:pan-y}
+.history-scene-heading{position:absolute;left:5%;top:7%;width:48%;pointer-events:none}
+.history-scene-heading .history-overline{margin:0;font:700 9px Mulish,sans-serif;letter-spacing:.19em;color:#476172}
+#history-current{font:700 clamp(75px,10vw,160px)/1 Mulish,sans-serif;letter-spacing:-.07em;color:#163c57;margin:17px 0 10px}
+.source-body #history-scene-title{font:400 clamp(27px,3vw,45px)/1.08 OzoneX,sans-serif;margin:0;color:#183b54;max-width:500px}
+#history-scene-subtitle{display:block;font:400 24px/1.2 OzoneX,sans-serif;color:#56717a;margin-top:7px}
+.history-scene-bottom{position:absolute;bottom:94px;left:5%;width:49%;display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.history-signal{display:flex;gap:9px;align-items:center;font:400 22px/1 OzoneX,sans-serif;color:#183c55}
+.history-signal>i{width:7px;height:7px;background:#d52b3d;border-radius:50%;box-shadow:0 0 0 5px #d52b3d12;animation:history-signal 2s ease-in-out infinite}
+#history-pause{font:400 18px OzoneX,sans-serif;color:#294e61;background:#ffffff69;border:1px solid #7a959959;border-radius:30px;padding:8px 14px;cursor:pointer;pointer-events:auto}
+#history-pause:hover{background:#fff}
+.history-scroll-cue{font:700 8px Mulish,sans-serif;letter-spacing:.13em;width:100%;margin-top:7px;color:#54717d}
+.history-stage>.history-years{position:absolute;left:5%;right:5%;bottom:19px;border-top:1px solid #6a84874d;padding:15px 0 5px;gap:8px;scrollbar-width:none;scroll-behavior:smooth;z-index:3;pointer-events:auto;background:#eef0e9ed;backdrop-filter:blur(14px);border-radius:14px;padding-left:10px;padding-right:10px}
+.history-stage .history-years button{color:#3e6173;border-color:#849c9c80;background:#f8f9f254;padding:9px 13px;font-size:9px;flex-shrink:0}
+.history-stage .history-years button.is-current{color:white;background:#153c56;border-color:#153c56}
+.history-route-progress{position:absolute;height:2px;bottom:76px;left:5%;right:5%;background:#8fa2a12b}
+.history-route-progress i{display:block;background:#dc2d40;width:100%;height:100%;transform:scaleX(0);transform-origin:left}
+.history-cinema .history-journey{position:relative;z-index:1;padding:0 5% 0 61%;pointer-events:none;isolation:auto}
+.history-cinema .history-station{min-height:100svh;padding:20svh 0 22svh;align-items:center;scroll-margin-top:0}
+.history-cinema .history-event,.history-cinema .history-station:nth-of-type(even) .history-event{width:100%;padding:32px 30px;margin:0;background:#f9faf2db;border:1px solid #ffffffb3;border-radius:26px;box-shadow:0 18px 75px #1b3a4c0a;backdrop-filter:blur(18px);pointer-events:auto;transition:background .6s,border-color .6s,transform .6s,opacity .6s;opacity:.5}
+.history-cinema .history-station.is-active .history-event{color:#16364f;background:#f9faf2f5;border-color:#fff;transform:translateY(-5px);opacity:1;box-shadow:0 20px 80px #16364f16}
+.history-cinema .history-station.is-active .station-index{color:#6b8590}
+.history-cinema .history-event h2,.history-cinema .history-station.is-active .history-event h2{color:#db2f40;font:700 48px/1 Mulish,sans-serif;letter-spacing:-.05em;margin:18px 0 25px}
+.history-cinema .station-index{font:700 8px Mulish,sans-serif;letter-spacing:.18em;color:#6c8590}
+.history-cinema .history-event-copy{font:400 27px/1.3 OzoneX,sans-serif;color:#284c61}
+.history-cinema .history-station.is-active .history-event-copy{color:#284c61}
+.history-cinema .history-event-copy p{margin:0 0 17px}
+.history-cinema .history-event-copy p:last-child{margin-bottom:0}
+.history-cinema .history-event-copy ul{padding-left:22px}
+.history-cinema .history-event-copy li{margin-bottom:14px}
+.history-cinema .journey-terminus{position:relative;z-index:2;margin:0;background:#15394f;color:white;min-height:50svh;padding:11svh 8%;text-align:left}
+.history-cinema .journey-terminus>span{font:700 9px Mulish,sans-serif;letter-spacing:.18em;color:#b3c6cb}
+.history-cinema .journey-terminus>p{font:400 64px/1 OzoneX,sans-serif;margin:23px 0}
+.history-cinema .journey-terminus>a{display:inline-block;color:#fff;font:400 25px OzoneX,sans-serif;padding-bottom:10px;border-bottom:1px solid #9ab6c4}
+.history-loading{position:absolute;top:53%;left:15%;font:400 24px OzoneX,sans-serif;color:#345b6c;transition:opacity .4s}
+.history-ready .history-loading{opacity:0;pointer-events:none}
+.history-no-webgl .history-loading{max-width:70%;left:10%}
+.history-years button:focus-visible,#history-pause:focus-visible{outline:3px solid #d52b3d;outline-offset:3px}
+html[lang=en] .history-cinema .history-event-copy{font:400 15px/1.65 Mulish,sans-serif}
+html[lang=en] #history-scene-title{font:700 27px/1.1 Mulish,sans-serif}
+html[lang=en] #history-scene-subtitle{font:400 12px/1.6 Mulish,sans-serif}
+html[lang=en] .history-signal,html[lang=en] #history-pause{font:400 10px Mulish,sans-serif}
+@keyframes history-signal{50%{box-shadow:0 0 0 8px #d52b3d00}}
+@media(min-width:1500px){.history-cinema .history-event{padding:42px}.history-cinema .history-event-copy{font-size:30px}.history-scene-heading{top:9%}}
+@media(max-width:1000px) and (min-width:700px){.history-cinema .history-journey{padding-left:55%}.history-world-wrap{width:66%}.history-cinema .history-event{padding:25px 22px}.history-cinema .history-event-copy{font-size:25px}#history-current{font-size:105px}.history-scene-bottom{width:45%}}
+@media(max-width:699px){
+ .history-stage{height:100svh;min-height:600px;margin-bottom:-100svh}
+ .history-world-wrap{width:100%;height:52svh;min-height:320px;bottom:auto;top:4svh;mask-image:linear-gradient(#000 94%,transparent);-webkit-mask-image:linear-gradient(#000 94%,transparent)}
+ .history-atmosphere{width:100%;height:50svh;background:var(--sky,#e8dec7)}
+ .history-scene-heading{left:6%;top:24px;width:88%}
+ .history-overline{font-size:7px;letter-spacing:.16em}
+ #history-current{font-size:65px;margin:9px 0 6px;letter-spacing:-.07em}
+ .source-body #history-scene-title{font-size:27px;max-width:100%;margin:0}
+ #history-scene-subtitle{font-size:19px;margin-top:4px}
+ .history-scene-bottom{left:6%;right:6%;bottom:auto;top:47svh;width:auto;gap:10px;justify-content:space-between}
+ .history-signal{font-size:19px}.history-signal>i{width:5px;height:5px}
+ #history-pause{font-size:16px;padding:7px 10px}.history-scroll-cue{display:none}
+ .history-cinema .history-journey{padding:0 6%;}
+ .history-cinema .history-station{display:block;min-height:112svh;padding:56svh 0 9svh;}
+ .history-cinema .history-event,.history-cinema .history-station:nth-of-type(even) .history-event{padding:25px 25px 27px;margin:0;width:100%;border-radius:23px;opacity:.75;backdrop-filter:blur(15px)}
+ .history-cinema .history-station.is-active .history-event{transform:none;opacity:1}
+ .history-cinema .history-event h2{font-size:38px;margin:15px 0 20px}
+ .history-cinema .history-event-copy{font-size:25px;line-height:1.3}
+ .history-stage>.history-years{bottom:12px;left:6%;right:6%;padding-top:12px;gap:7px;background:#edf0e2b3;backdrop-filter:blur(16px);border-radius:16px;padding:10px 8px;}
+ .history-stage .history-years button{font-size:8px;padding:8px 10px;background:#f8f9f280}
+ .history-route-progress{bottom:66px;left:6%;right:6%}
+ .history-cinema .journey-terminus{min-height:40svh;padding:65px 7%}.history-cinema .journey-terminus>p{font-size:43px}
+ html[lang=en] #history-scene-title{font-size:20px}html[lang=en] #history-scene-subtitle{font-size:10px}html[lang=en] .history-cinema .history-event-copy{font-size:13px;line-height:1.65}html[lang=en] #history-pause{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){.history-signal>i{animation:none}.history-cinema .history-event{transition:none}}
