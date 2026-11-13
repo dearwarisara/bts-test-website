@@ -2,6 +2,12 @@
 
 เว็บไซต์ต้นแบบ BTS Group ภาษาไทยและอังกฤษ พร้อมโมเดลรถไฟ 3D และหน้าความเป็นมาแบบเลื่อนผ่านสถานีตามปี
 
+## เว็บไซต์ public
+
+<https://dearwarisara.github.io/bts-test-website/>
+
+เมื่อ push ขึ้น `main` GitHub Actions จะ deploy ไป GitHub Pages อัตโนมัติ โดย `build-pages.mjs` ปรับลิงก์และเส้นทางไฟล์ให้รองรับ `/bts-test-website/` ส่วน `dist/` ยังใช้รันในเครื่องและโฮสต์ที่ root domain ได้ตามเดิม
+
 ## รันเว็บไซต์
 
 ใช้ Node.js 18 ขึ้นไป ไม่ต้องติดตั้ง dependencies

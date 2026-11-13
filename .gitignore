@@ -1,3 +1,4 @@
 .cache-bts/
 
 __pycache__/
+.pages-build/
