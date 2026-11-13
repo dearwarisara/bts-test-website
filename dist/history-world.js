@@ -136,7 +136,7 @@ if(canvas) {
   if(active!==selection){active=selection;const chapter=chapterNames[active];current.textContent=years[active];title.textContent=chapter[en?1:0];subtitle.textContent=chapter[en?3:2];stage.dataset.era=String(themeFor(active));cards.forEach((c,j)=>c.classList.toggle('is-active',j===active));buttons.forEach((b,j)=>{b.classList.toggle('is-current',j===active);b.setAttribute('aria-current',j===active?'step':'false')});const bar=host.querySelector('.history-years'),b=buttons[active];bar.scrollTo({left:b.offsetLeft-bar.clientWidth/2+b.clientWidth/2,behavior:reduced?'instant':'smooth'});}
   host.querySelector('.history-route-progress i').style.transform=`scaleX(${clamp((scrollDistance+9)/(end+9))})`;
  }
- const resize=()=>{const r=canvas.parentElement.getBoundingClientRect();renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.fov=innerWidth<700?34:35;camera.updateProjectionMatrix();measure()};
+ const resize=()=>{const r=canvas.parentElement.getBoundingClientRect();renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.fov=innerWidth<700?34:35;camera.zoom=innerWidth>=700?Math.min(1,r.width/(r.height*.72)):1;camera.updateProjectionMatrix();measure()};
  new ResizeObserver(resize).observe(canvas.parentElement);document.fonts.ready.then(measure);
  addEventListener('scroll',syncScroll,{passive:true});addEventListener('resize',measure,{passive:true});
  buttons.forEach((b,i)=>b.addEventListener('click',()=>{const target=cardCenter(cards[i])-innerHeight*(innerWidth<700?.82:.5);window.scrollTo({top:target,behavior:reduced?'instant':'smooth'});cards[i].querySelector('h2').focus({preventScroll:true})}));
