@@ -20,7 +20,7 @@ for file in D.rglob('*.html'):
    hero['aria-label']='BTS Group corporate video' if lang=='en' else 'วิดีโอแนะนำ BTS Group'
    copy=s.new_tag('div',attrs={'class':'hero-brand-copy'})
    title=s.new_tag('h1',attrs={'aria-label':'Borderless Transform Solutions'})
-   for line in ('Borderless','Transform','Solutions'):
+   for line in ('B orderless','T ransform','S olutions'):
     span=s.new_tag('span');span.string=line;title.append(span)
    copy.append(title);hero.append(copy)
 
