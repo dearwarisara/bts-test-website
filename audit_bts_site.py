@@ -12,7 +12,7 @@ def text(article):
  return ' '.join(' '.join(article.stripped_strings).split())
 for f in files:
  s=BeautifulSoup(f.read_text(encoding='utf-8'),'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
- if len(s.select('body>header.site-header'))!=1 or len(s.select('body>footer.bts-footer'))!=1 or not s.select_one('link[href^="/bts-brand.css"]') or not s.select_one('link[href^="/bts-inner.css"]'):issues.append(str(f.relative_to(R)))
+ if len(s.select('body>header.site-header'))!=1 or len(s.select('body>footer.bts-footer'))!=1 or not s.select_one('link[href^="/bts-brand.css"]') or not s.select_one('link[href^="/bts-inner.css"]') or not s.select_one('link[href^="/bts-quality.css"]'):issues.append(str(f.relative_to(R)))
  labels=[n.get_text(' ',strip=True) for n in s.select('.main-nav > button,.main-nav > a.nav-direct')]
  if labels!=[n['label'] for n in cat['navigation'][lang]]:issues.append('Navigation: '+str(f.relative_to(R)))
  for a in s.select('header a[href],footer a[href]'):

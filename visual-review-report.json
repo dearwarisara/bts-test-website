@@ -1,0 +1,411 @@
+{
+  "scope": "Representative pages across all 15 layout families, in TH/EN. Structural link/content audit covers all 1002 pages separately.",
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 900
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "desktop": [
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/about/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/advance-search/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/contact/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/cookies-policy/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/update/news-event/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/sustainability/at-a-glance/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/our-business/business-overview/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/our-business/move/ceo-of-move/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/management-structure/director/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/library/1043-f56ecc/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/investor-relations/investment-calculator/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/investor-relations/resource-center/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/detail/3729740fef29/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/career/job-opportunities/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/about/our-history/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/about/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/advance-search/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/contact/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/cookies-policy/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/update/news-event/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/sustainability/at-a-glance/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/our-business/business-overview/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/our-business/move/ceo-of-move/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/management-structure/director/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/library/104084-23fe04/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/investor-relations/investment-calculator/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/investor-relations/resource-center/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/detail/0050f378e310/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/career/job-opportunities/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/about/our-history/"
+    }
+  ],
+  "mobile": [
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/about/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/advance-search/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/contact/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/cookies-policy/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/update/news-event/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/sustainability/at-a-glance/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/our-business/business-overview/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/our-business/move/ceo-of-move/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/management-structure/director/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/library/1043-f56ecc/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/investor-relations/investment-calculator/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/investor-relations/resource-center/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/detail/3729740fef29/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/career/job-opportunities/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/th/about/our-history/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/about/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/advance-search/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/contact/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/cookies-policy/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/update/news-event/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/sustainability/at-a-glance/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/our-business/business-overview/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/our-business/move/ceo-of-move/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/management-structure/director/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/library/104084-23fe04/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/investor-relations/investment-calculator/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/investor-relations/resource-center/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/detail/0050f378e310/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/career/job-opportunities/"
+    },
+    {
+      "issues": [],
+      "largeIcons": [],
+      "overflow": false,
+      "path": "/en/about/our-history/"
+    }
+  ],
+  "businessClicks": [
+    {
+      "target": "move",
+      "url": "http://127.0.0.1:4173/en/our-business/move/",
+      "heading": "MOVE"
+    },
+    {
+      "target": "mix",
+      "url": "http://127.0.0.1:4173/en/our-business/mix/",
+      "heading": "MIX"
+    },
+    {
+      "target": "match",
+      "url": "http://127.0.0.1:4173/en/our-business/match/",
+      "heading": "MATCH"
+    }
+  ],
+  "sustainabilityClicks": [
+    {
+      "index": 0,
+      "url": "http://127.0.0.1:4173/en/sustainability/environmental-sustainability/",
+      "heading": "Environmental Sustainability"
+    },
+    {
+      "index": 1,
+      "url": "http://127.0.0.1:4173/en/sustainability/social-sustainability/",
+      "heading": "Social Sustainability"
+    },
+    {
+      "index": 2,
+      "url": "http://127.0.0.1:4173/en/corporate-governance/at-a-glance/",
+      "heading": "At a Glance"
+    }
+  ]
+}

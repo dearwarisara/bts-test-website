@@ -1,0 +1,62 @@
+/* Shared layout safeguards and reviewed homepage components. */
+.bts-unified :is(main,section,article,.container,.row,.card,.card-block,.page-card,.publication-body){min-width:0}
+.bts-unified :is(h1,h2,h3,h4,h5,h6,p,.card-title,.card-text,.page-card,.official-tree a,.chapter-destination){overflow-wrap:anywhere}
+.bts-unified :is(a,button,input,select,textarea):focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.bts-unified .financial-home{margin-top:0}
+.bts-unified .business-intro{align-items:end;gap:36px;padding-bottom:32px}
+.bts-unified .business-intro p{max-width:580px;margin:0}
+.bts-unified .business-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;gap:24px;min-height:0}
+.bts-unified .business-panel{min-width:0;min-height:380px;align-items:flex-start;justify-content:flex-end;text-align:left;padding:32px;outline-offset:4px}
+.bts-unified .business-panel:hover,.bts-unified .business-panel:focus-visible{flex:1}
+.bts-unified .business-panel:after{background:linear-gradient(180deg,transparent 15%,#06264a45 45%,#06264af2)}
+.bts-unified .business-panel h3,html[lang=en] .bts-unified .business-panel h3{font:700 32px/1.2 Mulish,sans-serif;margin:0 0 12px}
+.bts-unified .business-panel h3:before{margin:0 0 18px}
+.bts-unified .business-description{font:400 22px/1.45 OzoneX,sans-serif;color:white;max-width:100%;padding-right:24px}
+html[lang=en] .bts-unified .business-description{font:400 16px/1.5 Mulish,sans-serif}
+.bts-unified .business-panel .panel-arrow{position:absolute;right:28px;bottom:29px;font:400 22px/1 Mulish,sans-serif;opacity:1;transform:none}
+.bts-unified .esg-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.bts-unified .esg-tabs{min-width:0}
+.bts-unified .esg-tabs a{display:grid;grid-template-columns:30px minmax(0,1fr) 24px;align-items:center;gap:18px;width:100%;min-height:104px;padding:24px;border-radius:16px;margin-bottom:16px;color:var(--ink);border-left:3px solid transparent;transition:background .2s,color .2s}
+.bts-unified .esg-tabs a:last-child{margin-bottom:0}
+.bts-unified .esg-tabs a:hover,.bts-unified .esg-tabs a.active,.bts-unified .esg-tabs a:focus-visible{background:#fff;border-left-color:var(--red);color:var(--blue);box-shadow:0 6px 24px #23324e06}
+.bts-unified .esg-tabs a>small{width:30px;height:30px;display:grid;place-items:center;font:600 12px/1 Mulish,sans-serif;color:var(--red);border-radius:50%;background:transparent}
+.bts-unified .esg-tabs a.active>small{background:var(--blue);color:#fff}
+.bts-unified .esg-tabs a>span{font:500 24px/1.4 OzoneX,sans-serif;min-width:0;overflow-wrap:anywhere}
+html[lang=en] .bts-unified .esg-tabs a>span{font:500 20px/1.45 Mulish,sans-serif}
+.bts-unified .esg-tabs a>b{font:400 24px/1 Mulish,sans-serif;color:var(--red)}
+.bts-unified #esg-link{min-width:0;aspect-ratio:1/1;min-height:0;display:block;position:relative;overflow:hidden}
+.bts-unified #esg-image{width:100%;height:100%;object-fit:cover}
+.bts-unified #esg-caption{left:24px;right:24px;bottom:22px;max-width:calc(100% - 48px);overflow-wrap:anywhere;line-height:1.45}
+/* Cards grow with their text instead of clipping a fixed-height box. */
+.bts-unified .source-body :is(.card-default,.card-fixHeight,.card-board,.card-download){min-width:0;height:auto!important;max-height:none}
+.bts-unified .source-body .card-default{display:flex;flex-direction:column}
+.bts-unified .source-body .card-block{min-width:0;flex:1;overflow-wrap:anywhere}
+.bts-unified .source-body .card-footer{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.bts-unified .source-body :is(.card-title,.card-text){max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.bts-unified .source-body :is(.btn,.official-action,.btn-pdf,.btn-online){max-width:100%;white-space:normal;line-height:1.4;overflow-wrap:anywhere}
+.bts-unified .source-body .row>[class*="col-"]{min-width:0}
+.bts-unified .source-body .bts-line{display:flex;flex-direction:column;gap:20px;min-width:0}
+.bts-unified .source-body .bts-line__item{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;min-width:0}
+.bts-unified .source-body .bts-line__item-icon{width:24px;height:24px;flex:0 0 24px}
+.bts-unified .source-body .bts-line__item-icon img{width:24px!important;height:24px!important;max-width:24px!important;object-fit:contain;margin:0;border-radius:0;padding:0}
+.bts-unified .source-body :is(.card__icon,.upcoming-event__icon,.accordion__icon){width:24px;height:24px;flex:0 0 24px;font-size:20px;line-height:1}
+.bts-unified .source-body :is(.card__icon,.upcoming-event__icon,.accordion__icon) :is(img,svg){width:24px;height:24px;max-width:24px;max-height:24px;object-fit:contain;margin:0;padding:0}
+.bts-unified .source-body .card-icon>.card-img-top,.bts-unified .source-body img.card-icon--md{width:48px!important;height:48px!important;max-width:48px!important;max-height:48px!important;object-fit:contain;padding:0;margin:24px 24px 0;border-radius:0}
+.bts-unified .source-body img[src*="/business/icon/icon-"],.bts-unified .source-body img[src*="/business/match/icon-match-"]{width:160px;max-width:100%;height:auto;object-fit:contain;margin:0 0 24px;border-radius:0}
+.bts-unified .source-body img[src*="/business/icon/"]:not([src*="icon-move"]):not([src*="icon-mix"]){max-width:120px;max-height:80px;object-fit:contain}
+.bts-unified .source-body .bts-line__image img{width:120px;max-height:70px;object-fit:contain;margin:0}
+.bts-unified .source-body :is(.fa,[class^="icon-"]){font-size:20px;line-height:1;display:inline-block}
+.bts-unified .source-body .table-scroll{width:100%;max-width:100%;overflow-x:auto}
+.bts-unified .source-body table{max-width:100%;border-collapse:collapse}
+.bts-unified .source-body :is(th,td){overflow-wrap:anywhere;white-space:normal}
+.bts-unified .page-card{display:flex;flex-direction:column;height:auto;min-width:0}
+.bts-unified .page-card h3{overflow-wrap:anywhere;white-space:normal}
+.bts-unified .page-card .page-card-arrow{font-size:22px;line-height:1}
+.bts-unified .quarter-ribbon{gap:18px;flex-wrap:wrap}
+.bts-unified .annual-card>div{flex-wrap:wrap;max-width:100%}
+@media(max-width:1000px){.bts-unified .business-panel{padding:24px;min-height:340px}.bts-unified .esg-layout{gap:28px}.bts-unified .esg-tabs a{padding:20px 16px;gap:12px}html[lang=en] .bts-unified .esg-tabs a>span{font-size:18px}}
+@media(max-width:760px){.bts-unified .business-intro{display:block}.bts-unified .business-intro p{margin-top:20px}.bts-unified .business-panels{grid-template-columns:1fr;gap:20px}.bts-unified .business-panel{min-height:300px;padding:28px}.bts-unified .esg-layout{grid-template-columns:minmax(0,1fr);gap:24px}.bts-unified .esg-tabs a{min-height:88px;padding:18px;gap:12px}.bts-unified .esg-tabs a>span{font-size:22px}html[lang=en] .bts-unified .esg-tabs a>span{font-size:18px}.bts-unified #esg-link{aspect-ratio:4/3}.bts-unified #esg-caption{left:20px;right:20px;bottom:18px}.bts-unified .source-body .card-block{padding:20px}.bts-unified .source-body .card-default{width:100%}.bts-unified .source-body .row>.col-6{flex-basis:100%;width:100%}}
+
+/* Avoid repeated container gutters inside imported BTS content. */
+.bts-unified .source-body .container{width:100%;max-width:100%;padding-inline:0;margin-inline:auto}
+html[lang=en] .bts-unified .source-body :is(.btn-pdf,.btn-online,.official-action,.archive-more){font:500 16px/1.4 Mulish,sans-serif}
