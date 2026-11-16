@@ -14513,6 +14513,48 @@
       "2024",
       "2026",
       "2567"
-    ]
+    ],
+    "generatedIllustrations": 21,
+    "generator": "Built-in image_gen",
+    "imageManifest": "history-image-prompts.json",
+    "generatedArtChecks": [
+      {
+        "viewport": "desktop",
+        "cards": 3,
+        "issues": [],
+        "overflow": false,
+        "path": "/en/about/our-history/",
+        "textCount": 110
+      },
+      {
+        "viewport": "desktop",
+        "cards": 3,
+        "issues": [],
+        "overflow": false,
+        "path": "/th/about/our-history/",
+        "textCount": 110
+      },
+      {
+        "viewport": "mobile",
+        "cards": 3,
+        "issues": [],
+        "overflow": false,
+        "path": "/th/about/our-history/",
+        "textCount": 110
+      },
+      {
+        "viewport": "mobile",
+        "cards": 3,
+        "issues": [],
+        "overflow": false,
+        "path": "/en/about/our-history/",
+        "textCount": 110
+      }
+    ],
+    "galleryImagesLoaded": 21,
+    "trainScrollProgressTest": {
+      "from": 0.1855108288490426,
+      "to": 0.788463171772103
+    }
   }
 }

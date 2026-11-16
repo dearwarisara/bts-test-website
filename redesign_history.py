@@ -1,7 +1,9 @@
 """Replace the history model with an expansive, accessible vertical timeline."""
 from pathlib import Path
 from bs4 import BeautifulSoup
+import json
 R=Path(__file__).parent;D=R/'dist'
+ART=json.loads((R/'history-image-prompts.json').read_text(encoding='utf-8'))['assets']
 for lang in ('th','en'):
  f=D/lang/'about/our-history/index.html';s=BeautifulSoup(f.read_text(encoding='utf-8'),'html.parser')
  old=s.select('.history-station,.timeline-entry');records=[]
@@ -26,7 +28,7 @@ for lang in ('th','en'):
  caption=s.new_tag('span',attrs={'class':'timeline-nav-caption'});caption.string='YEAR' if lang=='en' else 'ปี';nav.append(caption)
  scroller=s.new_tag('div',attrs={'class':'timeline-year-links'});nav.append(scroller)
  timeline=s.new_tag('section',attrs={'class':'bts-timeline','aria-label':title})
- rail=s.new_tag('div',attrs={'class':'timeline-rail','aria-hidden':'true'});progress=s.new_tag('i',attrs={'class':'timeline-rail-progress'});rail.append(progress);timeline.append(rail)
+ rail=s.new_tag('div',attrs={'class':'timeline-rail','aria-hidden':'true'});progress=s.new_tag('i',attrs={'class':'timeline-rail-progress'});rail.append(progress);train=s.new_tag('div',attrs={'class':'timeline-train','aria-hidden':'true'});train.append(s.new_tag('img',src='/assets/bts-timeline-train.svg',alt='',attrs={'class':'timeline-train-body'}));train.append(s.new_tag('img',src='/assets/bts-logo.svg',alt='',attrs={'class':'timeline-train-logo'}));rail.append(train);timeline.append(rail)
  listing=s.new_tag('ol',attrs={'class':'timeline-list'});timeline.append(listing)
  for i,(year,copy_html) in enumerate(records):
   link=s.new_tag('a',href=f'#year-{i}',attrs={'data-timeline-year':str(i)});link.string=year;scroller.append(link)
@@ -36,10 +38,17 @@ for lang in ('th','en'):
   number=s.new_tag('span',attrs={'class':'timeline-index'});number.string=f'{i+1:02d} / {len(records):02d}';content.append(number)
   heading=s.new_tag('h2',attrs={'class':'timeline-year-label','tabindex':'-1'});heading.string=year;content.append(heading)
   copy=BeautifulSoup(copy_html,'html.parser').select_one('.history-event-copy');copy['class']=['history-event-copy','timeline-copy'];content.append(copy)
-  entry.append(content);listing.append(entry)
+  entry.append(content)
+  art=ART[i];art_path=R/art.get('web_file',art['file'])
+  if not art_path.exists():raise RuntimeError('Missing generated illustration: '+str(art_path))
+  figure=s.new_tag('figure',attrs={'class':'timeline-art'})
+  image=s.new_tag('img',src='/'+str(art_path.relative_to(D)).replace('\\','/'),alt=('Concept illustration for ' if lang=='en' else 'ภาพประกอบแนวคิดปี ')+year,loading='lazy',decoding='async',width=str(art['width']),height=str(art['height']))
+  figure.append(image)
+  caption=s.new_tag('figcaption');caption.string='Concept illustration · AI' if lang=='en' else 'ภาพประกอบแนวคิด · AI';figure.append(caption)
+  entry.append(figure);listing.append(entry)
  end=s.new_tag('div',attrs={'class':'timeline-end','aria-hidden':'true'});end.string='BTS GROUP';timeline.append(end)
  source.append(timeline);s.select_one('.page-layout').insert_before(nav)
- css=s.new_tag('link',rel='stylesheet',href='/history-timeline.css?v=1');s.head.append(css)
- js=s.new_tag('script',src='/history-timeline.js?v=1',type='module');s.body.append(js)
+ css=s.new_tag('link',rel='stylesheet',href='/history-timeline.css?v=3');s.head.append(css)
+ js=s.new_tag('script',src='/history-timeline.js?v=2',type='module');s.body.append(js)
  f.write_text(str(s),encoding='utf-8')
  print(f'{lang}: redesigned {len(records)} history milestones')

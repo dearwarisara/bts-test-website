@@ -1,0 +1,216 @@
+{
+  "generator": "Built-in image_gen",
+  "purpose": "Concept illustrations for BTS history milestones; not archival photographs",
+  "assets": [
+    {
+      "year": "1968",
+      "file": "output/imagegen/history/history-1968.png",
+      "prompt": "Use case: historical-scene. Asset type: landscape editorial illustration for the 1968 milestone on a BTS Group corporate history website. Scene: origins of Tanayong as a Thai property development company in 1968, a modest modernist Bangkok office and architectural drafting plans on a desk, period-appropriate low-rise Bangkok skyline, a hopeful beginning. Style: polished architectural miniature / refined 3D paper-sculpture editorial illustration, realistic materials with clean simplified geometry, soft daylight, ivory white background, BTS corporate deep blue #02559b and restrained red #ed1d24 details, muted warm grey. Wide 3:2 composition with generous breathing room, single coherent scene, premium restrained corporate aesthetic. No trains in this early founding scene. No letters, numbers, captions, logos, watermark or infographic panels. This is a conceptual illustration rather than an archival photograph. Generate exactly one image.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2769374,
+      "web_file": "dist/assets/history-generated/history-1968.webp",
+      "web_bytes": 287152
+    },
+    {
+      "year": "1991",
+      "file": "output/imagegen/history/history-1991.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 1991. A Thai property company being listed on Thailand's stock market in 1991: elegant Bangkok office architecture, a small ceremonial brass listing bell and restrained rising geometric financial bars on an architectural desk, early 1990s skyline. No readable numbers or screens.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2903885,
+      "web_file": "dist/assets/history-generated/history-1991.webp",
+      "web_bytes": 312540
+    },
+    {
+      "year": "1992",
+      "file": "output/imagegen/history/history-1992.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 1992. Planning Bangkok's first elevated SkyTrain system: architectural scale model of concrete elevated tracks and a white train with blue lower body and red stripe, engineering plans and survey tools in an early 1990s Bangkok setting. Clearly a project-planning conceptual scene, not an operating railway.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2828145,
+      "web_file": "dist/assets/history-generated/history-1992.webp",
+      "web_bytes": 293254
+    },
+    {
+      "year": "1997",
+      "file": "output/imagegen/history/history-1997.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 1997. Resilience during the 1997 Asian financial crisis: unfinished Bangkok building framework, a quiet construction crane, rolled architectural plans and a rain-cloud sky opening to a thin light horizon. Restrained, thoughtful navy and grey mood, a small red construction detail. No destruction, no people in distress, no text or charts.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2725838,
+      "web_file": "dist/assets/history-generated/history-1997.webp",
+      "web_bytes": 234930
+    },
+    {
+      "year": "1999",
+      "file": "output/imagegen/history/history-1999.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 1999. Opening of Bangkok's first BTS SkyTrain core network: a pristine white train with navy blue lower body and a thin red stripe arriving on elevated concrete tracks at a late-1990s Bangkok station. Welcoming station, a few small generic passengers, warm daylight and optimistic urban architecture. No readable signs or train markings.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2527032,
+      "web_file": "dist/assets/history-generated/history-1999.webp",
+      "web_bytes": 239592
+    },
+    {
+      "year": "2006-2008",
+      "file": "output/imagegen/history/history-2006-2008.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2006-2008. Corporate recovery after financial rehabilitation: a restored Bangkok architectural model with a completed elevated rail bridge, clean business folders and a sunlit city returning to activity. A white, navy and red urban train in the middle distance. Optimistic recovery concept, coherent single scene.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2798635,
+      "web_file": "dist/assets/history-generated/history-2006-2008.webp",
+      "web_bytes": 307166
+    },
+    {
+      "year": "2009",
+      "file": "output/imagegen/history/history-2009.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2009. Silom rail extension and expansion into advertising: an elevated Bangkok station platform with a white navy-and-red SkyTrain, new tracks extending into the neighbourhood and elegant blank digital advertising panels. Compact city architecture and soft daylight, no readable advertising.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2775384,
+      "web_file": "dist/assets/history-generated/history-2009.webp",
+      "web_bytes": 284170
+    },
+    {
+      "year": "2010",
+      "file": "output/imagegen/history/history-2010.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2010. Integrated Bangkok mobility: a white navy-and-red elevated SkyTrain above an orderly street with a modern city bus in a dedicated bus lane, shaded pedestrian connections and tropical urban greenery. Corporate transition and the beginning of BRT operations expressed through connected transport, no brand lettering.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3135539,
+      "web_file": "dist/assets/history-generated/history-2010.webp",
+      "web_bytes": 417340
+    },
+    {
+      "year": "2011",
+      "file": "output/imagegen/history/history-2011.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2011. Sukhumvit rail expansion: a white navy-and-red SkyTrain travelling along a graceful elevated viaduct out toward Bangkok residential neighbourhoods, a newly connected platform and green pocket parks. Bright, calm scene with a clear sense of an extending route.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3010731,
+      "web_file": "dist/assets/history-generated/history-2011.webp",
+      "web_bytes": 360982
+    },
+    {
+      "year": "2012",
+      "file": "output/imagegen/history/history-2012.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2012. Rail operations and maintenance capability: a refined Bangkok transit control room with a miniature elevated train visible through the window, a wall of abstract route diagrams without text, small generic engineers and maintenance equipment. A subtle blank outdoor media panel reflects the advertising business. No legible UI or captions.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2496637,
+      "web_file": "dist/assets/history-generated/history-2012.webp",
+      "web_bytes": 226590
+    },
+    {
+      "year": "2013",
+      "file": "output/imagegen/history/history-2013.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2013. Rail infrastructure investment and expansion: a carefully crafted model of an elevated BTS viaduct linking two lively Bangkok districts, white navy-and-red train, tiny commuters, well-maintained station and architectural planning blocks on a clean table. A brass investment bell subtly indicates infrastructure funding, no money piles or readable financial data.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3070900,
+      "web_file": "dist/assets/history-generated/history-2013.webp",
+      "web_bytes": 384856
+    },
+    {
+      "year": "2015",
+      "file": "output/imagegen/history/history-2015.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2015. Expansion of the property portfolio: a modern Bangkok mixed-use development model with white and blue office and residential towers, landscaped public space, and an elevated white navy-and-red train connecting the development. Soft daylight and restrained architecture-focused composition.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2717291,
+      "web_file": "dist/assets/history-generated/history-2015.webp",
+      "web_bytes": 278192
+    },
+    {
+      "year": "2017",
+      "file": "output/imagegen/history/history-2017.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2017. New rail network opportunities: an architectural project model of Bangkok elevated rail routes meeting at an interchange, one white navy-and-red mainline train, subtle pink and yellow planned-route ribbons, green-line extensions reaching new neighbourhoods. Show model planning elements, not all lines as already operational.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2847841,
+      "web_file": "dist/assets/history-generated/history-2017.webp",
+      "web_bytes": 314578
+    },
+    {
+      "year": "2018",
+      "file": "output/imagegen/history/history-2018.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2018. Expansion across transport, media, property and delivery: a cohesive Bangkok district with an extended elevated white navy-and-red SkyTrain route, an office advertising display with blank imagery, tasteful property towers and a small parcel-delivery van. One coherent city scene, no split panels or readable labels.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2841580,
+      "web_file": "dist/assets/history-generated/history-2018.webp",
+      "web_bytes": 317604
+    },
+    {
+      "year": "2020",
+      "file": "output/imagegen/history/history-2020.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2020. A connected Bangkok transport ecosystem: elevated white navy-and-red mainline SkyTrain, a short gold-accent urban shuttle by the river, a new highway connection, and a distant conceptual airport terminal with a small aircraft. Refined architectural miniature conveying rail, road and aviation connectivity.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3111239,
+      "web_file": "dist/assets/history-generated/history-2020.webp",
+      "web_bytes": 391924
+    },
+    {
+      "year": "2021",
+      "file": "output/imagegen/history/history-2021.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2021. The MOVE, MIX and MATCH strategy as a unified city: three connected architectural clusters in one miniature Bangkok scene, transport with a white navy-and-red SkyTrain, advertising and digital media with blank screens, and property and partnership offices. Routes weave these together. No infographic panels, lettering or slogans.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3055409,
+      "web_file": "dist/assets/history-generated/history-2021.webp",
+      "web_bytes": 384378
+    },
+    {
+      "year": "2022",
+      "file": "output/imagegen/history/history-2022.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2022. Diversification and station commerce: a refined Bangkok elevated station with small retail shops, a pink-accent monorail extension represented on a nearby architectural model, and elegant city property development. White, navy and restrained red palette with necessary subtle pink accent, one coherent scene.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2803465,
+      "web_file": "dist/assets/history-generated/history-2022.webp",
+      "web_bytes": 310964
+    },
+    {
+      "year": "2023",
+      "file": "output/imagegen/history/history-2023.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2023. Launch of Bangkok's Pink and Yellow monorail lines: two elegant white monorail trains, one with pink accents and one with yellow accents, on separate elevated guideways within a modern Bangkok interchange scene. Tropical greenery and passengers as tiny unobtrusive figures. No readable route labels, no invented logos.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2948570,
+      "web_file": "dist/assets/history-generated/history-2023.webp",
+      "web_bytes": 347014
+    },
+    {
+      "year": "2024",
+      "file": "output/imagegen/history/history-2024.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2024. Corporate restructuring and electric BRT mobility: clean modern Bangkok office towers as interlocking architectural volumes, a contemporary electric city bus in a dedicated lane in the foreground, and a white navy-and-red elevated train farther back. Calm blue and white with restrained red details, no financial chart or readable text.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2714758,
+      "web_file": "dist/assets/history-generated/history-2024.webp",
+      "web_bytes": 263180
+    },
+    {
+      "year": "2025",
+      "file": "output/imagegen/history/history-2025.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2025. Airport people-mover operations and Pink Line extension: an elegant white automated people-mover in a bright glass airport terminal, a distant aircraft outside, and a subtle pink-accent elevated extension in the background architectural landscape. A blank advertising display ties in media operations. One coherent conceptual miniature.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2647840,
+      "web_file": "dist/assets/history-generated/history-2025.webp",
+      "web_bytes": 252778
+    },
+    {
+      "year": "2026",
+      "file": "output/imagegen/history/history-2026.png",
+      "prompt": "Use case: stylized-concept. Asset type: landscape illustration for a BTS Group corporate history timeline. Create exactly one refined architectural-miniature / high-end 3D paper-sculpture editorial scene, with tactile matte paper and plaster materials, clean simplified but credible Thai urban architecture, soft daylight, ivory white and muted warm grey, deep corporate blue #02559b and restrained red #ed1d24 accents. Same coherent premium visual family as an architectural editorial illustration, not cartoon clip art. Wide 3:2 composition, balanced scene, generous breathing room. No letters, numbers, dates, captions, logos, watermark, collage borders or infographic panels. This is an interpretive conceptual illustration, not an archival photograph. Historical milestone: 2026. New motorways, accessible housing and airport-city development: a landscaped low-rise residential neighbourhood connected to a sweeping modern intercity motorway, with a distant planned airport terminal shown as an architectural model. Thai tropical greenery, white and blue architecture, restrained red accents, optimistic daylight. No readable signs, no false archival styling.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3172467,
+      "web_file": "dist/assets/history-generated/history-2026.webp",
+      "web_bytes": 428696
+    }
+  ]
+}

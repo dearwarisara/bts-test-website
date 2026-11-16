@@ -6,8 +6,8 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let pending=false,active=-1;
 function update(){
  pending=false;if(!route||!entries.length)return;
- const r=route.getBoundingClientRect(),focus=innerHeight*.43;
- route.style.setProperty('--route-progress',String(Math.max(0,Math.min(1,(focus-r.top)/Math.max(1,r.height-80)))));
+ const r=route.querySelector('.timeline-rail').getBoundingClientRect(),focus=innerHeight*.43;
+ route.style.setProperty('--route-progress',String(Math.max(0,Math.min(1,(focus-r.top)/Math.max(1,r.height)))));
  let next=0;entries.forEach((entry,i)=>{if(entry.getBoundingClientRect().top<=focus)next=i});
  if(next===active)return;active=next;
  entries.forEach((entry,i)=>{entry.classList.toggle('is-current',i===active);entry.classList.toggle('is-past',i<active)});

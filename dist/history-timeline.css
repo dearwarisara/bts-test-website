@@ -60,3 +60,20 @@ html[lang] .history-timeline-page .source-body h2.timeline-year-label{font:400 c
 
 html[lang=th] .history-timeline-page .history-date-range small{font:400 18px/1.4 OzoneX,sans-serif;letter-spacing:0}
 html[lang=th] .history-timeline-page .timeline-nav-caption{font:500 18px/1 OzoneX,sans-serif;letter-spacing:0}
+
+/* BTS rails, moving train marker and a separate image for every milestone. */
+.bts-timeline .timeline-rail{width:20px;background:repeating-linear-gradient(180deg,transparent 0 16px,#c3cedc 16px 18px);overflow:visible}
+.bts-timeline .timeline-rail:before{left:2px;width:2px;background:#93a8bf}
+.bts-timeline .timeline-rail:after{content:'';position:absolute;right:2px;top:0;bottom:0;width:2px;background:#93a8bf}
+.bts-timeline .timeline-rail-progress{left:9px;width:2px;background:var(--red)}
+.timeline-train{position:absolute;left:50%;top:calc(var(--route-progress)*100%);width:44px;height:77px;transform:translate(-50%,-50%);z-index:5;filter:drop-shadow(0 4px 6px #23324e30);pointer-events:none}
+.history-timeline-page .source-body .timeline-train img{position:absolute;display:block;max-width:none;margin:0;padding:0;border-radius:0;object-fit:contain}
+.history-timeline-page .source-body .timeline-train .timeline-train-body{inset:0;width:44px;height:77px}
+.history-timeline-page .source-body .timeline-train .timeline-train-logo{left:16px;top:42px;width:12px;height:16px}
+.history-timeline-page .timeline-entry{min-height:0;padding-bottom:88px;align-items:start}
+.history-timeline-page .timeline-art{grid-column:3;grid-row:1;min-width:0;width:100%;align-self:start;position:sticky;top:184px;padding:24px 0 0;margin:0}
+.history-timeline-page .timeline-entry:nth-child(even) .timeline-art{grid-column:1}
+.history-timeline-page .source-body .timeline-art>img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;margin:0;padding:0;border-radius:16px;border:1px solid #e4eaf1;background:#f4f3ef}
+.history-timeline-page .source-body .timeline-art figcaption{font:400 11px/1.4 Mulish,sans-serif;color:#738da3;margin:10px 0 0;text-align:right;letter-spacing:.2px}
+html[lang=th] .history-timeline-page .source-body .timeline-art figcaption{font:400 16px/1.4 OzoneX,sans-serif;letter-spacing:0}
+@media(max-width:760px){.bts-timeline .timeline-rail{width:14px}.bts-timeline .timeline-rail:before{left:1px}.bts-timeline .timeline-rail:after{right:1px}.bts-timeline .timeline-rail-progress{left:6px}.timeline-train{width:28px;height:49px}.history-timeline-page .source-body .timeline-train .timeline-train-body{width:28px;height:49px}.history-timeline-page .source-body .timeline-train .timeline-train-logo{left:10px;top:26px;width:8px;height:11px}.history-timeline-page .timeline-entry{padding-bottom:48px}.history-timeline-page .timeline-art,.history-timeline-page .timeline-entry:nth-child(even) .timeline-art{grid-column:2;grid-row:2;position:relative;top:auto;padding-top:12px}.history-timeline-page .source-body .timeline-art>img{border-radius:12px}.history-timeline-page .source-body .timeline-art figcaption{margin-top:8px}}
