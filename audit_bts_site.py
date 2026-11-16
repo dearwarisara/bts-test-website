@@ -11,7 +11,8 @@ def text(article):
  if article is None:return None
  history=article.select('.history-event-copy')
  if history:return [(n.find_parent(attrs={'data-year':True}).get('data-year'),' '.join(' '.join(n.stripped_strings).split())) for n in history]
- for n in article.select('.source-attribution,.page-card'):n.decompose()
+ # The IR banner player now lives in the cover; compare the remaining article copy.
+ for n in article.select('.source-attribution,.page-card,.ir-banner'):n.decompose()
  return ' '.join(' '.join(article.stripped_strings).split())
 for f in files:
  s=BeautifulSoup(f.read_text(encoding='utf-8'),'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'

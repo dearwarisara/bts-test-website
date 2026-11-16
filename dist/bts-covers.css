@@ -1,4 +1,7 @@
 /* Shared photographic cover, matching the Our History treatment. */
+.bts-unified .inner-cover .cover-video{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;border-radius:0}
+.cover-video-toggle{position:absolute;z-index:2;right:5%;bottom:24px;width:38px;height:38px;display:grid;place-items:center;padding:0;border:1px solid #ffffff80;border-radius:50%;background:#07172840;color:#fff;font:400 16px/1 sans-serif;cursor:pointer}
+.cover-video-toggle:focus-visible{outline:2px solid white;outline-offset:4px}
 .bts-unified .inner-hero{isolation:isolate;position:relative;overflow:hidden;min-height:390px;box-sizing:border-box;padding:34px 0 64px;border:0;border-radius:0;background:#10263c;color:#fff;display:flex;align-items:stretch}
 .bts-unified .inner-hero:after{display:none}
 .bts-unified .inner-cover{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:1;pointer-events:none}
@@ -20,6 +23,7 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=extended] h1{font
 .bts-unified .inner-hero[data-cover-article=true] .inner-cover img{object-position:center 25%}
 .bts-unified .inner-hero[data-cover-topic=awards] .inner-cover img{object-position:center 25%}
 @media(max-width:760px){
+ .video-cover .cover-video-toggle{top:20px;bottom:auto;right:20px;width:32px;height:32px}
  .bts-unified .inner-hero{min-height:300px;padding:24px 0 38px}
  .bts-unified .inner-hero>.container{width:calc(100% - 40px)}
  .bts-unified .inner-breadcrumb{padding-bottom:56px;gap:10px}

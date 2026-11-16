@@ -102,3 +102,5 @@ subprocess.run([sys.executable,str(R/'repair_cards.py')],check=True)
 subprocess.run([sys.executable,str(R/'redesign_history.py')],check=True)
 
 subprocess.run([sys.executable,str(R/'apply_inner_covers.py')],check=True)
+
+subprocess.run([sys.executable,str(R/'apply_video_covers.py')],check=True)
