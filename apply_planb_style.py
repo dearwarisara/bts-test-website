@@ -57,7 +57,7 @@ for file in D.rglob('*.html'):
  source=re.sub(r'/metro\.js\?v=\d+','/metro.js?v=7',source)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=7"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=8"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
  if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
 

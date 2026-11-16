@@ -162,3 +162,9 @@ html[lang=en] .bts-unified .source-body h4,html[lang=en] .bts-unified .source-bo
  .bts-unified .main-nav>.mega-panel .mega-links{width:100%}
  .bts-unified.inner-page{padding-top:87px}
 }
+
+/* Hero headline size requested from the reference. */
+.bts-unified .hero h1,
+html[lang=en] .bts-unified .hero h1{font-size:4.75rem;font-weight:600}
+
+@font-face{font-family:Mulish;src:url('/assets/Mulish-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
