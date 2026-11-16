@@ -1,0 +1,312 @@
+{
+  "desktop": [
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/our-business/mix/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/our-business/match/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/sustainability/environmental-sustainability/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/sustainability/social-sustainability/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/sustainability/economic-sustainability/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/investor-relations/financial-information/key-financial-data/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/corporate-governance/corporate-governance-policy-and-code-of-business-conduct/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/career/why-bts-group/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/contact/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/detail/3b894e04ba05/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/detail/6c5db3deb447/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/library/189392-33acfc/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/library/115721-1c916f/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/awards/years/2025-26/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/about/our-history/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/our-business/move/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 390,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/about/our-ambition/",
+      "viewport": 1440,
+      "white": true,
+      "withinCover": true
+    }
+  ],
+  "mobile": [
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/our-business/mix/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/our-business/match/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/sustainability/environmental-sustainability/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/sustainability/social-sustainability/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/sustainability/economic-sustainability/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/investor-relations/financial-information/key-financial-data/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 373.59375,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/corporate-governance/corporate-governance-policy-and-code-of-business-conduct/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/career/why-bts-group/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/contact/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 370.375,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/detail/3b894e04ba05/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 378.75,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/detail/6c5db3deb447/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 475.578125,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/library/189392-33acfc/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 445.9375,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/library/115721-1c916f/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/en/awards/years/2025-26/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/about/our-history/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/our-business/move/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    },
+    {
+      "coverHeight": 300,
+      "loaded": true,
+      "overflow": false,
+      "route": "/th/about/our-ambition/",
+      "viewport": 390,
+      "white": true,
+      "withinCover": true
+    }
+  ]
+}
