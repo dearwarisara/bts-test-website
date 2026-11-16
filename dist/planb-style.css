@@ -159,3 +159,14 @@ html[lang=en] .bts-unified .source-body p,html[lang=en] .bts-unified .source-bod
 html .bts-unified .source-body .chapter-lead{font-size:.8125rem!important;line-height:1.5!important}
 .bts-unified .chapter-destination h2,.bts-unified .related-pages h2{font-size:1.5rem}
 .bts-unified .chapter-destination h3{font-size:1.3rem}
+
+/* A compact single-row desktop header, without the empty logo/tool row. */
+@media(min-width:1101px){
+ .bts-unified .site-header,.bts-unified .site-header.scrolled{display:grid;grid-template-columns:50px minmax(0,1fr) auto;align-items:center;column-gap:32px;height:88px;padding:0 5%}
+ .bts-unified .site-header .header-top,.bts-unified .site-header.scrolled .header-top{display:contents}
+ .bts-unified .site-header .logo{grid-column:1;grid-row:1}
+ .bts-unified .site-header .header-tools{position:static;transform:none;grid-column:3;grid-row:1;gap:14px}
+ .bts-unified .site-header .main-nav,.bts-unified .site-header.scrolled .main-nav{grid-column:2;grid-row:1;height:88px;margin:0;gap:clamp(10px,1.2vw,23px);min-width:0}
+ .bts-unified .site-header .mega-shell{position:absolute;top:100%;left:0;right:0;grid-column:1/-1;max-height:calc(100svh - 88px)}
+ .bts-unified.inner-page{padding-top:88px}
+}
