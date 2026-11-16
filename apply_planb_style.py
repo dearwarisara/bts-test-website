@@ -1,7 +1,7 @@
 """Apply Plan B-inspired presentation while preserving BTS content and fonts."""
 from pathlib import Path
 from bs4 import BeautifulSoup
-import re
+import re,subprocess,sys
 R=Path(__file__).parent;D=R/'dist'
 for file in D.rglob('*.html'):
  source=file.read_text(encoding='utf-8-sig')
@@ -80,14 +80,17 @@ for file in D.rglob('*.html'):
    main.append(contact)
   source=str(s)
  source=re.sub(r'<span class="header-context">BTS GROUP</span>','',source)
+ source=re.sub(r'/content\.js\?v=\d+','/content.js?v=12',source)
  source=re.sub(r'/metro\.js\?v=\d+','/metro.js?v=11',source)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
  source=re.sub(r'<link[^>]+href="/bts-quality\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=9"/><link rel="stylesheet" href="/bts-quality.css?v=11"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=9"/><link rel="stylesheet" href="/bts-quality.css?v=12"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
  if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
 
  file.write_text(source,encoding='utf-8')
 print('Applied Plan B-inspired styling to all pages; BTS content and local routes preserved.')
 
+
+subprocess.run([sys.executable,str(R/'repair_cards.py')],check=True)

@@ -5,14 +5,18 @@ from collections import Counter
 from bs4 import BeautifulSoup
 import json,subprocess,sys
 R=Path(__file__).parent;D=R/'dist';cat=json.loads((D/'site-catalog.json').read_text(encoding='utf-8'))
+card_count=0;card_layout_errors=[]
 files=sorted(D.rglob('*.html'));issues=[];missing=Counter();external=Counter();content_mismatch=[];inner=[]
 def text(article):
  if article is None:return None
- for n in article.select('.source-attribution'):n.decompose()
+ for n in article.select('.source-attribution,.page-card'):n.decompose()
  return ' '.join(' '.join(article.stripped_strings).split())
 for f in files:
  s=BeautifulSoup(f.read_text(encoding='utf-8'),'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
  if len(s.select('body>header.site-header'))!=1 or len(s.select('body>footer.bts-footer'))!=1 or not s.select_one('link[href^="/bts-brand.css"]') or not s.select_one('link[href^="/bts-inner.css"]') or not s.select_one('link[href^="/bts-quality.css"]'):issues.append(str(f.relative_to(R)))
+ for card in s.select('.page-card'):
+  card_count+=1
+  if not card.select_one(':scope > .page-card-body'):card_layout_errors.append(str(f.relative_to(R)))
  labels=[n.get_text(' ',strip=True) for n in s.select('.main-nav > button,.main-nav > a.nav-direct')]
  if labels!=[n['label'] for n in cat['navigation'][lang]]:issues.append('Navigation: '+str(f.relative_to(R)))
  for a in s.select('header a[href],footer a[href]'):
@@ -33,7 +37,7 @@ for (f,current),spec in zip(inner,specs):
  old=BeautifulSoup(blob.decode('utf-8-sig'),'html.parser')
  if text(old.select_one('.source-body'))!=current:content_mismatch.append(str(f.relative_to(R)))
  checked+=1
-report={'baseline_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip(),'pages':len(files),'inner_content_checked':checked,'content_changes':content_mismatch,'shell_or_navigation_errors':issues,'external_menu_links':dict(external),'missing_local_links':dict(missing)}
+report={'card_count':card_count,'card_layout_errors':card_layout_errors,'baseline_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip(),'pages':len(files),'inner_content_checked':checked,'content_changes':content_mismatch,'shell_or_navigation_errors':issues,'external_menu_links':dict(external),'missing_local_links':dict(missing)}
 (R/'site-unification-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False,indent=2))
-if issues or missing or external or content_mismatch:sys.exit(1)
+if issues or missing or external or content_mismatch or card_layout_errors:sys.exit(1)

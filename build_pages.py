@@ -1,3 +1,4 @@
+from card_content import summarize,card_image
 import json,re,hashlib,html
 from pathlib import Path
 from urllib.parse import urlsplit,unquote,urljoin
@@ -84,7 +85,7 @@ by_path={p['path']:p for p in catalog}
 for p in catalog:
  p['navigable']=p['primary'] or (not p['document'] and not re.search(r'/\d+(?:/|$)',p['path']) and p['group'] in {g[0] for g in groups})
 def cards(items,kind=''):
- return '<div class="page-card-grid '+kind+'">'+''.join(f'''<a class="page-card" href="{html.escape(p['href'],quote=True)}">{('<div class="page-card-image"><img loading="lazy" src="'+html.escape(p['image'],quote=True)+'" alt=""/></div>') if p.get('image') and 'opengraph' not in p['image'] else ''}<span class="page-card-kicker">{'DOCUMENT' if p['document'] else p['group'].replace('-',' ').upper()}</span><h3>{html.escape(p['title'])}</h3><p>{html.escape(p['description'][:180])}</p><span class="page-card-arrow">↗</span></a>''' for p in items)+'</div>'
+ return '<div class="page-card-grid '+kind+'">'+''.join(f'''<a class="page-card" href="{html.escape(p['href'],quote=True)}">{('<div class="page-card-image"><img loading="lazy" src="'+html.escape(p['image'],quote=True)+'" alt=""/></div>') if p.get('image') and 'opengraph' not in p['image'] else ''}<span class="page-card-kicker">{'DOCUMENT' if p['document'] else p['group'].replace('-',' ').upper()}</span><h3>{html.escape(p['title'])}</h3><p>{html.escape(summarize(p['description']))}</p><span class="page-card-arrow">↗</span></a>''' for p in items)+'</div>'
 def resources(p):
  path=p['path'];lang=path.split('/')[1];suffix=path.split('/')[-1];g=group(path)
  candidates=[x for x in catalog if x['lang']==lang and x['path']!=path]
