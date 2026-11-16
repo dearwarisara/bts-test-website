@@ -13,7 +13,8 @@ for(const lang of ['th','en']){
   assert.equal(art.length,21);assert.equal(new Set(art).size,21);
   for(const src of art)assert.ok(existsSync(new URL('../dist'+src,import.meta.url)),src);
   assert.match(html,/class="timeline-train"/);
-  assert.ok(html.includes('/assets/bts-timeline-train.svg'));
+  assert.doesNotMatch(html,/class="timeline-index"/);
+  assert.ok(html.includes('/assets/bts-timeline-train-top.svg'));
   assert.doesNotMatch(html,/<canvas|history-world\.js|chapter-motion\.js/);
  });
 }

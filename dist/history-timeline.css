@@ -77,3 +77,14 @@ html[lang=th] .history-timeline-page .timeline-nav-caption{font:500 18px/1 Ozone
 .history-timeline-page .source-body .timeline-art figcaption{font:400 11px/1.4 Mulish,sans-serif;color:#738da3;margin:10px 0 0;text-align:right;letter-spacing:.2px}
 html[lang=th] .history-timeline-page .source-body .timeline-art figcaption{font:400 16px/1.4 OzoneX,sans-serif;letter-spacing:0}
 @media(max-width:760px){.bts-timeline .timeline-rail{width:14px}.bts-timeline .timeline-rail:before{left:1px}.bts-timeline .timeline-rail:after{right:1px}.bts-timeline .timeline-rail-progress{left:6px}.timeline-train{width:28px;height:49px}.history-timeline-page .source-body .timeline-train .timeline-train-body{width:28px;height:49px}.history-timeline-page .source-body .timeline-train .timeline-train-logo{left:10px;top:26px;width:8px;height:11px}.history-timeline-page .timeline-entry{padding-bottom:48px}.history-timeline-page .timeline-art,.history-timeline-page .timeline-entry:nth-child(even) .timeline-art{grid-column:2;grid-row:2;position:relative;top:auto;padding-top:12px}.history-timeline-page .source-body .timeline-art>img{border-radius:12px}.history-timeline-page .source-body .timeline-art figcaption{margin-top:8px}}
+
+/* A slim three-car roof view follows the rail direction. */
+.timeline-train{width:32px;height:192px;filter:drop-shadow(1px 2px 2px #23324e28)}
+.history-timeline-page .source-body .timeline-train .timeline-train-body{width:32px;height:192px}
+.bts-timeline .timeline-rail{top:52px}
+.timeline-stop{margin-top:44px}
+.timeline-content:before{top:52px}
+@media(max-width:760px){.timeline-train{width:22px;height:132px}.history-timeline-page .source-body .timeline-train .timeline-train-body{width:22px;height:132px}.bts-timeline .timeline-rail{top:48px}.timeline-stop{margin-top:40px}.timeline-content:before,.timeline-entry:nth-child(even) .timeline-content:before{top:48px}}
+
+.bts-timeline .timeline-rail{bottom:172px}
+@media(max-width:760px){.bts-timeline .timeline-rail{bottom:152px}}
