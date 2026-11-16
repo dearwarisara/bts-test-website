@@ -9,7 +9,7 @@ for file in D.rglob('*.html'):
  if home:
   s=BeautifulSoup(source,'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
   hero=s.select_one('.hero')
-  # The opening is only BTS footage, with no pinned or scaled stage.
+  # Keep the original headline over full-size video without scroll scaling.
   if hero:
    screen=hero.select_one('.hero-screen')
    if screen:
@@ -18,6 +18,12 @@ for file in D.rglob('*.html'):
     for child in children:hero.append(child)
    for node in hero.select('.hero-brand-copy,.hero-bottom>a'):node.decompose()
    hero['aria-label']='BTS Group corporate video' if lang=='en' else 'วิดีโอแนะนำ BTS Group'
+   copy=s.new_tag('div',attrs={'class':'hero-brand-copy'})
+   title=s.new_tag('h1',attrs={'aria-label':'Borderless Transform Solutions'})
+   for line in ('Borderless Transform','Solutions'):
+    span=s.new_tag('span');span.string=line;title.append(span)
+   copy.append(title);hero.append(copy)
+
   main=s.main;financial=s.select_one('.financial-home');pub=s.select_one('#publications');news=s.select_one('#news');shortcuts=s.select_one('.home-shortcuts')
   if financial and shortcuts:shortcuts.insert_after(financial.extract())
   if financial and pub:financial.insert_after(pub.extract())
@@ -49,7 +55,7 @@ for file in D.rglob('*.html'):
   source=str(s)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=2"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=3"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
  if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
  if 'header-context' not in source:source=source.replace('<div class="header-top">','<div class="header-top"><span class="header-context">BTS GROUP</span>',1)
