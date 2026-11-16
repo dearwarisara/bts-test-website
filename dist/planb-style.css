@@ -168,3 +168,16 @@ html[lang=en] .bts-unified .source-body h4,html[lang=en] .bts-unified .source-bo
 html[lang=en] .bts-unified .hero h1{font-size:4.75rem;font-weight:600}
 
 @font-face{font-family:Mulish;src:url('/assets/Mulish-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+
+/* Desktop editorial alignment; centered composition on phones. */
+@media(min-width:761px){
+ .bts-unified .hero-brand-copy{left:8%;top:50%;width:84%;max-width:1000px;margin:0;transform:translateY(-50%);text-align:left}
+ .bts-unified .hero h1{text-align:left}
+ .bts-unified .hero-overlay{background:linear-gradient(90deg,#10283e80, #10283e35 55%,#10283e15),linear-gradient(180deg,#10283e30,transparent 40%)}
+}
+@media(max-width:760px){
+ .bts-unified .hero-brand-copy{left:50%;top:50%;width:94%;margin:0;transform:translate(-50%,-50%);text-align:center}
+ .bts-unified .hero h1{text-align:center}
+}
+
+@media(max-width:760px){.bts-unified .hero h1,html[lang=en] .bts-unified .hero h1{font-size:clamp(40px,12vw,4.75rem)}}
