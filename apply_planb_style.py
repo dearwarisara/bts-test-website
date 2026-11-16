@@ -9,16 +9,15 @@ for file in D.rglob('*.html'):
  if home:
   s=BeautifulSoup(source,'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
   hero=s.select_one('.hero')
-  if hero and not hero.select_one('.hero-sticky'):
-   stage=s.new_tag('div',attrs={'class':'hero-sticky'});back=s.new_tag('div',attrs={'class':'hero-backdrop'});image=s.new_tag('img',src='https://www.btsgroup.co.th/storage/bilboard/banner-masstransit-v2.jpg',alt='');back.append(image);stage.append(back)
-   screen=s.new_tag('div',attrs={'class':'hero-screen'})
-   for n in list(hero.contents):screen.append(n.extract())
-   stage.append(screen);hero.append(stage)
-  title=hero.select_one('h1') if hero else None
-  if title:
-   title.clear()
-   for line in ('Borderless Transform','Solutions'):
-    span=s.new_tag('span');span.string=line;title.append(span)
+  # The opening is only BTS footage, with no pinned or scaled stage.
+  if hero:
+   screen=hero.select_one('.hero-screen')
+   if screen:
+    children=list(screen.contents)
+    hero.clear()
+    for child in children:hero.append(child)
+   for node in hero.select('.hero-brand-copy,.hero-bottom>a'):node.decompose()
+   hero['aria-label']='BTS Group corporate video' if lang=='en' else 'วิดีโอแนะนำ BTS Group'
   main=s.main;financial=s.select_one('.financial-home');pub=s.select_one('#publications');news=s.select_one('#news');shortcuts=s.select_one('.home-shortcuts')
   if financial and shortcuts:shortcuts.insert_after(financial.extract())
   if financial and pub:financial.insert_after(pub.extract())
@@ -50,9 +49,9 @@ for file in D.rglob('*.html'):
   source=str(s)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=1"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=2"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
- if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=1"></script></body>')
+ if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
  if 'header-context' not in source:source=source.replace('<div class="header-top">','<div class="header-top"><span class="header-context">BTS GROUP</span>',1)
  file.write_text(source,encoding='utf-8')
 print('Applied Plan B-inspired styling to all pages; BTS content and local routes preserved.')
