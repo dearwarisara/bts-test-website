@@ -73,93 +73,6 @@
 .bts-unified .site-header.scrolled .search-open{background:#f5f8fb;border-color:#d4dfe9;color:var(--blue)}
 .bts-unified .site-header .menu-toggle{color:var(--blue)}
 
-/* Original BTS type scale: 16px root; 110% only from 1900px. */
-html{font-size:16px}
-html .bts-unified{font-size:.8125rem;line-height:1.5}
-.bts-unified :is(h1,.h1){font-family:OzoneX,sans-serif;font-size:2rem}
-.bts-unified :is(h2,.h2){font-family:OzoneX,sans-serif;font-size:1.5rem}
-.bts-unified :is(h3,.h3){font-family:OzoneX,sans-serif;font-size:1.3rem}
-.bts-unified :is(h4,.h4){font-family:OzoneX,sans-serif;font-size:1.2rem}
-.bts-unified :is(h5,.h5){font-family:OzoneX,sans-serif;font-size:1.1rem}
-.bts-unified :is(h6,.h6){font-family:OzoneX,sans-serif;font-size:1rem}
-.bts-unified .site-header .logo{padding:0;border-radius:0;background:none;display:block;flex:none}
-.bts-unified .site-header .logo img,
-.bts-unified .site-header.scrolled .logo img{display:block;width:50px;height:67px;object-fit:contain;max-width:none;transform:none}
-.bts-unified .site-header .header-top,
-.bts-unified .site-header.scrolled .header-top{height:87px}
-.bts-unified .site-header .header-context{display:none}
-.bts-unified .main-nav>button,.bts-unified .main-nav>.nav-direct,
-.bts-unified .mega-links a,.bts-unified .official-tree a,
-.bts-unified .official-tree ul ul a{font-family:OzoneX,sans-serif;font-size:1.125rem}
-.bts-unified .main-nav>button,.bts-unified .main-nav>.nav-direct{font-weight:700}
-.bts-unified .mega-panel h2{font-size:1.5rem}
-.bts-unified .mega-panel p,.bts-unified .mega-panel .outline-button{font-size:1rem}
-.bts-unified .language{font-size:1rem}
-.bts-unified .hero h1{font-family:Mulish,OzoneX,sans-serif;font-size:3.5rem;font-weight:700;text-transform:none;letter-spacing:0;line-height:1.2}
-.bts-unified .hero h1>span{padding:0}
-.bts-unified .home-shortcuts>a,.bts-unified .home-shortcuts a>span{font-size:1.25rem}
-.bts-unified .section-title,.bts-unified .news-heading .section-title,
-.bts-unified #publications>.section-heading .section-title,
-.bts-unified .business-intro .section-title,.bts-unified .center-heading .section-title{font-size:1.5rem;font-weight:700;line-height:1.3;letter-spacing:0}
-.bts-unified .section-tag,.bts-unified .financial-home>.section-tag,
-.bts-unified .center-heading>span{font-size:1.125rem}
-.bts-unified .financial-home h2{font-size:1.5rem;font-weight:700}
-.bts-unified .financial-period{font-size:1.3rem}
-.bts-unified .financial-home .metric strong,
-.bts-unified .financial-home .metric:first-child strong{font-family:OzoneX,sans-serif;font-size:2rem;font-weight:700;letter-spacing:0;line-height:1.2}
-.bts-unified .financial-home .metric span:not(.glass-icon){font-size:.8125rem;line-height:1.2}
-.bts-unified .outline-button,.bts-unified .gradient-button,
-.bts-unified .finance-actions .outline-button{font-size:1rem}
-.bts-unified .report-tabs button,.bts-unified .news-filters button{font-size:1.125rem}
-.bts-unified .bts-reports .annual-card h3{font-size:1.1rem;font-weight:700;line-height:1.3}
-.bts-unified .quick-card h3,.bts-unified .bts-resource-layout .quick-card h3{font-size:1.1rem;font-weight:700;letter-spacing:0;line-height:1.3}
-.bts-unified .quick-card>span,.bts-unified .bts-resource-layout .quick-card>span{font-size:.8125rem}
-.bts-unified .quarter-ribbon strong{font-size:1.5rem}
-.bts-unified .quarter-ribbon a,.bts-unified .ir-bottom p{font-size:.8125rem}
-.bts-unified .news-card h3{font-size:1.3rem;font-weight:500;line-height:1.4}
-.bts-unified .news-card time,.bts-unified .read-more{font-size:.8125rem}
-.bts-unified .body-large,.bts-unified .business-intro>p,
-.bts-unified .center-heading>p{font-size:.8125rem;line-height:1.5}
-.bts-unified .business-panel h3{font-size:1.3rem}
-.bts-unified .esg-tabs button>span{font-family:OzoneX,sans-serif;font-size:1.125rem;letter-spacing:0}
-.bts-unified #esg-caption{font-size:1rem}
-.bts-unified .contact-tile h2{font-size:1.5rem}
-.bts-unified .contact-tile p{font-size:.8125rem}
-.bts-unified .contact-tile>span{font-size:1rem}
-.bts-unified .bts-footer .footer-grid h3{font-size:1.3rem}
-.bts-unified .bts-footer .more,.bts-unified .bts-footer .footer-bottom{font-size:1rem}
-.bts-unified .footer-company>img{width:50px;height:67px;padding:0;object-fit:contain}
-.bts-unified.inner-page{padding-top:137px}
-.bts-unified .inner-hero h1,html[lang=en] .bts-unified .inner-hero h1{font-size:26px;line-height:1.2}
-.bts-unified .inner-breadcrumb{font-size:.8125rem}
-.bts-unified .inner-station,.bts-unified .inner-content-link,
-.bts-unified .chapter-navigation>span,.bts-unified .chapter-picker{font-size:1.125rem}
-.bts-unified .page-layout>.source-body,
-.bts-unified .source-body p,.bts-unified .source-body li,
-html[lang=en] .bts-unified .source-body p,html[lang=en] .bts-unified .source-body li{font-size:.8125rem;line-height:1.5}
-.bts-unified .source-body h2{font-size:1.5rem}
-.bts-unified .source-body h3,.bts-unified .source-body .card-title{font-size:1.3rem}
-.bts-unified .source-body h4{font-size:1.2rem}
-.bts-unified .source-body h5{font-size:1.1rem}
-.bts-unified .source-body table,.bts-unified .source-body .source-note{font-size:.8125rem}
-.bts-unified .page-card h3{font-size:1.3rem}
-.bts-unified .page-card p{font-size:.8125rem}
-.bts-unified .archive-more,.bts-unified .source-body .btn-pdf,.bts-unified .source-body .btn-online{font-size:1rem}
-.bts-unified .source-body .text-size-14{font-size:.875rem}
-.bts-unified .source-body .text-size-20{font-size:1.25rem}
-.bts-unified .source-body .text-size-22{font-size:1.375rem}
-.bts-unified .search-form label{font-size:2rem}
-.bts-unified .search-form input,.bts-unified .search-form button{font-size:1rem}
-.bts-unified #search-results a strong{font-size:1.3rem}
-.bts-unified #search-results a small,.bts-unified #search-results p{font-size:.8125rem}
-@media(min-width:1900px){html{font-size:110%}}
-@media(max-width:760px){.bts-unified.inner-page{padding-top:87px}.bts-unified .site-header.mobile-open .main-nav{max-height:calc(100svh - 87px)}}
-
-/* Override older theme declarations that marked lead sizes as important. */
-html .bts-unified .source-body .chapter-lead{font-size:.8125rem!important;line-height:1.5!important}
-.bts-unified .chapter-destination h2,.bts-unified .related-pages h2{font-size:1.5rem}
-.bts-unified .chapter-destination h3{font-size:1.3rem}
-
 /* A compact single-row desktop header, without the empty logo/tool row. */
 @media(min-width:1101px){
  .bts-unified .site-header,.bts-unified .site-header.scrolled{display:grid;grid-template-columns:50px minmax(0,1fr) auto;align-items:center;column-gap:32px;height:88px;padding:0 5%}
@@ -169,4 +82,83 @@ html .bts-unified .source-body .chapter-lead{font-size:.8125rem!important;line-h
  .bts-unified .site-header .main-nav,.bts-unified .site-header.scrolled .main-nav{grid-column:2;grid-row:1;height:88px;margin:0;gap:clamp(10px,1.2vw,23px);min-width:0}
  .bts-unified .site-header .mega-shell{position:absolute;top:100%;left:0;right:0;grid-column:1/-1;max-height:calc(100svh - 88px)}
  .bts-unified.inner-page{padding-top:88px}
+}
+
+/* Readable role-based type sizes, with explicit language specificity. */
+html{font-size:16px}
+html .bts-unified{font-size:22px;line-height:1.55}
+html[lang=en] .bts-unified{font-size:16px;line-height:1.6}
+.bts-unified .site-header .logo{padding:0;background:none;border-radius:0;display:block;flex:none}
+.bts-unified .site-header .logo img,.bts-unified .site-header.scrolled .logo img{width:50px;height:67px;object-fit:contain;max-width:none;transform:none;display:block}
+.bts-unified .site-header .header-context{display:none}
+html[lang=th] .bts-unified .main-nav>button,html[lang=th] .bts-unified .main-nav>.nav-direct{font:500 22px/1.2 OzoneX,sans-serif}
+html[lang=en] .bts-unified .main-nav>button,html[lang=en] .bts-unified .main-nav>.nav-direct{font:400 14px/1.3 Mulish,sans-serif;text-transform:uppercase;letter-spacing:0}
+html[lang=en] .bts-unified .main-nav>.current-section,html[lang=en] .bts-unified .main-nav>[aria-expanded=true],html[lang=en] .bts-unified .main-nav>a:hover,html[lang=en] .bts-unified .main-nav>button:hover{font-weight:700}
+.bts-unified .mega-links a,.bts-unified .official-tree a,.bts-unified .official-tree ul ul a{font:400 22px/1.4 OzoneX,sans-serif}
+html[lang=en] .bts-unified .mega-links a,html[lang=en] .bts-unified .official-tree a,html[lang=en] .bts-unified .official-tree ul ul a{font:400 16px/1.5 Mulish,sans-serif}
+.bts-unified .hero h1{font:700 56px/1.2 Mulish,OzoneX,sans-serif;text-transform:none;letter-spacing:0}
+.bts-unified .hero h1>span{padding:0}
+.bts-unified .home-shortcuts>a,.bts-unified .home-shortcuts a>span{font-size:26px}
+.bts-unified .section-title,.bts-unified .news-heading .section-title,.bts-unified #publications>.section-heading .section-title,.bts-unified .business-intro .section-title,.bts-unified .center-heading .section-title{font:500 40px/1.25 OzoneX,sans-serif;letter-spacing:0}
+.bts-unified .financial-home h2{font:500 40px/1.25 OzoneX,sans-serif}
+.bts-unified .financial-period{font-size:24px}
+.bts-unified .section-tag,.bts-unified .financial-home>.section-tag,.bts-unified .center-heading>span{font-size:22px}
+.bts-unified .financial-home .metric strong,.bts-unified .financial-home .metric:first-child strong{font:400 48px/1.1 Mulish,sans-serif;letter-spacing:-1px}
+.bts-unified .financial-home .metric span:not(.glass-icon){font-size:22px;line-height:1.4}
+.bts-unified .outline-button,.bts-unified .gradient-button,.bts-unified .finance-actions .outline-button,.bts-unified .mega-panel .outline-button{font-size:22px}
+.bts-unified .report-tabs button,.bts-unified .news-filters button{font-size:22px}
+.bts-unified .bts-reports .annual-card h3,.bts-unified .quick-card h3,.bts-unified .bts-resource-layout .quick-card h3{font:500 28px/1.35 OzoneX,sans-serif;letter-spacing:0}
+.bts-unified .quick-card>span,.bts-unified .bts-resource-layout .quick-card>span,.bts-unified .quarter-ribbon a,.bts-unified .ir-bottom p{font-size:22px}
+.bts-unified .news-card h3{font-size:28px;line-height:1.4}
+.bts-unified .news-card time,.bts-unified .read-more{font-size:20px}
+.bts-unified .body-large,.bts-unified .business-intro>p,.bts-unified .center-heading>p{font-size:24px;line-height:1.6}
+.bts-unified .business-panel h3{font-size:28px}
+.bts-unified .esg-tabs button>span{font:500 24px/1.4 OzoneX,sans-serif;letter-spacing:0}
+.bts-unified #esg-caption{font-size:22px}
+.bts-unified .contact-tile h2{font-size:36px}
+.bts-unified .contact-tile p,.bts-unified .contact-tile>span{font-size:22px}
+.bts-unified .bts-footer .footer-grid h3{font-size:26px}
+.bts-unified .bts-footer .more,.bts-unified .bts-footer .footer-bottom{font-size:20px}
+.bts-unified .footer-company>img{width:50px;height:67px;padding:0;object-fit:contain}
+.bts-unified .inner-hero h1,html[lang=en] .bts-unified .inner-hero h1{font-size:40px;line-height:1.2}
+.bts-unified .inner-breadcrumb{font-size:20px}
+.bts-unified .inner-station,.bts-unified .inner-content-link,.bts-unified .chapter-navigation>span,.bts-unified .chapter-picker{font-size:22px}
+.bts-unified .page-layout>.source-body,.bts-unified .source-body p,.bts-unified .source-body li{font-size:22px;line-height:1.6}
+html .bts-unified .source-body .chapter-lead{font-size:24px!important;line-height:1.6!important}
+.bts-unified .source-body h2{font-size:32px}
+.bts-unified .source-body h3,.bts-unified .source-body .card-title,.bts-unified .page-card h3{font-size:28px}
+.bts-unified .source-body h4{font-size:26px}
+.bts-unified .source-body h5{font-size:24px}
+.bts-unified .source-body table,.bts-unified .page-card p,.bts-unified .source-body .source-note{font-size:20px}
+.bts-unified .archive-more,.bts-unified .source-body .btn-pdf,.bts-unified .source-body .btn-online{font-size:22px}
+html[lang=en] .bts-unified :is(.section-title,.news-heading .section-title,#publications>.section-heading .section-title,.business-intro .section-title,.center-heading .section-title,.financial-home h2){font:700 32px/1.3 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.section-tag,.financial-home>.section-tag,.center-heading>span,.financial-period,.home-shortcuts>a,.home-shortcuts a>span){font-size:18px}
+html[lang=en] .bts-unified :is(.outline-button,.gradient-button,.finance-actions .outline-button,.mega-panel .outline-button,.report-tabs button,.news-filters button){font:500 16px/1.4 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.quick-card h3,.bts-resource-layout .quick-card h3,.bts-reports .annual-card h3,.news-card h3,.business-panel h3){font:700 22px/1.4 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.quick-card>span,.bts-resource-layout .quick-card>span,.quarter-ribbon a,.ir-bottom p,.body-large,.business-intro>p,.center-heading>p,.financial-home .metric span:not(.glass-icon),.contact-tile p,.contact-tile>span,.bts-footer .more,.bts-footer .footer-bottom,#esg-caption,.inner-breadcrumb,.inner-station,.inner-content-link,.chapter-navigation>span,.chapter-picker){font:400 16px/1.6 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.news-card time,.read-more){font-size:14px}
+html[lang=en] .bts-unified .esg-tabs button>span{font:500 20px/1.4 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.contact-tile h2,.inner-hero h1){font:700 32px/1.3 Mulish,sans-serif}
+html[lang=en] .bts-unified :is(.bts-footer .footer-grid h3,.page-card h3,.source-body h3,.source-body .card-title){font:700 22px/1.4 Mulish,sans-serif}
+html[lang=en] .bts-unified .page-layout>.source-body,html[lang=en] .bts-unified .source-body p,html[lang=en] .bts-unified .source-body li,html[lang=en] .bts-unified .source-body table,html[lang=en] .bts-unified .page-card p{font:400 16px/1.65 Mulish,sans-serif}
+html[lang=en] .bts-unified .source-body .chapter-lead{font-size:18px!important}
+html[lang=en] .bts-unified .source-body h2{font:700 28px/1.35 Mulish,sans-serif}
+html[lang=en] .bts-unified .source-body h4,html[lang=en] .bts-unified .source-body h5{font:700 20px/1.4 Mulish,sans-serif}
+@media(min-width:1101px){.bts-unified .site-header,.bts-unified .site-header.scrolled{padding-inline:3%;column-gap:24px}.bts-unified .site-header .main-nav,.bts-unified .site-header.scrolled .main-nav{gap:clamp(8px,1vw,20px)}}
+@media(max-width:760px){.bts-unified .site-header .header-top,.bts-unified .site-header.scrolled .header-top{height:87px}.bts-unified.inner-page{padding-top:87px}.bts-unified .site-header.mobile-open .main-nav{max-height:calc(100svh - 87px)}html[lang=en] .bts-unified .main-nav>button,html[lang=en] .bts-unified .main-nav>.nav-direct{font-size:16px}.bts-unified .hero h1{font-size:48px}.bts-unified .section-title,.bts-unified .financial-home h2{font-size:34px}html[lang=en] .bts-unified .hero h1{font-size:48px}}
+
+@media(max-width:1399px){
+ .bts-unified .site-header,.bts-unified .site-header.scrolled{display:block;height:auto;padding:0}
+ .bts-unified .site-header .header-top,.bts-unified .site-header.scrolled .header-top{display:flex;position:relative;align-items:center;justify-content:flex-start;height:87px;padding:0 3%}
+ .bts-unified .site-header .header-tools{display:flex;position:absolute;right:3%;top:50%;transform:translateY(-50%);gap:16px}
+ .bts-unified .site-header .menu-toggle{display:block;border:0;background:transparent;font-size:23px;padding:0}
+ .bts-unified .site-header .main-nav,.bts-unified .site-header.scrolled .main-nav{display:none;height:auto;max-height:calc(100svh - 87px);overflow-y:auto;gap:0;margin:0;padding:15px 3%;background:white;color:var(--ink)}
+ .bts-unified .site-header.mobile-open .main-nav{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;width:100%}
+ .bts-unified .main-nav>button,.bts-unified .main-nav>.nav-direct{flex-shrink:0;width:100%;padding:15px 0;text-align:left;border-bottom:1px solid #e6eaf0}
+ .bts-unified .main-nav>button:after{content:'+';float:right;color:var(--blue);font-size:20px}
+ .bts-unified .main-nav>button[aria-expanded=true]:after{content:'−'}
+ .bts-unified .main-nav>.mega-panel{display:block;width:100%;max-width:none;flex-shrink:0;padding:15px 20px}
+ .bts-unified .main-nav>.mega-panel>div:first-child{display:none}
+ .bts-unified .main-nav>.mega-panel .mega-links{width:100%}
+ .bts-unified.inner-page{padding-top:87px}
 }

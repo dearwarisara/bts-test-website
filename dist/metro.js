@@ -1,6 +1,6 @@
 const pageLang=document.documentElement.lang==='en'?'en':'th';
 const header=document.querySelector('.site-header'),nav=document.querySelector('.main-nav'),shell=document.querySelector('.mega-shell'),menuToggle=document.querySelector('.menu-toggle');
-const mobile=matchMedia('(max-width:760px)'),reduced=matchMedia('(prefers-reduced-motion:reduce)');
+const mobile=matchMedia('(max-width:1399px)'),reduced=matchMedia('(prefers-reduced-motion:reduce)');
 let closeTimer,activeMenu=null;
 function closeMega(){clearTimeout(closeTimer);document.querySelectorAll('.mega-panel').forEach(p=>{p.hidden=true;if(p.parentElement!==shell)shell.append(p)});nav.querySelectorAll('[data-menu]').forEach(b=>b.setAttribute('aria-expanded','false'));header.classList.remove('has-menu');activeMenu=null}
 function openMega(button){clearTimeout(closeTimer);const key=button.dataset.menu;if(activeMenu===key)return;closeMega();activeMenu=key;button.setAttribute('aria-expanded','true');const panel=document.querySelector(`#mega-${key}`);panel.hidden=false;if(mobile.matches)button.after(panel);header.classList.add('has-menu')}
