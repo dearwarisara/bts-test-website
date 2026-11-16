@@ -1,0 +1,59 @@
+"""Apply Plan B-inspired presentation while preserving BTS content and fonts."""
+from pathlib import Path
+from bs4 import BeautifulSoup
+import re
+R=Path(__file__).parent;D=R/'dist'
+for file in D.rglob('*.html'):
+ source=file.read_text(encoding='utf-8-sig')
+ home=file in (D/'index.html',D/'th/home/index.html',D/'en/home/index.html')
+ if home:
+  s=BeautifulSoup(source,'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
+  hero=s.select_one('.hero')
+  if hero and not hero.select_one('.hero-sticky'):
+   stage=s.new_tag('div',attrs={'class':'hero-sticky'});back=s.new_tag('div',attrs={'class':'hero-backdrop'});image=s.new_tag('img',src='https://www.btsgroup.co.th/storage/bilboard/banner-masstransit-v2.jpg',alt='');back.append(image);stage.append(back)
+   screen=s.new_tag('div',attrs={'class':'hero-screen'})
+   for n in list(hero.contents):screen.append(n.extract())
+   stage.append(screen);hero.append(stage)
+  title=hero.select_one('h1') if hero else None
+  if title:
+   title.clear()
+   for line in ('Borderless Transform','Solutions'):
+    span=s.new_tag('span');span.string=line;title.append(span)
+  main=s.main;financial=s.select_one('.financial-home');pub=s.select_one('#publications');news=s.select_one('#news');shortcuts=s.select_one('.home-shortcuts')
+  if financial and shortcuts:shortcuts.insert_after(financial.extract())
+  if financial and pub:financial.insert_after(pub.extract())
+  if pub and news:pub.insert_after(news.extract())
+  if pub and not pub.select_one('.publication-body'):
+   body=s.new_tag('div',attrs={'class':'publication-body'})
+   reports=pub.select_one('.bts-reports');resources=pub.select_one('.ir-layout');bottom=pub.select_one('.ir-bottom')
+   if reports:
+    tabs=s.new_tag('div',attrs={'class':'report-tabs','role':'group','aria-label':'Reports' if lang=='en' else 'รายงาน'})
+    for i,label in enumerate(('Annual Report','Sustainability Report') if lang=='en' else ('รายงานประจำปี','รายงานความยั่งยืน')):
+     button=s.new_tag('button',attrs={'data-report-tab':str(i),'aria-pressed':'true' if i==0 else 'false','class':'active' if i==0 else ''});button.string=label;tabs.append(button)
+    reports.insert(0,tabs)
+    for i,card in enumerate(reports.select('.annual-card')):card['data-report-card']=str(i)
+    body.append(reports.extract())
+   if resources:body.append(resources.extract())
+   if bottom:body.append(bottom.extract())
+   pub.append(body)
+  if not s.select_one('.planb-contact'):
+   contact=s.new_tag('section',attrs={'class':'planb-contact container'})
+   entries=[('อีเมล์รับข่าวสาร','ติดตามข่าวสารและความเคลื่อนไหวของ BTS Group','สมัครรับข่าวสาร','information-inquiry/news-subscription','banner-about.jpg'),('ติดต่อนักลงทุนสัมพันธ์','ข้อมูลและช่องทางติดต่อฝ่ายนักลงทุนสัมพันธ์','ติดต่อเรา','information-inquiry/ir-contact','banner-ir.jpg')]
+   if lang=='en':entries=[('Email Alerts','Stay connected with the latest news from BTS Group.','Subscribe','information-inquiry/news-subscription','banner-about.jpg'),('IR Contact','Investor information and IR contact channels.','Contact Us','information-inquiry/ir-contact','banner-ir.jpg')]
+   for i,(heading,desc,cta,path,image) in enumerate(entries):
+    a=s.new_tag('a',href=f'/{lang}/investor-relations/{path}/',attrs={'class':'contact-tile contact-tile-'+str(i)})
+    img=s.new_tag('img',src='https://www.btsgroup.co.th/storage/banner/'+('banner-about.jpg' if i==0 else 'banner-ir.jpg'),alt='',loading='lazy');a.append(img)
+    h=s.new_tag('h2');h.string=heading;a.append(h)
+    p=s.new_tag('p');p.string=desc;a.append(p)
+    span=s.new_tag('span');span.string=cta+' ↗';a.append(span);contact.append(a)
+   main.append(contact)
+  source=str(s)
+ # A single stylesheet updates the shared shell and all content layouts.
+ source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=1"/></head>')
+ source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
+ if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=1"></script></body>')
+ if 'header-context' not in source:source=source.replace('<div class="header-top">','<div class="header-top"><span class="header-context">BTS GROUP</span>',1)
+ file.write_text(source,encoding='utf-8')
+print('Applied Plan B-inspired styling to all pages; BTS content and local routes preserved.')
+

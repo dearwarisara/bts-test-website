@@ -1,6 +1,6 @@
 # BTS Group website
 
-เว็บไซต์ BTS Group ภาษาไทยและอังกฤษ ใช้ฟอนต์ OzoneX และ Mulish ของ BTS พร้อมเอกลักษณ์ขาว–น้ำเงิน–แดง เส้นราง และจุดเชื่อมต่อสถานี
+เว็บไซต์ BTS Group ภาษาไทยและอังกฤษ ใช้ฟอนต์ OzoneX และ Mulish ของ BTS พร้อมข้อมูลและโลโก้ BTS ในแนวทางการจัดวางจาก Plan B Investor Relations
 
 ## เปิดเว็บไซต์
 
@@ -39,6 +39,9 @@ audit_bts_site.py ตรวจทุกหน้า ทั้งโครงส�
 
 ## โครงสร้างสำคัญ
 
+- dist/planb-style.css: เลย์เอาต์ส่วนกลาง พื้นน้ำเงินไล่เฉด มุมโค้ง และ responsive layout ตามแนวอ้างอิง Plan B
+- dist/planb-motion.js: วิดีโอย่อกรอบตามการเลื่อนหน้า รองรับ reduced motion และแท็บรายงาน
+- apply_planb_style.py: ใช้สไตล์ปัจจุบันหลังสร้างข้อมูลและเมนู BTS
 - dist/metro.css และ dist/metro.js: โครงสร้างและการทำงานร่วมกันของเว็บไซต์
 - dist/bts-brand.css: ฟอนต์ BTS สี และรายละเอียดเอกลักษณ์
 - dist/bts-inner.css: หัวเว็บร่วม หน้าภายใน ตาราง เอกสาร และ responsive layout
@@ -53,4 +56,4 @@ audit_bts_site.py ตรวจทุกหน้า ทั้งโครงส�
 
 Push main แล้ว GitHub Actions จะตรวจและจัดแพ็กด้วย build-pages.mjs ก่อนเผยแพร่ GitHub Pages อัตโนมัติ โดยปรับเส้นทางไฟล์ให้รองรับ /bts-test-website/
 
-ข้อมูลและสื่ออ้างอิง https://www.btsgroup.co.th/th/home ส่วนแนวทางการจัดวางเริ่มต้นอ้างอิง https://www.metrosystems.co.th/en/home
+ข้อมูลและสื่ออ้างอิง https://www.btsgroup.co.th/th/home ส่วนแนวทางการจัดวางปัจจุบันอ้างอิง https://investor.planbmedia.co.th/en/home โดยคงฟอนต์ โลโก้ ชื่อเมนู หัวข้อ และข้อมูลของ BTS

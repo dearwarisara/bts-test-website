@@ -160,3 +160,6 @@ for file in D.rglob('*.html'):
    a.attrs.pop('target',None);a.attrs.pop('rel',None)
  file.write_text(str(soup),encoding='utf-8');changed+=1
 print(f'Applied BTS shell to {changed} pages; localized {rewritten} links')
+
+# Apply the selected presentation skin after restoring BTS content and menus.
+if (R/'apply_planb_style.py').exists():subprocess.run([sys.executable,str(R/'apply_planb_style.py')],check=True)
