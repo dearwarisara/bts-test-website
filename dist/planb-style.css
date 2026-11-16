@@ -56,3 +56,19 @@
 .bts-unified .inner-hero{background:linear-gradient(110deg,#024577,#02559b)}
 .bts-unified .sustainability{background:linear-gradient(#fff,#eaeff7)}
 .bts-unified .bts-reports .annual-card{background:linear-gradient(115deg,#024577,#3d7eae 55%,#eaeff7)}
+
+/* Opaque white header in every navigation and scroll state. */
+.bts-unified .site-header,
+.bts-unified .site-header.scrolled,
+.bts-unified .site-header.has-menu,
+.bts-unified .site-header.mobile-open,
+.bts-unified.inner-page .site-header{background:#fff;color:var(--ink);backdrop-filter:none;border-bottom:1px solid #e3e9f0;box-shadow:0 2px 12px #23324e08}
+.bts-unified .site-header .language,
+.bts-unified .site-header.scrolled .language{color:#738da3}
+.bts-unified .site-header .language b,
+.bts-unified .site-header.scrolled .language b,
+.bts-unified .site-header.has-menu .language b,
+.bts-unified .site-header.mobile-open .language b{color:var(--blue)}
+.bts-unified .site-header .search-open,
+.bts-unified .site-header.scrolled .search-open{background:#f5f8fb;border-color:#d4dfe9;color:var(--blue)}
+.bts-unified .site-header .menu-toggle{color:var(--blue)}

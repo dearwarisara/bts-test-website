@@ -55,7 +55,7 @@ for file in D.rglob('*.html'):
   source=str(s)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=3"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=4"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
  if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
  if 'header-context' not in source:source=source.replace('<div class="header-top">','<div class="header-top"><span class="header-context">BTS GROUP</span>',1)
