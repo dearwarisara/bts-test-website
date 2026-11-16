@@ -12,6 +12,7 @@ for f in D.rglob('*.html'):
  if not s.body or 'inner-page' not in s.body.get('class',[]):continue
  route='/'+f.parent.relative_to(D).as_posix();hero=s.select_one('.inner-hero,.history-intro')
  if not hero:errors.append([route,'Missing cover']);continue
+ if s.select_one('.chapter-navigation'):errors.append([route,'Removed chapter navigation must not return'])
  img=hero.select_one('.inner-cover img,.history-cover-image');h=hero.select_one('h1')
  if not h or not h.get_text(strip=True):errors.append([route,'Missing page title'])
  if not s.select_one('link[href^="/bts-covers.css"]'):errors.append([route,'Missing shared cover stylesheet'])

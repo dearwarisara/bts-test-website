@@ -5,6 +5,10 @@ import re,subprocess,sys
 R=Path(__file__).parent;D=R/'dist'
 for file in D.rglob('*.html'):
  source=file.read_text(encoding='utf-8-sig')
+ if 'chapter-navigation' in source:
+  shell=BeautifulSoup(source,'html.parser')
+  for node in shell.select('.chapter-navigation'):node.decompose()
+  source=str(shell)
  home=file in (D/'index.html',D/'th/home/index.html',D/'en/home/index.html')
  if home:
   s=BeautifulSoup(source,'html.parser');lang='en' if s.html.get('lang')=='en' else 'th'
