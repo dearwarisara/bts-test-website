@@ -20,7 +20,7 @@ for file in D.rglob('*.html'):
    hero['aria-label']='BTS Group corporate video' if lang=='en' else 'วิดีโอแนะนำ BTS Group'
    copy=s.new_tag('div',attrs={'class':'hero-brand-copy'})
    title=s.new_tag('h1',attrs={'aria-label':'Borderless Transform Solutions'})
-   for line in ('Borderless Transform','Solutions'):
+   for line in ('Borderless','Transform','Solutions'):
     span=s.new_tag('span');span.string=line;title.append(span)
    copy.append(title);hero.append(copy)
 
@@ -53,12 +53,13 @@ for file in D.rglob('*.html'):
     span=s.new_tag('span');span.string=cta+' ↗';a.append(span);contact.append(a)
    main.append(contact)
   source=str(s)
+ source=re.sub(r'<span class="header-context">BTS GROUP</span>','',source)
  # A single stylesheet updates the shared shell and all content layouts.
  source=re.sub(r'<link[^>]+href="/planb-style\.css[^\"]*"[^>]*>','',source)
- source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=4"/></head>')
+ source=source.replace('</head>','<link rel="stylesheet" href="/planb-style.css?v=5"/></head>')
  source=re.sub(r'<script[^>]+src="/planb-motion\.js[^\"]*"[^>]*>\s*</script>','',source)
  if home:source=source.replace('</body>','<script type="module" src="/planb-motion.js?v=2"></script></body>')
- if 'header-context' not in source:source=source.replace('<div class="header-top">','<div class="header-top"><span class="header-context">BTS GROUP</span>',1)
+
  file.write_text(source,encoding='utf-8')
 print('Applied Plan B-inspired styling to all pages; BTS content and local routes preserved.')
 
