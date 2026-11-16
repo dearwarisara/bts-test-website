@@ -94,3 +94,5 @@ print('Applied Plan B-inspired styling to all pages; BTS content and local route
 
 
 subprocess.run([sys.executable,str(R/'repair_cards.py')],check=True)
+
+subprocess.run([sys.executable,str(R/'redesign_history.py')],check=True)

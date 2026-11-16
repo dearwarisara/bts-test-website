@@ -9,6 +9,8 @@ card_count=0;card_layout_errors=[]
 files=sorted(D.rglob('*.html'));issues=[];missing=Counter();external=Counter();content_mismatch=[];inner=[]
 def text(article):
  if article is None:return None
+ history=article.select('.history-event-copy')
+ if history:return [(n.find_parent(attrs={'data-year':True}).get('data-year'),' '.join(' '.join(n.stripped_strings).split())) for n in history]
  for n in article.select('.source-attribution,.page-card'):n.decompose()
  return ' '.join(' '.join(article.stripped_strings).split())
 for f in files:
@@ -26,7 +28,7 @@ for f in files:
   if h.startswith('/') and not h.startswith('//') and not Path(u.path).suffix:
    p=D/u.path.lstrip('/')/'index.html';q=D/unquote(u.path.lstrip('/'))/'index.html'
    if not p.exists() and not q.exists():missing[h]+=1
- if s.select_one('.inner-hero'):inner.append((f,text(s.select_one('.source-body'))))
+ if s.select_one('.inner-hero,.history-intro'):inner.append((f,text(s.select_one('.source-body'))))
 specs=[('HEAD:'+f.relative_to(R).as_posix()) for f,_ in inner]
 batch=subprocess.run(['git','cat-file','--batch'],cwd=R,input=('\n'.join(specs)+'\n').encode(),stdout=subprocess.PIPE,check=True).stdout
 pos=0;checked=0
