@@ -88,3 +88,14 @@ html[lang=th] .history-timeline-page .source-body .timeline-art figcaption{font:
 
 .bts-timeline .timeline-rail{bottom:172px}
 @media(max-width:760px){.bts-timeline .timeline-rail{bottom:152px}}
+
+/* Photographic cover: one clear title, without secondary navigation. */
+.history-timeline-page .history-intro{position:relative;isolation:isolate;overflow:hidden;min-height:390px;padding:34px 5% 64px;background:#10263c;border:0;display:flex;flex-direction:column;justify-content:space-between}
+.history-cover-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.history-intro:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,23,40,.83),rgba(7,23,40,.48) 62%,rgba(7,23,40,.3)),linear-gradient(0deg,rgba(7,23,40,.25),transparent)}
+.history-intro-top{margin-bottom:64px}
+.history-intro-grid{display:block}
+.history-timeline-page .history-intro h1{color:#fff}
+.history-timeline-page .history-intro p,.history-breadcrumb,.history-kicker,.history-breadcrumb a{color:#e2eaf2}
+.history-timeline-page .page-layout{padding-top:52px}
+@media(max-width:760px){.history-timeline-page .history-intro{min-height:300px;padding:24px 20px 38px}.history-intro-top{margin-bottom:56px}.history-timeline-page .page-layout{padding-top:28px}.history-cover-image{object-position:60% center}}
