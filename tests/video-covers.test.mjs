@@ -20,6 +20,9 @@ for(const lang of ['th','en']){
   assert.doesNotMatch(video,/\bcontrols\b/);
   assert.doesNotMatch(html,/class="ir-banner"/);
   assert.match(html,/class="cover-video-toggle"/);
+  assert.match(html,/data-ir-documents/);
+  assert.ok(html.includes('/ir-home.css?v=1'));
+  assert.doesNotMatch(html,/class="modal fade/);
   assert.ok(html.includes('/cover-video.js?v=1'));
  });
 }
