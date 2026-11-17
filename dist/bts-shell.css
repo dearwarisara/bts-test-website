@@ -66,3 +66,14 @@ html[lang=en] .bts-unified .site-header[data-navigation-version="3"] .official-t
 @media(prefers-reduced-motion:reduce){.bts-unified .site-header[data-navigation-version="3"] .nav-chevron{transition:none}}
 @media(max-width:1399px){html:has(.site-header.mobile-open),body.bts-unified:has(.site-header.mobile-open){overflow:hidden}.bts-unified .site-header.mobile-open .main-nav{overscroll-behavior:contain}}
 .bts-unified .site-header[data-navigation-version="3"] .official-tree a>span:first-child{font:inherit;color:inherit}
+/* Side-by-side level 2 / level 3: opening a branch never pushes other categories down. */
+.bts-unified .site-header[data-navigation-version="3"] .official-tree{position:relative;min-height:510px}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree>.nav-index-columns{display:block;width:46%;padding-right:20px;border-right:1px solid #dce6ee}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree .nav-branch>ul{position:absolute;top:0;left:49%;right:0;max-height:510px;overflow:auto;margin:0;padding:8px 18px;background:#f4f8fc;border:0;border-left:2px solid #02559b;border-radius:0 10px 10px 0}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree :is(a,summary){min-height:40px;padding:9px 8px;font-size:22px}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree .nav-chevron{transform:rotate(-45deg)}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree details[open]>summary>.nav-chevron{transform:rotate(-45deg)}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree .nav-branch a{min-height:42px;font-size:21px}
+@media(max-width:650px){.bts-unified .site-header[data-navigation-version="3"] .main-nav>.mega-panel{padding:8px 0 18px}.bts-unified .site-header[data-navigation-version="3"] .official-tree>.nav-index-columns{width:44%;padding-right:8px}.bts-unified .site-header[data-navigation-version="3"] .official-tree .nav-branch>ul{left:46%;padding:5px 9px}.bts-unified .site-header[data-navigation-version="3"] .official-tree :is(a,summary){font-size:20px;gap:8px;padding:9px 4px}.bts-unified .site-header[data-navigation-version="3"] .official-tree .nav-branch a{font-size:20px}.bts-unified .site-header[data-navigation-version="3"] .official-tree{min-height:620px}}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree:not(:has(.nav-branch)){min-height:0}
+.bts-unified .site-header[data-navigation-version="3"] .official-tree:not(:has(.nav-branch))>.nav-index-columns{display:grid;grid-template-columns:1fr 1fr;width:100%;padding:0;border:0;gap:24px}

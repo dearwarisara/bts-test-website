@@ -38,3 +38,5 @@ const search=document.querySelector('#search-dialog'),input=document.querySelect
 
 document.querySelector('.search-form').addEventListener('submit',e=>{e.preventDefault();clearTimeout(searchTimer);findPages(input.value.trim(),++searchVersion)});
 
+// Keep one side panel open; native summaries retain Enter / Space activation.
+header.querySelectorAll('.official-tree details.nav-branch').forEach(branch=>branch.addEventListener('toggle',()=>{if(branch.open)branch.closest('.official-tree').querySelectorAll('details.nav-branch').forEach(other=>{if(other!==branch)other.open=false})}));

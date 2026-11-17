@@ -134,3 +134,18 @@ html[lang=en] .modern-dialog h6{font:600 14px/1.5 Mulish,sans-serif}
 html[lang=en] .modern-inner[data-modern-group=contact] .source-body .btn-secondary{font:500 14px/1.4 Mulish,sans-serif}
 .modern-inner:not([data-modern-kind=history]) .source-body :is(input,select,textarea){max-width:100%;box-sizing:border-box;font-family:inherit;border:1px solid #cbdce8;border-radius:6px;padding:12px 14px;background:#fff;color:#23324e}
 .modern-inner:not([data-modern-kind=history]) .source-body :is(input,select,textarea):focus-visible{outline:2px solid #02559b;outline-offset:2px}
+/* Compact directory rows: no oversized decorative circles or faded labels. */
+.modern-inner .source-body .chapter-destination{display:grid;grid-template-columns:32px minmax(0,1fr) 36px;align-items:center;gap:18px;text-align:left;min-height:78px;padding:18px 22px;margin:0;border:0;border-bottom:1px solid #dce6ee;border-radius:0;background:#fff;opacity:1;transform:none}
+.modern-inner .source-body .chapter-destination h2{margin:0!important;font-size:28px!important;line-height:1.4!important;color:#02559b;opacity:1;transform:none;text-align:left}
+.modern-inner .source-body .chapter-destination .destination-index{font:500 12px/1.4 Mulish,sans-serif;color:#8094a8;opacity:1}
+.modern-inner .source-body .chapter-destination .destination-arrow{position:static;display:grid;place-items:center;width:36px;height:36px;margin:0;border:1px solid #dce6ee;border-radius:50%;font:400 18px/1 Mulish,sans-serif;color:#02559b;opacity:1;transform:none}
+.modern-inner .source-body .chapter-destination:hover{background:#f4f8fc}
+html[lang=en] .modern-inner .source-body .chapter-destination h2{font-size:19px!important}
+.modern-inner .related-pages{padding-block:38px}
+.modern-inner .related-pages .page-card-body{min-height:130px}
+@media(max-width:650px){.modern-inner .source-body .chapter-destination{grid-template-columns:24px minmax(0,1fr) 30px;gap:10px;padding:16px 8px}.modern-inner .source-body .chapter-destination h2{font-size:24px!important}.modern-inner .source-body .chapter-destination .destination-arrow{width:30px;height:30px}}
+.modern-inner .source-body .chapter-destination{display:grid!important;text-align:left!important;min-height:78px!important;padding:18px 22px!important;grid-template-columns:32px minmax(0,1fr) 36px!important;opacity:1!important}
+.modern-inner .source-body .chapter-destination:before,.modern-inner .source-body .chapter-destination:after{display:none!important}
+.modern-inner .source-body .chapter-destination>*{grid-column:auto!important;position:static!important;opacity:1!important;transform:none!important}
+.modern-inner .source-body .chapter-destination h2{text-align:left!important}
+.modern-inner .source-body :is(table,tbody,tr,td,a,[data-aos]){opacity:1;filter:none}
