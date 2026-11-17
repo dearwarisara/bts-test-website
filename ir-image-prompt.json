@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: ads-marketing. Asset type: editorial background for BTS Group investor relations Annual Report feature card. Create a premium architectural visualization of Bangkok connected by elevated urban electric rail, at blue hour. A realistic modern white and silver metro train with restrained blue and red livery moves on an elegant elevated curved rail viaduct across the lower right foreground toward a sophisticated Bangkok skyline, river and warm-lit office towers in the upper right. Strong depth, beautifully proportioned realistic architecture, cinematic architectural photography, physical materials, subtle long exposure light trails, refined midnight navy, cobalt, ivory and tiny red accents. Landscape 3:2 composition. Keep the LEFT 45 percent calm deep navy evening sky and atmospheric shadows for white HTML title overlay; put most architectural detail to the right and lower right. This is a conceptual brand illustration, not documentary. No invented landmarks dominating, no fantasy technology, no futuristic spaceship, no toy aesthetic, no miniatures, no cartoon, no infographic, no chart, no numbers, no letters, no logos, no text, no watermark. Full bleed edge-to-edge, crisp refined imagery with natural restrained lighting, not neon or cyberpunk.",
+  "original": "output/imagegen/ir/connected-city-v1.png",
+  "web_asset": "dist/assets/ir/connected-city-v1.webp",
+  "width": 1536,
+  "height": 1024,
+  "usage": "Decorative concept illustration on the Annual Report feature card. Not a documentary photo."
+}

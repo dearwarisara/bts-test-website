@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync} from 'node:fs';
+test('IR concept illustration is available to the deployed pages',()=>{
+ assert.ok(existsSync(new URL('../dist/assets/ir/connected-city-v1.webp',import.meta.url)));
+});
 for(const path of ['index.html','th/home/index.html','en/home/index.html']){
  test(`${path}: homepage uses the original BTS tiger film`,()=>{
   const html=readFileSync(new URL('../dist/'+path,import.meta.url),'utf8');
@@ -21,7 +24,7 @@ for(const lang of ['th','en']){
   assert.doesNotMatch(html,/class="ir-banner"/);
   assert.match(html,/class="cover-video-toggle"/);
   assert.match(html,/data-ir-documents/);
-  assert.ok(html.includes('/ir-home.css?v=1'));
+  assert.ok(html.includes('/ir-home.css?v=2'));
   assert.doesNotMatch(html,/class="modal fade/);
   assert.ok(html.includes('/cover-video.js?v=1'));
  });

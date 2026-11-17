@@ -10,6 +10,14 @@ for lang in ['th','en']:
  for n,cls in zip(sections,['ir-results','ir-publications','ir-news-events','ir-contact-section']):
   n['class']=list(dict.fromkeys(n.get('class',[])+[cls]))
   if cls=='ir-contact-section':n['class']=[c for c in n['class'] if c!='container']
+ root.select_one('.ir-results')['id']='ir-results'
+ hero=s.select_one('.video-cover>.container')
+ for n in s.select('.ir-cover-link,.ir-cover-eyebrow,.ir-art-caption'):n.decompose()
+ eyebrow=s.new_tag('span',attrs={'class':'ir-cover-eyebrow'});eyebrow.string='BTS GROUP / INVESTOR RELATIONS';hero.select_one('h1').insert_before(eyebrow)
+ jump=s.new_tag('a',href='#ir-results',attrs={'class':'ir-cover-link'});jump.string='Explore investor information' if lang=='en' else 'ข้อมูลสำหรับนักลงทุน'
+ arrow=s.new_tag('span',attrs={'aria-hidden':'true'});arrow.string='↓';jump.append(arrow);hero.append(jump)
+ feature=root.select('.ir-publications .card--download')[1]
+ caption=s.new_tag('small',attrs={'class':'ir-art-caption'});caption.string='Concept illustration · AI' if lang=='en' else 'ภาพประกอบแนวคิด · AI';feature.append(caption)
  # Replace the nonfunctional Bootstrap modal with a native, keyboard-accessible disclosure.
  for card in root.select('.ir_home__download'):
   modal=card.select_one('.modal')
@@ -32,6 +40,6 @@ for lang in ['th','en']:
   desc=card.select_one('p');heading=card.select_one('h3')
   if desc and heading and desc.get_text(strip=True)==heading.get_text(strip=True):desc.decompose()
  for n in s.select('link[href^="/ir-home.css"]'):n.decompose()
- s.head.append(s.new_tag('link',rel='stylesheet',href='/ir-home.css?v=1'))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/ir-home.css?v=2'))
  f.write_text(str(s),encoding='utf-8')
  print(lang+': redesigned IR overview and replaced broken download modal')

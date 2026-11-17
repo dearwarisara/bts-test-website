@@ -92,3 +92,4 @@ Push main แล้ว GitHub Actions จะตรวจและจัดแพ
 - history-image-prompts.json เก็บพรอมป์ต์ที่ใช้จริง ชื่อไฟล์ และขนาดภาพ ต้นฉบับ PNG เก็บใน output/imagegen/history/ ภายใน workspace; หน้าเว็บใช้ WebP ที่ความละเอียดเดิมใน dist/assets/history-generated/ รวมประมาณ 6.6 MB และโหลดแบบ lazy
 - เส้นกลางเป็นรางคู่พร้อมขบวนรถ BTS มุมมองจากด้านบนแบบ SVG จำนวน 3 ตู้ ตัวรถเคลื่อนตามความคืบหน้าการเลื่อนหน้า
 - redesign_ir_home.py / dist/ir-home.css: หน้าหลักนักลงทุนสัมพันธ์ใช้กริดกราฟและเอกสารที่อ่านง่าย ไอคอนขนาดเล็ก การ์ดรายงานเท่ากัน และรายการงบการเงินแบบ details ที่เปิดด้วยคีย์บอร์ดได้ แทน Bootstrap modal ที่แสดงผิดตำแหน่ง โดยคงข้อมูลและลิงก์เอกสารเดิม
+- IR modern presentation: พื้นข้อมูลการเงินสีน้ำเงินเข้ม และการ์ดรายงานประจำปีที่ใช้ภาพแนวคิดรถไฟฟ้าและเมืองยามเย็น สร้างด้วย built-in image_gen; พรอมป์ต์และตำแหน่งไฟล์เก็บใน ir-image-prompt.json ภาพเว็บ dist/assets/ir/connected-city-v1.webp ขนาดประมาณ 249 KB และต้นฉบับ output/imagegen/ir/connected-city-v1.png
