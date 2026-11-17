@@ -1,0 +1,59 @@
+{
+  "viewport_limit": "Requested 1440 and 390 but browser remained at 1280. Mobile revalidation not completed in this run.",
+  "desktop_results": [
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/home/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/en/home/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/about/our-ambition/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/about/board-of-directors/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/en/our-business/move/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/sustainability/social-sustainability/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/investor-relations/home/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/en/investor-relations/document/yearly-reports/",
+      "width": 1280
+    },
+    {
+      "clipped": 0,
+      "overflow": false,
+      "path": "/th/contact/",
+      "width": 1280
+    }
+  ]
+}

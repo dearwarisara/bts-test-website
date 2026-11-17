@@ -1,0 +1,61 @@
+/* BTS corporate editorial system — references reviewed 17 November 2026. */
+.bts-unified{--editorial-line:#dbe5ed;--editorial-paper:#f4f7fa}
+.bts-unified .business{padding-top:12px;padding-bottom:72px}
+.bts-unified .business-intro{padding-top:48px;padding-bottom:32px;align-items:end}
+.bts-unified .business-panels{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:246px 246px;gap:20px}
+.bts-unified .business-panel{min-height:0;height:100%;border-radius:12px;align-items:flex-start;justify-content:flex-end;padding:32px;text-align:left;overflow:hidden}
+.bts-unified .business-panel:first-child{grid-row:1/3}
+.bts-unified .business-panel:after{background:linear-gradient(180deg,transparent 20%,#05223d26 45%,#05223de8)}
+.bts-unified .business-panel:first-child h3{font-size:40px}
+.bts-unified .business-panel h3:before{width:32px;height:2px;margin-bottom:16px;background:#ed2846}
+.bts-unified .business-panel .business-description{max-width:85%;color:#edf5fc}
+.bts-unified .business-panel .panel-arrow{right:26px;bottom:27px;width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffffff80;border-radius:50%;font-size:18px}
+.bts-unified .financial-home{position:relative;width:100%;max-width:none;padding:64px max(5%,calc((100% - 1280px)/2));background:#083453;color:white;border-radius:0}
+.bts-unified .financial-home:before{content:'';position:absolute;top:0;left:5%;width:42px;height:3px;background:#e92543}
+.bts-unified .financial-home :is(.section-tag,h2,.metric strong){color:#fff}
+.bts-unified .financial-home :is(.financial-period,.metric span:not(.glass-icon)){color:#c6d8e6}
+.bts-unified .financial-home .metrics{border:0;box-shadow:none;background:transparent;border-radius:0;padding:12px 0 24px;gap:50px}
+.bts-unified .financial-home .metric{background:transparent;border-color:#ffffff30;padding:24px 0 0}
+.bts-unified .financial-home .metric strong{font-weight:300}
+.bts-unified .financial-home .finance-actions{margin-top:18px}
+.bts-unified .financial-home .outline-button{background:#fff;color:#02559b;border-radius:6px}
+.bts-unified .financial-home .outline-button:hover{background:#e92543;color:white}
+.bts-unified .news{padding-block:64px 72px}
+.bts-unified .news-image{border-radius:10px;overflow:hidden;aspect-ratio:16/10}
+.bts-unified .news-card{padding-bottom:8px;border-bottom:1px solid var(--editorial-line)}
+.bts-unified .news-card h3{margin-top:16px;color:#173d5b}
+.bts-unified .read-more{border:0;justify-content:space-between}
+.bts-unified .news-image img{transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.bts-unified .news-card:hover .news-image img{transform:scale(1.035)}
+.bts-unified .sustainability{background:#f3f7fa;padding-block:64px 72px}
+.bts-unified .esg-layout{gap:48px}
+.bts-unified .esg-tabs a{border-radius:6px;background:transparent;border-bottom:1px solid #dce6ee;margin:0;min-height:100px;padding:22px 16px}
+.bts-unified .esg-tabs a.active{border-left-color:#e92543;box-shadow:none}
+.bts-unified #esg-link{border-radius:12px}
+.bts-unified .quick-card{border-radius:10px;box-shadow:none;border:1px solid #dce6ee;min-height:210px}
+.bts-unified .annual-card{border-radius:10px}
+.bts-unified .contact-tile{border-radius:12px;min-height:320px}
+.bts-unified .contact-tile>p,.bts-unified .contact-tile>span{opacity:1;transform:none}
+/* Inner pages: content-specific layouts over one consistent spacing and surface system. */
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-card-grid{gap:24px}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.card-default,.card-download,.card-board,.card.card-content){border-radius:10px;box-shadow:none;border-color:#dbe5ed}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card{border-radius:12px;overflow:hidden}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card img{transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card:hover img{transform:scale(1.025)}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.modern-section,section)>h2{padding-bottom:16px;border-bottom:1px solid #dbe5ed}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-emphasis{border-radius:12px;background:#0b3654!important;box-shadow:none}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-emphasis h2{border:0}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(th,td){border-color:#e2e9ef}
+.modern-inner:not([data-modern-kind=history]) .source-body th{background:#0b3654}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-footer{border-top:1px solid #e2e9ef}
+.ir-home-page .ir-results{background:#f1f6f9}
+.ir-home-page .ir_home__download{border-radius:6px;padding:18px 22px;min-height:82px;border:0;border-bottom:1px solid #d8e4ed}
+.ir-home-page .ir_home__chart>.row{gap:1px;border-radius:10px;overflow:hidden;background:#dbe5ed}
+.ir-home-page .ir-publications{background:white}
+.ir-home-page .card--download{border-radius:10px;transition:border-color .25s,transform .25s}
+.ir-home-page .card--download:hover{border-color:#6c9cbe;transform:translateY(-3px)}
+.ir-home-page .ir-news-events{border-top:1px solid #dbe5ed}
+@media(max-width:760px){.bts-unified .business-panels{grid-template-columns:1fr;grid-template-rows:auto;width:calc(100% - 40px);gap:16px}.bts-unified .business-panel,.bts-unified .business-panel:first-child{grid-row:auto;min-height:280px;padding:24px}.bts-unified .business-panel:first-child{min-height:380px}.bts-unified .business-panel:first-child h3{font-size:32px}.bts-unified .financial-home{padding:42px 22px}.bts-unified .financial-home .metrics{gap:22px}.bts-unified .financial-home .finance-actions{gap:12px;flex-wrap:wrap}.bts-unified .sustainability{padding-block:42px 48px}.bts-unified .esg-layout{gap:28px}.bts-unified .esg-tabs a{min-height:82px;padding:16px 12px}.bts-unified .contact-tile{min-height:280px}.ir-home-page .ir_home__download{padding:17px 18px}}
+@media(prefers-reduced-motion:reduce){.bts-unified .news-image img,.modern-inner .source-body .modern-photo-card img,.ir-home-page .card--download{transition:none}}
+
+.bts-unified .financial-home .metric strong,.bts-unified .financial-home .metric strong.negative{color:#fff!important}.bts-unified .business-intro>p{color:#5b7186}

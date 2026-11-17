@@ -40,7 +40,7 @@ def footer(lang, nodes):
     def links(items):
         return ''.join(f'<a href="{escape(first(n))}">{escape(n["label"])}<span aria-hidden="true">↗</span></a>' for n in items)
     company = 'บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์<br>จำกัด (มหาชน)' if th else 'BTS Group Holdings<br>Public Company Limited'
-    address = '1000/9 อาคาร บีทีเอส วิชันนารี ปาร์ค – นอร์ท ทาวเวอร์ ชั้นที่ 34<br>ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพฯ 10900' if th else '1000/9 BTS Visionary Park – North Tower, 34th Floor<br>Phahonyothin Road, Chom Phon, Chatuchak, Bangkok 10900'
+    address = '1000/9 อาคาร บีทีเอส วิชันนารี ปาร์ค – เซาธ์ ทาวเวอร์ ชั้นที่ 33<br>ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพฯ 10900' if th else '1000/9 BTS Visionary Park – South Tower, 33rd Floor<br>Phahonyothin Road, Chom Phon, Chatuchak, Bangkok 10900'
     return f'''<footer class="bts-footer footer-modern">
       <div class="footer-signature"><span class="footer-eyebrow">BTS GROUP</span><p>Borderless <span>Transform</span> Solutions</p><a href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a></div>
       <div class="footer-main-grid">

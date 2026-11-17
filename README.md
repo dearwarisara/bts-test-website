@@ -96,3 +96,5 @@ Push main แล้ว GitHub Actions จะตรวจและจัดแพ
 - modernize_inner_pages.py / dist/bts-modern-inner.css: ธีมเดียวกันสำหรับหน้าภายในอื่น 997 หน้า แยกตามเนื้อหาธุรกิจ ข่าว บุคคล รายงาน และตาราง ใช้ภาพต้นฉบับตามหน้า คง OzoneX / Mulish และกราฟเดิม จำกัดขนาดไอคอน รองรับภาพแยกตามจอ และใช้ native dialog สำหรับรายการเอกสาร เก็บรายงานการปรับใน modern-inner-report.json โดย audit_bts_site.py ตรวจข้อความ ลิงก์ และลำดับภาพต้นฉบับครบทั้งเว็บ
 
 - refresh_shared_shell.py / dist/bts-shell.css: shared navy footer with grouped internal links and verified contact information; level-3 menus use native details/summary with the official hierarchy, current-page ancestors expanded, and keyboard navigation in metro.js. Applied after the content styles in the regeneration pipeline.
+
+- apply_editorial_design.py / dist/bts-editorial.css: BTS editorial layouts adapted from the seven reviewed corporate references. Source links and design decisions are recorded in reference-design-review.json. The original BTS content, font files and brand assets are preserved.

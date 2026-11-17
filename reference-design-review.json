@@ -1,0 +1,41 @@
+{
+  "reviewed": "2026-11-17",
+  "sources": [
+    {
+      "url": "https://www.ichitangroup.com/th/home",
+      "pattern": "Full-bleed film and large image-led storytelling"
+    },
+    {
+      "url": "https://www.metrosystems.co.th/th/home",
+      "pattern": "Corporate blue contrast and clear section headings"
+    },
+    {
+      "url": "https://www.ch-karnchang.co.th/th/home",
+      "pattern": "Documents, sustainability and governance grouped by purpose"
+    },
+    {
+      "url": "https://www.ttwplc.com/en/home",
+      "pattern": "Business-led content structure and restrained water-toned surfaces"
+    },
+    {
+      "url": "https://investor.sabina.co.th/en/home",
+      "pattern": "Clear financial, stock and publication hierarchy"
+    },
+    {
+      "url": "https://www.pttgcgroup.com/en/home",
+      "pattern": "Asymmetric editorial image composition"
+    },
+    {
+      "url": "https://investor.bangkokair.com/en/home",
+      "pattern": "Compact latest-document list with direct actions"
+    }
+  ],
+  "implementation": [
+    "BTS white header, original fonts, logos, film and content retained",
+    "MOVE featured image with MIX and MATCH stacked alongside",
+    "Navy financial chapter with high-contrast metrics",
+    "Shared report rows, restrained cards, media crops and spacing",
+    "Existing level-three side navigation retained"
+  ],
+  "assets": "All imagery remains BTS imagery; no reference logos, copy or media imported"
+}

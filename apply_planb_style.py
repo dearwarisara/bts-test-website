@@ -110,3 +110,5 @@ subprocess.run([sys.executable,str(R/'redesign_ir_home.py')],check=True)
 subprocess.run([sys.executable,str(R/'modernize_inner_pages.py')],check=True)
 
 subprocess.run([sys.executable,str(R/'refresh_shared_shell.py')],check=True)
+
+subprocess.run([sys.executable,str(R/'apply_editorial_design.py')],check=True)
