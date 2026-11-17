@@ -15,8 +15,6 @@ for lang in ['th','en']:
  hero=s.select_one('.video-cover>.container')
  for n in s.select('.ir-cover-link,.ir-cover-eyebrow,.ir-art-caption'):n.decompose()
  eyebrow=s.new_tag('span',attrs={'class':'ir-cover-eyebrow'});eyebrow.string='BTS GROUP / INVESTOR RELATIONS';hero.select_one('h1').insert_before(eyebrow)
- jump=s.new_tag('a',href='#ir-results',attrs={'class':'ir-cover-link'});jump.string='Explore investor information' if lang=='en' else 'ข้อมูลสำหรับนักลงทุน'
- arrow=s.new_tag('span',attrs={'aria-hidden':'true'});arrow.string='↓';jump.append(arrow);hero.append(jump)
  feature=root.select('.ir-publications .card--download')[1]
  caption=s.new_tag('small',attrs={'class':'ir-art-caption'});caption.string='Concept illustration · AI' if lang=='en' else 'ภาพประกอบแนวคิด · AI';feature.append(caption)
  # Replace the nonfunctional Bootstrap modal with a native, keyboard-accessible disclosure.
