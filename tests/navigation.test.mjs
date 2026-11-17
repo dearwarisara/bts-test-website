@@ -26,4 +26,19 @@ for(const lang of ['th','en']){
   assert.ok(start>=0&&end>start);
   assert.equal((html.slice(start,end).match(/<a\s/g)||[]).length,links.length);
  });
+ test(`${lang}: level-3 disclosure preserves every header destination and marks its current branch`,()=>{
+  const html=readFileSync(path.join(root,`dist/${lang}/investor-relations/document/financial-statements/index.html`),'utf8');
+  const header=html.slice(html.indexOf('<header'),html.indexOf('</header>'));
+  assert.match(header,/data-navigation-version="3"/);
+  assert.match(header,/<details class="nav-branch" open="">/);
+  assert.match(header,/<summary>/);
+  for(const node of flatten(output[lang]).filter(n=>n.href)){
+   assert.ok(header.includes(`href="${node.href}"`),`Missing header route: ${node.href}`);
+  }
+  const footer=html.slice(html.indexOf('<footer'),html.indexOf('</footer>'));
+  assert.match(footer,/footer-modern/);
+  assert.match(footer,/tel:\+6620801000/);
+  assert.ok(footer.includes(`/${lang}/contact/`));
+  assert.match(html,/\/bts-shell\.css\?v=1/);
+ });
 }
