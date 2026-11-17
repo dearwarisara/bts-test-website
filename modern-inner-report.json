@@ -1,0 +1,6995 @@
+{
+  "pages": 997,
+  "kinds": {
+    "editorial": 98,
+    "history": 2,
+    "data": 52,
+    "reading": 66,
+    "news": 46,
+    "profile": 210,
+    "documents": 523
+  },
+  "source_photos": 370,
+  "bounded_icons": 98,
+  "routes": [
+    {
+      "route": "/en/about/awards/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/board-of-directors/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/management-team/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/message-from-the-chairman/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/organization-chart/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/our-ambition/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/en/about/our-history/",
+      "kind": "history",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/about/subsidiaries-and-associated/",
+      "kind": "data",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/advance-search/",
+      "kind": "reading",
+      "group": "advance-search",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2015-16/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2016-17/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2017-18/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2018-19/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2019-20/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2020-21/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2021-22/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2022-23/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2023-24/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2024-25/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/awards/years/2025-26/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/career/job-opportunities/",
+      "kind": "editorial",
+      "group": "career",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/career/why-bts-group/",
+      "kind": "editorial",
+      "group": "career",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/departments/company-secretary/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/departments/internal-audit/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/departments/investor-relations/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/departments/sustainability/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/form/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/contact/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/cookies-policy/",
+      "kind": "data",
+      "group": "cookies-policy",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-communications/corporate-vdo/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-communications/news-event/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/anti-corruption/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/at-a-glance/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 8,
+      "bounded_icons": 3
+    },
+    {
+      "route": "/en/corporate-governance/charters-and-definition-of-independent-directors/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/company-secretary/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/complaint-channels/",
+      "kind": "data",
+      "group": "corporate-governance",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/corporate-documents/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/corporate-governance-policy-and-code-of-business-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/corporate-social-responsibilities/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/internal-audit-office/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/investor-relations-code-of-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/report-the-securities-holding-of-directors-and-executives/",
+      "kind": "data",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/corporate-governance/risk-management/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/0050f378e310/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/018293411fd0/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/03a27709f4ac/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/09bf7940f050/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/0a9db5d073a4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/0e8d56adfa62/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 2,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/0f97776f012d/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/11fe47f8b412/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/13cf9711490e/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1488d8be7564/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1513f3993384/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/159afd413516/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 5,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/17a67c66f537/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 2,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/180457f36014/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/184b48ed9f3d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1876a234a769/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/194b378befda/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/19cce1605269/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/19ea374fd1be/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1c401fa778a8/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1c810dc9e37c/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 7,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1eddef42372b/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/1fa6d3a691d6/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/20afed811462/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 8,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/21d24d6b0ba1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2557bd7eaa15/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/26674873ace9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/26df9c963019/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/279cdd1fc8ad/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2cad331f121f/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 5,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2d9287a48a48/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2e34f7474c42/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2ee5d501d2b0/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2fd2b454fa41/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/2fe8d84045d6/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 5,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/306b7e590078/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/3417c1ee48b3/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/34c4c50e6e04/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/374b63e8d41d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/37b2093e20d1/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/385ae192f40a/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/3b56319208a8/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/3b894e04ba05/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/3d2e5cdef2e4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/3f5fc10c4862/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/42b9d18fcfc2/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/47fabc10d6aa/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/4b5cf31322c6/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/4cdec86e9fc1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/4dea86816dd6/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/4f40f9fb7820/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/4fdc5d2f3e46/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/504f0b540c67/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/552be0fa8748/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 7,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/5580f420a165/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/56f9f2861c5d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/5820ecef8dc8/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/5884afd0a182/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/5b8a603c7df8/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/5e3ebb55e7e9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/65df0bad467a/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/672be4d98573/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/67a50c7be5fa/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/6c5db3deb447/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/759b9f23e364/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7699f07ec7e7/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/77b7303bf505/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/77b964a597c5/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/78afc4347023/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 5,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7937f8266dc1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7b57f42fdc00/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7c710c455e96/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7e8a2f9b491d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7eb58e11b961/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/7f87788e18b4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/813805aab358/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/819d5e3d5e2c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/81c3d0ac6b15/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/8542d6947acc/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/85b168d6de1f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/8fd59a758e2f/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/9409ac1e9364/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/94e7d445dbd1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/9531e1401a16/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/96402fa8eff4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/97e5afe29530/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/9d41da06b9af/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/9e877932482f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/9fbf96dbfb7b/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/a37cfcd19e20/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/a3a2ce039a07/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/a41ab4ce6725/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/a66bde2a8995/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/a91445e4cb63/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/aa2f8e5fcbe9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ab7496c2d58f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ac4b9f90c0e2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ad000fc295d8/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ad25416e90c7/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ae4bc3e398bb/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/b15d6ca30387/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/b6e557ad196c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/b7d09b992fed/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/b88131fd44af/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/b97517eb28e3/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ba426b44e3f4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/bb5903e7bb29/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c151bdfb794f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c1677b11f604/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c22f172ff851/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 12,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c3460af2ea44/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c4adb75a7562/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c5ef883ceb35/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/c8810a1cd096/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/ca5e0bf61421/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/cb0ef8001f23/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/cb68df21806a/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/cb8377b6e92d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/d06c6ec26e44/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/d0a08e9c3349/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/d0d61d3e3d04/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/d4fdbc71aab2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/db8d8f6b1fe3/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/dc7429bcd1cc/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/df29f5f54e46/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/e0e0a6c7f020/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/e7fad254faf7/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/e9642f136b7b/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/f31e70f0b100/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/f5508535c563/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/f5c449ec2178/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/f8047325f0f5/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/detail/fa02fd34d4c8/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/anti-corruption/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/charters/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/company-secretary/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/corporate-documents/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/corporate-governance-policy-and-code-of-business-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/corporate-social-responsibilities/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/internal-audit-office/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/investor-relations-code-of-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/risk-management/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/sustainability-factsheet/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/sustainability-presentation/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/download/sustainability-report/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/analyst-contact/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/analyst-registration/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/document/fact-sheet/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/document/financial-statements/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/en/investor-relations/document/investor-presentation/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/document/mdna/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/en/investor-relations/document/newsletters/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/en/investor-relations/document/shareholder-meetings/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/document/webcasts/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/document/yearly-reports/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/events-calendar/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/faqs/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/credit-rating/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/debt-information/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/debt-information/views/btsc/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/debt-information/views/btsg/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/key-financial-data/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/financial-information/key-financial-ratios/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/information-inquiry/ir-contact/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/information-inquiry/news-subscription/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/investment-calculator/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/news-announcements/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 11,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/newsroom/set-announcements/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/publications-amp-downloads/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/resource-center/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/contact-our-registrar/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/corporate-information/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/debentures-information/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/debentures-information/views/btsc/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/debentures-information/views/btsg/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/dividend-information/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/shareholder-information/shareholder-structure/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/stock-quote/bts/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/stock-quote/bts-w8/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/investor-relations/warrants-information/bts-w8/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/104084-23fe04/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/1043-64b6cc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/104443-5873f5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106351-103528/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106351-285efc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106351-b3ce7c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106356-dd11c5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106360-521f87/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106362-b72a85/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106460-fe26b6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106564-34656c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/106741-669121/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/107215-6148ce/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/108216-eb48e0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115487-f642e2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115489-b7eab3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115498-4381c4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115585-fb868f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115711-bb06d7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/115721-1c916f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116141-325edb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116332-c740de/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116455-3ee705/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116733-314e68/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116871-c85070/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116873-c2a649/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116874-74e874/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116874-902642/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116874-e0f68a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/116902-34e415/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/117011-7e2911/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/117077-eb38f0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/117183-711108/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/117187-5052fd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/117189-0ebf50/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118193-2423b6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118228-c8939f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118327-03ea87/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118401-bce8c1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118501-aaf0ce/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118528-1deabf/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118719-81d5dd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118721-b4f92e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118796-e98e92/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/118798-ade544/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/120882-c385f3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121893-4956d8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121895-60344a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121933-7d5cda/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121941-11e403/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121958-286c86/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/121986-5db5a7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/122012-fb8b5a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/122058-878fdd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/122060-1a9664/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/123495-077105/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/125688-8a0877/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/125850-36a3c0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/125852-2f7172/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/125917-2d846e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126792-61d53d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126794-1c60cc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126795-1a2fc4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126795-8ed43b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126795-d43973/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126796-e9967e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126859-110061/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126927-cf6ac1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126948-3e99ac/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/126956-5bd975/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/127413-aecc95/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/127439-b39f61/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/127927-a2fe7f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/128011-9da519/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/129151-7ff44e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/129787-90ae60/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/131200-8f775c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/131560-2ed8f9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134477-710935/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134479-2b1ebe/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134480-2ab8ba/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134480-4b7921/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134480-e538e0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134483-12cf5b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134487-796f1b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/134488-8241bd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/136309-46ddac/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/136678-2c101d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/138018-ba6447/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/138637-52d040/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/140897-9c66db/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/141029-720c0f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/141076-84d91b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/142015-f08a35/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/142021-93a7a7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151042-1a4473/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151044-a3b407/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151045-2aca3a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151045-72dbda/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151045-9a8435/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151048-f8c266/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151049-018df6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151086-9943e5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/151143-f5dd08/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/154419-334d58/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/154770-7dc16a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/155917-6924f6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/156001-81d670/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/156272-15a57e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/156286-629ad1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/158472-5f5de6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/158963-4a1b1e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/158965-43097d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/159524-a29de0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/16-570601/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160380-c2763d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160382-c8e73d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160383-18ae22/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160383-686c4a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160383-e8e641/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160385-8ad5df/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160618-a31a1d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/160832-9afaf5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/162761-dc64ab/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/164011-1bb61d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/164062-2e98b3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/164076-f2fd7b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/17-5dfb69/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173898-24dcfe/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173898-c6064e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173898-f99125/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173901-fe85df/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173903-f36999/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173904-62f642/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/173921-08928d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/174022-cf473e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/174345-b842ce/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/174444-5ef0c7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/175977-c528b5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/176079-1845db/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/176092-1c2743/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/176642-007b4c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/179643-b7919b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/180002-00f2ef/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185763-ff8286/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185765-bc1137/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185767-ab9d0b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185768-569db3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185768-5fc9c1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185768-ece649/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185775-3841f0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185789-c33ca0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/185933-131842/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/186352-6aff71/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/187175-15a8d9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/187877-ca8ab8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/189381-dd180c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/189391-7aad57/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/189393-0bdb53/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193405-f776cd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193406-78ebc9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193406-7cb22b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193406-92b387/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193409-c4e7b4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193411-cac264/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193419-99dea1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193500-fbac9e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/193530-a0c65a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/196829-e787a8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/196843-1dd751/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/197002-92b0f0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/197029-2a4888/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/197299-1507dd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/197315-5eda6d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/197921-86b98d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/201284-1e117b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202462-475c21/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202462-cb18e6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202462-f3eb6c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202465-80b7f5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202467-453982/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202487-612fac/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202596-c007ac/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202668-a04b1d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/202811-11fbbf/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/203489-7a8c53/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/204187-d00324/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/204498-418c84/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/204523-22ecc9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/204616-5f17cd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/242-d149ae/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24908-65eff3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24908-b793dc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24909-71828f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24909-b44a7b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24910-747841/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24910-792d90/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24911-94f50c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24911-d38371/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24912-1a2cbe/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24912-dc98ba/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24913-da1fab/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24913-f4245c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24914-21e668/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24914-7de3be/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24915-3ce56a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24915-9ddc08/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24916-169563/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24916-414959/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24917-056ca3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24917-b77190/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24918-a73d4a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24918-bc6943/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24919-104da3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24919-dbc26e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24920-9611c4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24920-9e4fd9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24921-5ad312/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24921-7af731/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24922-5809ad/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24923-061e49/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24924-1011cb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24925-7ba609/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24926-fd0636/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24927-989514/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24928-dd3afa/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/24929-42e3c7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25034-5c1475/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25034-84d658/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25034-dbd183/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25039-13e570/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25039-458518/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25039-a0d2ac/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25040-11619f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25040-53e902/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25040-9b02c5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25065-8968c7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25066-ca9fc9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25067-a17448/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25068-f4b22d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25069-41ee98/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25070-234a5a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25071-e7c405/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25072-b73646/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25073-8e54a8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25074-5b149c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25075-3e9f0c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25076-c88224/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25077-6af941/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25078-0570a2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25079-248ae4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25080-8dd9f2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25081-6eafc4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25082-e03e8a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25083-7d3f6c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25084-eb822a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25085-b4c746/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25086-db9ac8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25087-28a3a1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25088-efa4f4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25089-b7fdf9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25090-b3d252/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25091-6c5bf8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25092-469815/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25093-586ba5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25094-0476d4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25095-90b68f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25096-65759f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25097-13dcc8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/25098-676ea8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/29043-5cf92d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/39-5e1ec0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/40-201281/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41133-3c9115/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41135-eff259/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41137-677f5e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41139-5d6f76/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41141-a22028/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41227-a5fc69/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41301-6551e5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41314-659582/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41883-ce4431/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/41972-629b2f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/43560-a9b7e7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/43562-9bc91c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/43563-3013ae/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/43563-89052f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/43563-8974f2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/44302-7c7388/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/46680-85c20a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/46773-596570/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/47296-15adfd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/47314-cbf641/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/47394-029abc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/47695-de06af/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48270-fc4722/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48272-4f7e98/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48273-4b596d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48273-7c5388/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48273-a202ae/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48276-bc7848/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48280-c6587b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/48351-f6e7f0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/49443-023eff/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50340-399788/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50370-955f80/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50518-16380d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50917-93379c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50950-a3a0af/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50985-9d439d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/50996-617d26/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/51034-31d709/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/51046-411e12/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/51067-ce07fd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/51069-854e56/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/51267-bfecd3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/517-257737/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53834-8e06c8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53835-a3d7a6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53835-af0b69/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53835-b2738a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53841-41d5f8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/53866-7d89d9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/54569-e1d5a8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/54641-7dd797/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/54645-a4ac09/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/59853-305dec/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/59913-8f7c73/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/59940-5ad280/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/608-b268cf/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/62944-918dfe/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/62946-0d4599/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/62947-20ab4a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/62947-6847ed/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/62947-b08b8d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63348-ff9e40/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63589-50d08e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63617-a42e5c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63706-a15d0d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63773-b99635/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/63911-0792d3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64205-635837/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64246-770ab0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64515-8d6892/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64555-9d8ad9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64914-0752b3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64916-b6a971/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64917-0f1283/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64917-bca118/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/64917-d799fc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/66823-2e612f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/66954-3600b1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/67160-49842e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/67337-64e4db/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/67505-2f2ca6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/67669-75c627/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70918-cb0ab1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70920-3a94e1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70922-a6a045/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70923-3906e8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70923-5a7f23/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/70923-790c48/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/71687-ba5613/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/72363-e9d614/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/72364-f884f4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/757-8ae904/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/77297-8d34f9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/78022-8c4df1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/80613-dc019c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/81225-cbe6fd/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/81386-d0a4e1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86417-5bb0c3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86474-f8084f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86476-da5915/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86477-7755e7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86477-bd84b9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86477-e4c208/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/86611-291771/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/89191-2a7c58/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/89206-36cf6d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/90156-5034ee/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/91238-0880ad/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/91265-c99df3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92592-69a9ce/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92592-95881b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92592-c3fd10/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92595-52d08b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92597-a2f878/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/92927-f96777/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/93457-62071d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/93577-896309/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/943-ff0ccc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/94744-b21587/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95022-c3ada3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95063-bad395/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95200-d12508/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95383-126e92/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95880-1ad0b8/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95880-90cde2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95880-d35f7a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95883-8b5f34/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95902-e27bfc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95904-11ac89/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/95906-f1326e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/96006-89f0f2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/96204-a6be34/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98211-9fd06f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98350-6cf0c4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98442-3a52e2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98862-56461f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98870-cc878a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/library/98876-de95e9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/audit/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/board-of-directors/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/executive/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/nomination-remuneration/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/risk-management/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/committees/sustainability/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/director/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/management/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/management/teams/company-secretary/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/management/teams/executives/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/management-structure/management/teams/internal-audit-director/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/our-business/business-overview/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 0,
+      "bounded_icons": 3
+    },
+    {
+      "route": "/en/our-business/match/ceo-of-match/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/our-business/match/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 15,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/en/our-business/mix/ceo-of-mix/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/our-business/mix/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 3,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/en/our-business/move/ceo-of-move/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/our-business/move/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 5,
+      "bounded_icons": 18
+    },
+    {
+      "route": "/en/privacy-policy/",
+      "kind": "reading",
+      "group": "privacy-policy",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/privacy-statement/",
+      "kind": "reading",
+      "group": "privacy-statement",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/risk-management-uat/",
+      "kind": "reading",
+      "group": "risk-management-uat",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/search/",
+      "kind": "reading",
+      "group": "search",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sitemap/",
+      "kind": "reading",
+      "group": "sitemap",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/at-a-glance/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/definition-and-goal/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/economic-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 5,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/en/sustainability/environmental-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 4,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/en/sustainability/esg-resource-centre/policies-and-commitments/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/esg-resource-centre/specific-reports/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/projects-activities/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 11,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/publications-downloads/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/sustainability/social-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 8,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/en/sustainability/sustainability-at-bts-group/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 20,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/en/sustainability/sustainability-report/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/terms-and-conditions/",
+      "kind": "reading",
+      "group": "terms-and-conditions",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/en/update/news-event/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/awards/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/board-of-directors/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/management-team/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/message-from-the-chairman/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/organization-chart/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/our-ambition/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/th/about/our-history/",
+      "kind": "history",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/about/subsidiaries-and-associated/",
+      "kind": "data",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/advance-search/",
+      "kind": "reading",
+      "group": "advance-search",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/",
+      "kind": "editorial",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2558-59/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2559-60/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2560-61/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2561-62/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2562-63/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2563-64/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2564-65/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2565-66/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2566-67/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2567-68/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/awards/years/2568-69/",
+      "kind": "reading",
+      "group": "awards",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/career/job-opportunities/",
+      "kind": "editorial",
+      "group": "career",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/career/why-bts-group/",
+      "kind": "editorial",
+      "group": "career",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/departments/company-secretary/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/departments/internal-audit/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/departments/investor-relations/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/departments/sustainability/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/form/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/contact/",
+      "kind": "editorial",
+      "group": "contact",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/cookies-policy/",
+      "kind": "data",
+      "group": "cookies-policy",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-communications/corporate-vdo/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-communications/news-event/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/anti-corruption/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/at-a-glance/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 8,
+      "bounded_icons": 3
+    },
+    {
+      "route": "/th/corporate-governance/charters-and-definition-of-independent-directors/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/company-secretary/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/complaint-channels/",
+      "kind": "data",
+      "group": "corporate-governance",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/corporate-documents/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/corporate-governance-policy-and-code-of-business-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/corporate-social-responsibilities/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/internal-audit-office/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/investor-relations-code-of-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/report-the-securities-holding-of-directors-and-executives/",
+      "kind": "data",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/corporate-governance/risk-management/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/018302b4d7c9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/0248d165d57f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/032f1658ad25/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/04bf2b41149c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/09db855642e9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/09edad350788/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/0b8774974fd2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/1060043508c0/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/118431521102/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/14ada8c1381c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/180e284f1254/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/1e4456e49b10/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/249bed2d61a1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/26b83470a126/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/2ba1adc702a7/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/2ce543c92d9d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/2fa5cf612732/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3148ab28ab56/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/31d5d0a00bca/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/323b94f99e78/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3729740fef29/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 2,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3831ba3d1cbb/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/39debf776080/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3ae7b32b29db/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3cbda0914d0d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/3d0155af93a2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/419890a9e5d3/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/424ca6f09902/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/4624587a497e/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/476de1b5a37f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/48130672f9ce/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/48fe31fe4351/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/49e6e37c8467/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/4a637ab31a31/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/4cd359e55a8c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/4e9a61120bc8/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/4f47760c4f10/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/53ebff526107/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/56963a699291/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/56c520ed2f3d/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/59f65eb27a0f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/5d927d151f4b/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/60c75dee8cd6/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/61f98ac4cf2b/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/644b16570b34/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/64a6f2b1ecb4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/6514d57911bd/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/675afd1c4e14/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/687ea473c9bf/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/6b9350a50fb0/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/6d25c1987341/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/6d3848547c94/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/72d027666de7/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/79623c71bfb5/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/7a2f5d8acc6c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/7a4e315a4be1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/7b9d5388150e/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/7ee5ecbff15a/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/7f8a146419c2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/825a729c6f4c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/872e5566b88b/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/88a7db0410a5/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/8a043ab0a2f4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/8e9c5b45ce0c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/8f3bb85e93a5/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/9c73614f70d1/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/9d1b0caf164c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/a01021c2b797/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/a75e5f92308f/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/a85f4a5c75fc/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/a8c1caca66f4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/aacd3c5f30a2/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/ae9dce4f03b9/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/b502a353fb55/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/b79b07cf4677/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/bac530d815c3/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/bad31d144371/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/c049d8dd136c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/c1b9813bd01e/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/c5de004186da/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/cbf01848ae5a/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/cc137ffaa50c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/cd356c9a5b22/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/ce0e37ef39f4/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/ceee5bb52905/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d0656b1c9c66/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d071d0aa43f8/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d12930f42310/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d179c52e129f/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d8185932a2b6/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/d833feb3680a/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 3,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/db74cc60cd45/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/ddbc7b202979/",
+      "kind": "news",
+      "group": "corporate-communications",
+      "source_photos": 2,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/e252a586d36a/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/e6829a5933fe/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/f212ba93118e/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/f4ae9d58358e/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/f5c53cd487de/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/fcb572a96e1c/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/fdbec14b4585/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/detail/fe7ceedc5efe/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/anti-corruption/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/charters/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/company-secretary/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/corporate-documents/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/corporate-governance-policy-and-code-of-business-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/corporate-social-responsibilities/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/internal-audit-office/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/investor-relations-code-of-conduct/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/risk-management/",
+      "kind": "editorial",
+      "group": "corporate-governance",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/sustainability-factsheet/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/sustainability-presentation/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/download/sustainability-report/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/analyst-contact/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/analyst-registration/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/document/fact-sheet/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/document/financial-statements/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/th/investor-relations/document/investor-presentation/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/document/mdna/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/th/investor-relations/document/newsletters/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/th/investor-relations/document/shareholder-meetings/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/document/webcasts/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/document/yearly-reports/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/events-calendar/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/faqs/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/credit-rating/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/debt-information/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/debt-information/views/btsc/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/debt-information/views/btsg/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/key-financial-data/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/financial-information/key-financial-ratios/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/information-inquiry/ir-contact/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/information-inquiry/news-subscription/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/investment-calculator/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/news-announcements/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/newsroom/set-announcements/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/publications-amp-downloads/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/resource-center/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/contact-our-registrar/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/corporate-information/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/debentures-information/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/debentures-information/views/btsc/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/debentures-information/views/btsg/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/dividend-information/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/shareholder-information/shareholder-structure/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/stock-quote/bts/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/stock-quote/bts-w8/",
+      "kind": "reading",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/investor-relations/warrants-information/bts-w8/",
+      "kind": "data",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/1043-f56ecc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/116875-303051/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/116875-44bdd9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/116875-6349b6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/116902-59839b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/118327-6b0a57/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126790-21163a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126790-6f1503/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126790-a961f5/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126796-6d801e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126927-adb54d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/126948-8805e0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/127439-b32454/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/134481-7e66ae/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/134481-b1f4b3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/134481-c5fc95/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/134488-aa180f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/136309-742036/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/136678-aaa88c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/142015-27cadc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151046-40f69c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151046-4c3bc6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151046-ec68f1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151049-79acc3/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151086-015915/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/151143-c5caf2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/156272-c21e50/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/16-cba923/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160384-0d8121/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160384-e6e5a4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160384-ec7d71/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160385-9e5347/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160618-5c5aa7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/160832-e39bf0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/173899-310c4a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/173899-96d571/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/173899-bbf04a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/173904-e8c3d7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/174022-656b4c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/174345-f69aeb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/174444-b15aa6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/176641-dcd5b0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/179642-64c3fe/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/180001-19aaa1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185762-818418/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185764-1bd258/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185766-7ef13c/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185769-138859/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185769-e1a3fb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185769-ee0e65/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185775-57d7cf/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185788-694bb2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/185933-4d4743/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/186352-6edc9b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/187174-bbfe23/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/187876-794438/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/189381-15bb5d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/189390-4068e2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/189392-33acfc/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193407-2b038a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193407-83c13a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193407-d913a1/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193408-393237/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193410-5a75f7/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193412-657698/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193419-14754f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193500-5b6180/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/193530-413f26/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/196828-a215f2/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/196843-08545f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/197028-2c0013/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/197298-e54f59/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/197315-610e3e/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/197370-f23e25/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/197920-541331/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/201283-016b63/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202463-32326f/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202463-415a4b/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202463-4b34e6/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202464-439dc0/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202466-13f1ab/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202487-1adc86/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202668-4412ee/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/202811-f450e9/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/203488-0c0a08/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/204186-53c526/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/204497-62cc4d/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/204522-caa1cb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/204615-ae4fd4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/39-5776fb/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/40-099091/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/517-f05665/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/608-b21b0a/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/757-1fed63/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/library/943-cffba4/",
+      "kind": "documents",
+      "group": "investor-relations",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/audit/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/board-of-directors/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/executive/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/nomination-remuneration/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/risk-management/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/committees/sustainability/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/director/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/management/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/management/teams/company-secretary/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/management/teams/executives/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/management-structure/management/teams/internal-audit-director/",
+      "kind": "profile",
+      "group": "about",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/our-business/business-overview/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 0,
+      "bounded_icons": 3
+    },
+    {
+      "route": "/th/our-business/match/ceo-of-match/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/our-business/match/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 15,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/th/our-business/mix/ceo-of-mix/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/our-business/mix/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 3,
+      "bounded_icons": 1
+    },
+    {
+      "route": "/th/our-business/move/ceo-of-move/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/our-business/move/",
+      "kind": "editorial",
+      "group": "our-business",
+      "source_photos": 5,
+      "bounded_icons": 18
+    },
+    {
+      "route": "/th/privacy-policy/",
+      "kind": "reading",
+      "group": "privacy-policy",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/privacy-statement/",
+      "kind": "reading",
+      "group": "privacy-statement",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/risk-management-uat/",
+      "kind": "reading",
+      "group": "risk-management-uat",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/search/",
+      "kind": "reading",
+      "group": "search",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sitemap/",
+      "kind": "reading",
+      "group": "sitemap",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/at-a-glance/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 4,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/definition-and-goal/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 1,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/economic-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 5,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/th/sustainability/environmental-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 4,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/th/sustainability/esg-resource-centre/policies-and-commitments/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/esg-resource-centre/specific-reports/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/projects-activities/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 6,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/publications-downloads/",
+      "kind": "editorial",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/sustainability/social-sustainability/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 8,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/th/sustainability/sustainability-at-bts-group/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 20,
+      "bounded_icons": 4
+    },
+    {
+      "route": "/th/sustainability/sustainability-report/",
+      "kind": "data",
+      "group": "sustainability",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/terms-and-conditions/",
+      "kind": "reading",
+      "group": "terms-and-conditions",
+      "source_photos": 0,
+      "bounded_icons": 0
+    },
+    {
+      "route": "/th/update/news-event/",
+      "kind": "reading",
+      "group": "corporate-communications",
+      "source_photos": 0,
+      "bounded_icons": 0
+    }
+  ]
+}

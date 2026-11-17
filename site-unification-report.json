@@ -1,10 +1,12 @@
 {
   "card_count": 2997,
   "card_layout_errors": [],
-  "baseline_commit": "c7627c7fefebe6866ad265afa41d5bc6bdaf4c8a",
+  "baseline_commit": "c77af960bc9b2cd3ca648a0cab278f718b4134a5",
   "pages": 1002,
   "inner_content_checked": 999,
+  "modern_inner_pages": 997,
   "content_changes": [],
+  "source_image_changes": [],
   "shell_or_navigation_errors": [],
   "external_menu_links": {},
   "missing_local_links": {}
