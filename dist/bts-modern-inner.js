@@ -18,3 +18,12 @@ document.querySelectorAll('.modern-inner .source-body [data-toggle="modal"]').fo
  }
  trigger.addEventListener('click',open);trigger.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'&&!trigger.hasAttribute('href'))open(e)});
 });
+// Visual review mode eagerly loads photographs before full-page capture.
+if(new URLSearchParams(location.search).has('visual_review')){document.documentElement.classList.add('visual-review');document.documentElement.style.setProperty('--review-height',innerHeight+'px');document.querySelectorAll('img').forEach(img=>{img.loading='eager';img.decoding='sync'});}
+// Restore the annual / quarterly views without the original select plugin.
+document.querySelectorAll('.modern-inner .block-select__content').forEach(group=>{
+ const panels=[...group.children].filter(n=>n.classList.contains('select-content'));
+ if(panels.length<2||!panels.every(n=>['yearly','quarter'].includes(n.id)))return;
+ const th=document.documentElement.lang!=='en',tabs=document.createElement('div');tabs.className='financial-view-tabs';tabs.setAttribute('role','group');tabs.setAttribute('aria-label',th?'ช่วงเวลาข้อมูลการเงิน':'Financial reporting period');
+ panels.forEach((panel,index)=>{const button=document.createElement('button');button.type='button';button.textContent=panel.id==='yearly'?(th?'ข้อมูลประจำปี':'Full Year Highlights'):(th?'ข้อมูลรายไตรมาส':'Quarterly Highlights');button.setAttribute('aria-controls',panel.id);button.setAttribute('aria-pressed',String(index===0));panel.hidden=index!==0;button.addEventListener('click',()=>{panels.forEach(p=>p.hidden=p!==panel);tabs.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));window.dispatchEvent(new Event('resize'))});tabs.append(button)});group.before(tabs);
+});

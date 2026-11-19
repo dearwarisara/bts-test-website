@@ -59,3 +59,63 @@
 @media(prefers-reduced-motion:reduce){.bts-unified .news-image img,.modern-inner .source-body .modern-photo-card img,.ir-home-page .card--download{transition:none}}
 
 .bts-unified .financial-home .metric strong,.bts-unified .financial-home .metric strong.negative{color:#fff!important}.bts-unified .business-intro>p{color:#5b7186}
+/* Inner-page editorial pass: purposeful reading widths and restrained information surfaces. */
+.modern-inner:not([data-modern-kind=history]) .page-layout{max-width:1240px;padding-top:48px;padding-bottom:64px}
+.modern-inner[data-modern-kind=reading] .page-layout,.modern-inner[data-modern-kind=news] .page-layout{max-width:1040px}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.card-block,.card-body){padding:24px}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.card-title,.card-text){margin-top:0;word-break:normal;overflow-wrap:break-word}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.card-title,h3){text-wrap:pretty}
+.modern-inner[data-modern-kind=documents] .source-body .table{border:1px solid #dce6ee;border-radius:8px;overflow:hidden}
+.modern-inner[data-modern-kind=documents] .source-body :is(td,th){vertical-align:middle;padding:17px 20px}
+.modern-inner[data-modern-kind=documents] .source-body td:last-child{white-space:normal}
+.modern-inner[data-modern-kind=profile] .source-body .card-board{border-radius:10px;border:1px solid #dce6ee;background:#fff}
+.modern-inner[data-modern-kind=profile] .source-body .card-board img{object-position:top center}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.form-control,input:not([type=checkbox]):not([type=radio]),textarea,select){max-width:100%;box-sizing:border-box;border:1px solid #cfdae4;border-radius:6px;min-height:44px;background:#fff;color:#233d56}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(ul,ol){padding-left:24px}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(p,li){color:#435c72}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-emphasis :is(p,li){color:#e3edf5}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card :is(p,h3){color:inherit}
+@media(max-width:760px){.modern-inner:not([data-modern-kind=history]) .page-layout{width:calc(100% - 40px);padding-block:32px 44px}.modern-inner:not([data-modern-kind=history]) .source-body :is(.card-block,.card-body){padding:20px}.modern-inner[data-modern-kind=documents] .source-body :is(td,th){padding:13px 12px}.modern-inner:not([data-modern-kind=history]) .source-body .modern-section{margin-bottom:32px}}
+/* Reviewed business overview and archive pagination. */
+.modern-inner .source-body .business-card{display:block;min-height:0;height:auto;margin:0 0 16px;padding:22px 24px;border:1px solid #dce6ee;border-left:3px solid #02559b;border-radius:8px;background:#f7fafc}
+.modern-inner .source-body .business-card__header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:10px}
+.modern-inner .source-body .business-card__title{font-size:30px;font-weight:500;color:#02559b}
+.modern-inner .source-body .business-card__image{width:38px;height:38px}
+.modern-inner .source-body .business-card__image img{width:38px;height:38px;object-fit:contain;margin:0}
+.modern-inner .source-body .business-card p{margin:0 0 10px;max-width:none}
+.modern-inner .source-body .business-card .btn{padding:0;border:0;background:transparent;color:#02559b;min-height:0}
+html[lang=en] .modern-inner .source-body .business-card__title{font-size:20px}
+.modern-inner .source-body .embed-responsive video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#092840;border-radius:10px}
+.modern-inner .source-body ul.pagination{display:flex;flex-wrap:wrap;align-items:center;gap:7px;padding:20px 0;margin:20px 0;list-style:none}
+.modern-inner .source-body .pagination li{display:block;margin:0;padding:0;list-style:none}
+.modern-inner .source-body .pagination :is(a,span){display:grid;place-items:center;min-width:34px;min-height:34px;padding:5px 10px;border:1px solid #dce6ee;border-radius:5px;line-height:1.3;background:#fff;color:#02559b}
+.modern-inner .source-body .pagination .active :is(a,span){background:#02559b;color:#fff;border-color:#02559b}
+.ir-home-page .ir_home .ir_home__download,.ir-home-page .ir_home .ir_home__download :is(summary,div,a,h6){color:#233d56!important}
+.ir-home-page .ir_home .ir_home__download{background:#fff!important;border-bottom:1px solid #dce6ee!important}
+.ir-home-page .ir_home .ir_home__download .btn{color:#02559b!important}
+.modern-inner .source-body .pagination{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:20px 0;margin:20px 0}
+.modern-inner .source-body .pagination :is(li,.page-item){display:block;margin:0;padding:0;list-style:none}
+.modern-inner:not([data-modern-kind=history]) .source-body :is(.chapter-reveal,.reveal,.page-animate){opacity:1!important;transform:none!important;filter:none!important}
+.modern-inner .source-body .financial-view-tabs{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid #dce6ee;margin-bottom:28px;padding-bottom:12px}
+.modern-inner .source-body .financial-view-tabs button{font:inherit;cursor:pointer;padding:9px 20px;border:1px solid #dce6ee;border-radius:6px;background:white;color:#02559b}
+.modern-inner .source-body .financial-view-tabs button[aria-pressed=true]{background:#02559b;color:white;border-color:#02559b}
+.modern-inner .source-body .select-content[hidden]{display:none!important}
+.modern-inner[data-modern-kind=profile] .source-body .col-md-5:has(.card-board){align-self:start}
+.modern-inner[data-modern-kind=profile] .source-body .card-board{height:auto!important;align-self:start;max-width:380px;padding:0;overflow:hidden}
+.modern-inner[data-modern-kind=profile] .source-body .card-board__thumbnail{height:auto!important;min-height:0!important}
+.modern-inner[data-modern-kind=profile] .source-body .card-board__thumbnail img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;margin:0}
+.modern-inner .source-body th :is(p,strong,span){color:inherit}
+
+/* Preserve the real viewport height in full-page review captures. */
+.visual-review .inner-hero.video-cover{height:calc(var(--review-height) - 88px)!important}
+@media(max-width:1399px){.visual-review .inner-hero.video-cover{height:calc(var(--review-height) - 87px)!important}}
+
+.modern-inner .source-body th :is(p,strong,span){color:#fff!important}
+.modern-inner .source-body .card-bg img{display:block;width:100%;height:100%;object-fit:cover;margin:0}
+.modern-inner.layout-news .source-body .card-bg:empty{display:none}
+.modern-inner.layout-news .source-body .card-default:not(:has(.card-bg img)) .card-block{display:flex;flex-direction:column;justify-content:center}
+.modern-inner .source-body .col-md-5:has(.card-board){align-self:start}
+.modern-inner .source-body .card-board{height:auto!important;align-self:start;overflow:hidden}
+.modern-inner .source-body .card-board__thumbnail{height:auto!important;min-height:0!important}
+.modern-inner .source-body .card-board__thumbnail img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;margin:0}
+.modern-inner [data-archive-path] .page-card-image{display:none}

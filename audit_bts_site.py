@@ -33,7 +33,7 @@ for f in files:
    p=D/u.path.lstrip('/')/'index.html';q=D/unquote(u.path.lstrip('/'))/'index.html'
    if not p.exists() and not q.exists():missing[h]+=1
  if s.select_one('.inner-hero,.history-intro'):
-  article=s.select_one('.source-body');images=[n.get('src','') for n in article.select('img')] if article else []
+  article=s.select_one('.source-body');images=[n.get('src','') for n in article.select('img') if not n.find_parent(class_='card-bg')] if article else []
   inner.append((f,text(article),images))
 specs=[('HEAD:'+f.relative_to(R).as_posix()) for f,_,_ in inner]
 batch=subprocess.run(['git','cat-file','--batch'],cwd=R,input=('\n'.join(specs)+'\n').encode(),stdout=subprocess.PIPE,check=True).stdout
@@ -43,11 +43,11 @@ for (f,current,current_images),spec in zip(inner,specs):
  if header.endswith(' missing'):content_mismatch.append(spec);continue
  size=int(header.rsplit(' ',1)[1]);blob=batch[pos:pos+size];pos+=size+1
  old=BeautifulSoup(blob.decode('utf-8-sig'),'html.parser')
- old_article=old.select_one('.source-body');old_images=[n.get('src','') for n in old_article.select('img')] if old_article else []
+ old_article=old.select_one('.source-body');old_images=[n.get('src','') for n in old_article.select('img') if not n.find_parent(class_='card-bg')] if old_article else []
  if old_images!=current_images:image_mismatch.append(str(f.relative_to(R)))
  if text(old.select_one('.source-body'))!=current:content_mismatch.append(str(f.relative_to(R)))
  checked+=1
-report={'card_count':card_count,'card_layout_errors':card_layout_errors,'baseline_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip(),'pages':len(files),'inner_content_checked':checked,'modern_inner_pages':modern_count,'content_changes':content_mismatch,'source_image_changes':image_mismatch,'shell_or_navigation_errors':issues,'external_menu_links':dict(external),'missing_local_links':dict(missing)}
+report={'card_count':card_count,'card_layout_errors':card_layout_errors,'baseline_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip(),'pages':len(files),'inner_content_checked':checked,'modern_inner_pages':modern_count,'content_changes':content_mismatch,'source_image_changes':image_mismatch,'restored_news_card_images':sum(1 for f in files if 'news-event' in f.as_posix() and (D.as_posix() in f.as_posix()) for _ in BeautifulSoup(f.read_text(encoding='utf-8'),'html.parser').select('.source-body .card-bg img')),'shell_or_navigation_errors':issues,'external_menu_links':dict(external),'missing_local_links':dict(missing)}
 (R/'site-unification-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False,indent=2))
 if issues or missing or external or content_mismatch or image_mismatch or card_layout_errors:sys.exit(1)

@@ -8,3 +8,5 @@ output/imagegen/history/
 output/imagegen/ir/
 
 .cover-review/
+
+.visual-qa-inner/

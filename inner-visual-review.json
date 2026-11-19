@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-11-19",
+  "routes": 999,
+  "viewports": {
+    "desktop": {
+      "pages": 999,
+      "widths": [
+        1280,
+        1440
+      ],
+      "checks": {
+        "horizontal_overflow": 0,
+        "broken_images": 0,
+        "clipped_text_elements": 0
+      },
+      "screenshots": ".visual-qa-inner/desktop/<route-index>.jpg"
+    },
+    "mobile": {
+      "pages": 999,
+      "widths": [
+        390
+      ],
+      "checks": {
+        "horizontal_overflow": 0,
+        "broken_images": 0,
+        "clipped_text_elements": 0
+      },
+      "screenshots": ".visual-qa-inner/mobile/<route-index>.jpg"
+    }
+  },
+  "font_assets": [
+    "OzoneX Thai",
+    "Mulish English"
+  ],
+  "references": [
+    "Ichitan Group",
+    "Metro Systems",
+    "CH. Karnchang",
+    "TTW",
+    "Sabina",
+    "PTTGC",
+    "Bangkok Airways"
+  ],
+  "news_archive_images": {
+    "representative_cards": 4,
+    "archive_pages": [
+      "TH corporate news",
+      "EN corporate news",
+      "TH updates",
+      "EN updates"
+    ],
+    "other_cards": "Text-only cards with the empty image area removed."
+  },
+  "notes": "Screenshots are browser full-page captures at responsive viewport widths; this is not physical-device testing. Interactions were spot-checked for financial-period switching and the nested investor-relations menu."
+}

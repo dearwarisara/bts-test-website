@@ -1,12 +1,13 @@
 {
   "card_count": 2997,
   "card_layout_errors": [],
-  "baseline_commit": "889d00d174063546287be7bd849dad00a0763eb7",
+  "baseline_commit": "76926792f8c5148a46fa100a65023657a3978ecc",
   "pages": 1002,
   "inner_content_checked": 999,
   "modern_inner_pages": 997,
   "content_changes": [],
   "source_image_changes": [],
+  "restored_news_card_images": 4,
   "shell_or_navigation_errors": [],
   "external_menu_links": {},
   "missing_local_links": {}
