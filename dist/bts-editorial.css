@@ -393,3 +393,58 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
 .modern-inner .inner-hero:has(.ir-cover-eyebrow) .inner-station{display:none}
 .bts-unified .sustainability #esg-link{width:100%;align-self:stretch}
 @media(max-width:760px){.modern-inner .inner-hero .inner-station{font-size:14px}.modern-inner .inner-hero:has(.ir-cover-eyebrow) .inner-station{display:none}}
+
+/* Rich BTS finish: stronger brand contrast and refined photo surfaces. */
+.bts-unified .hero-overlay{background:linear-gradient(90deg,#06203de8 0%,#082b4bb8 33%,#082b4b38 66%,#061e3510 100%),linear-gradient(0deg,#041a3370,transparent 48%)}
+.bts-unified .hero h1{letter-spacing:-.035em;text-shadow:0 2px 24px #06182f30}
+.bts-unified .hero h1>span b{color:#f12848}
+.bts-unified .hero-brand-copy:after{width:50px;height:3px;background:linear-gradient(90deg,#f12848 0 60%,#fff 60% 70%,#1763ad 70%)}
+.bts-unified .hero-discover{box-shadow:0 8px 22px #e9254333}
+.bts-unified .business-intro{padding-top:48px;padding-bottom:28px}
+.bts-unified .business-intro .section-title{color:#073d73}
+.bts-unified .business-panel{box-shadow:0 14px 30px #07284820}
+.bts-unified .business-panel:after{background:linear-gradient(180deg,#082b4b00 4%,#082b4b05 35%,#062446dc 100%)}
+.bts-unified .business-panel:hover{transform:translateY(-5px);box-shadow:0 20px 42px #082b4b30}
+.bts-unified .business-icon{border-color:#ffffffc9;background:#092b4b8c;box-shadow:0 5px 18px #051a2d50}
+.bts-unified .financial-home{background:linear-gradient(115deg,#e6f1f9 0%,#f0f6fb 54%,#e1edf6 100%);border-top:1px solid #d4e3ef;border-bottom:1px solid #cadce9}
+.bts-unified .financial-home:before{height:4px;background:linear-gradient(90deg,#ed2344 0 62%,#fff 62% 70%,#155da4 70%)}
+.bts-unified .financial-home>h2{color:#064d8c}
+.bts-unified .financial-home .metric{position:relative;min-height:152px;padding:12px 22px;border-left-color:#adc5d8}
+.bts-unified .financial-home .metric .glass-icon{display:grid!important;place-items:center;flex:0 0 38px;width:38px;height:38px;color:#07569a}
+.bts-unified .financial-home .metric .line-icon{display:block;width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5}
+.bts-unified .financial-home .metric strong{color:#074f8c!important;font-size:clamp(34px,3.35vw,50px)}
+.bts-unified .financial-home .metric span:not(.glass-icon){color:#37566f}
+.bts-unified .financial-home:after{opacity:.56;filter:saturate(1.08)}
+.bts-unified .news-heading .section-title{color:#073d73}
+.bts-unified .news-heading .section-title:after{content:'';display:block;width:48px;height:3px;margin-top:10px;background:linear-gradient(90deg,#ed2344 0 65%,#155da4 65%)}
+.bts-unified .news-card:first-child{box-shadow:0 18px 38px #082b4b26}
+.bts-unified .news-card:first-child .news-image:after{background:linear-gradient(0deg,#041b31f2 0%,#082b4b05 78%)}
+.bts-unified .news-card:not(:first-child){border-bottom-color:#c5d6e4}
+.bts-unified .news-card:not(:first-child) .news-image{border-radius:8px;box-shadow:0 7px 18px #092b4b18}
+.bts-unified .news-card .read-more b{color:#ed2344}
+.bts-unified .investor{border-top:3px solid #ee2848;box-shadow:0 22px 48px #092b4b28;background-image:linear-gradient(90deg,#041c37f2 0%,#073563d9 60%,#074b7e8f 100%),url('/assets/covers/3e4c28877075f837-cover.webp')}
+.bts-unified .investor-link{border-left-color:#ffffff6b}
+.bts-unified .investor-link .line-icon{filter:drop-shadow(0 2px 7px #00172c80)}
+.bts-unified .investor-link>b{color:#ff4b62}
+.bts-unified .sustainability{background:linear-gradient(125deg,#eaf3fa 0%,#f5f8fb 55%,#e7f0f7 100%);border-top:1px solid #d8e5ef}
+.bts-unified .sustainability .center-heading>span{color:#07569a;font-size:17px;font-weight:600}
+.bts-unified .sustainability .center-heading .section-title{color:#073d73}
+.bts-unified .sustainability .center-heading .section-title:after{content:'';display:block;width:44px;height:3px;margin-top:10px;background:#ed2344}
+.bts-unified .sustainability .center-heading>p{color:#405c73}
+.bts-unified .sustainability .esg-tabs a{background:linear-gradient(150deg,#fff,#edf5fb);border-color:#ccdeeb;box-shadow:0 10px 26px #0a315016}
+.bts-unified .sustainability .esg-tabs a.active{background:linear-gradient(145deg,#e4f1fa,#dbeaf5);border-color:#95b9d2;box-shadow:inset 3px 0 #e92543,0 12px 28px #0a31501a}
+.bts-unified .sustainability .esg-tabs a small{border-color:#93b2ca;color:#07569a}
+.bts-unified .sustainability #esg-link{box-shadow:0 12px 28px #092b4b1a}
+.bts-unified .sustainability:after{opacity:.62}
+.modern-inner .inner-hero .inner-station:before{background:linear-gradient(90deg,#ed2344 0 62%,#fff 62% 70%,#155da4 70%)}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card{box-shadow:0 16px 34px #082b4b20}
+.modern-inner:not([data-modern-kind=history]) .source-body .business-card{border-left-color:#ed2344;box-shadow:0 10px 26px #092b4b10}
+@media(max-width:760px){
+ .bts-unified .business-intro{padding-top:36px}
+ .bts-unified .financial-home .metric{min-height:0;padding:14px 3px}
+ .bts-unified .financial-home .metric .glass-icon{flex-basis:32px;width:32px;height:32px}
+ .bts-unified .financial-home .metric .line-icon{width:25px;height:25px}
+ .bts-unified .financial-home:after{height:90px}
+ .bts-unified .investor{box-shadow:0 14px 30px #092b4b22}
+ .bts-unified .sustainability .esg-tabs a{box-shadow:0 7px 18px #0a315014}
+}
