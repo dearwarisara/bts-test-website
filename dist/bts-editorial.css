@@ -251,3 +251,145 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
  .bts-unified .sustainability{padding:44px 20px 60px}
  .bts-unified .sustainability:after{height:80px}
 }
+
+/* Reference correction: BTS-specific detail, image-led hierarchy and compact rhythm. */
+.bts-unified .hero{height:clamp(590px,76svh,740px);min-height:590px;overflow:hidden}
+.bts-unified .hero video{object-fit:cover;object-position:center 52%;background:#0a2844}
+.bts-unified .hero-brand-copy{top:48%;left:7%;width:min(52%,720px);max-width:720px}
+.bts-unified .hero h1{font-size:clamp(58px,5.2vw,76px);line-height:1.08;letter-spacing:-.025em;margin:20px 0 14px}
+.bts-unified .hero h1>span{display:block;white-space:nowrap}
+.bts-unified .hero h1>span b{display:inline;color:var(--ref-red);font-weight:600}
+.bts-unified .hero-signature{max-width:540px;margin:14px 0 0;color:#f3f6f8;font:400 22px/1.6 OzoneX,sans-serif;text-align:left;text-shadow:0 1px 14px #04162970}
+.bts-unified .hero-discover{margin-top:22px;background:var(--ref-red);border-color:var(--ref-red);border-radius:4px;padding-inline:22px}
+.bts-unified .hero-discover:hover{background:var(--ref-blue);border-color:var(--ref-blue)}
+.bts-unified .business{padding-bottom:52px}
+.bts-unified .business-intro{padding-top:42px;padding-bottom:24px}
+.bts-unified .business-panels{grid-template-rows:clamp(260px,22vw,320px);gap:18px}
+.bts-unified .business-panel,.bts-unified .business-panel:first-child{min-height:260px;border-radius:12px;padding:24px}
+.bts-unified .business-panel:after{background:linear-gradient(180deg,#092b4b08 8%,#092b4b22 42%,#061d36e8 100%)}
+.bts-unified .business-icon{position:absolute;top:22px;left:24px;width:52px;height:52px;display:grid;place-items:center;border:1px solid #ffffffb3;border-radius:50%;background:#082d4a66;color:#fff}
+.bts-unified .business-icon .line-icon{width:27px;height:27px;stroke:currentColor;fill:none;stroke-width:1.5}
+.bts-unified .business-panel h3{margin:0 0 3px;font-size:30px;line-height:1.15}
+.bts-unified .business-panel h3:before{width:24px;margin-bottom:12px}
+.bts-unified .business-panel .business-description{max-width:78%;font-size:17px;line-height:1.45}
+.bts-unified .business-panel .panel-arrow{right:22px;bottom:22px;width:32px;height:32px}
+.bts-unified .financial-home{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(230px,.9fr) minmax(0,2.1fr);grid-template-rows:auto auto auto 1fr;column-gap:32px;align-items:start;margin-top:0;padding:52px max(5%,calc((100% - 1320px)/2)) 120px;background:linear-gradient(180deg,#edf5fb 0%,#edf5fb 74%,#dfeaf2 100%);overflow:hidden}
+.bts-unified .financial-home:before{left:max(5%,calc((100% - 1320px)/2));top:0;width:40px;background:var(--ref-red)}
+.bts-unified .financial-home:after{content:'';position:absolute;z-index:-1;left:0;right:0;bottom:-8px;height:112px;background:linear-gradient(0deg,#edf5fb05,#edf5fb00 58%),url('/assets/covers/3e4c28877075f837-cover.webp') center 59%/cover;opacity:.48;mask-image:linear-gradient(0deg,#000 8%,transparent 100%)}
+.bts-unified .financial-home>.section-tag,.bts-unified .financial-home>h2,.bts-unified .financial-home>.financial-period,.bts-unified .financial-home>.finance-actions{grid-column:1;justify-self:start}
+.bts-unified .financial-home>.section-tag{margin:0 0 10px}
+.bts-unified .financial-home>h2{margin:0 0 8px;font-size:36px;line-height:1.25}
+.bts-unified .financial-home>.financial-period{margin:0;color:#5a7188;font-size:17px;line-height:1.5}
+.bts-unified .financial-home>.metrics{grid-column:2;grid-row:1/4;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-self:center;gap:0;margin:0;padding:4px 0 0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.bts-unified .financial-home .metric{display:flex;align-items:flex-start;gap:14px;min-width:0;min-height:144px;padding:16px 20px;background:transparent;border:0;border-left:1px solid #b8ccdc;border-radius:0;box-shadow:none}
+.bts-unified .financial-home .metric:first-child{border-left:1px solid #b8ccdc}
+.bts-unified .financial-home .metric .glass-icon{flex:0 0 38px;width:38px;height:38px;border:0;background:transparent;color:var(--ref-blue)}
+.bts-unified .financial-home .metric .line-icon{width:26px;height:26px}
+.bts-unified .financial-home .metric>div{min-width:0}
+.bts-unified .financial-home .metric strong{display:block;margin:0 0 8px;font-size:clamp(32px,3.2vw,48px);line-height:1;color:var(--ref-navy)!important;font-weight:600}
+.bts-unified .financial-home .metric span:not(.glass-icon){display:block;color:#314b62;font-size:16px;line-height:1.4}
+.bts-unified .financial-home>.finance-actions{align-self:end;margin:14px 0 0;gap:9px;flex-wrap:wrap}
+.bts-unified .financial-home>.finance-actions .outline-button{min-height:38px;padding:7px 13px;border-color:#9fb6c9;background:transparent;color:var(--ref-navy);font-size:15px}
+.bts-unified .news{padding:54px 0 60px}
+.bts-unified .news-heading{margin-bottom:18px}
+.bts-unified .news-carousel{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);grid-template-rows:repeat(2,minmax(125px,1fr));gap:16px;overflow:visible}
+.bts-unified .news-card{display:grid;grid-template-columns:142px minmax(0,1fr);grid-template-rows:auto 1fr auto;gap:5px 16px;min-width:0;padding:0 0 14px;border-bottom:1px solid var(--ref-line)}
+.bts-unified .news-card:first-child{display:flex;position:relative;grid-column:1;grid-row:1/3;min-height:300px;justify-content:flex-end;padding:24px;border:0;border-radius:12px;overflow:hidden;color:#fff;background:#092b4b}
+.bts-unified .news-card .news-image{grid-column:1;grid-row:1/4;width:142px;height:100%;min-height:108px;aspect-ratio:1.35;border-radius:6px}
+.bts-unified .news-card time{grid-column:2;grid-row:1;margin:0;font-size:14px}
+.bts-unified .news-card h3{grid-column:2;grid-row:2;align-self:start;margin:0;font-size:18px;line-height:1.4}
+.bts-unified .news-card .read-more{grid-column:2;grid-row:3;align-self:end;margin:0;padding:0;border:0;font-size:14px}
+.bts-unified .news-card:first-child .news-image{position:absolute;inset:0;width:100%;height:100%;border-radius:0;aspect-ratio:auto}
+.bts-unified .news-card:first-child .news-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#041b31ee 0%,#062b4b24 76%)}
+.bts-unified .news-card:first-child :is(time,h3,.read-more){position:relative;z-index:1;margin:0;color:#fff}
+.bts-unified .news-card:first-child time{font-size:14px}
+.bts-unified .news-card:first-child h3{max-width:640px;font-size:24px;line-height:1.4}
+.bts-unified .news-card:first-child .read-more{margin-top:4px}
+.bts-unified .news-card:nth-child(n+3){display:none}
+.bts-unified .investor{margin:48px auto;border-radius:14px;padding:40px;background-image:linear-gradient(90deg,#061f3bf0 0%,#092d4bc9 58%,#092d4b60 100%),url('/assets/covers/3e4c28877075f837-cover.webp');background-position:center 58%;background-size:cover}
+.bts-unified .sustainability{padding:54px 0 100px;background:linear-gradient(180deg,#fff 0%,#f1f6fa 86%,#e5eef5 100%)}
+.bts-unified .sustainability:after{height:105px;background-position:center 59%;opacity:.45}
+.bts-unified .sustainability .container{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.6fr);gap:34px;align-items:center}
+.bts-unified .sustainability .center-heading{grid-column:1;grid-row:1;margin:0;text-align:left}
+.bts-unified .sustainability .center-heading .section-title{margin:6px 0 12px}
+.bts-unified .sustainability .center-heading>p{font-size:18px;line-height:1.6}
+.bts-unified .sustainability .esg-layout{grid-column:2;grid-row:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.bts-unified .sustainability .esg-tabs{display:contents}
+.bts-unified .sustainability .esg-tabs:before{display:none}
+.bts-unified .sustainability .esg-tabs a{display:flex;position:relative;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:12px;min-height:150px;margin:0;padding:18px;border:1px solid #d8e4ee;border-radius:10px;background:linear-gradient(145deg,#fff,#f4f8fb);color:var(--ref-navy);box-shadow:0 8px 22px #0a31500a}
+.bts-unified .sustainability .esg-tabs a.active{border-color:#b6ccdd;border-left:1px solid #b6ccdd;background:linear-gradient(145deg,#f8fcff,#eaf3f9);box-shadow:0 10px 25px #0a315011}
+.bts-unified .sustainability .esg-tabs a small{display:grid;place-items:center;width:28px;height:28px;border:1px solid #a9c1d5;border-radius:50%;background:#fff;color:var(--ref-blue);font:700 11px/1 Mulish,sans-serif}
+.bts-unified .sustainability .esg-tabs a>span{font-size:17px;line-height:1.4}
+.bts-unified .sustainability .esg-tabs a>b{position:absolute;right:16px;top:17px;font-size:19px;color:var(--ref-red)}
+.bts-unified .sustainability #esg-link{grid-column:1/4;display:block;height:105px;border-radius:9px;overflow:hidden;box-shadow:none}
+.bts-unified .sustainability #esg-link img{width:100%;height:100%;object-fit:cover;object-position:center 52%;filter:saturate(.8)}
+.bts-unified .sustainability #esg-caption{font-size:14px}
+.modern-inner .inner-hero .inner-station{display:none}
+.modern-inner .inner-hero:not(.video-cover){min-height:clamp(410px,48svh,570px)}
+@media(max-width:1050px){.bts-unified .financial-home{grid-template-columns:minmax(210px,.8fr) minmax(0,1.6fr);column-gap:18px}.bts-unified .financial-home .metric{padding-inline:14px}.bts-unified .sustainability .container{grid-template-columns:1fr}.bts-unified .sustainability .center-heading,.bts-unified .sustainability .esg-layout{grid-column:1;grid-row:auto}.bts-unified .sustainability .center-heading{text-align:left}}
+@media(max-width:760px){
+ .bts-unified .hero{height:clamp(510px,74svh,620px);min-height:510px}
+ .bts-unified .hero-brand-copy{top:48%;left:6%;width:88%;max-width:none}
+ .bts-unified .hero h1,html[lang=en] .bts-unified .hero h1{font-size:clamp(42px,11vw,56px);line-height:1.13}
+ .bts-unified .hero-signature{max-width:340px;margin-top:12px;font-size:17px;line-height:1.55}
+ .bts-unified .hero-discover{margin-top:17px;min-height:44px;padding-inline:17px;font-size:14px}
+ .bts-unified .business-intro{grid-template-columns:1fr;gap:6px;padding-top:34px;padding-bottom:20px}
+ .bts-unified .business-panels{grid-template-columns:1fr;grid-template-rows:none;gap:13px}
+ .bts-unified .business-panel,.bts-unified .business-panel:first-child{min-height:230px;padding:20px}
+ .bts-unified .business-icon{top:18px;left:19px;width:46px;height:46px}
+ .bts-unified .business-panel h3,.bts-unified .business-panel:first-child h3{font-size:27px}
+ .bts-unified .business-panel .business-description{font-size:16px}
+ .bts-unified .financial-home{display:grid;grid-template-columns:1fr;grid-template-rows:auto;padding:38px 20px 90px;gap:0}
+ .bts-unified .financial-home>.section-tag,.bts-unified .financial-home>h2,.bts-unified .financial-home>.financial-period,.bts-unified .financial-home>.finance-actions,.bts-unified .financial-home>.metrics{grid-column:1;grid-row:auto}
+ .bts-unified .financial-home>h2{font-size:31px}
+ .bts-unified .financial-home>.financial-period{font-size:15px}
+ .bts-unified .financial-home>.metrics{grid-template-columns:1fr;margin-top:18px}
+ .bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:0;padding:15px 3px;border-left:0;border-top:1px solid #c8d8e5;gap:12px}
+ .bts-unified .financial-home .metric strong{font-size:32px}
+ .bts-unified .financial-home .metric span:not(.glass-icon){font-size:15px}
+ .bts-unified .financial-home>.finance-actions{margin-top:14px}
+ .bts-unified .financial-home>.finance-actions .outline-button{font-size:14px}
+ .bts-unified .news-carousel{grid-template-columns:1fr;grid-template-rows:auto;gap:16px}
+ .bts-unified .news-card:first-child{grid-column:1;grid-row:auto;min-height:250px;padding:18px}
+ .bts-unified .news-card:first-child h3{font-size:20px}
+ .bts-unified .news-card:not(:first-child){grid-template-columns:118px minmax(0,1fr);min-height:112px;gap:4px 12px}
+ .bts-unified .news-card:not(:first-child) .news-image{width:118px;min-height:106px}
+ .bts-unified .investor{margin:30px auto;padding:25px 20px}
+ .bts-unified .sustainability{padding:38px 0 76px}
+ .bts-unified .sustainability .container{width:calc(100% - 40px);gap:22px}
+ .bts-unified .sustainability .esg-layout{grid-template-columns:1fr;gap:10px}
+ .bts-unified .sustainability .esg-tabs a{min-height:90px;padding:14px 16px 14px 54px;justify-content:center}
+ .bts-unified .sustainability .esg-tabs a small{position:absolute;left:14px;top:50%;transform:translateY(-50%)}
+ .bts-unified .sustainability #esg-link{grid-column:1;height:120px}
+}
+.bts-unified .financial-home{grid-template-rows:auto auto auto auto}
+.bts-unified .financial-home>.metrics{grid-row:1/5}
+.bts-unified .financial-home .metric:first-child{grid-row:auto;position:static;align-items:flex-start;min-height:144px;padding:16px 20px;overflow:visible;border-right:0;border-bottom:0}
+.bts-unified .financial-home .metric:first-child:after{content:none;display:none}
+.bts-unified .financial-home .metric>div{display:block;flex:1}
+.bts-unified .financial-home .metric strong{display:block;margin:0 0 8px}
+.bts-unified .news .carousel-controls,.bts-unified .news .news-filters{display:none!important}
+.bts-unified .investor{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,2fr);align-items:center;gap:36px;min-height:280px;padding:38px 42px}
+.bts-unified .investor-intro{max-width:400px}
+.bts-unified .investor-eyebrow{display:inline-block;margin-bottom:10px;color:#dfeaf3;font:700 11px/1.4 Mulish,sans-serif;letter-spacing:.16em}
+.bts-unified .investor-intro h2{margin:0 0 12px;color:#fff;font:500 38px/1.2 OzoneX,sans-serif}
+.bts-unified .investor-intro p{margin:0 0 18px;color:#e2edf5;font:400 17px/1.55 OzoneX,sans-serif}
+.bts-unified .investor-contact{display:inline-flex;align-items:center;gap:15px;padding:10px 15px;border:1px solid #ffffff80;border-radius:4px;color:#fff;font-size:15px;text-decoration:none}
+.bts-unified .investor-contact b{color:#ff5368}
+.bts-unified .investor-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.bts-unified .investor-link{display:flex;min-width:0;min-height:126px;flex-direction:column;justify-content:center;align-items:center;gap:13px;padding:14px;border-left:1px solid #ffffff50;color:#fff;text-align:center;text-decoration:none;font-size:15px;line-height:1.4;transition:background .2s}
+.bts-unified .investor-link:hover{background:#ffffff18;color:#fff}
+.bts-unified .investor-link .line-icon{width:31px;height:31px;fill:none;stroke:#fff;stroke-width:1.5}
+.bts-unified .investor-link>b{color:#ff5368}
+.bts-unified .sustainability .center-heading>p{margin-top:8px}
+@media(max-width:1050px){.bts-unified .investor{grid-template-columns:1fr;gap:22px}.bts-unified .investor-intro{max-width:620px}.bts-unified .investor-links{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){.bts-unified .financial-home .metric:first-child{grid-row:auto;min-height:0;padding:15px 3px}.bts-unified .investor{grid-template-columns:1fr;gap:20px;padding:25px 20px}.bts-unified .investor-intro h2{font-size:29px}.bts-unified .investor-intro p{font-size:15px}.bts-unified .investor-links{grid-template-columns:repeat(2,minmax(0,1fr))}.bts-unified .investor-link{min-height:108px;border-top:1px solid #ffffff50;border-left:0;font-size:14px}.bts-unified .investor-link:nth-child(even){border-left:1px solid #ffffff50}}
+.bts-unified .business-intro .section-tag{color:var(--ref-navy);font:700 11px/1.4 Mulish,sans-serif;letter-spacing:.14em}
+.bts-unified .business-intro .section-title{max-width:660px;font-size:clamp(30px,3vw,40px);line-height:1.24}
+.bts-unified .business-intro>p{font-size:18px;line-height:1.55;color:#4f687e}
+@media(max-width:760px){.bts-unified .financial-home>.metrics{grid-row:auto}.bts-unified .business-intro .section-title{font-size:31px}.bts-unified .business-intro>p{font-size:16px}}
+.modern-inner .inner-hero .inner-station{display:flex;align-items:center;gap:12px;margin:0 0 14px;color:#edf5fb;font:500 16px/1.45 OzoneX,sans-serif;letter-spacing:.02em}
+.modern-inner .inner-hero .inner-station:before{content:'';width:30px;height:2px;flex:0 0 30px;background:var(--ref-red)}
+.modern-inner .inner-hero:has(.ir-cover-eyebrow) .inner-station{display:none}
+.bts-unified .sustainability #esg-link{width:100%;align-self:stretch}
+@media(max-width:760px){.modern-inner .inner-hero .inner-station{font-size:14px}.modern-inner .inner-hero:has(.ir-cover-eyebrow) .inner-station{display:none}}
