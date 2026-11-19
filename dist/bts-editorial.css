@@ -119,3 +119,135 @@ html[lang=en] .modern-inner .source-body .business-card__title{font-size:20px}
 .modern-inner .source-body .card-board__thumbnail{height:auto!important;min-height:0!important}
 .modern-inner .source-body .card-board__thumbnail img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;margin:0}
 .modern-inner [data-archive-path] .page-card-image{display:none}
+
+/* BTS reference direction: bold transport imagery, clear editorial hierarchy,
+   and compact destination cards, using the existing BTS OzoneX / Mulish fonts. */
+.bts-unified{--ref-navy:#092b4b;--ref-blue:#07569a;--ref-red:#e92543;--ref-sky:#edf5fb;--ref-line:#d8e4ee}
+.bts-unified .site-header{background:#fff;border-bottom:1px solid #e5edf3;box-shadow:0 5px 22px #0c2c4608}
+.bts-unified .site-header .main-nav :is(a,button){color:#123151}
+.bts-unified .site-header .main-nav :is(a:hover,button:hover){color:var(--ref-blue)}
+.bts-unified .site-header .main-nav>.current-section:after{background:var(--ref-red)}
+.bts-unified :is(.inner-hero,.hero){color:#fff}
+.bts-unified .inner-hero:not(.video-cover){min-height:clamp(430px,56svh,650px);padding-bottom:56px}
+.bts-unified .inner-cover:after{background:linear-gradient(90deg,#071e38e8 0%,#0a2c4db3 38%,#0a2c4d50 72%,#071e3824),linear-gradient(0deg,#071e3890,transparent 62%)}
+.bts-unified .inner-breadcrumb{font-size:15px;letter-spacing:.02em}
+.bts-unified .inner-hero .inner-station{display:flex;align-items:center;gap:14px;margin:0 0 16px;color:#eaf2fa;font:700 12px/1.4 Mulish,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.bts-unified .inner-hero .inner-station:before{content:'';display:block;width:34px;height:2px;background:var(--ref-red)}
+.bts-unified .inner-hero .inner-station:before{border:0;border-radius:0;box-shadow:none}
+.bts-unified .inner-hero h1,html[lang=en] .bts-unified .inner-hero h1{font-size:clamp(46px,5.1vw,72px);line-height:1.14;letter-spacing:-.015em}
+.bts-unified .inner-hero[data-cover-title-length=long] h1{font-size:clamp(40px,4.2vw,58px)}
+html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-size:clamp(36px,3.7vw,52px)}
+.modern-inner:not([data-modern-kind=history]) .page-layout{width:min(92%,1420px);max-width:1420px;padding-top:56px;padding-bottom:80px;gap:clamp(32px,4vw,64px)}
+.modern-inner[data-modern-kind=reading] .page-layout,.modern-inner[data-modern-kind=news] .page-layout{max-width:1080px}
+.modern-inner:not([data-modern-kind=history]) .source-body{font-size:23px;line-height:1.65}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-section{margin-bottom:56px}
+.modern-inner:not([data-modern-kind=history]) .source-body .section__header{margin-bottom:28px}
+.modern-inner:not([data-modern-kind=history]) .source-body h2{font-size:clamp(34px,3.25vw,46px);line-height:1.22;padding:0 0 17px;border:0;background:linear-gradient(90deg,var(--ref-red) 0 42px,transparent 42px) left bottom/100% 2px no-repeat}
+.modern-inner:not([data-modern-kind=history]) .source-body h3{font-size:clamp(25px,2.35vw,34px);line-height:1.28}
+.modern-inner:not([data-modern-kind=history]) .source-body p{line-height:1.75}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-card-grid{gap:22px}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-default,.modern-inner:not([data-modern-kind=history]) .source-body .card-board,.modern-inner:not([data-modern-kind=history]) .source-body .card.card-content,.modern-inner:not([data-modern-kind=history]) .source-body .business-card{border-radius:16px;box-shadow:0 12px 30px #0a31500d}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-default{overflow:hidden}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-default>.card-img-top{border-bottom-color:var(--ref-line);background:#e8f1f8}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-default.card-info .card-img-top{height:auto;aspect-ratio:16/9;padding:0}
+.modern-inner:not([data-modern-kind=history]) .source-body .card-default.card-info .card-bg img{width:100%;height:100%;object-fit:cover}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card{min-height:320px;border-radius:16px;box-shadow:0 14px 34px #082b4b1a}
+.modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card:before{background:linear-gradient(0deg,#061f3bea,#061f3b05 72%)}
+.modern-inner:not([data-modern-kind=history]) .source-body .card.card-content{background:linear-gradient(135deg,#f7fbfe,#edf5fb);border-color:var(--ref-line)}
+.modern-inner:not([data-modern-kind=history]) .source-body .business-card{border:1px solid var(--ref-line);border-left:4px solid var(--ref-red);background:linear-gradient(135deg,#fff,#f3f8fc);padding:28px}
+.modern-inner:not([data-modern-kind=history]) .source-body .business-card__title{font-size:32px;color:var(--ref-navy)}
+.modern-inner:not([data-modern-kind=history]) .source-body .business-card .btn{color:var(--ref-blue);font-weight:600}
+.modern-inner:not([data-modern-kind=history]) .source-body .table-scroll{border:1px solid var(--ref-line);border-radius:14px;box-shadow:0 8px 26px #092b4b09}
+.modern-inner:not([data-modern-kind=history]) .source-body th{background:var(--ref-navy)}
+.modern-inner:not([data-modern-kind=history]) .source-body .source-accordion{border-color:var(--ref-line)}
+.modern-inner:not([data-modern-kind=history]) .source-body .source-accordion summary{border-radius:10px;background:#f2f7fb;padding:18px 22px}
+.modern-inner:not([data-modern-kind=history]) .source-body .source-accordion[open] summary{background:var(--ref-navy)}
+.modern-inner .related-pages{background:var(--ref-sky)}
+.modern-inner .related-pages .page-card{border-radius:16px;box-shadow:0 12px 30px #0a31500b}
+.modern-inner .related-pages .page-card-image{aspect-ratio:16/9}
+.modern-inner .related-pages .page-card .page-card-arrow{color:var(--ref-red)}
+.ir-home-page .ir_home__download{border-radius:10px;padding:18px 22px}
+.ir-home-page .ir-results{border-radius:18px}
+.bts-unified .hero{isolation:isolate}
+.bts-unified .hero-overlay{background:linear-gradient(90deg,#061f3be8 0%,#082b4ba6 43%,#0b2a4629 78%),linear-gradient(0deg,#051b33aa,transparent 60%)}
+.bts-unified .hero-brand-copy{left:7%;top:50%;width:min(48%,680px);max-width:680px;margin:0;transform:translateY(-50%);text-align:left}
+.bts-unified .hero-brand-copy:before{content:'BTS GROUP';display:inline-flex;align-items:center;gap:14px;color:#fff;font:700 12px/1.5 Mulish,sans-serif;letter-spacing:.16em}
+.bts-unified .hero-brand-copy:after{content:'';position:absolute;top:9px;left:94px;width:42px;height:2px;background:var(--ref-red)}
+.bts-unified .hero h1,html[lang=en] .bts-unified .hero h1{font:600 clamp(48px,5.2vw,76px)/1.14 Mulish,OzoneX,sans-serif;letter-spacing:-.025em;margin:22px 0 0;text-align:left}
+.bts-unified .hero h1>span{padding:0 0 4px}
+.bts-unified .hero h1>span:first-child b,.bts-unified .hero h1>span:nth-child(2) b,.bts-unified .hero h1>span:nth-child(3) b{color:var(--ref-red)}
+.bts-unified .hero-discover{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:28px;padding:0 24px;border:1px solid #ffffff70;border-radius:5px;background:var(--ref-blue);color:#fff;font:600 16px/1.3 OzoneX,sans-serif;transition:background .2s,transform .2s}
+.bts-unified .hero-discover:hover{background:var(--ref-red);transform:translateY(-2px)}
+.bts-unified .business{padding:0 0 72px}
+.bts-unified .business-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:40px;align-items:end;width:min(90%,1380px);margin:0 auto;padding:52px 0 30px}
+.bts-unified .business-intro .section-tag,.bts-unified .section-heading .section-tag{position:relative;display:inline-block;margin-bottom:15px;color:var(--ref-navy);font:700 12px/1.5 Mulish,sans-serif;letter-spacing:.12em}
+.bts-unified .business-intro .section-title,.bts-unified .section-heading .section-title{font-size:clamp(34px,3.5vw,48px);line-height:1.25;letter-spacing:-.015em}
+.bts-unified .business-intro>p{font-size:20px;line-height:1.65;color:#506b83}
+.bts-unified .business-panels{width:min(90%,1380px);grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(320px,390px);gap:20px;margin:0 auto}
+.bts-unified .business-panel,.bts-unified .business-panel:first-child{grid-row:auto;min-height:320px;border-radius:14px;padding:26px;box-shadow:0 12px 34px #092b4b1a}
+.bts-unified .business-panel h3,.bts-unified .business-panel:first-child h3{font-size:clamp(27px,2.35vw,36px);line-height:1.2}
+.bts-unified .business-panel .business-description{font-size:18px;line-height:1.5;max-width:90%}
+.bts-unified .business-panel .glass-icon{width:52px;height:52px}
+.bts-unified .financial-home{background:var(--ref-sky);color:var(--ref-navy);padding-block:54px 68px}
+.bts-unified .financial-home:before{left:5%;width:40px;background:var(--ref-red)}
+.bts-unified .financial-home :is(.section-tag,h2,.metric strong){color:var(--ref-navy)!important}
+.bts-unified .financial-home :is(.financial-period,.metric span:not(.glass-icon)){color:#5a7188}
+.bts-unified .financial-home .section-tag{color:var(--ref-navy);font:700 12px/1.5 Mulish,sans-serif;letter-spacing:.12em}
+.bts-unified .financial-home .metrics{gap:22px;padding:18px 0 14px}
+.bts-unified .financial-home .metric{padding:24px;background:#ffffffd9;border:1px solid #d9e7f1;border-radius:12px;box-shadow:0 8px 24px #0d35520b}
+.bts-unified .financial-home .metric strong{font-size:clamp(36px,4vw,58px);font-weight:600}
+.bts-unified .financial-home .outline-button{border:1px solid var(--ref-blue);background:var(--ref-blue);color:#fff}
+.bts-unified .financial-home .outline-button:hover{background:var(--ref-red);border-color:var(--ref-red)}
+.bts-unified .investor{width:min(92%,1440px);max-width:none;margin:64px auto;border:0;border-radius:18px;padding:52px;background:linear-gradient(90deg,#071f3bf0,#092d4bc2 62%,#0a2b4b66),url('/assets/covers/24834a68b5316013-cover.webp') center/cover;color:#fff;overflow:hidden}
+.bts-unified .investor .eyebrow,.bts-unified .investor .display,.bts-unified .investor-copy>p,.bts-unified .investor .text-button{color:#fff}
+.bts-unified .investor-copy>p{font-size:18px;line-height:1.7;color:#e4eff7}
+.bts-unified .investor .text-button{border-bottom:1px solid #ffffff80;padding-bottom:8px}
+.bts-unified .investor .financial>div{border-color:#ffffff40}
+.bts-unified .investor .financial strong,.bts-unified .investor .financial>div span{color:#fff}
+.bts-unified .investor .financial .loss{color:#ff9aa7}
+.bts-unified .news{width:min(90%,1380px);max-width:none;margin:0 auto;padding:64px 0 72px}
+.bts-unified .news-heading{align-items:end}
+.bts-unified .news-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:24px}
+.bts-unified .news-grid>a{border:1px solid var(--ref-line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 28px #092b4b0b;padding:0}
+.bts-unified .news-grid>a:first-child{grid-row:span 2}
+.bts-unified .news-grid>a>.news-image{border-radius:0;aspect-ratio:16/9}
+.bts-unified .news-grid>a:first-child>.news-image{aspect-ratio:16/10}
+.bts-unified .news-grid>a>.news-meta,.bts-unified .news-grid>a>h3,.bts-unified .news-grid>a>p,.bts-unified .news-grid>a>.text-button{margin-left:20px;margin-right:20px}
+.bts-unified .news-grid>a>.news-meta{margin-top:18px}
+.bts-unified .news-grid>a>h3{font-size:22px;line-height:1.45}
+.bts-unified .news-grid>a>.text-button{margin-top:auto;margin-bottom:18px}
+.bts-unified .sustainability{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#eff6fb 0%,#f6f9fc 75%,#fff 100%);padding:68px max(5%,calc((100% - 1380px)/2)) 76px}
+.bts-unified .sustainability:after{content:'';position:absolute;z-index:-1;left:0;right:0;bottom:0;height:120px;background:linear-gradient(0deg,#0b40642b,transparent),url('/assets/covers/3e4c28877075f837-cover.webp') center 60%/cover;opacity:.3;mask-image:linear-gradient(0deg,#000,transparent)}
+.bts-unified .sustainability .center-heading{max-width:1380px;margin-inline:auto}
+.bts-unified .contact-tile{border:1px solid #ffffff2a;border-radius:14px}
+@media(max-width:1100px){.bts-unified .business-panels{grid-template-rows:minmax(300px,350px)}.bts-unified .investor{padding:40px}.bts-unified .news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bts-unified .news-grid>a:first-child{grid-row:span 2}}
+@media(max-width:760px){
+ .bts-unified .inner-hero:not(.video-cover){min-height:390px;padding-bottom:38px}
+ .bts-unified .inner-hero h1,html[lang=en] .bts-unified .inner-hero h1{font-size:clamp(36px,10vw,48px)}
+ .modern-inner:not([data-modern-kind=history]) .page-layout{width:calc(100% - 40px);padding-block:36px 52px;gap:20px}
+ .modern-inner:not([data-modern-kind=history]) .source-body{font-size:19px;line-height:1.65}
+ .modern-inner:not([data-modern-kind=history]) .source-body .modern-section{margin-bottom:36px}
+ .modern-inner:not([data-modern-kind=history]) .source-body h2{font-size:31px}
+ .modern-inner:not([data-modern-kind=history]) .source-body h3{font-size:24px}
+ .modern-inner:not([data-modern-kind=history]) .source-body .modern-photo-card{min-height:260px}
+ .bts-unified .hero-brand-copy{left:6%;top:48%;width:88%;max-width:none;transform:translateY(-50%)}
+ .bts-unified .hero-brand-copy:before{font-size:10px}
+ .bts-unified .hero-brand-copy:after{left:83px;top:7px;width:30px}
+ .bts-unified .hero h1,html[lang=en] .bts-unified .hero h1{font-size:clamp(42px,11vw,58px);line-height:1.16;letter-spacing:-.025em;text-align:left}
+ .bts-unified .hero-discover{min-height:46px;margin-top:18px;font-size:14px}
+ .bts-unified .business-intro{display:block;width:calc(100% - 40px);padding:40px 0 24px}
+ .bts-unified .business-intro>p{margin-top:14px;font-size:17px}
+ .bts-unified .business-panels{width:calc(100% - 40px);grid-template-columns:1fr;grid-template-rows:none;gap:14px}
+ .bts-unified .business-panel,.bts-unified .business-panel:first-child{min-height:300px;padding:24px}
+ .bts-unified .financial-home{padding:40px 20px 48px}
+ .bts-unified .financial-home .metrics{display:grid;grid-template-columns:1fr;gap:12px}
+ .bts-unified .financial-home .metric{padding:20px}
+ .bts-unified .investor{width:calc(100% - 32px);margin:38px auto;padding:28px 22px;border-radius:14px;background-position:58% center}
+ .bts-unified .news{width:calc(100% - 40px);padding:40px 0 48px}
+ .bts-unified .news-heading{display:flex;gap:14px;align-items:end}
+ .bts-unified .news-grid{grid-template-columns:1fr;gap:16px;margin:24px 0}
+ .bts-unified .news-grid>a:first-child{grid-row:auto}
+ .bts-unified .news-grid>a:first-child>.news-image{aspect-ratio:16/9}
+ .bts-unified .sustainability{padding:44px 20px 60px}
+ .bts-unified .sustainability:after{height:80px}
+}
