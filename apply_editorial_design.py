@@ -1,21 +1,80 @@
 from pathlib import Path
 from bs4 import BeautifulSoup
+
+def apply_finance_scene(page, language):
+ section = page.select_one('.financial-home')
+ if section is None:
+  return
+
+ is_thai = language == 'th'
+ label = section.select_one('.section-tag').get_text(strip=True)
+ period = section.select_one('.financial-period').get_text(strip=True)
+ period = period.removeprefix('ข้อมูลสำคัญทางการเงินประจำ' if is_thai else 'Financial Highlights ')
+ figures = [figure.extract() for figure in section.select('.metric strong')]
+ finance_url = section.select_one('.finance-actions a')['href']
+
+ section.clear()
+ section['class'] = ['finance-glass']
+ section['aria-labelledby'] = 'finance-glass-title'
+ scene = BeautifulSoup("""
+ <div class="finance-glass-inner">
+  <p class="finance-glass-eyebrow"></p>
+  <h2 id="finance-glass-title"></h2>
+  <p class="finance-glass-period"></p>
+  <dl class="finance-glass-metrics"></dl>
+  <a class="finance-glass-action"><span aria-hidden="true">↗</span></a>
+ </div>
+ """, 'html.parser').div
+
+ scene.p.string = label
+ heading = scene.h2
+ if is_thai:
+  heading.append('ข้อมูลสำคัญ')
+  heading.append(page.new_tag('br'))
+  heading.append('ทางการเงิน')
+ else:
+  heading.string = 'Key Financial Data'
+ period_text, separator, unit = period.partition(' · ')
+ period_node = scene.select_one('.finance-glass-period')
+ period_node.append(period_text)
+ if separator:
+  dot = page.new_tag('span')
+  dot.string = '·'
+  period_node.append(dot)
+  period_node.append(unit)
+
+ labels = ('รายได้รวม', 'EBITDA', 'กำไร (ขาดทุน)') if is_thai else (
+  'Total Revenue', 'EBITDA', 'Net Profit (Loss)')
+ details = 'สุทธิส่วนที่เป็นของผู้ถือหุ้น' if is_thai else 'Attributable to Equity Holders'
+ for index, (name, figure) in enumerate(zip(labels, figures)):
+  card = page.new_tag('div', attrs={'class': 'finance-glass-card'})
+  term = page.new_tag('dt')
+  term.string = name
+  if index == 2:
+   detail = page.new_tag('span', attrs={'class': 'finance-glass-detail'})
+   detail.string = details
+   term.append(' ')
+   term.append(detail)
+  value = page.new_tag('dd')
+  value.append(figure)
+  card.extend([term, value])
+  scene.dl.append(card)
+
+ scene.a['href'] = finance_url
+ scene.a.insert(0, 'ดูข้อมูลทางการเงิน' if is_thai else 'View Financial Data')
+ section.append(scene)
+
 R=Path(__file__).parent
 for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 28 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 29 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
-  finance_title = s.select_one('.financial-home > h2')
-  if body_path == '/th/home' and finance_title and finance_title.get_text(' ', strip=True) == 'ข้อมูลสำคัญทางการเงิน':
-   finance_title.clear()
-   finance_title.append('ข้อมูลสำคัญ')
-   finance_title.append(s.new_tag('br'))
-   finance_title.append('ทางการเงิน')
+  apply_finance_scene(s, body_path.split('/')[1])
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
    section.decompose()
