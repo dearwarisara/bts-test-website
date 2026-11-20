@@ -900,6 +900,11 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
 .bts-unified .footer-modern .footer-identity-rule{display:none!important}
 .bts-unified .footer-modern .footer-identity h3{font-size:1.25rem!important;line-height:1.5}
 
+/* With the eyebrow removed, let the footer signature span the full text column. */
+.bts-unified .footer-modern .footer-signature{grid-template-columns:minmax(0,1fr) auto}
+.bts-unified .footer-modern .footer-signature p{min-width:0;white-space:nowrap}
+@media(max-width:760px){.bts-unified .footer-modern .footer-signature p{white-space:normal;overflow-wrap:normal}}
+
 /* Homepage hero fills the visible screen; remove the redundant CTA below the title. */
 .bts-unified .hero{height:100svh;min-height:620px;max-height:none}
 .bts-unified .hero-discover{display:none}
