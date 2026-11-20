@@ -5,7 +5,7 @@ for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
- s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-editorial.css?v=5'))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-editorial.css?v=6'))
  # Keep archive artwork restrained: show one representative story image per
  # news archive, and leave the remaining cards as clean editorial text cards.
  news_archive = s.body and s.body.get('data-path', '').endswith(('/news-event', '/update/news-event'))
