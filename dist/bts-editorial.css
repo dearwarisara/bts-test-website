@@ -894,6 +894,12 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
  html[lang=en] .bts-unified .footer-modern .footer-link-columns a{font:500 16px/1.5 Mulish,sans-serif}
 }
 
+/* Remove the red-boxed brand labels/rule and enlarge the legal company name. */
+.bts-unified .sustainability-cover-eyebrow,
+.bts-unified .footer-modern .footer-eyebrow,
+.bts-unified .footer-modern .footer-identity-rule{display:none!important}
+.bts-unified .footer-modern .footer-identity h3{font-size:1.25rem!important;line-height:1.5}
+
 /* Homepage hero fills the visible screen; remove the redundant CTA below the title. */
 .bts-unified .hero{height:100svh;min-height:620px;max-height:none}
 .bts-unified .hero-discover{display:none}
