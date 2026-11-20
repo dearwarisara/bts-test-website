@@ -642,3 +642,119 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
  .bts-unified .sustainability .esg-tabs{grid-column:1;grid-row:2}
  .bts-unified .sustainability .esg-tabs a{min-height:72px;padding-left:42px}
 }
+
+/* Financial, ESG and footer scenes: clear hierarchy, BTS colors and balanced scale. */
+.bts-unified .financial-home{padding:70px max(5%,calc((100% - 1480px)/2)) 76px;background:linear-gradient(115deg,#f7f9fb 0%,#eaf1f7 100%);column-gap:clamp(32px,4vw,64px)}
+.bts-unified .financial-home:after{display:none}
+.bts-unified .financial-home:before{left:max(5%,calc((100% - 1480px)/2));width:52px;height:3px;background:var(--ci-red)}
+.bts-unified .financial-home>.section-tag,.bts-unified .financial-home>h2,.bts-unified .financial-home>.financial-period,.bts-unified .financial-home>.finance-actions{max-width:440px}
+.bts-unified .financial-home>h2{font-size:clamp(34px,3.1vw,46px);line-height:1.25;letter-spacing:-.025em}
+.bts-unified .financial-home>.financial-period{font-size:16px;line-height:1.7}
+.bts-unified .financial-home .metrics{width:100%;align-self:center;align-content:center;gap:14px;padding:0}
+.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-width:0;min-height:184px;align-items:flex-start;gap:14px;padding:24px 20px;border:1px solid #d6e2ec;border-top:2px solid var(--ci-blue);border-radius:3px;background:#ffffffdb;box-shadow:0 14px 34px #0b2b4510}
+.bts-unified .financial-home .metric:nth-child(2){border-top-color:var(--ci-red)}
+.bts-unified .financial-home .metric .glass-icon{flex-basis:30px;width:30px;height:30px;color:var(--ci-blue)}
+.bts-unified .financial-home .metric .line-icon{width:23px;height:23px}
+.bts-unified .financial-home .metric strong{font-size:clamp(30px,2.8vw,42px);line-height:1.08;letter-spacing:-.035em}
+.bts-unified .financial-home .metric span:not(.glass-icon){font-size:14px;line-height:1.55;color:#58718a}
+.bts-unified .financial-home>.finance-actions{align-self:end;margin-top:20px}
+.bts-unified .financial-home>.finance-actions .outline-button{min-height:42px;padding-inline:15px;border-color:#a9bdce;background:#ffffff88;color:#183b5b;font-size:14px}
+.bts-unified .financial-home>.finance-actions .outline-button:hover{background:var(--ci-blue);color:#fff}
+.bts-unified .sustainability{padding:84px 0 90px;background:linear-gradient(115deg,#f7f9fb 0%,#edf3f8 100%)}
+.bts-unified .sustainability:after{display:none}
+.bts-unified .sustainability .container{width:min(90%,1480px);max-width:1480px;grid-template-columns:minmax(260px,.78fr) minmax(0,1.5fr);gap:clamp(38px,5vw,76px)}
+.bts-unified .sustainability .center-heading{align-self:center;max-width:410px}
+.bts-unified .sustainability .center-heading>span{display:block;color:var(--ci-blue);font:600 13px/1.5 OzoneX,sans-serif;letter-spacing:.06em}
+.bts-unified .sustainability .center-heading .section-title{margin:10px 0 16px;font-size:clamp(42px,4.2vw,56px);line-height:1.13;letter-spacing:-.025em}
+.bts-unified .sustainability .center-heading>p{font-size:18px;line-height:1.8;color:#58718a}
+.bts-unified .sustainability .esg-layout{grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);grid-template-rows:1fr;gap:clamp(20px,2vw,30px);align-items:stretch}
+.bts-unified .sustainability .esg-tabs{display:flex;flex-direction:column;justify-content:center;gap:8px}
+.bts-unified .sustainability .esg-tabs a{display:grid;grid-template-columns:36px minmax(0,1fr) 18px;align-items:center;gap:12px;min-height:86px;margin:0;padding:14px 16px;border:1px solid transparent;border-bottom-color:#d3e0ea;border-radius:2px;background:transparent;box-shadow:none;font-size:16px;line-height:1.5}
+.bts-unified .sustainability .esg-tabs a.active{border-color:#d2e0eb;border-left:2px solid var(--ci-red);background:#fff;box-shadow:0 12px 30px #1239560b}
+.bts-unified .sustainability .esg-tabs a>small{grid-area:1/1}
+.bts-unified .sustainability .esg-tabs a>span{grid-area:1/2;width:100%;min-width:0;justify-self:stretch}
+.bts-unified .sustainability .esg-tabs a>b{grid-area:1/3;position:static;justify-self:end}
+.bts-unified .sustainability .esg-tabs a small{width:30px;height:30px;border-color:#cad8e3;font-size:10px}
+.bts-unified .sustainability .esg-tabs a>b{position:static;justify-self:end;font-size:18px;color:var(--ci-blue)}
+.bts-unified .sustainability #esg-link{grid-column:2;grid-row:1;width:100%;height:clamp(380px,34vw,470px);min-height:0;border-radius:3px;overflow:hidden;box-shadow:0 18px 42px #0c2a411a}
+.bts-unified .sustainability #esg-link img{filter:saturate(.9);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.bts-unified .sustainability #esg-link:hover img{transform:scale(1.025)}
+.bts-unified .footer-modern{--footer-muted:#c1ccda;border-top:2px solid var(--ci-blue);background:linear-gradient(115deg,#071a36 0%,#0d2b4b 68%,#103f66 100%);color:#fff}
+.bts-unified .footer-modern:before{top:-2px;left:0;width:14%;height:2px;background:var(--ci-red)}
+.bts-unified .footer-modern .footer-signature{max-width:1680px;margin:0 auto;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(22px,3vw,48px);padding:25px clamp(32px,5vw,84px);border-bottom:1px solid #ffffff20}
+.bts-unified .footer-modern .footer-eyebrow{color:#aec2d4;font-size:11px;letter-spacing:.18em}
+.bts-unified .footer-modern .footer-signature p{font-size:clamp(26px,2.5vw,34px);line-height:1.25;letter-spacing:-.02em}
+.bts-unified .footer-modern .footer-signature p>span{color:#a8bfd2}
+.bts-unified .footer-modern .footer-signature>a{gap:14px;padding:9px 13px;border:1px solid #ffffff42;border-radius:2px;font:500 15px/1.5 OzoneX,sans-serif;white-space:nowrap}
+.bts-unified .footer-modern .footer-signature>a>span{width:25px;height:25px;background:var(--ci-red)}
+.bts-unified .footer-modern .footer-main-grid{max-width:1680px;margin:0 auto;grid-template-columns:minmax(220px,.78fr) minmax(400px,1.25fr) minmax(280px,.9fr);gap:clamp(30px,4vw,58px);padding:34px clamp(32px,5vw,84px) 38px}
+.bts-unified .footer-modern .footer-identity{grid-template-columns:58px minmax(0,1fr);gap:15px}
+.bts-unified .footer-modern .footer-logo{width:58px;height:76px;padding:8px;border-radius:2px}
+.bts-unified .footer-modern .footer-logo img{width:42px;height:60px}
+.bts-unified .footer-modern .footer-identity h3{font-size:18px;line-height:1.5}
+.bts-unified .footer-modern .footer-identity-rule{background:linear-gradient(90deg,var(--ci-red) 0 45%,var(--ci-blue-3) 45% 100%)}
+.bts-unified .footer-modern :is(.footer-navigation,.footer-connect)>h3{margin-bottom:15px;font-size:18px;line-height:1.4}
+.bts-unified .footer-modern .footer-link-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.bts-unified .footer-modern .footer-link-columns>div{gap:9px}
+.bts-unified .footer-modern .footer-link-columns a{font-size:15px;line-height:1.55;transition:color .2s}
+.bts-unified .footer-modern .footer-link-columns a>span{color:#94abc0}
+.bts-unified .footer-modern .footer-connect{border-left-color:#ffffff30;padding-left:clamp(20px,2.2vw,34px)}
+.bts-unified .footer-modern .footer-connect p{max-width:360px;font-size:15px;line-height:1.75}
+.bts-unified .footer-modern .footer-phone{margin-top:15px;font-size:14px}
+.bts-unified .footer-modern .footer-phone>span:first-child{font-size:15px}
+.bts-unified .footer-modern .footer-location{margin-top:14px;padding-top:12px;border-top-color:#ffffff30;font-size:14px}
+.bts-unified .footer-modern .footer-legal{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:center;gap:6px 20px;padding:14px clamp(32px,5vw,84px);border-top:1px solid #ffffff1c;background:#06162d;color:#bfccda}
+.bts-unified .footer-modern .footer-legal>span{grid-column:1;grid-row:1;color:#91a7bc;font-size:10px}
+.bts-unified .footer-modern .footer-legal nav{grid-column:1;grid-row:2;gap:7px 20px;margin:0}
+.bts-unified .footer-modern .footer-legal nav a{font:400 12px/1.5 OzoneX,sans-serif;color:#bfccda}
+.bts-unified .footer-modern .footer-legal .back-top{grid-column:2;grid-row:1/3;width:38px;height:38px;border-radius:50%;border-color:#7892aa}
+html[lang=en] .bts-unified .footer-modern :is(.footer-signature>a,.footer-link-columns a,.footer-location){font:500 13px/1.6 Mulish,sans-serif}
+@media(max-width:1050px){
+ .bts-unified .financial-home{grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr);padding-top:56px;padding-bottom:60px}
+ .bts-unified .financial-home>.metrics{grid-template-columns:1fr;gap:8px}
+ .bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:94px;padding:15px 18px}
+ .bts-unified .financial-home .metric strong{font-size:32px}
+ .bts-unified .footer-modern .footer-signature{grid-template-columns:auto minmax(0,1fr);gap:12px 24px}
+ .bts-unified .footer-modern .footer-signature>a{grid-column:2;justify-self:start}
+ .bts-unified .footer-modern .footer-main-grid{grid-template-columns:minmax(190px,.75fr) minmax(0,1.25fr);gap:32px}
+ .bts-unified .footer-modern .footer-connect{grid-column:1/-1;border-left:0;border-top:1px solid #ffffff30;padding:22px 0 0}
+ .bts-unified .sustainability .container{grid-template-columns:1fr;gap:28px}
+ .bts-unified .sustainability .center-heading,.bts-unified .sustainability .esg-layout{grid-column:1;grid-row:auto}
+ .bts-unified .sustainability .center-heading{max-width:700px}
+}
+@media(max-width:650px){
+ .bts-unified .financial-home{display:grid;grid-template-columns:1fr;grid-template-rows:auto;padding:40px 20px 48px;gap:0}
+ .bts-unified .financial-home>.section-tag,.bts-unified .financial-home>h2,.bts-unified .financial-home>.financial-period,.bts-unified .financial-home>.finance-actions,.bts-unified .financial-home>.metrics{grid-column:1;grid-row:auto}
+ .bts-unified .financial-home>h2{font-size:30px}
+ .bts-unified .financial-home>.metrics{grid-template-columns:1fr;margin-top:16px}
+ .bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:88px}
+ .bts-unified .financial-home .metric strong{font-size:30px}
+ .bts-unified .financial-home>.finance-actions{flex-wrap:wrap;margin-top:14px}
+ .bts-unified .sustainability{padding:50px 0 58px}
+ .bts-unified .sustainability .container{width:calc(100% - 40px);gap:22px}
+ .bts-unified .sustainability .center-heading .section-title{font-size:36px}
+ .bts-unified .sustainability .center-heading>p{font-size:16px}
+ .bts-unified .sustainability .esg-layout{grid-template-columns:1fr;grid-template-rows:auto auto;gap:14px}
+ .bts-unified .sustainability .esg-tabs{grid-column:1;grid-row:2;gap:5px}
+ .bts-unified .sustainability .esg-tabs a{min-height:66px;padding:10px 12px;font-size:15px}
+ .bts-unified .sustainability #esg-link{grid-column:1;grid-row:1;height:230px}
+ .bts-unified .footer-modern .footer-signature{grid-template-columns:1fr;gap:10px;padding:23px 22px}
+ .bts-unified .footer-modern .footer-signature .footer-eyebrow,.bts-unified .footer-modern .footer-signature>a{grid-column:1}
+ .bts-unified .footer-modern .footer-signature p{font-size:25px}
+ .bts-unified .footer-modern .footer-signature>a{justify-content:space-between;width:100%;font-size:14px}
+ .bts-unified .footer-modern .footer-main-grid{grid-template-columns:1fr;gap:24px;padding:28px 22px 30px}
+ .bts-unified .footer-modern .footer-identity{grid-template-columns:54px minmax(0,1fr)}
+ .bts-unified .footer-modern .footer-logo{width:54px;height:70px}
+ .bts-unified .footer-modern .footer-identity h3{font-size:17px}
+ .bts-unified .footer-modern :is(.footer-navigation,.footer-connect)>h3{font-size:17px;margin-bottom:12px}
+ .bts-unified .footer-modern .footer-link-columns{gap:10px}
+ .bts-unified .footer-modern .footer-link-columns>div{gap:8px}
+ .bts-unified .footer-modern .footer-link-columns a{font-size:14px;line-height:1.5}
+ .bts-unified .footer-modern .footer-connect{grid-column:1;padding-top:19px}
+ .bts-unified .footer-modern .footer-connect p{font-size:14px}
+ .bts-unified .footer-modern .footer-location{font-size:13px}
+ .bts-unified .footer-modern .footer-legal{grid-template-columns:minmax(0,1fr) 36px;gap:10px;padding:14px 22px}
+ .bts-unified .footer-modern .footer-legal nav{gap:7px 12px}
+ .bts-unified .footer-modern .footer-legal nav a{font-size:11px}
+ .bts-unified .footer-modern .back-top{width:34px;height:34px}
+}
