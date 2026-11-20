@@ -1157,3 +1157,179 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   .finance-glass-card dt { margin: 0; font-size: 19px; }
   .finance-glass-action { margin-top: 20px; }
 }
+
+/* Homepage Investor Hub: Bangkok at night. */
+.bts-unified #publications.investor-night {
+  --hub-navy: #0b213d;
+  --hub-blue: #02559b;
+  display: block;
+  padding: 0;
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  font: 400 23px/1.24 OzoneX, sans-serif;
+  background:
+    linear-gradient(90deg, #08172df5 4%, #0a2440d4 47%, #0a223a70),
+    url('/assets/ir/connected-city-v1.webp') center 57% / cover;
+  border-top: 1px solid #91b6d6;
+}
+
+.investor-night-inner {
+  width: min(1152px, calc(100% - 96px));
+  min-height: 550px;
+  margin-inline: auto;
+  padding-block: 55px;
+  display: grid;
+  grid-template-columns: minmax(255px, 2fr) minmax(0, 3fr);
+  align-content: center;
+  align-items: center;
+  gap: 21px 52px;
+}
+
+.investor-night-intro { grid-column: 1; align-self: end; }
+.investor-night-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #dcefff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.investor-night-eyebrow::before {
+  content: '';
+  width: 34px;
+  height: 1px;
+  background: #d83832;
+}
+.investor-night .investor-night-intro h2 {
+  margin: 11px 0 10px;
+  color: #fff;
+  font: 700 clamp(43px, 4.1vw, 65px)/1 OzoneX, sans-serif;
+}
+.investor-night .investor-night-intro p {
+  max-width: 330px;
+  margin: 0;
+  color: #e3eef8;
+}
+
+.investor-night-resources {
+  grid-area: 1 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+.investor-night-resource {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 122px;
+  padding: 16px 18px;
+  border: 1px solid #aac7e268;
+  border-radius: 16px;
+  background: linear-gradient(125deg, #274c6be0, #0d263dd1);
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 1px #ffffff26;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.08;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color .2s, border-color .2s;
+}
+.investor-night-resource:hover { border-color: #bfddf7; background: #234a69; }
+.investor-night-resource > span:nth-child(2) { overflow-wrap: anywhere; }
+.investor-night-icon,
+.investor-night-arrow {
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 50%;
+}
+.investor-night-icon {
+  grid-column: 1 / -1;
+  width: 45px;
+  height: 45px;
+  color: #e8f5ff;
+  background: #c6e4ff1a;
+  border: 1px solid #b0d2ef61;
+}
+.investor-night-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.investor-night-arrow {
+  width: 30px;
+  height: 30px;
+  color: #f3f9ff;
+  font: 16px/1 Arial, sans-serif;
+  border: 1px solid #789aba80;
+}
+.investor-night-resource:hover .investor-night-arrow {
+  background: var(--hub-blue);
+  border-color: var(--hub-blue);
+}
+.investor-night-action {
+  grid-column: 1;
+  display: inline-flex;
+  align-self: start;
+  justify-self: start;
+  align-items: center;
+  gap: 17px;
+  padding: 5px 7px 5px 17px;
+  border: 1px solid #a3c3df95;
+  border-radius: 30px;
+  color: white;
+  background: #102c48aa;
+  font-weight: 700;
+  text-decoration: none;
+}
+.investor-night-action .investor-night-arrow {
+  background: #f3f9ff;
+  border-color: transparent;
+  color: var(--hub-navy);
+}
+.investor-night-action:hover { background: #1c4267; }
+.investor-night a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+
+@media (max-width: 1080px) {
+  .investor-night-inner { width: calc(100% - 64px); column-gap: 28px; }
+}
+@media (max-width: 760px) {
+  .investor-night-inner {
+    width: calc(100% - 44px);
+    min-height: 0;
+    padding-block: 32px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .investor-night-resources { grid-area: auto / 1; gap: 9px; }
+  .investor-night-eyebrow { font-size: 18px; }
+  .investor-night .investor-night-intro p { font-size: 21px; }
+  .investor-night-resource {
+    min-height: 93px;
+    padding: 10px;
+    gap: 6px;
+    border-radius: 13px;
+    font-size: 21px;
+  }
+  .investor-night-icon { width: 37px; height: 37px; }
+  .investor-night-icon svg { width: 22px; height: 22px; }
+  .investor-night-arrow { width: 24px; height: 24px; font-size: 13px; }
+  .investor-night-action { min-height: 42px; font-size: 21px; }
+}
+@media (max-width: 360px) {
+  .investor-night-inner { width: calc(100% - 32px); }
+  .investor-night-resource { font-size: 19px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .investor-night-resource { transition: none; }
+}

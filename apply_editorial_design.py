@@ -64,17 +64,54 @@ def apply_finance_scene(page, language):
  scene.a.insert(0, 'ดูข้อมูลทางการเงิน' if is_thai else 'View Financial Data')
  section.append(scene)
 
+def apply_investor_hub(page):
+ section = page.select_one('section.investor#publications')
+ if section is None:
+  return
+
+ intro = section.select_one('.investor-intro')
+ intro.name = 'header'
+ intro['class'] = ['investor-night-intro']
+ intro.h2['id'] = 'investor-night-title'
+ intro.select_one('.investor-eyebrow')['class'] = ['investor-night-eyebrow']
+
+ resources = section.select_one('.investor-links')
+ resources['class'] = ['investor-night-resources']
+ for resource in resources.find_all('a', recursive=False):
+  resource['class'] = ['investor-night-resource']
+  icon = page.new_tag('span', attrs={'class': 'investor-night-icon', 'aria-hidden': 'true'})
+  resource.svg.attrs.pop('class', None)
+  resource.svg.wrap(icon)
+  arrow = resource.b
+  arrow.name = 'span'
+  arrow['class'] = ['investor-night-arrow']
+
+ action = intro.select_one('.investor-contact').extract()
+ action['class'] = ['investor-night-action']
+ arrow = action.b
+ arrow.name = 'span'
+ arrow['class'] = ['investor-night-arrow']
+ arrow['aria-hidden'] = 'true'
+
+ section.clear()
+ section['class'] = ['investor-night']
+ section['aria-labelledby'] = 'investor-night-title'
+ inner = page.new_tag('div', attrs={'class': 'investor-night-inner'})
+ inner.extend([intro.extract(), resources.extract(), action])
+ section.append(inner)
+
 R=Path(__file__).parent
 for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 29 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 30 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
   apply_finance_scene(s, body_path.split('/')[1])
+  apply_investor_hub(s)
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
    section.decompose()
