@@ -9,6 +9,9 @@ for f in (R/'dist').rglob('*.html'):
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  body_path = s.body.get('data-path', '') if s.body else ''
  if body_path in ('/th/home', '/en/home'):
+  # The newsletter/IR contact tiles are redundant after the homepage story flow.
+  for section in s.select('main > .planb-contact'):
+   section.decompose()
   scene = s.select_one('.sustainability')
   if scene:
    is_th = s.html.get('lang', 'th') == 'th'
