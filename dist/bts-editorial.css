@@ -758,3 +758,45 @@ html[lang=en] .bts-unified .footer-modern :is(.footer-signature>a,.footer-link-c
  .bts-unified .footer-modern .footer-legal nav a{font-size:11px}
  .bts-unified .footer-modern .back-top{width:34px;height:34px}
 }
+
+/* Subtle motion and light play for the finance and ESG scenes. */
+.bts-unified .financial-home{overflow:hidden}
+.bts-unified .financial-home:after{content:"";display:block;position:absolute;z-index:0;inset:0;pointer-events:none;background:radial-gradient(ellipse at 93% 8%,#1e76b212 0,transparent 32%),linear-gradient(90deg,transparent calc(100% - 1px),#12579609 calc(100% - 1px));background-size:auto,128px 100%}
+.bts-unified .financial-home>*{position:relative;z-index:1}
+.bts-unified .financial-home .metric{position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.75,.25,1),box-shadow .35s,border-color .35s}
+.bts-unified .financial-home .metric:after{content:"";position:absolute;inset:auto 18px 0;height:2px;background:linear-gradient(90deg,var(--ci-red),var(--ci-blue));transform:scaleX(.18);transform-origin:left;opacity:.5;transition:transform .4s,opacity .4s}
+.bts-unified .financial-home .metric:hover{transform:translateY(-7px);border-color:#a9c5da;box-shadow:0 22px 44px #0b2b4520}
+.bts-unified .financial-home .metric:hover:after{transform:scaleX(1);opacity:1}
+.bts-unified .financial-home .metric .glass-icon{transition:transform .35s,color .35s}
+.bts-unified .financial-home .metric:hover .glass-icon{transform:translateY(-3px);color:var(--ci-red)}
+.bts-unified .financial-home .metric strong{font-variant-numeric:tabular-nums}
+.bts-unified .sustainability{position:relative;overflow:hidden}
+.bts-unified .sustainability:before{content:"";position:absolute;top:12%;right:-130px;width:340px;height:340px;border:1px solid #07569a0c;border-radius:50%;box-shadow:0 0 0 34px #07569a05,0 0 0 68px #07569a03;pointer-events:none}
+.bts-unified .sustainability .container{position:relative;z-index:1}
+.bts-unified .sustainability .center-heading .section-title{position:relative;width:max-content;max-width:100%}
+.bts-unified .sustainability .center-heading .section-title:after{content:"";position:absolute;left:0;bottom:-13px;width:48px;height:2px;background:linear-gradient(90deg,var(--ci-red),#e9254300);transition:width .45s}
+.bts-unified .sustainability .center-heading:hover .section-title:after{width:92px}
+.bts-unified .sustainability .esg-tabs a{position:relative;overflow:hidden;transition:background .3s,border-color .3s,box-shadow .3s,transform .3s}
+.bts-unified .sustainability .esg-tabs a:before{content:"";position:absolute;inset:0 auto 0 0;width:2px;background:linear-gradient(180deg,var(--ci-red),var(--ci-blue));transform:scaleY(0);transform-origin:top;transition:transform .35s}
+.bts-unified .sustainability .esg-tabs a:is(:hover,.active){transform:translateX(4px);border-color:#c6d9e7;background:linear-gradient(100deg,#fff,#f2f7fb);box-shadow:0 12px 28px #0c31500d}
+.bts-unified .sustainability .esg-tabs a:is(:hover,.active):before{transform:scaleY(1)}
+.bts-unified .sustainability .esg-tabs a small{transition:background .3s,color .3s,border-color .3s,transform .3s}
+.bts-unified .sustainability .esg-tabs a:is(:hover,.active) small{background:var(--ci-blue);border-color:var(--ci-blue);color:#fff;transform:scale(1.05)}
+.bts-unified .sustainability .esg-tabs a>b{transition:transform .3s,color .3s}
+.bts-unified .sustainability .esg-tabs a:hover>b{transform:translateX(4px);color:var(--ci-red)}
+.bts-unified .sustainability #esg-link{position:relative;isolation:isolate;box-shadow:0 22px 46px #0c2a411c}
+.bts-unified .sustainability #esg-link:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,#071b3400 48%,#071b34a6 100%);pointer-events:none}
+.bts-unified .sustainability #esg-link:after{content:"BTS GROUP  /  ESG";position:absolute;z-index:2;top:20px;left:20px;padding:7px 10px;border:1px solid #ffffff70;background:#061b3445;color:#fff;font:600 10px/1.2 Mulish,sans-serif;letter-spacing:.16em;pointer-events:none}
+.bts-unified .sustainability #esg-caption{z-index:3;display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:calc(100% - 32px);margin:0 16px 16px;padding:10px 12px;border:1px solid #ffffff35;background:#071b347a;backdrop-filter:blur(10px);transition:transform .35s,background .35s}
+.bts-unified .sustainability #esg-link:hover #esg-caption{transform:translateY(-3px);background:#071b34b5}
+.bts-unified .sustainability #esg-link img{transition:transform .85s cubic-bezier(.2,.7,.2,1),filter .5s}
+.bts-unified .sustainability #esg-link:hover img{transform:scale(1.035);filter:saturate(1.04)}
+@keyframes bts-finance-arrive{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.bts-unified .financial-home .metric{animation:bts-finance-arrive .65s both cubic-bezier(.2,.7,.2,1)}
+.bts-unified .financial-home .metric:nth-child(2){animation-delay:.1s}
+.bts-unified .financial-home .metric:nth-child(3){animation-delay:.2s}
+@media(prefers-reduced-motion:reduce){
+ .bts-unified .financial-home .metric{animation:none;transition:none}
+ .bts-unified .financial-home .metric:after,.bts-unified .sustainability .center-heading .section-title:after,.bts-unified .sustainability .esg-tabs a:before{transition:none}
+ .bts-unified .sustainability .esg-tabs a,.bts-unified .sustainability #esg-link img,.bts-unified .sustainability #esg-caption{transition:none}
+}
