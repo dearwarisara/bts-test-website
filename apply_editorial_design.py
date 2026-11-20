@@ -5,7 +5,7 @@ for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
- s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-editorial.css?v=20'))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-editorial.css?v=21'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  body_path = s.body.get('data-path', '') if s.body else ''
  if body_path in ('/th/home', '/en/home'):
