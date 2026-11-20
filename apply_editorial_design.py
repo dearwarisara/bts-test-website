@@ -5,10 +5,17 @@ for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
- s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-editorial.css?v=26'))
- # Turn the homepage sustainability module into a full-bleed editorial scene.
  body_path = s.body.get('data-path', '') if s.body else ''
+ stylesheet_version = 28 if body_path in ('/th/home', '/en/home') else 26
+ s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
+ # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
+  finance_title = s.select_one('.financial-home > h2')
+  if body_path == '/th/home' and finance_title and finance_title.get_text(' ', strip=True) == 'ข้อมูลสำคัญทางการเงิน':
+   finance_title.clear()
+   finance_title.append('ข้อมูลสำคัญ')
+   finance_title.append(s.new_tag('br'))
+   finance_title.append('ทางการเงิน')
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
    section.decompose()
