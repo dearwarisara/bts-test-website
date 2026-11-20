@@ -531,3 +531,114 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
 .modern-inner .related-pages{background:var(--ci-sky-table)}
 .ir-home-page .ir-results{background:var(--ci-sky-table)}
 .ir-home-page .ir_home__download{border-bottom-color:var(--ci-lightbluegray-table)}
+
+/* Tollway reference translated into BTS: cinematic scale, guided browsing,
+   and investor-grade information hierarchy. */
+.bts-unified .hero{height:calc(100svh - 82px);min-height:690px;max-height:1040px}
+.bts-unified .hero video{object-position:center 50%}
+.bts-unified .hero-overlay{background:linear-gradient(90deg,#091a3be8 0%,#091a3ba8 36%,#091a3b28 73%,#091a3b0a 100%),linear-gradient(0deg,#091a3b82,transparent 48%)}
+.bts-unified .hero-brand-copy{left:7.2%;width:min(56%,760px)}
+.bts-unified .hero-brand-copy:before{font-size:13px;letter-spacing:.19em}
+.bts-unified .hero-brand-copy:after{background:var(--ci-red);height:2px}
+.bts-unified .hero h1{font-size:clamp(68px,6.4vw,92px);line-height:1.06;letter-spacing:-.035em}
+.bts-unified .hero-signature{font-size:21px;max-width:510px;color:#f8f8f8}
+.bts-unified .hero-scroll-cue{position:absolute;z-index:3;right:4.2%;bottom:42px;display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;writing-mode:vertical-rl;font:700 10px/1.3 Mulish,sans-serif;letter-spacing:.2em}
+.bts-unified .hero-scroll-cue:before{content:'';width:1px;height:58px;background:linear-gradient(var(--ci-red),#ffffffb3)}
+.bts-unified .hero-scroll-cue i{width:7px;height:7px;border-right:1px solid #fff;border-bottom:1px solid #fff;transform:rotate(45deg);margin-top:2px}
+.bts-unified .hero-scroll-cue:hover{color:#fff;opacity:.72}
+.bts-unified .hero #video-toggle{left:5%;right:auto}
+.bts-unified .hero-bottom{justify-content:flex-start}
+.bts-unified .business{padding-bottom:76px}
+.bts-unified .business-intro{padding-top:64px;padding-bottom:32px}
+.bts-unified .business-intro .section-tag{margin-bottom:13px;color:var(--ci-blue);letter-spacing:.18em}
+.bts-unified .business-intro .section-title{max-width:760px;color:var(--ci-dark-slate-blue);font-size:clamp(38px,4vw,54px);line-height:1.17}
+.bts-unified .business-intro>p{max-width:540px;color:#587995;font-size:18px;line-height:1.7}
+.bts-unified .business-panels{grid-template-columns:1.08fr 1fr 1fr;grid-template-rows:clamp(310px,30vw,420px);gap:14px}
+.bts-unified .business-panel,.bts-unified .business-panel:first-child{border:1px solid #ffffff70;border-radius:3px;padding:30px 28px;box-shadow:none}
+.bts-unified .business-panel:after{background:linear-gradient(180deg,#091a3b08 12%,#091a3b12 38%,#091a3be3 100%)}
+.bts-unified .business-panel h3,.bts-unified .business-panel:first-child h3{font-size:clamp(30px,3vw,42px);letter-spacing:-.02em}
+.bts-unified .business-panel h3:before{width:38px;height:2px;background:var(--ci-red)}
+.bts-unified .business-panel .business-description{font-size:16px;color:#f8f8f8}
+.bts-unified .business-panel .panel-arrow{width:38px;height:38px;border-radius:50%;border-color:#ffffffbb;background:#091a3b55}
+.bts-unified .financial-home{background:linear-gradient(110deg,#f8f8f8,#edf2f7);border-block:1px solid #c0cfdc;padding-block:68px 76px}
+.bts-unified .financial-home>h2{font-size:clamp(38px,4vw,52px);color:var(--ci-dark-slate-blue)!important}
+.bts-unified .financial-home:before{width:48px;height:2px;background:var(--ci-red)}
+.bts-unified .financial-home .metrics{gap:0;padding:24px 0 16px}
+.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:160px;padding:14px 30px;border:0;border-left:1px solid #c0cfdc;border-radius:0;background:transparent;box-shadow:none}
+.bts-unified .financial-home .metric:first-child{border-left:0}
+.bts-unified .financial-home .metric .glass-icon{width:34px;height:34px;flex-basis:34px;border:0;border-radius:0;background:transparent;color:var(--ci-blue)}
+.bts-unified .financial-home .metric .line-icon{width:27px;height:27px}
+.bts-unified .financial-home .metric strong{color:var(--ci-blue-2)!important;font-size:clamp(40px,4.6vw,62px);font-weight:500}
+.bts-unified .financial-home .outline-button{border-color:var(--ci-blue);background:transparent;color:var(--ci-blue);border-radius:2px}
+.bts-unified .financial-home .outline-button:hover{background:var(--ci-blue);border-color:var(--ci-blue);color:#fff}
+.bts-unified .news{padding-block:76px 84px}
+.bts-unified .news-heading{padding-bottom:22px;border-bottom:1px solid #c0cfdc}
+.bts-unified .news-heading .section-title{font-size:clamp(38px,4vw,52px);color:var(--ci-dark-slate-blue)}
+.bts-unified .news-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.82fr);gap:22px 36px;margin-top:30px}
+.bts-unified .news-grid>a{border:0;border-radius:0;background:transparent;box-shadow:none;padding:0}
+.bts-unified .news-grid>a:first-child{grid-row:span 2}
+.bts-unified .news-grid>a>.news-image{aspect-ratio:16/9;border-radius:2px;overflow:hidden}
+.bts-unified .news-grid>a:first-child>.news-image{aspect-ratio:1.54}
+.bts-unified .news-grid>a>.news-meta,.bts-unified .news-grid>a>h3,.bts-unified .news-grid>a>p,.bts-unified .news-grid>a>.text-button{margin-left:0;margin-right:0}
+.bts-unified .news-grid>a>.news-meta{color:var(--ci-marble-blue)}
+.bts-unified .news-grid>a>h3{color:var(--ci-dark-slate-blue);font-size:21px;line-height:1.45}
+.bts-unified .news-grid>a>.text-button{color:var(--ci-blue);border-bottom:1px solid #c0cfdc}
+.bts-unified .investor{width:min(90%,1380px);min-height:320px;margin:68px auto;border-radius:2px;border-top:2px solid var(--ci-red);background-image:linear-gradient(90deg,#091a3bf2,#23324eed 65%,#0245778c),url('/assets/covers/3e4c28877075f837-cover.webp');padding:46px 48px}
+.bts-unified .investor-intro h2{font-size:42px}
+.bts-unified .investor-links{border-top:1px solid #ffffff47;border-bottom:1px solid #ffffff47}
+.bts-unified .investor-link{min-height:144px;border-left-color:#ffffff35}
+.bts-unified .investor-link .line-icon{width:27px;height:27px;stroke-width:1.35}
+.bts-unified .investor-link>b{color:#d83832}
+.bts-unified .sustainability{padding-block:78px 90px;background:linear-gradient(115deg,#f8f8f8,#edf2f7);border-top:1px solid #c0cfdc}
+.bts-unified .sustainability .container{grid-template-columns:minmax(260px,.75fr) minmax(0,1.45fr);gap:54px}
+.bts-unified .sustainability .center-heading .section-title{font-size:clamp(40px,4vw,54px);color:var(--ci-dark-slate-blue)}
+.bts-unified .sustainability .esg-layout{grid-template-columns:minmax(190px,.7fr) minmax(0,1.3fr);grid-template-rows:minmax(0,1fr)}
+.bts-unified .sustainability .esg-tabs{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:center;gap:0}
+.bts-unified .sustainability .esg-tabs a{min-height:86px;padding:16px 34px 16px 46px;border:0;border-bottom:1px solid #c0cfdc;border-radius:0;background:transparent;box-shadow:none;justify-content:center}
+.bts-unified .sustainability .esg-tabs a.active{border-color:#c0cfdc;background:#fff;box-shadow:inset 2px 0 var(--ci-red)}
+.bts-unified .sustainability .esg-tabs a small{position:absolute;left:8px;top:50%;transform:translateY(-50%);width:auto;height:auto;border:0;background:transparent;color:var(--ci-red)}
+.bts-unified .sustainability .esg-tabs a>b{right:8px;top:50%;transform:translateY(-50%);color:var(--ci-blue)}
+.bts-unified .sustainability #esg-link{grid-column:2;grid-row:1;height:100%;min-height:330px;border-radius:2px;box-shadow:none}
+.bts-unified .sustainability #esg-caption{background:linear-gradient(0deg,#091a3bbd,transparent);padding:16px}
+@media(max-width:1050px){
+ .bts-unified .hero{height:calc(100svh - 78px);min-height:620px}
+ .bts-unified .business-panels{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(290px,34vw)}
+ .bts-unified .sustainability .container{grid-template-columns:1fr;gap:30px}
+ .bts-unified .sustainability .center-heading,.bts-unified .sustainability .esg-layout{grid-column:1;grid-row:auto}
+}
+@media(max-width:760px){
+ .bts-unified .hero{height:calc(100svh - 78px);min-height:610px;max-height:none}
+ .bts-unified .hero-brand-copy{left:7%;top:46%;width:84%}
+ .bts-unified .hero h1{font-size:clamp(52px,13vw,68px);line-height:1.08}
+ .bts-unified .hero-signature{max-width:320px;font-size:17px;line-height:1.55}
+ .bts-unified .hero-scroll-cue{right:20px;bottom:24px;font-size:9px;gap:8px}
+ .bts-unified .hero-scroll-cue:before{height:38px}
+ .bts-unified .hero #video-toggle{left:20px;right:auto}
+ .bts-unified .business-intro{padding-top:44px;padding-bottom:24px}
+ .bts-unified .business-intro .section-title{font-size:34px}
+ .bts-unified .business-intro>p{font-size:16px}
+ .bts-unified .business-panels{grid-template-columns:1fr;grid-template-rows:none;gap:10px}
+ .bts-unified .business-panel,.bts-unified .business-panel:first-child{min-height:250px;padding:24px}
+ .bts-unified .financial-home{padding-block:42px 54px}
+ .bts-unified .financial-home>h2{font-size:32px}
+ .bts-unified .financial-home .metrics{gap:0}
+ .bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:0;padding:18px 0;border-left:0;border-top:1px solid #c0cfdc}
+ .bts-unified .financial-home .metric:first-child{border-top:0}
+ .bts-unified .news{padding-block:48px 54px}
+ .bts-unified .news-heading{align-items:center}
+ .bts-unified .news-heading .section-title{font-size:32px}
+ .bts-unified .news-grid{grid-template-columns:1fr;gap:24px;margin-top:22px}
+ .bts-unified .news-grid>a:first-child{grid-row:auto}
+ .bts-unified .news-grid>a:first-child>.news-image{aspect-ratio:16/9}
+ .bts-unified .investor{width:calc(100% - 32px);min-height:0;margin:38px auto;padding:28px 22px;background-position:62% center}
+ .bts-unified .investor-intro h2{font-size:30px}
+ .bts-unified .investor-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bts-unified .investor-link{min-height:96px;padding:12px 8px;font-size:13px}
+ .bts-unified .sustainability{padding-block:48px 56px}
+ .bts-unified .sustainability .container{gap:22px}
+ .bts-unified .sustainability .center-heading .section-title{font-size:34px}
+ .bts-unified .sustainability .esg-layout{grid-template-columns:1fr;grid-template-rows:auto auto}
+ .bts-unified .sustainability #esg-link{grid-column:1;grid-row:1;height:220px;min-height:220px}
+ .bts-unified .sustainability .esg-tabs{grid-column:1;grid-row:2}
+ .bts-unified .sustainability .esg-tabs a{min-height:72px;padding-left:42px}
+}

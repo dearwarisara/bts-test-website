@@ -24,9 +24,19 @@ for file in D.rglob('*.html'):
    hero['aria-label']='BTS Group corporate video' if lang=='en' else 'วิดีโอแนะนำ BTS Group'
    copy=s.new_tag('div',attrs={'class':'hero-brand-copy'})
    title=s.new_tag('h1',attrs={'aria-label':'Borderless Transform Solutions'})
-   for line in ('B orderless','T ransform','S olutions'):
-    span=s.new_tag('span');span.string=line;title.append(span)
-   copy.append(title);hero.append(copy)
+   for initial,word in (('B','orderless'),('T','ransform'),('S','olutions')):
+    span=s.new_tag('span');lead=s.new_tag('b');lead.string=initial;span.append(lead);span.append(word);title.append(span)
+   copy.append(title)
+   signature=s.new_tag('p',attrs={'class':'hero-signature'})
+   signature.string='Every connection opens new possibilities.' if lang=='en' else 'ทุกการเชื่อมต่อ คือจุดเริ่มต้นของความเป็นไปได้'
+   copy.append(signature)
+   discover=s.new_tag('a',href=f'/{lang}/our-business/business-overview/',attrs={'class':'hero-discover'})
+   discover.string='Discover BTS Group' if lang=='en' else 'สำรวจธุรกิจของเรา';copy.append(discover)
+   hero.append(copy)
+   if hero and not hero.select_one('.hero-scroll-cue'):
+    cue=s.new_tag('a',href='#business',attrs={'class':'hero-scroll-cue','aria-label':'Scroll to explore' if lang=='en' else 'เลื่อนเพื่อสำรวจเนื้อหา'})
+    label=s.new_tag('span');label.string='SCROLL TO EXPLORE' if lang=='en' else 'SCROLL TO EXPLORE'
+    cue.append(label);cue.append(s.new_tag('i',attrs={'aria-hidden':'true'}));hero.append(cue)
 
   main=s.main;financial=s.select_one('.financial-home');pub=s.select_one('#publications');news=s.select_one('#news');shortcuts=s.select_one('.home-shortcuts')
   if financial and shortcuts:shortcuts.insert_after(financial.extract())
