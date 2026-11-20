@@ -862,6 +862,38 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 13px/1.5 Mul
  html[lang=en] .bts-unified .footer-modern .footer-link-columns a{font:500 12px/1.5 Mulish,sans-serif}
 }
 
+/* Give the footer the same full-width presence and navigation scale as the header. */
+.bts-unified .footer-modern .footer-signature,
+.bts-unified .footer-modern .footer-main-grid{width:100%;max-width:none;margin-inline:0;padding-inline:5vw}
+.bts-unified .footer-modern .footer-signature{padding-block:22px;grid-template-columns:130px minmax(0,1fr) auto}
+.bts-unified .footer-modern .footer-main-grid{grid-template-columns:minmax(240px,.8fr) minmax(500px,1.4fr) minmax(320px,.9fr);gap:clamp(28px,3vw,50px);padding-block:30px 34px}
+.bts-unified .footer-modern .footer-identity h3,
+.bts-unified .footer-modern :is(.footer-navigation,.footer-connect)>h3{font-size:20px;line-height:1.45}
+.bts-unified .footer-modern .footer-link-columns a{font-size:20px;line-height:1.55}
+.bts-unified .footer-modern .footer-connect p{font-size:17px;line-height:1.7}
+.bts-unified .footer-modern .footer-phone{font-size:17px}
+.bts-unified .footer-modern .footer-phone>span:first-child{font-size:18px}
+.bts-unified .footer-modern .footer-location{font-size:16px;line-height:1.65}
+.bts-unified .footer-modern .footer-legal{width:100%;padding:14px 5vw}
+.bts-unified .footer-modern .footer-legal nav a{font-size:13px}
+html[lang=en] .bts-unified .footer-modern .footer-link-columns a{font:500 19px/1.55 Mulish,sans-serif}
+html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mulish,sans-serif}
+@media(max-width:1000px){
+ .bts-unified .footer-modern .footer-main-grid{grid-template-columns:minmax(210px,.8fr) minmax(0,1.2fr);gap:28px;padding-block:26px 30px}
+ .bts-unified .footer-modern .footer-connect{grid-column:1/-1}
+}
+@media(max-width:650px){
+ .bts-unified .footer-modern .footer-signature{grid-template-columns:1fr;padding:20px 22px;gap:10px}
+ .bts-unified .footer-modern .footer-main-grid{grid-template-columns:1fr;padding:26px 22px 30px;gap:24px}
+ .bts-unified .footer-modern :is(.footer-navigation,.footer-connect)>h3,
+ .bts-unified .footer-modern .footer-identity h3{font-size:18px}
+ .bts-unified .footer-modern .footer-link-columns a{font-size:17px;line-height:1.5}
+ .bts-unified .footer-modern .footer-connect p{font-size:15px}
+ .bts-unified .footer-modern .footer-phone{font-size:15px}
+ .bts-unified .footer-modern .footer-location{font-size:14px}
+ html[lang=en] .bts-unified .footer-modern .footer-link-columns a{font:500 16px/1.5 Mulish,sans-serif}
+}
+
 /* Homepage hero fills the visible screen; remove the redundant CTA below the title. */
 .bts-unified .hero{height:100svh;min-height:620px;max-height:none}
 .bts-unified .hero-discover{display:none}
