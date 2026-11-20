@@ -969,7 +969,31 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
  .bts-unified .investor-link{min-height:58px;font-size:16px}
 }
 
+/* Match the selected mockup more closely: a readable glass-tower motif and the rail photo on the right. */
+.bts-unified .financial-home:after{width:37%;background-color:#dceaf8;background-image:linear-gradient(90deg,transparent 0 24px,#ffffff82 25px 27px,transparent 28px 62px,#165b8d20 63px 64px,transparent 65px),repeating-linear-gradient(0deg,transparent 0 45px,#ffffffa0 46px 48px,transparent 49px 94px),linear-gradient(138deg,#d6e7f6 0%,#e9f2fa 55%,#f7fafd 100%);clip-path:polygon(0 0,100% 0,83% 100%,0 100%);mask-image:linear-gradient(90deg,#000 0%,#000 72%,transparent 100%)}
+.bts-unified .financial-home:before{left:36%;width:5px;background:var(--ci-red);box-shadow:2px 0 0 #0b5d9d}
+.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:150px;padding-inline:clamp(14px,1.7vw,28px)}
+.bts-unified .investor{background-image:linear-gradient(90deg,#061b35f5 0%,#08213de8 32%,#082b49cc 55%,#082b4966 76%,#071b3420 100%),url('/assets/ir/connected-city-v1.webp');background-position:center center;background-size:cover}
+@media(max-width:1050px){.bts-unified .investor{background-position:68% center}}
+@media(max-width:650px){.bts-unified .financial-home:after{width:100%;mask-image:linear-gradient(90deg,#000 0%,#000 35%,transparent 100%)}.bts-unified .financial-home:before{display:none}.bts-unified .investor{background-position:70% center}}
+
 /* Homepage hero fills the visible screen; remove the redundant CTA below the title. */
 .bts-unified .hero{height:100svh;min-height:620px;max-height:none}
 .bts-unified .hero-discover{display:none}
 @media(max-width:650px){.bts-unified .hero{height:100svh;min-height:560px;max-height:none}}
+
+/* Design 4 refinement: a glass tower dissolves into the clear financial data field. */
+.bts-unified .financial-home{min-height:360px;grid-template-columns:minmax(340px,.82fr) minmax(0,1.9fr);column-gap:clamp(40px,5vw,92px);padding-top:52px;padding-bottom:50px;background:#fff}
+.bts-unified .financial-home:after{width:40%;opacity:1;background:url('/assets/financial-glass-tower.svg') left center/cover no-repeat;clip-path:none;mask-image:none}
+.bts-unified .financial-home:before{display:none}
+.bts-unified .financial-home>h2:after{content:"";display:block;width:46px;height:2px;margin-top:14px;background:var(--ci-red)}
+.bts-unified .financial-home>.section-tag,.bts-unified .financial-home>h2,.bts-unified .financial-home>.financial-period,.bts-unified .financial-home>.finance-actions{max-width:490px}
+.bts-unified .financial-home>.metrics{grid-row:1/4;grid-template-columns:repeat(3,minmax(0,1fr));align-self:center}
+.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:126px;padding-inline:clamp(16px,2vw,34px)}
+.bts-unified .financial-home .metric strong{font-size:clamp(42px,3.6vw,62px)}
+.bts-unified .financial-home .metric span:not(.glass-icon){max-width:220px}
+.bts-unified .investor{grid-template-columns:minmax(310px,.78fr) minmax(350px,1fr) minmax(170px,.72fr);min-height:430px;gap:clamp(30px,4vw,70px);background-image:linear-gradient(90deg,#071b34f6 0%,#08213bea 33%,#092b49c9 54%,#082b4961 76%,#071b3410 100%),url('/assets/ir/connected-city-v1.webp');background-position:center 54%}
+.bts-unified .investor-links{max-width:540px}
+.bts-unified .investor-link{min-height:66px;font-size:17px}
+@media(max-width:1050px){.bts-unified .financial-home{grid-template-columns:minmax(250px,.86fr) minmax(0,1.14fr);column-gap:32px}.bts-unified .financial-home:after{width:45%}.bts-unified .financial-home>.metrics{grid-template-columns:1fr;grid-row:1/4}.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:82px;padding:12px 16px;border-left:0;border-top:1px solid #cbd9e5}.bts-unified .financial-home .metric:first-child{border-top:0}.bts-unified .financial-home .metric strong{font-size:42px}.bts-unified .investor{grid-template-columns:minmax(250px,.8fr) minmax(300px,1fr);min-height:0;padding-block:48px}.bts-unified .investor>.publication-body{display:none}}
+@media(max-width:650px){.bts-unified .financial-home{grid-template-columns:1fr;min-height:0;padding:40px 22px 44px}.bts-unified .financial-home:after{width:100%;opacity:.62;background-position:left center;background-size:auto 100%;mask-image:linear-gradient(90deg,#000 0%,#000 24%,transparent 88%)}.bts-unified .financial-home:before{display:none}.bts-unified .financial-home>.metrics{grid-template-columns:1fr;grid-row:auto;margin-top:18px}.bts-unified .financial-home .metric,.bts-unified .financial-home .metric:first-child{min-height:76px;padding:12px 4px;border-left:0;border-top:1px solid #cbd9e5}.bts-unified .financial-home .metric:first-child{border-top:0}.bts-unified .financial-home .metric strong{font-size:36px}.bts-unified .investor{grid-template-columns:1fr;gap:24px;min-height:0;padding:38px 22px;background-position:70% center}.bts-unified .investor-links{max-width:none}}

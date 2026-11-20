@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="900" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4EFF8"/>
+      <stop offset=".58" stop-color="#F1F6FA"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="70" y1="26" x2="455" y2="493" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AEC8DE"/>
+      <stop offset=".45" stop-color="#D6E4EF"/>
+      <stop offset="1" stop-color="#A9C1D5"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="140" y1="60" x2="430" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFD" stop-opacity=".88"/>
+      <stop offset=".52" stop-color="#5F8DB3" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#D9E7F1" stop-opacity=".64"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="260" x2="680" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset=".82" stop-color="white" stop-opacity=".82"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadeMask"><rect width="900" height="520" fill="url(#fade)"/></mask>
+  </defs>
+  <g mask="url(#fadeMask)" opacity=".9">
+    <path d="M0 0h550v520H0z" fill="url(#sky)"/>
+    <path d="m40 520 74-402 210-67 129 469H40Z" fill="url(#tower)"/>
+    <path d="m114 118 210-67v469H40l74-402Z" fill="url(#glass)"/>
+    <path d="m324 51 129 469H324V51Z" fill="#8BAEC9" fill-opacity=".34"/>
+    <path d="m112 124 211-67M102 178h222M93 232h231M83 286h241M73 340h251M63 394h261M53 448h271" stroke="#fff" stroke-opacity=".78" stroke-width="5"/>
+    <path d="m145 107-51 391M195 91l-29 407M246 75l-8 423M292 60v438M344 124v374M390 292v206" stroke="#6E95B6" stroke-opacity=".46" stroke-width="4"/>
+    <path d="M0 495h540" stroke="#B5C9D9" stroke-width="3"/>
+    <path d="M358 519 441 221l107 299H358Z" fill="#D5E4EE" fill-opacity=".8"/>
+    <path d="m441 221 107 299H441V221Z" fill="#92B3CB" fill-opacity=".55"/>
+    <path d="m393 398 96-1m-108 42 123-1m-136 42 150-1" stroke="#fff" stroke-opacity=".8" stroke-width="4"/>
+    <path d="M0 509h440" stroke="#E92748" stroke-width="3"/>
+  </g>
+</svg>
