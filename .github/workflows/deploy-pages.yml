@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -17,6 +18,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      PAGES_ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -32,9 +35,28 @@ jobs:
         env:
           SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - name: Upload website
+        id: upload
         uses: actions/upload-pages-artifact@v4
         with:
+          name: ${{ env.PAGES_ARTIFACT_NAME }}
           path: .pages-build
+      - name: Wait for GitHub to index the Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGES_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: |
+          endpoint="repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=$PAGES_ARTIFACT_NAME"
+          for attempt in {1..15}; do
+            if artifact_id=$(gh api "$endpoint" --jq '.artifacts[] | select(.expired == false) | .id') &&
+              [[ -n "$PAGES_ARTIFACT_ID" && "$artifact_id" == "$PAGES_ARTIFACT_ID" ]]; then
+              exit 0
+            fi
+            sleep 4
+          done
+          echo "::error::GitHub did not list the newly uploaded Pages artifact within 60 seconds."
+          exit 1
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
