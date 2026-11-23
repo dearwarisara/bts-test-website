@@ -12,8 +12,28 @@ mobile.addEventListener('change',closeNavigation);header.querySelectorAll('.mega
 document.addEventListener('focusin',e=>{if(!header.contains(e.target))closeMega()});
 let scrollPending=false;function updateHeader(){header.classList.toggle('scrolled',scrollY>60);scrollPending=false}addEventListener('scroll',()=>{if(!scrollPending){scrollPending=true;requestAnimationFrame(updateHeader)}},{passive:true});updateHeader();
 // Shared page modules
-if(document.querySelector('#hero-video')){
-const video=document.querySelector('#hero-video'),videoToggle=document.querySelector('#video-toggle');function syncVideo(){videoToggle.textContent=video.paused?'▶':'Ⅱ';videoToggle.setAttribute('aria-label',video.paused?'เล่นวิดีโอ':'หยุดวิดีโอ')};video.addEventListener('play',syncVideo);video.addEventListener('pause',syncVideo);if(reduced.matches){video.autoplay=false;video.pause();if(video.currentTime>0)video.currentTime=0;syncVideo()};videoToggle.addEventListener('click',()=>{if(video.paused)video.play().catch(()=>{});else video.pause()});
+const heroVideo = document.querySelector('#hero-video');
+const videoToggle = document.querySelector('#video-toggle');
+if (heroVideo) {
+  if (reduced.matches) {
+    heroVideo.autoplay = false;
+    heroVideo.pause();
+    if (heroVideo.currentTime > 0) heroVideo.currentTime = 0;
+  }
+
+  if (videoToggle) {
+    const syncVideo = () => {
+      videoToggle.textContent = heroVideo.paused ? '▶' : 'Ⅱ';
+      videoToggle.setAttribute('aria-label', heroVideo.paused ? 'เล่นวิดีโอ' : 'หยุดวิดีโอ');
+    };
+    heroVideo.addEventListener('play', syncVideo);
+    heroVideo.addEventListener('pause', syncVideo);
+    videoToggle.addEventListener('click', () => {
+      if (heroVideo.paused) heroVideo.play().catch(() => {});
+      else heroVideo.pause();
+    });
+    syncVideo();
+  }
 }
 Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1800))]).then(()=>document.body.classList.add('ready'));
 if(!reduced.matches){document.body.classList.add('js-motion');const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.business-intro>div,.business-intro>p,.about-content,.section-heading,.ir-layout,.center-heading,.esg-layout,.news-heading,.career-layout>div,.purpose-strip h2').forEach(e=>{e.classList.add('reveal');observer.observe(e)});const counters=new IntersectionObserver(entries=>{for(const e of entries){if(!e.isIntersecting)continue;counters.unobserve(e.target);const el=e.target,n=Number(el.dataset.count),start=performance.now();function frame(now){const t=Math.min(1,(now-start)/1450),v=Math.round(Math.abs(n)*(1-Math.pow(1-t,3)));el.textContent=n<0?`(${v.toLocaleString('en-US')})`:v.toLocaleString('en-US');if(t<1)requestAnimationFrame(frame);else el.textContent=el.dataset.final}requestAnimationFrame(frame)}},{threshold:.6});document.querySelectorAll('[data-count]').forEach(el=>counters.observe(el))}

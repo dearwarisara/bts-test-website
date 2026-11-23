@@ -114,10 +114,13 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 43 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 44 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
+  metro_script = s.select_one('script[src^="/metro.js"]')
+  if metro_script is not None:
+   metro_script['src'] = '/metro.js?v=12'
   hero = s.select_one('.hero')
   if hero:
    tagline = hero.select_one('.hero-signature')
