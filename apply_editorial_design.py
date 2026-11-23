@@ -65,6 +65,11 @@ def apply_finance_scene(page, language):
  section.append(scene)
 
 def apply_investor_hub(page):
+ compact_hub = page.select_one('section.investor-night#publications')
+ if compact_hub is not None:
+  focus_investor_documents(compact_hub)
+  return
+
  section = page.select_one('section.investor#publications')
  if section is None:
   return
@@ -99,6 +104,15 @@ def apply_investor_hub(page):
  inner = page.new_tag('div', attrs={'class': 'investor-night-inner'})
  inner.extend([intro.extract(), resources.extract(), action])
  section.append(inner)
+ focus_investor_documents(section)
+
+def focus_investor_documents(section):
+ for link in section.select('.investor-night-resources a[href]'):
+  if link['href'].rstrip('/').endswith('/financial-information/key-financial-data'):
+   link.decompose()
+ intro_copy = section.select_one('.investor-night-intro > p')
+ if intro_copy is not None:
+  intro_copy.decompose()
 
 R=Path(__file__).parent
 for f in (R/'dist').rglob('*.html'):
@@ -106,7 +120,7 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 30 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 31 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
