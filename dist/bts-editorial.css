@@ -1332,3 +1332,115 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   from { opacity: 0; transform: translateY(50px); filter: blur(8px); }
   to { opacity: 1; transform: none; filter: none; }
 }
+
+/* Shared labeled actions and their icon-only counterparts. */
+.bts-unified {
+  --cta-ink: #00569f;
+  --cta-border: #bcd5eb;
+  --cta-icon-fill: #0d233e;
+  --cta-surface: #fff;
+  --cta-hover-surface: #edf5fc;
+}
+
+body.bts-unified[data-path] [data-bts-cta]:not(.hero-discover, .inner-content-link, [hidden]) {
+  display: inline-flex;
+}
+
+body.bts-unified[data-path] [data-bts-cta]:not([hidden]) {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-block-size: 44px;
+  padding: 6px 7px 6px 17px !important;
+  border: 1px solid var(--cta-border);
+  border-radius: 999px;
+  background: var(--cta-surface);
+  color: var(--cta-ink) !important;
+  box-shadow: none;
+  font: 700 23px/1.15 OzoneX, sans-serif;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+html[lang="en"] body.bts-unified[data-path] [data-bts-cta]:not([hidden]) {
+  font: 700 14px/1.35 Mulish, sans-serif;
+}
+
+body.bts-unified[data-path] [data-bts-cta][data-cta-icon-only]:not([hidden]) {
+  justify-content: center;
+  min-inline-size: 44px;
+  padding-inline: 6px !important;
+}
+
+body.bts-unified[data-path] [data-bts-cta]::before,
+body.bts-unified[data-path] [data-bts-cta]::after {
+  content: none;
+}
+
+body.bts-unified[data-path] [data-bts-cta] > .bts-cta-icon {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--cta-icon-fill);
+  color: #fff;
+  font: 400 15px/1 system-ui, sans-serif;
+}
+
+body.bts-unified[data-path] :is([data-bts-cta]:not([hidden]), .sustainability-cover-arrow):hover {
+  border-color: var(--cta-ink);
+  background: var(--cta-hover-surface);
+}
+
+.bts-unified .sustainability-cover-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--cta-border);
+  background: var(--cta-surface);
+}
+
+.bts-unified .sustainability-cover-arrow::before {
+  content: none;
+}
+
+.bts-unified .sustainability-cover-arrow span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--cta-icon-fill);
+  color: #fff;
+  font: 400 15px/1 system-ui, sans-serif;
+  transform: none;
+}
+
+.bts-unified .sustainability-cover-arrow:hover span {
+  transform: none;
+}
+
+body.bts-unified[data-path] :is(.search-open, .menu-toggle, .search-close, .back-top, .cover-video-toggle, button.close) {
+  border: 1px solid var(--cta-border);
+  border-radius: 50%;
+  background: var(--cta-surface);
+  color: var(--cta-ink);
+}
+
+.bts-unified :is([data-bts-cta], .sustainability-cover-arrow, .search-open, .menu-toggle, .search-close, .back-top, .cover-video-toggle):focus-visible {
+  outline: 2px solid var(--cta-ink);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px #fff;
+}

@@ -1,5 +1,49 @@
 from pathlib import Path
+import re
+
 from bs4 import BeautifulSoup
+
+
+BUTTON_LINKS = (
+ 'a.outline-button, a.official-action, a.btn, a.btn-back, a.finance-glass-action, '
+ 'a.investor-night-action, a.hero-discover, a.inner-content-link, a.chapter-back, '
+ 'a.card-link--icon-next, .footer-signature > a, button.archive-more'
+)
+EDGE_ARROWS = re.compile(r'^←\s*|\s*[↗→↓]$')
+
+
+def style_action_buttons(page):
+ for button in page.select(BUTTON_LINKS):
+  if button.has_attr('data-bts-cta'):
+   continue
+  classes = button.get('class', [])
+  label = button.get_text(' ', strip=True)
+  arrow = '↗'
+  if 'btn-pdf' in classes or 'archive-more' in classes or label.endswith('↓'):
+   arrow = '↓'
+  elif 'btn-back' in classes or 'chapter-back' in classes or label.startswith('←'):
+   arrow = '←'
+
+  for icon in button.find_all(['span', 'b'], recursive=False):
+   if icon.get_text(strip=True) in ('↗', '→', '↓', '←') and not icon.find():
+    icon.decompose()
+  text_nodes = [node for node in button.find_all(string=True) if node.strip()]
+  if text_nodes:
+   for node in dict.fromkeys((text_nodes[0], text_nodes[-1])):
+    cleaned = EDGE_ARROWS.sub('', node.strip())
+    if cleaned != node.strip():
+     node.replace_with(cleaned)
+
+  button['data-bts-cta'] = ''
+  if not button.get_text(strip=True):
+   button['data-cta-icon-only'] = ''
+   if not any(button.get(attr) for attr in ('aria-label', 'aria-labelledby', 'title')):
+    is_thai = page.html.get('lang') == 'th'
+    button['aria-label'] = ('ดาวน์โหลด' if is_thai else 'Download') if arrow == '↓' else (
+     'ดูออนไลน์' if is_thai else 'View online')
+  icon = page.new_tag('span', attrs={'class': 'bts-cta-icon', 'aria-hidden': 'true'})
+  icon.string = arrow
+  button.append(icon)
 
 def apply_finance_scene(page, language):
  section = page.select_one('.financial-home, .finance-glass')
@@ -114,7 +158,7 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 44 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 45
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
@@ -186,5 +230,6 @@ for f in (R/'dist').rglob('*.html'):
   if photo:
    img=s.new_tag('img',src=photo['src'],alt='',loading='eager')
    box.append(img)
+ style_action_buttons(s)
  f.write_text(str(s),encoding='utf8')
 print('Applied the BTS editorial system to all shared layouts.')
