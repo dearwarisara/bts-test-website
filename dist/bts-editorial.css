@@ -292,10 +292,10 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
 .bts-unified .financial-home>.finance-actions .outline-button{min-height:38px;padding:7px 13px;border-color:#9fb6c9;background:transparent;color:var(--ref-navy);font-size:15px}
 .bts-unified .news{padding:54px 0 60px}
 .bts-unified .news-heading{margin-bottom:18px}
-.bts-unified .news.container{width:calc(100% - clamp(48px,6vw,112px));max-width:1760px}
+.bts-unified .news.container{width:min(83.333333%,1600px);max-width:1600px;margin-inline:auto}
 .bts-unified .news-carousel{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);grid-template-rows:repeat(3,minmax(112px,1fr));gap:16px;overflow:visible}
 .bts-unified .news-card{display:grid;grid-template-columns:142px minmax(0,1fr);grid-template-rows:auto 1fr auto;gap:5px 16px;min-width:0;padding:0 0 14px;border-bottom:1px solid var(--ref-line)}
-.bts-unified .news-card:first-child{display:flex;position:relative;grid-column:1;grid-row:1/4;min-height:388px;justify-content:flex-end;padding:24px;border:0;border-radius:12px;overflow:hidden;color:#fff;background:#092b4b}
+.bts-unified .news-card:first-child{display:flex;position:relative;grid-column:1;grid-row:1/4;align-self:start;width:100%;height:auto;aspect-ratio:1000/666;min-height:0;justify-content:flex-end;padding:24px;border:0;border-radius:12px;overflow:hidden;color:#fff;background:#092b4b}
 .bts-unified .news-card .news-image{grid-column:1;grid-row:1/4;width:142px;height:100%;min-height:108px;aspect-ratio:1.35;border-radius:6px}
 .bts-unified .news-card time{grid-column:2;grid-row:1;margin:0;font-size:14px}
 .bts-unified .news-card h3{grid-column:2;grid-row:2;align-self:start;margin:0;font-size:18px;line-height:1.4}
@@ -353,7 +353,7 @@ html[lang=en] .bts-unified .inner-hero[data-cover-title-length=long] h1{font-siz
  .bts-unified .news-carousel{grid-template-columns:1fr;grid-template-rows:auto;gap:16px}
 .bts-unified .news.container{width:calc(100% - 40px)}
  .bts-unified .news-card:nth-child(n+2){grid-column:1}
- .bts-unified .news-card:first-child{grid-column:1;grid-row:auto;min-height:250px;padding:18px}
+ .bts-unified .news-card:first-child{grid-column:1;grid-row:auto;min-height:250px;aspect-ratio:auto;padding:18px}
  .bts-unified .news-card:first-child h3{font-size:20px}
  .bts-unified .news-card:not(:first-child){grid-template-columns:118px minmax(0,1fr);min-height:112px;gap:4px 12px}
  .bts-unified .news-card:not(:first-child) .news-image{width:118px;min-height:106px}
