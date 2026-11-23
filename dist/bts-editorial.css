@@ -1315,3 +1315,6 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   .investor-night-resource { transition: none; }
 }
 .bts-unified .hero-brand-copy:before,.bts-unified .hero-brand-copy:after{display:none!important;content:none!important}
+.bts-unified .hero-brand-copy h1{display:block!important;position:relative;z-index:2;visibility:visible!important;opacity:1!important;color:#fff}
+.bts-unified .hero-brand-copy h1>span{display:block}
+.bts-unified .hero-brand-copy h1>span b{color:var(--ci-red)}

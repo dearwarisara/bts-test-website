@@ -114,19 +114,15 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 42 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 43 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
   hero = s.select_one('.hero')
   if hero:
-   hero_copy = hero.select_one('.hero-brand-copy')
-   hero_title = hero_copy.select_one('h1') if hero_copy else None
-   if hero_copy and hero_title and not hero_copy.select_one('.hero-signature'):
-    tagline = s.new_tag('p', attrs={'class': 'hero-signature'})
-    tagline.string = ('Every connection opens new possibilities.' if s.html.get('lang') == 'en'
-                      else 'ทุกการเชื่อมต่อ คือจุดเริ่มต้นของความเป็นไปได้')
-    hero_title.insert_after(tagline)
+   tagline = hero.select_one('.hero-signature')
+   if tagline is not None:
+    tagline.decompose()
    video_control = hero.select_one('.hero-bottom')
    if video_control is not None:
     video_control.decompose()
