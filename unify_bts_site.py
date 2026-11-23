@@ -140,7 +140,6 @@ for file in D.rglob('*.html'):
   if oldhero:oldhero.replace_with(fragment(hero_html))
   else:soup.main.insert(0,fragment(hero_html))
   for n in soup.select('.source-attribution'):n.decompose()
-  for n in soup.select('.related-pages>.section-kicker'):set_text(n,'ข้อมูลที่เกี่ยวข้อง' if lang=='th' else 'Related Information')
  soup.body.insert(0,fragment(header(lang,path)))
  soup.body.append(fragment(footer(lang)));soup.body.append(fragment(dialog(lang)))
  for href in ('/metro.css?v=3','/bts-brand.css?v=2','/bts-inner.css?v=1'):

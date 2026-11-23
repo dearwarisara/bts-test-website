@@ -49,11 +49,6 @@ for f in sorted(D.rglob('*.html')):
     grid=s.new_tag('div',attrs={'class':'modern-photo-grid'})
     for card in cards:add(card,'modern-photo-card');grid.append(card.extract())
     gallery.clear();gallery.append(grid)
- for card in s.select('.related-pages .page-card'):
-  image=card.select_one('.page-card-image')
-  if image:image.decompose()
-  desc=card.select_one('p');h=card.select_one('h3')
-  if desc:desc.decompose()
  for n in s.select('link[href^="/bts-modern-inner.css"],script[src^="/bts-modern-inner.js"]'):n.decompose()
  s.head.append(s.new_tag('link',rel='stylesheet',href='/bts-modern-inner.css?v=1'))
  s.body.append(s.new_tag('script',src='/bts-modern-inner.js?v=1',type='module'))

@@ -156,6 +156,8 @@ R=Path(__file__).parent
 for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
+ for section in s.select('section.related-pages, section#related-information'):
+  section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
  stylesheet_version = 46
