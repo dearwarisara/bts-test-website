@@ -1159,7 +1159,7 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   .finance-glass-action { margin-top: 20px; }
 }
 
-/* Homepage Investor Hub: Bangkok at night. */
+/* Homepage Investor Hub with light glass cards. */
 .bts-unified #publications.investor-night {
   --hub-navy: #0b213d;
   --hub-blue: #02559b;
@@ -1221,19 +1221,22 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   gap: 10px;
   min-height: 116px;
   padding: 13px 14px;
-  border: 1px solid #aac7e268;
+  border: 1px solid #cfdeec;
   border-radius: 16px;
-  background: linear-gradient(125deg, #274c6be0, #0d263dd1);
+  background: linear-gradient(135deg, #ffffffed 24%, #eaf3fcaa);
   backdrop-filter: blur(6px);
-  box-shadow: inset 0 1px #ffffff26;
-  color: #fff;
+  box-shadow: 0 5px 14px #23476f0d, inset 0 1px #fff;
+  color: var(--hub-blue);
   font-size: 24px;
   line-height: 1.08;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color .2s, border-color .2s;
+  transition: border-color .2s, box-shadow .2s;
 }
-.investor-night-resource:hover { border-color: #bfddf7; background: #234a69; }
+.investor-night-resource:hover {
+  border-color: #8eb2d2;
+  box-shadow: 0 7px 18px #23476f1a, inset 0 1px #fff;
+}
 .investor-night-resource > span:nth-child(2) { overflow-wrap: anywhere; }
 .investor-night-icon,
 .investor-night-arrow {
@@ -1246,9 +1249,9 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   grid-column: 1 / -1;
   width: 45px;
   height: 45px;
-  color: #e8f5ff;
-  background: #c6e4ff1a;
-  border: 1px solid #b0d2ef61;
+  color: var(--hub-blue);
+  background: #eff6fccc;
+  border: 1px solid #ccdfee;
 }
 .investor-night-icon svg {
   width: 25px;
@@ -1262,13 +1265,14 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
 .investor-night-arrow {
   width: 30px;
   height: 30px;
-  color: #f3f9ff;
+  color: var(--hub-blue);
   font: 16px/1 Arial, sans-serif;
-  border: 1px solid #789aba80;
+  border: 1px solid #c5d8e9;
 }
 .investor-night-resource:hover .investor-night-arrow {
   background: var(--hub-blue);
   border-color: var(--hub-blue);
+  color: #fff;
 }
 .investor-night-action {
   grid-column: 1;
