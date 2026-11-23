@@ -34,7 +34,7 @@ def apply_finance_scene(page, language):
  labels = ('รายได้รวม', 'EBITDA', 'กำไร (ขาดทุน)') if is_thai else (
   'Total Revenue', 'EBITDA', 'Net Profit (Loss)')
  details = 'สุทธิส่วนที่เป็นของผู้ถือหุ้น' if is_thai else 'Attributable to Equity Holders'
- for index, (name, figure, symbol) in enumerate(zip(labels, figures, ('i-chart', 'i-chart', 'i-file'))):
+ for index, (name, figure) in enumerate(zip(labels, figures)):
   card = page.new_tag('div', attrs={'class': 'finance-glass-card'})
   term = page.new_tag('dt')
   term.string = name
@@ -48,11 +48,6 @@ def apply_finance_scene(page, language):
   unit = page.new_tag('span', attrs={'class': 'finance-glass-unit'})
   unit.string = 'ล้านบาท' if is_thai else 'THB million'
   value.append(unit)
-  icon = page.new_tag('span', attrs={'class': 'finance-glass-icon', 'aria-hidden': 'true'})
-  svg = page.new_tag('svg', attrs={'viewBox': '0 0 32 32'})
-  svg.append(page.new_tag('use', href=f'#{symbol}'))
-  icon.append(svg)
-  value.append(icon)
   card.extend([term, value])
   scene.dl.append(card)
 
@@ -116,7 +111,7 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 34 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 35 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
