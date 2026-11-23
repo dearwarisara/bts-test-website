@@ -1444,3 +1444,175 @@ body.bts-unified[data-path] :is(.search-open, .menu-toggle, .search-close, .back
   outline-offset: 3px;
   box-shadow: 0 0 0 2px #fff;
 }
+
+/* Warm photographic surfaces and a cool BTS navy in the shadows. */
+.bts-unified {
+  --city-night: #081b32;
+  --city-blue: #0c3d63;
+  --city-paper: #f8f6f2;
+  --city-line: #d6e1e9;
+}
+
+.bts-unified:not(.inner-page) main {
+  background: var(--city-paper);
+}
+
+.bts-unified .hero-overlay {
+  background:
+    linear-gradient(90deg, #081b32ed, #0b233cc7 29%, #0b233c45 60%, transparent 84%),
+    linear-gradient(0deg, #081b3299, transparent 46%);
+}
+
+.bts-unified .hero video {
+  filter: saturate(.88) sepia(.07);
+}
+
+.bts-unified .business {
+  background: linear-gradient(180deg, var(--city-paper), #fff 78%);
+}
+
+.bts-unified .business-intro {
+  padding-block: clamp(48px, 6vw, 92px) 30px;
+}
+
+.bts-unified .business-intro .section-title {
+  max-width: 18ch;
+  text-wrap: balance;
+}
+
+.bts-unified .business-intro > p {
+  color: #45627b;
+  font-size: clamp(19px, 1.48vw, 23px);
+}
+
+.bts-unified .business-panel,
+.bts-unified .business-panel:first-child {
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--city-night);
+}
+
+.bts-unified .business-panel::before {
+  filter: saturate(.83) sepia(.09);
+}
+
+.bts-unified .business-panel[data-business="move"]::before {
+  background-image: url('/assets/covers/fc9059fad5963b08-cover.webp');
+}
+
+.bts-unified .business-panel[data-business="mix"]::before {
+  background-image: url('/assets/covers/c359ca6fb975ec4c-cover.webp');
+}
+
+.bts-unified .business-panel[data-business="match"]::before {
+  background-image: url('/assets/covers/add6c11d537bfb53-cover.webp');
+}
+
+.bts-unified .business-panel::after {
+  background: linear-gradient(180deg, transparent 28%, #0a243957 60%, #081b32f5);
+}
+
+.bts-unified .business-panel .panel-arrow {
+  border-color: #ffffff91;
+  background: var(--city-night);
+}
+
+@media (min-width: 1060px) {
+  .bts-unified .business-panels {
+    align-items: end;
+    grid-template-columns: minmax(0, 1.62fr) repeat(2, minmax(0, 1fr));
+    grid-template-rows: clamp(350px, 34vw, 505px);
+    gap: clamp(14px, 1.45vw, 24px);
+  }
+
+  .bts-unified .business-panel:not(:first-child) {
+    height: 87%;
+  }
+
+  .bts-unified .business-panel:first-child h3 {
+    font-size: clamp(42px, 4.4vw, 67px);
+  }
+}
+
+.bts-unified .finance-glass {
+  background-image:
+    linear-gradient(90deg, #081b32f5, #0c3454af 56%, #0c345469),
+    url('/assets/ir/connected-city-v1.webp');
+}
+
+.bts-unified #publications.investor-night {
+  border-bottom: 1px solid var(--city-line);
+}
+
+.bts-unified .investor-night-resource {
+  background: linear-gradient(145deg, #fff 30%, #eff5fa);
+}
+
+.bts-unified .news-card:first-child .news-image img {
+  object-position: center top;
+}
+
+.bts-unified .news-card:first-child .news-image::after {
+  background: linear-gradient(0deg, #081b32fa, #081b3266 36%, transparent 69%);
+}
+
+.bts-unified .news-card:not(:first-child) {
+  border-bottom-color: var(--city-line);
+}
+
+.bts-unified .sustainability.sustainability-cover::before {
+  background:
+    radial-gradient(ellipse at center, #081b32b5 3%, #081b3282 46%, #081b3226 90%),
+    linear-gradient(0deg, #081b32ae, transparent 53%);
+}
+
+.bts-unified .inner-hero {
+  background: var(--city-night);
+}
+
+.bts-unified .inner-hero .inner-cover {
+  opacity: 1;
+}
+
+.bts-unified .inner-cover :is(img, video) {
+  filter: saturate(.86) sepia(.08);
+}
+
+.bts-unified .inner-hero .inner-cover::after {
+  background:
+    linear-gradient(90deg, #081b32eb 0%, #0b2b48ab 42%, #0b2b4838 79%),
+    linear-gradient(0deg, #081b3282, transparent 60%);
+}
+
+.bts-unified .inner-hero h1::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin-top: 19px;
+  background: linear-gradient(90deg, var(--ci-red) 0 58%, #a2c9e9 58%);
+}
+
+.bts-unified .related-pages {
+  background: linear-gradient(135deg, var(--city-paper), #edf4fa);
+}
+
+.bts-unified .footer-modern {
+  border-top-color: #75a9d0;
+  background: linear-gradient(115deg, var(--city-night), #0b2947 68%, var(--city-blue));
+}
+
+@media (max-width: 760px) {
+  .bts-unified .hero-overlay {
+    background: linear-gradient(90deg, #081b32e6, #081b3275 66%, #081b3233);
+  }
+
+  .bts-unified .business-intro .section-title {
+    max-width: none;
+  }
+
+  .bts-unified .inner-hero .inner-cover::after {
+    background: linear-gradient(90deg, #081b32e0, #0b2b4875),
+      linear-gradient(0deg, #081b3299, transparent 70%);
+  }
+}
