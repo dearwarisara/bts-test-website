@@ -2,51 +2,39 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 def apply_finance_scene(page, language):
- section = page.select_one('.financial-home')
+ section = page.select_one('.financial-home, .finance-glass')
  if section is None:
   return
 
  is_thai = language == 'th'
- label = section.select_one('.section-tag').get_text(strip=True)
- period = section.select_one('.financial-period').get_text(strip=True)
+ period_node = section.select_one('.financial-period, .finance-glass-period')
+ period = period_node.get_text(' ', strip=True)
  period = period.removeprefix('ข้อมูลสำคัญทางการเงินประจำ' if is_thai else 'Financial Highlights ')
- figures = [figure.extract() for figure in section.select('.metric strong')]
- finance_url = section.select_one('.finance-actions a')['href']
+ period = period.split('·', 1)[0].strip()
+ figures = [figure.extract() for figure in section.select('.metric strong, .finance-glass-card strong')]
+ finance_url = section.select_one('.finance-actions a, .finance-glass-action')['href']
 
  section.clear()
  section['class'] = ['finance-glass']
  section['aria-labelledby'] = 'finance-glass-title'
  scene = BeautifulSoup("""
  <div class="finance-glass-inner">
-  <p class="finance-glass-eyebrow"></p>
+  <header class="finance-glass-heading">
   <h2 id="finance-glass-title"></h2>
   <p class="finance-glass-period"></p>
+  </header>
   <dl class="finance-glass-metrics"></dl>
   <a class="finance-glass-action"><span aria-hidden="true">↗</span></a>
  </div>
  """, 'html.parser').div
 
- scene.p.string = label
- heading = scene.h2
- if is_thai:
-  heading.append('ข้อมูลสำคัญ')
-  heading.append(page.new_tag('br'))
-  heading.append('ทางการเงิน')
- else:
-  heading.string = 'Key Financial Data'
- period_text, separator, unit = period.partition(' · ')
- period_node = scene.select_one('.finance-glass-period')
- period_node.append(period_text)
- if separator:
-  dot = page.new_tag('span')
-  dot.string = '·'
-  period_node.append(dot)
-  period_node.append(unit)
+ scene.h2.string = 'ข้อมูลสำคัญทางการเงิน' if is_thai else 'Key Financial Data'
+ scene.p.string = period
 
  labels = ('รายได้รวม', 'EBITDA', 'กำไร (ขาดทุน)') if is_thai else (
   'Total Revenue', 'EBITDA', 'Net Profit (Loss)')
  details = 'สุทธิส่วนที่เป็นของผู้ถือหุ้น' if is_thai else 'Attributable to Equity Holders'
- for index, (name, figure) in enumerate(zip(labels, figures)):
+ for index, (name, figure, symbol) in enumerate(zip(labels, figures, ('i-chart', 'i-chart', 'i-file'))):
   card = page.new_tag('div', attrs={'class': 'finance-glass-card'})
   term = page.new_tag('dt')
   term.string = name
@@ -57,6 +45,14 @@ def apply_finance_scene(page, language):
    term.append(detail)
   value = page.new_tag('dd')
   value.append(figure)
+  unit = page.new_tag('span', attrs={'class': 'finance-glass-unit'})
+  unit.string = 'ล้านบาท' if is_thai else 'THB million'
+  value.append(unit)
+  icon = page.new_tag('span', attrs={'class': 'finance-glass-icon', 'aria-hidden': 'true'})
+  svg = page.new_tag('svg', attrs={'viewBox': '0 0 32 32'})
+  svg.append(page.new_tag('use', href=f'#{symbol}'))
+  icon.append(svg)
+  value.append(icon)
   card.extend([term, value])
   scene.dl.append(card)
 
@@ -120,7 +116,7 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 33 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 34 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
