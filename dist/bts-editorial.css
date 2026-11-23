@@ -1144,7 +1144,7 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
 }
 
 .investor-night-inner {
-  width: min(1152px, calc(100% - 96px));
+  width: min(1760px, calc(100% - clamp(64px, 8vw, 128px)));
   min-height: 340px;
   margin-inline: auto;
   padding-block: 42px;
@@ -1152,7 +1152,7 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   grid-template-columns: minmax(245px, 1fr) minmax(0, 1.85fr);
   align-content: center;
   align-items: center;
-  gap: 15px 32px;
+  gap: 15px clamp(28px, 3vw, 56px);
 }
 
 .investor-night-intro { grid-column: 1; align-self: end; }
@@ -1190,8 +1190,8 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
   grid-template-rows: auto auto;
   align-items: center;
   gap: 10px;
-  min-height: 116px;
-  padding: 13px 14px;
+  min-height: 128px;
+  padding: 15px 18px;
   border: 1px solid #cfdeec;
   border-radius: 16px;
   background: linear-gradient(135deg, #ffffffed 24%, #eaf3fcaa);
