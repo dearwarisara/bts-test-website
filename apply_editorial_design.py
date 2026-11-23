@@ -98,6 +98,9 @@ def apply_investor_hub(page):
  focus_investor_documents(section)
 
 def focus_investor_documents(section):
+ eyebrow = section.select_one('.investor-night-eyebrow')
+ if eyebrow is not None:
+  eyebrow.decompose()
  for link in section.select('.investor-night-resources a[href]'):
   if link['href'].rstrip('/').endswith('/financial-information/key-financial-data'):
    link.decompose()
@@ -111,10 +114,16 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 39 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 40 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
+  hero = s.select_one('.hero')
+  if hero:
+   for selector in ('.hero-signature', '.hero-bottom'):
+    node = hero.select_one(selector)
+    if node is not None:
+     node.decompose()
   apply_finance_scene(s, body_path.split('/')[1])
   apply_investor_hub(s)
   # The newsletter/IR contact tiles are redundant after the homepage story flow.

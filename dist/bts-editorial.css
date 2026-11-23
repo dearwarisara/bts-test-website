@@ -1314,3 +1314,4 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
 @media (prefers-reduced-motion: reduce) {
   .investor-night-resource { transition: none; }
 }
+.bts-unified .hero-brand-copy:before,.bts-unified .hero-brand-copy:after{display:none!important;content:none!important}
