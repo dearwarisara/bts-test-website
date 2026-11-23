@@ -1039,8 +1039,9 @@ html[lang=en] .bts-unified .footer-modern .footer-location{font:400 16px/1.65 Mu
 .finance-glass-card {
   position: relative;
   display: grid;
-  grid-template-rows: minmax(42px, auto) auto;
+  grid-template-rows: minmax(48px, auto) auto;
   align-content: center;
+  text-align: center;
   min-width: 0;
   min-height: 186px;
   padding: 18px 20px;

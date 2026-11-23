@@ -111,7 +111,7 @@ for f in (R/'dist').rglob('*.html'):
  if not s.select_one('.site-header'):continue
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 35 if body_path in ('/th/home', '/en/home') else 26
+ stylesheet_version = 36 if body_path in ('/th/home', '/en/home') else 26
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
