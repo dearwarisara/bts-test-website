@@ -48,7 +48,6 @@ def footer(lang, nodes):
           <a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a>
           <h3>{company}</h3>
           <div class="footer-connect">
-            <h3>{'ติดต่อบีทีเอสกรุ๊ป' if th else 'Contact BTS Group'}</h3>
             <p>{address}</p>
             <a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a>
             <a class="footer-location" href="/{lang}/contact/">{'ข้อมูลติดต่อและแผนที่' if th else 'Contact details & location'}<span aria-hidden="true">↗</span></a>
