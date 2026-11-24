@@ -44,9 +44,17 @@ def footer(lang, nodes):
     return f'''<footer class="bts-footer footer-modern footer-bts" id="site-footer">
       <div class="footer-signature"><span class="footer-eyebrow">BTS GROUP</span><p>Borderless <span>Transform</span> Solutions</p><a href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a></div>
       <div class="footer-main-grid">
-        <div class="footer-identity"><a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a><h3>{company}</h3><span class="footer-identity-rule" aria-hidden="true"></span></div>
+        <div class="footer-identity">
+          <a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a>
+          <h3>{company}</h3>
+          <div class="footer-connect">
+            <h3>{'ติดต่อบีทีเอสกรุ๊ป' if th else 'Contact BTS Group'}</h3>
+            <p>{address}</p>
+            <a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a>
+            <a class="footer-location" href="/{lang}/contact/">{'ข้อมูลติดต่อและแผนที่' if th else 'Contact details & location'}<span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
         <nav class="footer-navigation" aria-label="{'เมนูท้ายเว็บไซต์' if th else 'Footer navigation'}"><h3>{'สำรวจบีทีเอสกรุ๊ป' if th else 'Explore BTS Group'}</h3><div class="footer-link-columns"><div>{links(nodes[:4])}</div><div>{links(nodes[4:])}</div></div></nav>
-        <div class="footer-connect"><h3>{'ติดต่อบีทีเอสกรุ๊ป' if th else 'Contact BTS Group'}</h3><p>{address}</p><a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a><a class="footer-location" href="/{lang}/contact/">{'ข้อมูลติดต่อและแผนที่' if th else 'Contact details & location'}<span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="footer-legal"><span>© 2026 BTS Group Holdings Public Company Limited</span><nav aria-label="{'ข้อมูลเว็บไซต์' if th else 'Website information'}"><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'}</a></nav><button class="back-top" aria-label="{'กลับด้านบน' if th else 'Back to top'}"><span aria-hidden="true">↑</span></button></div>
     </footer>'''
