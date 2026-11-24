@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 
 from bs4 import BeautifulSoup
+from refresh_shared_shell import footer
 
 
 BUTTON_LINKS = (
@@ -156,11 +157,15 @@ R=Path(__file__).parent
 for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
+ old_footer = s.select_one('body > footer.bts-footer')
+ if old_footer is not None:
+  language = 'en' if s.html.get('lang') == 'en' else 'th'
+  old_footer.replace_with(BeautifulSoup(footer(language), 'html.parser'))
  for section in s.select('section.related-pages, section#related-information'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 46
+ stylesheet_version = 47
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):

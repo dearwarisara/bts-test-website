@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from bs4 import BeautifulSoup
+from refresh_shared_shell import footer
 import json, subprocess, sys, html, re
 R=Path(__file__).parent; D=R/'dist'
 CAT=json.loads((D/'site-catalog.json').read_text(encoding='utf-8'))
@@ -44,10 +45,6 @@ def header(lang,path):
    panels.append(f'<section class="mega-panel" id="mega-{n["key"]}" hidden><div><small>BTS GROUP</small><h2>{esc(n["label"])}</h2><a class="outline-button" href="{first(n)}">'+('ดูข้อมูลในหมวดนี้' if lang=='th' else 'Explore this section')+' <span>↗</span></a></div><div class="mega-links official-tree">'+tree_links(n['children'])+'</div></section>')
   else:nav.append(f'<a class="nav-direct'+(' current-section' if current else '')+'" href="'+esc(n['href'])+'">'+esc(n['label'])+'</a>')
  return f'<header class="site-header"><div class="header-top"><a class="logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group"/></a><div class="header-tools"><span class="language"><b>{lang.upper()}</b> | <a href="{alt}">{other.upper()}</a></span><button class="search-open" aria-label="'+('ค้นหา' if lang=='th' else 'Search')+'">⌕</button><button class="menu-toggle" aria-label="'+('เปิดเมนู' if lang=='th' else 'Open menu')+'" aria-expanded="false">☰</button></div></div><nav class="main-nav" aria-label="'+('เมนูหลัก' if lang=='th' else 'Main navigation')+'">'+''.join(nav)+'</nav><div class="mega-shell">'+''.join(panels)+'</div></header>'
-def footer(lang):
- nodes=[n for n in CAT['navigation'][lang] if n['key']!='home']; th=lang=='th'
- def links(ns):return ''.join(f'<a class="more" href="{first(n)}">{esc(n["label"])}<span>↗</span></a>' for n in ns)
- return f'<footer class="bts-footer"><div class="container footer-grid"><div class="footer-company"><a href="/{lang}/home/"><img src="/assets/bts-logo.svg" alt="BTS Group"/></a><h3>'+('บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์<br>จำกัด (มหาชน)' if th else 'BTS Group Holdings<br>Public Company Limited')+'</h3><p>Borderless Transform Solutions</p></div><div><h3>BTS Group</h3>'+links(nodes[:4])+'</div><div><h3>'+('ติดต่อและข้อมูลเพิ่มเติม' if th else 'Connect with BTS Group')+'</h3>'+links(nodes[4:])+f'<a class="more" href="/{lang}/sitemap/">'+('แผนผังเว็บไซต์' if th else 'Sitemap')+' <span>↗</span></a><button class="back-top" aria-label="'+('กลับด้านบน' if th else 'Back to top')+'">↑</button></div></div><div class="footer-bottom container"><span>© 2026 BTS Group Holdings Public Company Limited</span><div>'+f'<a href="/{lang}/privacy-statement/">'+('นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement')+f'</a><a href="/{lang}/cookies-policy/">'+('นโยบายคุกกี้' if th else 'Cookies Policy')+'</a></div></div></footer>'
 def dialog(lang):
  th=lang=='th'
  return '<dialog id="search-dialog"><div class="search-dialog-head"><img src="/assets/bts-logo.svg" alt="BTS Group"><button class="search-close" aria-label="'+('ปิดการค้นหา' if th else 'Close search')+'">×</button></div><form class="search-form"><label for="search-input">'+('ค้นพบทุกเรื่องราวของ BTS Group' if th else 'Explore BTS Group')+'</label><div><input id="search-input" type="search" placeholder="'+('ค้นหาข้อมูล ข่าวสาร หรือเอกสาร' if th else 'Search pages, news and documents')+'" autocomplete="off"><button type="submit">'+('ค้นหา' if th else 'Search')+'</button></div></form><div id="search-results" aria-live="polite"><p>'+('พิมพ์อย่างน้อย 2 ตัวอักษรเพื่อค้นหา' if th else 'Enter at least 2 characters to search')+'</p></div></dialog>'
