@@ -1621,13 +1621,21 @@ body.bts-unified[data-path] :is(.search-open, .menu-toggle, .search-close, .back
 .bts-unified .footer-modern.footer-bts {
   --footer-muted: #e3edf7;
   --footer-gutter: clamp(22px, 4.5vw, 86px);
-  --footer-heading-size: 19px;
-  --footer-contact-size: 18px;
-  --footer-link-size: 16px;
-  --footer-legal-size: 14px;
+  --footer-heading-size: 20px;
+  --footer-contact-size: 19px;
+  --footer-link-size: 17px;
+  --footer-legal-size: 15px;
   border: 0;
   background: #103b6c;
   color: #fff;
+}
+
+/* OzoneX has smaller visible Thai glyphs at the same CSS font size. */
+html[lang="th"] .bts-unified .footer-modern.footer-bts {
+  --footer-heading-size: 25px;
+  --footer-contact-size: 24px;
+  --footer-link-size: 22px;
+  --footer-legal-size: 19px;
 }
 
 .bts-unified .footer-modern.footer-bts::before {
@@ -1774,8 +1782,13 @@ html[lang="en"] .bts-unified .footer-bts :is(.footer-legal > span, .footer-legal
 
 @media (max-width: 760px) {
   .bts-unified .footer-modern.footer-bts {
-    --footer-heading-size: 17.5px;
-    --footer-contact-size: 16px;
+    --footer-heading-size: 19px;
+    --footer-contact-size: 17px;
+  }
+
+  html[lang="th"] .bts-unified .footer-modern.footer-bts {
+    --footer-heading-size: 23px;
+    --footer-contact-size: 22px;
   }
 
   .bts-unified .footer-bts .footer-legal {
