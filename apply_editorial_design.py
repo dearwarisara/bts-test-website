@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import re
 
 from bs4 import BeautifulSoup
@@ -154,18 +155,19 @@ def focus_investor_documents(section):
   intro_copy.decompose()
 
 R=Path(__file__).parent
+footer_nav = json.loads((R/'dist'/'site-catalog.json').read_text(encoding='utf8'))['navigation']
 for f in (R/'dist').rglob('*.html'):
  s=BeautifulSoup(f.read_text(encoding='utf8'),'html.parser')
  if not s.select_one('.site-header'):continue
  old_footer = s.select_one('body > footer.bts-footer')
  if old_footer is not None:
   language = 'en' if s.html.get('lang') == 'en' else 'th'
-  old_footer.replace_with(BeautifulSoup(footer(language), 'html.parser'))
+  old_footer.replace_with(BeautifulSoup(footer(language, footer_nav[language]), 'html.parser'))
  for section in s.select('section.related-pages, section#related-information'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 47
+ stylesheet_version = 48
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):

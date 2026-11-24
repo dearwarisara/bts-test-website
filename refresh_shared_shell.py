@@ -34,84 +34,22 @@ def nav_tree(nodes, current, level=2):
 def all_hrefs(nodes):
     return [h for n in nodes for h in ([n['href']] if n.get('href') else []) + all_hrefs(n.get('children', []))]
 
-def footer(lang):
-    labels = {
-        'th': {
-            'ir': 'ฝ่ายนักลงทุนสัมพันธ์',
-            'company': 'บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)',
-            'address': '1000/9 อาคาร บีทีเอส วิชันนารี ปาร์ค – นอร์ท ทาวเวอร์ ชั้นที่ 34<br>ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพฯ 10900',
-            'phone': 'โทรศัพท์',
-            'extension': 'ต่อ 6005 หรือ 6007',
-            'email': 'อีเมล',
-            'contact': 'ติดต่อนักลงทุนสัมพันธ์',
-            'links': 'เว็บไซต์ที่เกี่ยวข้อง',
-            'updates': 'ติดตามข่าวสาร BTS Group',
-            'legal': 'ข้อมูลเว็บไซต์',
-            'top': 'กลับด้านบน',
-        },
-        'en': {
-            'ir': 'Investor Relations',
-            'company': 'BTS Group Holdings Public Company Limited',
-            'address': '1000/9 BTS Visionary Park – North Tower, 34th Floor<br>Phahonyothin Road, Chom Phon, Chatuchak, Bangkok 10900',
-            'phone': 'Telephone',
-            'extension': 'ext. 6005 or 6007',
-            'email': 'Email',
-            'contact': 'Contact Investor Relations',
-            'links': 'Related Websites',
-            'updates': 'BTS Group Updates',
-            'legal': 'Website information',
-            'top': 'Back to top',
-        },
-    }[lang]
-
-    def links(items, arrows=False):
-        icon = ' <span aria-hidden="true">↗</span>' if arrows else ''
-        return ''.join(
-            f'<a href="/{lang}/{path}/">{th if lang == "th" else en}{icon}</a>'
-            for path, th, en in items
-        )
-
-    related = links([
-        ('our-business/business-overview', 'ธุรกิจของเรา', 'Our Business'),
-        ('investor-relations/home', 'นักลงทุนสัมพันธ์', 'Investor Relations'),
-        ('sustainability/sustainability-at-bts-group', 'ความยั่งยืน', 'Sustainability'),
-        ('contact', 'ติดต่อบีทีเอสกรุ๊ป', 'Contact BTS Group'),
-    ], arrows=True)
-    updates = links([
-        ('update/news-event', 'ข่าวสารองค์กร', 'Corporate News'),
-        ('corporate-communications/corporate-vdo', 'วิดีโอองค์กร', 'Corporate Videos'),
-    ], arrows=True)
-    legal = links([
-        ('terms-and-conditions', 'ข้อกำหนดและเงื่อนไข', 'Terms and Conditions'),
-        ('privacy-statement', 'นโยบายความเป็นส่วนตัว', 'Privacy Statement'),
-        ('cookies-policy', 'นโยบายคุกกี้', 'Cookies Policy'),
-        ('sitemap', 'แผนผังเว็บไซต์', 'Sitemap'),
-    ])
-
-    return f'''<footer class="bts-footer footer-modern footer-reference">
-      <div class="footer-reference-grid">
-        <div><a class="footer-reference-logo" href="/{lang}/home/"><img src="/assets/bts-logo.svg" alt="BTS Group" width="51" height="69"></a></div>
-        <section class="footer-reference-contact" aria-labelledby="footer-ir-title">
-          <h2 id="footer-ir-title">{labels['ir']}</h2>
-          <p>{labels['company']}<br>{labels['address']}</p>
-          <dl>
-            <div><dt>{labels['phone']}</dt><dd><a href="tel:+6620801000">+66 (0) 2 080 1000</a> {labels['extension']}</dd></div>
-            <div><dt>{labels['email']}</dt><dd><a href="mailto:ir@btsgroup.co.th">ir@btsgroup.co.th</a></dd></div>
-          </dl>
-          <a class="footer-reference-action" href="/{lang}/investor-relations/information-inquiry/ir-contact/" data-bts-cta>{labels['contact']}<span class="bts-cta-icon" aria-hidden="true">›</span></a>
-        </section>
-        <div class="footer-reference-links">
-          <nav aria-labelledby="footer-related-title"><h2 id="footer-related-title">{labels['links']}</h2><div>{related}</div></nav>
-          <nav aria-labelledby="footer-updates-title"><h2 id="footer-updates-title">{labels['updates']}</h2><div>{updates}</div></nav>
-        </div>
+def footer(lang, nodes):
+    th = lang == 'th'
+    nodes = [n for n in nodes if n['key'] != 'home']
+    def links(items):
+        return ''.join(f'<a href="{escape(first(n))}">{escape(n["label"])}<span aria-hidden="true">↗</span></a>' for n in items)
+    company = 'บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์<br>จำกัด (มหาชน)' if th else 'BTS Group Holdings<br>Public Company Limited'
+    address = '1000/9 อาคาร บีทีเอส วิชันนารี ปาร์ค – เซาธ์ ทาวเวอร์ ชั้นที่ 33<br>ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพฯ 10900' if th else '1000/9 BTS Visionary Park – South Tower, 33rd Floor<br>Phahonyothin Road, Chom Phon, Chatuchak, Bangkok 10900'
+    return f'''<footer class="bts-footer footer-modern footer-bts" id="site-footer">
+      <div class="footer-signature"><span class="footer-eyebrow">BTS GROUP</span><p>Borderless <span>Transform</span> Solutions</p><a href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a></div>
+      <div class="footer-main-grid">
+        <div class="footer-identity"><a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a><h3>{company}</h3><span class="footer-identity-rule" aria-hidden="true"></span></div>
+        <nav class="footer-navigation" aria-label="{'เมนูท้ายเว็บไซต์' if th else 'Footer navigation'}"><h3>{'สำรวจบีทีเอสกรุ๊ป' if th else 'Explore BTS Group'}</h3><div class="footer-link-columns"><div>{links(nodes[:4])}</div><div>{links(nodes[4:])}</div></div></nav>
+        <div class="footer-connect"><h3>{'ติดต่อบีทีเอสกรุ๊ป' if th else 'Contact BTS Group'}</h3><p>{address}</p><a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a><a class="footer-location" href="/{lang}/contact/">{'ข้อมูลติดต่อและแผนที่' if th else 'Contact details & location'}<span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="footer-reference-legal">
-        <p>© 2026 {labels['company']}</p>
-        <nav aria-label="{labels['legal']}">{legal}</nav>
-        <button type="button" class="back-top" aria-label="{labels['top']}"><span aria-hidden="true"></span></button>
-      </div>
+      <div class="footer-legal"><span>© 2026 BTS Group Holdings Public Company Limited</span><nav aria-label="{'ข้อมูลเว็บไซต์' if th else 'Website information'}"><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'}</a></nav><button class="back-top" aria-label="{'กลับด้านบน' if th else 'Back to top'}"><span aria-hidden="true">↑</span></button></div>
     </footer>'''
-
 
 def main():
     catalog = json.loads((D/'site-catalog.json').read_text(encoding='utf-8'))
@@ -122,7 +60,7 @@ def main():
         lang = 'en' if s.html.get('lang') == 'en' else 'th'
         current = '/' + file.parent.relative_to(D).as_posix() + '/'
         old = s.select_one('body>footer.bts-footer')
-        old.replace_with(BeautifulSoup(footer(lang), 'html.parser'))
+        old.replace_with(BeautifulSoup(footer(lang, catalog['navigation'][lang]), 'html.parser'))
         for group in catalog['navigation'][lang]:
             target = s.select_one(f'#mega-{group["key"]} .official-tree')
             if target:

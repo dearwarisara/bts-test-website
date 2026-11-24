@@ -138,7 +138,7 @@ for file in D.rglob('*.html'):
   else:soup.main.insert(0,fragment(hero_html))
   for n in soup.select('.source-attribution'):n.decompose()
  soup.body.insert(0,fragment(header(lang,path)))
- soup.body.append(fragment(footer(lang)));soup.body.append(fragment(dialog(lang)))
+ soup.body.append(fragment(footer(lang, CAT['navigation'][lang])));soup.body.append(fragment(dialog(lang)))
  for href in ('/metro.css?v=3','/bts-brand.css?v=2','/bts-inner.css?v=1'):
   n=soup.new_tag('link',rel='stylesheet',href=href);soup.head.append(n)
  for src in ('/metro.js?v=3',)+(() if is_home else ('/content.js?v=1',)):
