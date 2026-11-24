@@ -1618,6 +1618,24 @@ body.bts-unified[data-path] :is(.search-open, .menu-toggle, .search-close, .back
 }
 
 /* BTS footer: a solid brand surface, compact spacing and quiet dividers. */
+html[lang="th"] .bts-unified {
+  --site-menu-text-size: 22px;
+}
+
+html[lang="en"] .bts-unified {
+  --site-menu-text-size: 14px;
+}
+
+@media (max-width: 760px) {
+  html[lang="en"] .bts-unified {
+    --site-menu-text-size: 16px;
+  }
+}
+
+html[lang] .bts-unified .main-nav > :is(button, .nav-direct) {
+  font-size: var(--site-menu-text-size);
+}
+
 .bts-unified .footer-modern.footer-bts {
   --footer-muted: #e3edf7;
   --footer-gutter: clamp(22px, 4.5vw, 86px);
@@ -1719,18 +1737,13 @@ html[lang="en"] .bts-unified .footer-bts .footer-link-columns a {
   color: #e3edf7;
 }
 
-.bts-unified .footer-bts .footer-legal > span {
+.bts-unified .footer-bts :is(.footer-legal > span, .footer-legal nav a) {
   color: inherit;
-  font-size: 11px;
+  font: 400 var(--site-menu-text-size)/1.4 OzoneX, sans-serif;
 }
 
-.bts-unified .footer-bts .footer-legal nav a {
-  color: inherit;
-  font-size: 16px;
-}
-
-html[lang="en"] .bts-unified .footer-bts .footer-legal nav a {
-  font: 400 12px/1.6 Mulish, sans-serif;
+html[lang="en"] .bts-unified .footer-bts :is(.footer-legal > span, .footer-legal nav a) {
+  font-family: Mulish, sans-serif;
 }
 
 .bts-unified .footer-bts .footer-legal .back-top {
