@@ -47,7 +47,7 @@ def footer(lang, nodes):
           <h3>{company}</h3>
           <div class="footer-connect">
             <p><strong>{'ที่อยู่' if th else 'Address:'}</strong> {address}</p>
-            <a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a>
+            <a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000</a>
             <a class="footer-contact-action" href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a>
           </div>
         </div>

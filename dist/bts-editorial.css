@@ -1711,6 +1711,10 @@ html[lang="en"] .bts-unified .footer-bts .footer-phone {
   font-weight: 700;
 }
 
+.bts-unified .footer-bts .footer-phone > span:first-child {
+  margin-left: 0;
+}
+
 .bts-unified .footer-bts .footer-legal {
   padding-block: 10px;
   border-top: 1px solid #ffffff32;
