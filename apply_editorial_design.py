@@ -9,7 +9,7 @@ from refresh_shared_shell import footer
 BUTTON_LINKS = (
  'a.outline-button, a.official-action, a.btn, a.btn-back, a.finance-glass-action, '
  'a.investor-night-action, a.hero-discover, a.inner-content-link, a.chapter-back, '
- 'a.card-link--icon-next, .footer-contact-action, button.archive-more'
+ 'a.card-link--icon-next, .footer-contact-action, .sustainability-feature-action, button.archive-more'
 )
 EDGE_ARROWS = re.compile(r'^←\s*|\s*[↗→↓]$')
 
@@ -167,7 +167,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 56
+ stylesheet_version = 57 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
@@ -187,39 +187,39 @@ for f in (R/'dist').rglob('*.html'):
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
    section.decompose()
-  scene = s.select_one('.sustainability')
+  scene = s.select_one('section#sustainability, section.sustainability')
   if scene:
    is_th = s.html.get('lang', 'th') == 'th'
    heading = 'การพัฒนาอย่างยั่งยืน' if is_th else 'Sustainable Development'
-   eyebrow = 'BTS GROUP  /  ความยั่งยืน' if is_th else 'BTS GROUP  /  SUSTAINABILITY'
    description = ('เรามุ่งสร้างคุณค่าระยะยาว ด้วยการดำเนินธุรกิจที่รับผิดชอบต่อสิ่งแวดล้อม สังคม และการกำกับดูแลกิจการที่ดี'
                   if is_th else 'We create long-term value through responsible business practices for the environment, society and good corporate governance.')
    link_text = 'สำรวจความยั่งยืน' if is_th else 'Explore sustainability'
    link_href = '/th/sustainability/sustainability-at-bts-group/' if is_th else '/en/sustainability/sustainability-at-bts-group/'
    scene.clear()
-   scene['class'] = ['sustainability', 'sustainability-cover']
+   scene['class'] = ['sustainability-feature']
    scene['aria-labelledby'] = 'sustainability-cover-title'
-   content = s.new_tag('div', attrs={'class': 'sustainability-cover-content'})
-   label = s.new_tag('span', attrs={'class': 'sustainability-cover-eyebrow'})
-   label.string = eyebrow
+   content = s.new_tag('div', attrs={'class': 'sustainability-feature-copy'})
    title = s.new_tag('h2', id='sustainability-cover-title')
    title.string = heading
    copy = s.new_tag('p')
    copy.string = description
-   cta = s.new_tag('a', href=link_href, attrs={'class': 'sustainability-cover-arrow', 'aria-label': link_text})
-   arrow = s.new_tag('span', attrs={'aria-hidden': 'true'})
-   arrow.string = '→'
-   cta.append(arrow)
-   links = s.new_tag('nav', attrs={'class': 'sustainability-cover-more', 'aria-label': 'Sustainability topics' if not is_th else 'หัวข้อความยั่งยืน'})
+   cta = s.new_tag('a', href=link_href, attrs={'class': 'sustainability-feature-action'})
+   cta.string = link_text
+   image = s.new_tag('img', src='/assets/sustainability-bangkok-sunset.webp', alt='', width='2172', height='724',
+                     loading='lazy', decoding='async', attrs={'class': 'sustainability-feature-image'})
+   links = s.new_tag('nav', attrs={'class': 'sustainability-feature-links', 'aria-label': 'Sustainability topics' if not is_th else 'หัวข้อความยั่งยืน'})
    destinations = [('sustainability/environmental-sustainability', 'ความยั่งยืนด้านสิ่งแวดล้อม' if is_th else 'Environmental Sustainability'),
                    ('sustainability/social-sustainability', 'ความยั่งยืนด้านสังคม' if is_th else 'Social Sustainability'),
                    ('corporate-governance/at-a-glance', 'การกำกับดูแลกิจการ' if is_th else 'Corporate Governance')]
    for index, (path, text) in enumerate(destinations):
     item = s.new_tag('a', href=f'/{s.html.get("lang", "th")}/{path}/', attrs={'data-esg': str(index)})
     item.string = text
+    arrow = s.new_tag('span', attrs={'aria-hidden': 'true'})
+    arrow.string = '↗'
+    item.append(arrow)
     links.append(item)
-   content.extend([label, title, copy, cta, links])
-   scene.append(content)
+   content.extend([title, copy, cta])
+   scene.extend([content, image, links])
  # Keep archive artwork restrained: show one representative story image per
  # news archive, and leave the remaining cards as clean editorial text cards.
  news_archive = s.body and s.body.get('data-path', '').endswith(('/news-event', '/update/news-event'))
