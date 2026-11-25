@@ -9,7 +9,7 @@ from refresh_shared_shell import footer
 BUTTON_LINKS = (
  'a.outline-button, a.official-action, a.btn, a.btn-back, a.finance-glass-action, '
  'a.investor-night-action, a.hero-discover, a.inner-content-link, a.chapter-back, '
- 'a.card-link--icon-next, .footer-signature > a, button.archive-more'
+ 'a.card-link--icon-next, .footer-signature-action, button.archive-more'
 )
 EDGE_ARROWS = re.compile(r'^←\s*|\s*[↗→↓]$')
 
@@ -167,7 +167,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 53
+ stylesheet_version = 54
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):

@@ -38,22 +38,25 @@ def footer(lang, nodes):
     th = lang == 'th'
     nodes = [n for n in nodes if n['key'] != 'home']
     def links(items):
-        return ''.join(f'<a href="{escape(first(n))}">{escape(n["label"])}<span aria-hidden="true">↗</span></a>' for n in items)
-    company = 'บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์<br>จำกัด (มหาชน)' if th else 'BTS Group Holdings<br>Public Company Limited'
+        return ''.join(f'<a href="{escape(first(n))}">{escape(n["label"])}</a>' for n in items)
+    company = 'บริษัท บีทีเอส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)' if th else 'BTS Group Holdings Public Company Limited'
     address = '1000/9 อาคาร บีทีเอส วิชันนารี ปาร์ค – เซาธ์ ทาวเวอร์ ชั้นที่ 33<br>ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพฯ 10900' if th else '1000/9 BTS Visionary Park – South Tower, 33rd Floor<br>Phahonyothin Road, Chom Phon, Chatuchak, Bangkok 10900'
     return f'''<footer class="bts-footer footer-modern footer-bts" id="site-footer">
-      <div class="footer-signature"><span class="footer-eyebrow">BTS GROUP</span><p>Borderless <span>Transform</span> Solutions</p><a href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a></div>
+      <div class="footer-signature">
+        <a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a>
+        <p>Borderless <span>Transform</span> Solutions</p>
+        <a class="footer-signature-action" href="/{lang}/contact/">{'เชื่อมต่อกับเรา' if th else 'Connect with us'}<span aria-hidden="true">↗</span></a>
+      </div>
       <div class="footer-main-grid">
         <div class="footer-identity">
-          <a class="footer-logo" href="/{lang}/home/" aria-label="BTS Group"><img src="/assets/bts-logo.svg" alt="BTS Group" width="50" height="70"></a>
           <h3>{company}</h3>
           <div class="footer-connect">
-            <p>{address}</p>
+            <p><strong>{'ที่อยู่' if th else 'Address:'}</strong> {address}</p>
             <a class="footer-phone" href="tel:+6620801000"><span>{'โทรศัพท์' if th else 'Telephone'}</span>+66 (0) 2 080 1000<span aria-hidden="true">↗</span></a>
             <a class="footer-location" href="/{lang}/contact/">{'ข้อมูลติดต่อและแผนที่' if th else 'Contact details & location'}<span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <nav class="footer-navigation" aria-label="{'เมนูท้ายเว็บไซต์' if th else 'Footer navigation'}"><h3>{'สำรวจบีทีเอสกรุ๊ป' if th else 'Explore BTS Group'}</h3><div class="footer-link-columns"><div>{links(nodes[:4])}</div><div>{links(nodes[4:])}</div></div></nav>
+        <nav class="footer-navigation" aria-label="{'เมนูท้ายเว็บไซต์' if th else 'Footer navigation'}"><div class="footer-link-columns"><div>{links(nodes[:4])}</div><div>{links(nodes[4:])}</div></div></nav>
       </div>
       <div class="footer-legal"><span>© 2026 BTS Group Holdings Public Company Limited</span><nav aria-label="{'ข้อมูลเว็บไซต์' if th else 'Website information'}"><a href="/{lang}/privacy-statement/">{'นโยบายความเป็นส่วนตัว' if th else 'Privacy Statement'}</a><a href="/{lang}/cookies-policy/">{'นโยบายคุกกี้' if th else 'Cookies Policy'}</a><a href="/{lang}/sitemap/">{'แผนผังเว็บไซต์' if th else 'Sitemap'}</a></nav><button class="back-top" aria-label="{'กลับด้านบน' if th else 'Back to top'}"><span aria-hidden="true">↑</span></button></div>
     </footer>'''
