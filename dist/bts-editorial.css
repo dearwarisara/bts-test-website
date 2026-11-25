@@ -1642,32 +1642,12 @@ html[lang="th"] .bts-unified .footer-modern.footer-bts {
   content: none;
 }
 
-.bts-unified .footer-bts :is(.footer-signature, .footer-main-grid, .footer-legal) {
+.bts-unified .footer-bts :is(.footer-main-grid, .footer-legal) {
   padding-inline: var(--footer-gutter);
 }
 
-.bts-unified .footer-bts .footer-signature {
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 14px 20px;
-  padding-block: 19px;
-  border-bottom: 1px solid #ffffff32;
-}
-
-.bts-unified .footer-bts .footer-signature p {
-  font-size: clamp(23px, 2.35vw, 35px);
-  line-height: 1.28;
-  white-space: normal;
-}
-
-.bts-unified .footer-bts .footer-signature p > span {
-  color: #b8d9f6;
-}
-
-.bts-unified .footer-bts .footer-signature > a {
-  grid-column: auto;
-}
-
-html[lang] body.bts-unified[data-path] .footer-bts .footer-signature > a[data-bts-cta] {
+html[lang] body.bts-unified[data-path] .footer-bts .footer-contact-action[data-bts-cta] {
+  margin-top: 16px;
   font-size: var(--footer-link-size);
 }
 
@@ -1679,21 +1659,6 @@ html[lang] body.bts-unified[data-path] .footer-bts .footer-signature > a[data-bt
 
 .bts-unified .footer-bts .footer-identity {
   display: block;
-}
-
-.bts-unified .footer-bts .footer-signature > .footer-logo {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 58px;
-  padding: 6px;
-  border: 0;
-  border-radius: 5px;
-}
-
-.bts-unified .footer-bts .footer-logo img {
-  width: 32px;
-  height: 44px;
 }
 
 html[lang] .bts-unified .footer-bts .footer-identity > h3 {
@@ -1711,16 +1676,12 @@ html[lang] .bts-unified .footer-bts .footer-identity > h3 {
   gap: 11px;
 }
 
-html[lang] .bts-unified .footer-bts :is(.footer-link-columns a, .footer-location) {
+html[lang] .bts-unified .footer-bts .footer-link-columns a {
   font-size: var(--footer-link-size);
 }
 
 html[lang] .bts-unified .footer-bts :is(.footer-connect p, .footer-phone, .footer-phone > span:first-child) {
   font-size: var(--footer-contact-size);
-}
-
-.bts-unified .footer-bts .footer-location > span {
-  color: #b8d9f6;
 }
 
 .bts-unified .footer-bts .footer-identity .footer-connect {
@@ -1733,20 +1694,21 @@ html[lang] .bts-unified .footer-bts :is(.footer-connect p, .footer-phone, .foote
   max-width: none;
 }
 
-.bts-unified .footer-bts .footer-phone {
+html[lang] .bts-unified .footer-bts .footer-phone {
   margin-top: 10px;
+  font-family: OzoneX, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+html[lang="en"] .bts-unified .footer-bts .footer-phone {
+  font-family: Mulish, sans-serif;
 }
 
 .bts-unified .footer-bts .footer-phone > span:first-child,
 .bts-unified .footer-bts .footer-connect strong {
   color: #fff;
   font-weight: 700;
-}
-
-.bts-unified .footer-bts .footer-location {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-color: #ffffff32;
 }
 
 .bts-unified .footer-bts .footer-legal {
@@ -1819,14 +1781,6 @@ html[lang="en"] .bts-unified .footer-bts :is(.footer-legal > span, .footer-legal
 }
 
 @media (max-width: 620px) {
-  .bts-unified .footer-bts .footer-signature {
-    grid-template-columns: auto minmax(0, 1fr);
-  }
-
-  .bts-unified .footer-bts .footer-signature > .footer-signature-action {
-    grid-column: 2;
-  }
-
   .bts-unified .footer-bts .footer-main-grid {
     grid-template-columns: minmax(0, 1fr);
   }
