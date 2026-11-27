@@ -1888,3 +1888,214 @@ html[lang="en"] .bts-unified .sustainability-feature-copy p {
     font-size: 22px;
   }
 }
+.bts-unified .news-timeline {
+  padding: 39px max(52px, calc((100% - 1272px) / 2)) 46px;
+  background: #edf3f8;
+  color: #0b2747;
+  font: 400 23px/1.35 OzoneX, sans-serif;
+}
+
+.news-timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.bts-unified .news-timeline-header h2 {
+  margin: 0;
+  color: inherit;
+  font: 700 62px/1 OzoneX, sans-serif;
+  letter-spacing: normal;
+}
+
+.news-timeline-header h2::after {
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin-top: 13px;
+  background: var(--ci-red, #d83832);
+  content: '';
+}
+
+.news-timeline-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.13fr) minmax(0, 1fr);
+  gap: 32px;
+}
+
+.news-timeline-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #bdcfdf;
+  list-style: none;
+}
+
+.bts-unified .news-timeline-entry {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) auto;
+  gap: 15px;
+  align-items: center;
+  min-height: 103px;
+  padding: 12px 0;
+  border-bottom: 1px solid #bdcfdf;
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-timeline-entry time {
+  display: grid;
+  justify-items: start;
+  color: #496884;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.news-timeline-entry time strong {
+  color: #0b2747;
+  font-size: 34px;
+  line-height: .94;
+}
+
+.bts-unified .news-timeline-entry h3 {
+  margin: 0;
+  color: inherit;
+  font: 700 25px/1.22 OzoneX, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+.bts-unified .news-timeline-entry:hover h3 {
+  color: #00569f;
+}
+
+.news-timeline-arrow {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: #eaf2fa;
+  color: #00569f;
+  font: 400 15px/1 system-ui, sans-serif;
+}
+
+.news-timeline-list li:first-child .news-timeline-arrow {
+  background: #0b2747;
+  color: #fff;
+}
+
+.news-timeline-photo {
+  position: relative;
+  display: block;
+  min-height: 415px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #0b2747;
+}
+
+.news-timeline-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 44%;
+}
+
+.news-timeline-photo .news-timeline-arrow {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: #fff;
+}
+
+.news-timeline :is(.news-timeline-entry, .news-timeline-photo):focus-visible {
+  outline: 2px solid #00569f;
+  outline-offset: 3px;
+}
+
+html[lang="en"] .bts-unified .news-timeline-header h2 {
+  font: 700 42px/1.15 Mulish, sans-serif;
+}
+
+html[lang="en"] .bts-unified .news-timeline-entry {
+  font-family: Mulish, OzoneX, sans-serif;
+}
+
+html[lang="en"] .bts-unified .news-timeline-entry h3 {
+  font: 700 16px/1.45 Mulish, OzoneX, sans-serif;
+}
+
+html[lang="en"] .news-timeline-entry time {
+  font-size: 12px;
+}
+
+html[lang="en"] .news-timeline-entry time strong {
+  font-size: 25px;
+}
+
+@media (max-width: 760px) {
+  .bts-unified .news-timeline {
+    padding: 25px 18px 29px;
+  }
+
+  .news-timeline-header {
+    margin-bottom: 17px;
+  }
+
+  html[lang="th"] body.bts-unified[data-path] .news-timeline-header [data-bts-cta] {
+    font-size: 19px;
+  }
+
+  .bts-unified .news-timeline-header h2 {
+    font-size: 41px;
+  }
+
+  html[lang="en"] .bts-unified .news-timeline-header h2 {
+    font-size: 26px;
+  }
+
+  .news-timeline-header h2::after {
+    margin-top: 8px;
+  }
+
+  .news-timeline-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .news-timeline-photo {
+    grid-row: 1;
+    min-height: 215px;
+  }
+
+  .bts-unified .news-timeline-entry {
+    grid-template-columns: 66px minmax(0, 1fr) auto;
+    gap: 9px;
+    min-height: 85px;
+  }
+
+  .bts-unified .news-timeline-entry h3 {
+    font-size: 20px;
+  }
+
+  html[lang="en"] .bts-unified .news-timeline-entry h3 {
+    font-size: 14px;
+  }
+
+  .news-timeline-entry time {
+    font-size: 15px;
+  }
+
+  .news-timeline-entry time strong {
+    font-size: 31px;
+  }
+
+  .news-timeline-arrow {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+}

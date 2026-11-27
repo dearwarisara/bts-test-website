@@ -1,4 +1,7 @@
 from pathlib import Path
+from calendar import month_name
+from datetime import date
+from hashlib import sha256
 import json
 import re
 
@@ -154,6 +157,60 @@ def focus_investor_documents(section):
  if intro_copy is not None:
   intro_copy.decompose()
 
+def apply_news_timeline(page, language, dist):
+ section = page.select_one('section#news')
+ carousel = section.select_one('.news-carousel') if section else None
+ if carousel is None:
+  return
+
+ thai_months = ('มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน',
+                'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม')
+ months = thai_months if language == 'th' else tuple(month_name)[1:]
+ articles = []
+ for card in carousel.select('a.news-card'):
+  day, month, year = card.time.get_text(' ', strip=True).split()
+  full_date = date(int(year) - (543 if language == 'th' else 0), months.index(month) + 1, int(day))
+  articles.append((full_date, f'{month} {year}', card))
+ if not articles:
+  return
+ articles.sort(key=lambda article: article[0], reverse=True)
+
+ header = section.select_one('.news-heading').extract()
+ header['class'] = ['news-timeline-header']
+ header.h2['id'] = 'news-timeline-title'
+ section['class'] = ['news-timeline']
+ section['aria-labelledby'] = 'news-timeline-title'
+ layout = page.new_tag('div', attrs={'class': 'news-timeline-layout'})
+ entries = page.new_tag('ol', attrs={'class': 'news-timeline-list'})
+ for full_date, month_year, card in articles:
+  row = page.new_tag('li')
+  link = page.new_tag('a', href=card['href'], attrs={'class': 'news-timeline-entry'})
+  published = page.new_tag('time', datetime=full_date.isoformat())
+  day_number = page.new_tag('strong')
+  day_number.string = str(full_date.day)
+  published.extend([day_number, ' ' + month_year])
+  icon = page.new_tag('span', attrs={'class': 'news-timeline-arrow', 'aria-hidden': 'true'})
+  icon.string = '↗'
+  link.extend([published, card.h3.extract(), icon])
+  row.append(link)
+  entries.append(row)
+
+ latest = articles[0][2]
+ preview = page.new_tag('a', href=latest['href'], attrs={
+  'class': 'news-timeline-photo',
+  'aria-label': entries.h3.get_text(' ', strip=True),
+ })
+ image_source = latest.img['src']
+ local_image = f'assets/covers/{sha256(image_source.encode()).hexdigest()[:16]}-cover.webp'
+ image = page.new_tag('img', src='/' + local_image if (dist/local_image).is_file() else image_source,
+                      alt='', loading='lazy', decoding='async')
+ icon = page.new_tag('span', attrs={'class': 'news-timeline-arrow', 'aria-hidden': 'true'})
+ icon.string = '↗'
+ preview.extend([image, icon])
+ layout.extend([entries, preview])
+ section.clear()
+ section.extend([header, layout])
+
 R=Path(__file__).parent
 footer_nav = json.loads((R/'dist'/'site-catalog.json').read_text(encoding='utf8'))['navigation']
 for f in (R/'dist').rglob('*.html'):
@@ -167,7 +224,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 58 if body_path in ('/th/home', '/en/home') else 56
+ stylesheet_version = 59 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
@@ -184,6 +241,7 @@ for f in (R/'dist').rglob('*.html'):
     video_control.decompose()
   apply_finance_scene(s, body_path.split('/')[1])
   apply_investor_hub(s)
+  apply_news_timeline(s, body_path.split('/')[1], R/'dist')
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
    section.decompose()
