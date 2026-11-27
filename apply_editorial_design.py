@@ -157,9 +157,31 @@ def focus_investor_documents(section):
  if intro_copy is not None:
   intro_copy.decompose()
 
+def arrange_finance_highlight(section, language):
+ """Use equal columns for revenue and its unframed reporting period."""
+ finance = section.select_one('.investor-overview-finance')
+ if finance is None:
+  return
+ header = finance.select_one('.investor-overview-finance-head')
+ primary = finance.select_one('.investor-overview-primary')
+ if header is None or primary is None:
+  return
+ period = header.select_one('.investor-overview-period')
+ if period is not None:
+  primary.insert_after(period.extract())
+ label = primary.select_one('.investor-overview-primary-label')
+ if label is not None:
+  label.decompose()
+ value = primary.select_one('strong')
+ if value is not None:
+  unit = primary.select_one('.investor-overview-unit')
+  primary['aria-label'] = f"{'รายได้รวม' if language == 'th' else 'Total Revenue'} {value.get_text(' ', strip=True)} {unit.get_text(' ', strip=True) if unit else ''}"
+
 def apply_investor_overview(page, language):
  """Combine the financial figures and investor documents into the approved scene."""
- if page.select_one('section.investor-overview#financial'):
+ existing = page.select_one('section.investor-overview#financial')
+ if existing:
+  arrange_finance_highlight(existing, language)
   return
  finance = page.select_one('section.finance-glass#financial')
  hub = page.select_one('section.investor-night#publications')
@@ -245,6 +267,7 @@ def apply_investor_overview(page, language):
   link.extend([label, arrow])
   documents.nav.append(link)
 
+ arrange_finance_highlight(scene, language)
  finance.replace_with(scene)
  hub.decompose()
 
@@ -315,7 +338,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 60 if body_path in ('/th/home', '/en/home') else 56
+ stylesheet_version = 61 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
