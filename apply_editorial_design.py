@@ -157,6 +157,97 @@ def focus_investor_documents(section):
  if intro_copy is not None:
   intro_copy.decompose()
 
+def apply_investor_overview(page, language):
+ """Combine the financial figures and investor documents into the approved scene."""
+ if page.select_one('section.investor-overview#financial'):
+  return
+ finance = page.select_one('section.finance-glass#financial')
+ hub = page.select_one('section.investor-night#publications')
+ if finance is None or hub is None:
+  return
+
+ is_thai = language == 'th'
+ figures = finance.select('.finance-glass-card strong')
+ links = hub.select('.investor-night-resources a[href]')
+ if len(figures) != 3 or len(links) != 3:
+  return
+ finance_href = finance.select_one('.finance-glass-action')['href']
+ overview_href = hub.select_one('.investor-night-action')['href']
+ document_href = links[0]['href']
+ period = finance.select_one('.finance-glass-period').get_text(' ', strip=True)
+
+ scene = BeautifulSoup('''
+ <section class="investor-overview" id="financial" aria-labelledby="investor-overview-title">
+  <div class="investor-overview-inner">
+   <h2 id="investor-overview-title"></h2>
+   <div class="investor-overview-grid">
+    <div class="investor-overview-finance">
+     <div class="investor-overview-finance-head"><h3></h3><span class="investor-overview-period"></span></div>
+     <a class="investor-overview-primary" href=""><span class="investor-overview-primary-label"></span><strong></strong><span class="investor-overview-unit"></span></a>
+     <div class="investor-overview-secondary"></div>
+    </div>
+    <a class="investor-overview-city" href="">
+     <img src="/assets/ir/connected-city-v1.webp" alt="" loading="lazy" decoding="async"/>
+     <span class="investor-overview-photo-copy"><span><strong></strong><small></small></span><span class="investor-overview-arrow" aria-hidden="true">↗</span></span>
+    </a>
+    <div class="investor-overview-resources" id="publications">
+     <a class="investor-overview-architecture" href="">
+      <img src="/assets/financial-architecture-panel.png" alt="" loading="lazy" decoding="async"/>
+      <span class="investor-overview-architecture-copy"><strong></strong><span class="investor-overview-arrow" aria-hidden="true">↗</span></span>
+     </a>
+     <div class="investor-overview-documents"><h3></h3><nav aria-label=""></nav></div>
+    </div>
+   </div>
+  </div>
+ </section>
+ ''', 'html.parser').section
+
+ scene.h2.string = 'นักลงทุนสัมพันธ์' if is_thai else 'Investor Relations'
+ scene.select_one('.investor-overview-finance-head h3').string = 'ข้อมูลสำคัญทางการเงิน' if is_thai else 'Key Financial Data'
+ scene.select_one('.investor-overview-period').string = period
+ primary = scene.select_one('.investor-overview-primary')
+ primary['href'] = finance_href
+ primary['aria-label'] = ('ดูข้อมูลทางการเงิน' if is_thai else 'View financial data')
+ primary.select_one('.investor-overview-primary-label').string = 'รายได้รวม' if is_thai else 'Total Revenue'
+ primary.strong.replace_with(figures[0].extract())
+ primary.select_one('.investor-overview-unit').string = 'ล้านบาท' if is_thai else 'THB million'
+
+ secondary = scene.select_one('.investor-overview-secondary')
+ names = ('EBITDA', 'กำไร (ขาดทุน) สุทธิส่วนของผู้ถือหุ้น') if is_thai else ('EBITDA', 'Net Profit (Loss) Attributable to Equity Holders')
+ for label, figure in zip(names, figures[1:]):
+  card = page.new_tag('a', href=finance_href, attrs={'class': 'investor-overview-metric'})
+  title = page.new_tag('span', attrs={'class': 'investor-overview-metric-label'})
+  title.string = label
+  value = page.new_tag('span', attrs={'class': 'investor-overview-metric-value'})
+  value.append(figure.extract())
+  unit = page.new_tag('small')
+  unit.string = 'ล้านบาท' if is_thai else 'THB million'
+  value.append(unit)
+  card.extend([title, value])
+  secondary.append(card)
+
+ city = scene.select_one('.investor-overview-city')
+ city['href'] = overview_href
+ city.select_one('.investor-overview-photo-copy strong').string = 'ภาพรวมนักลงทุน' if is_thai else 'Investor Overview'
+ city.select_one('.investor-overview-photo-copy small').string = 'เชื่อมข้อมูลธุรกิจกับอนาคตของเมือง' if is_thai else 'Connecting business with the city’s future'
+ architecture = scene.select_one('.investor-overview-architecture')
+ architecture['href'] = document_href
+ architecture.select_one('strong').string = 'ศูนย์รวมเอกสาร' if is_thai else 'Document Centre'
+ documents = scene.select_one('.investor-overview-documents')
+ documents.h3.string = 'เข้าถึงข้อมูลสำคัญ' if is_thai else 'Key Resources'
+ documents.nav['aria-label'] = documents.h3.string
+ for source in links:
+  link = page.new_tag('a', href=source['href'])
+  label = page.new_tag('span')
+  label.string = source.select('span')[1].get_text(' ', strip=True)
+  arrow = page.new_tag('span', attrs={'class': 'investor-overview-arrow', 'aria-hidden': 'true'})
+  arrow.string = '↗'
+  link.extend([label, arrow])
+  documents.nav.append(link)
+
+ finance.replace_with(scene)
+ hub.decompose()
+
 def apply_news_timeline(page, language, dist):
  section = page.select_one('section#news')
  carousel = section.select_one('.news-carousel') if section else None
@@ -224,7 +315,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 59 if body_path in ('/th/home', '/en/home') else 56
+ stylesheet_version = 60 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
@@ -241,6 +332,7 @@ for f in (R/'dist').rglob('*.html'):
     video_control.decompose()
   apply_finance_scene(s, body_path.split('/')[1])
   apply_investor_hub(s)
+  apply_investor_overview(s, body_path.split('/')[1])
   apply_news_timeline(s, body_path.split('/')[1], R/'dist')
   # The newsletter/IR contact tiles are redundant after the homepage story flow.
   for section in s.select('main > .planb-contact'):
