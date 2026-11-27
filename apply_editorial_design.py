@@ -167,7 +167,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 57 if body_path in ('/th/home', '/en/home') else 56
+ stylesheet_version = 58 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):
@@ -207,19 +207,8 @@ for f in (R/'dist').rglob('*.html'):
    cta.string = link_text
    image = s.new_tag('img', src='/assets/sustainability-bangkok-sunset.webp', alt='', width='2172', height='724',
                      loading='lazy', decoding='async', attrs={'class': 'sustainability-feature-image'})
-   links = s.new_tag('nav', attrs={'class': 'sustainability-feature-links', 'aria-label': 'Sustainability topics' if not is_th else 'หัวข้อความยั่งยืน'})
-   destinations = [('sustainability/environmental-sustainability', 'ความยั่งยืนด้านสิ่งแวดล้อม' if is_th else 'Environmental Sustainability'),
-                   ('sustainability/social-sustainability', 'ความยั่งยืนด้านสังคม' if is_th else 'Social Sustainability'),
-                   ('corporate-governance/at-a-glance', 'การกำกับดูแลกิจการ' if is_th else 'Corporate Governance')]
-   for index, (path, text) in enumerate(destinations):
-    item = s.new_tag('a', href=f'/{s.html.get("lang", "th")}/{path}/', attrs={'data-esg': str(index)})
-    item.string = text
-    arrow = s.new_tag('span', attrs={'aria-hidden': 'true'})
-    arrow.string = '↗'
-    item.append(arrow)
-    links.append(item)
    content.extend([title, copy, cta])
-   scene.extend([content, image, links])
+   scene.extend([content, image])
  # Keep archive artwork restrained: show one representative story image per
  # news archive, and leave the remaining cards as clean editorial text cards.
  news_archive = s.body and s.body.get('data-path', '').endswith(('/news-event', '/update/news-event'))

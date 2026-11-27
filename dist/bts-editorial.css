@@ -1797,146 +1797,94 @@ html[lang="en"] .bts-unified .footer-bts :is(.footer-legal > span, .footer-legal
     gap: 5px 14px;
   }
 }
+
+/* Homepage sustainability panorama, with the copy anchored at the lower left. */
 .bts-unified .sustainability-feature {
-  --sustainability-gutter: clamp(22px, 5vw, 100px);
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  grid-template-rows: minmax(350px, auto) auto;
-  background: #f1f6fa;
-  color: #0d2948;
+  align-items: end;
+  min-height: 455px;
+  overflow: hidden;
+  padding: 56px 6%;
+  background: #0d2948;
+  color: #fff;
 }
 
-.sustainability-feature-copy {
-  align-self: center;
-  padding: 38px clamp(24px, 3vw, 68px) 38px var(--sustainability-gutter);
+.sustainability-feature::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, #06182de8, #071c31b0 31%, #0a29422a 66%, transparent 82%),
+    linear-gradient(0deg, #06172866, transparent 50%);
+  content: '';
+}
+
+.sustainability-feature-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 68%;
 }
 
 .bts-unified .sustainability-feature-copy h2 {
+  max-width: 630px;
   margin: 0;
-  color: #0d2948;
-  font: 700 clamp(40px, 3.5vw, 64px)/1.13 OzoneX, sans-serif;
-  text-wrap: balance;
+  color: #fff;
+  font: 700 clamp(38px, 4.3vw, 65px)/1.14 OzoneX, sans-serif;
+  letter-spacing: -.012em;
 }
 
 .sustainability-feature-copy h2::before {
   display: block;
-  width: 49px;
+  width: 50px;
   height: 3px;
-  margin-bottom: 17px;
-  background: linear-gradient(90deg, #d83832 0 37%, #02559b 37%);
+  margin-bottom: 18px;
+  background: var(--ci-red, #d83832);
   content: '';
 }
 
 .bts-unified .sustainability-feature-copy p {
-  max-width: 36ch;
-  margin: 12px 0 20px;
-  color: #36536e;
-  font: 400 24px/1.45 OzoneX, sans-serif;
+  max-width: 530px;
+  margin: 13px 0 22px;
+  color: #ecf5fc;
+  font: 400 25px/1.46 OzoneX, sans-serif;
 }
 
-.sustainability-feature-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  max-width: none;
-  min-height: 350px;
-  object-fit: cover;
-  object-position: left 70%;
-}
-
-.sustainability-feature-links {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  padding-inline: var(--sustainability-gutter);
-  border-block: 1px solid #d2e0eb;
-  background: #fff;
-}
-
-.bts-unified .sustainability-feature-links a {
-  display: flex;
-  min-height: 68px;
-  align-items: center;
-  gap: 12px;
-  padding: 12px clamp(14px, 2vw, 32px);
-  color: #104372;
-  font: 600 24px/1.25 OzoneX, sans-serif;
-  text-decoration: none;
-  transition: background-color .2s ease;
-}
-
-.sustainability-feature-links a + a {
-  border-inline-start: 1px solid #d2e0eb;
-}
-
-.sustainability-feature-links a::before {
-  width: 8px;
-  height: 8px;
-  flex: 0 0 8px;
-  border: 2px solid #02559b;
-  border-radius: 50%;
-  content: '';
-}
-
-.sustainability-feature-links a > span {
-  margin-inline-start: auto;
-  font: 400 15px/1 Mulish, sans-serif;
-}
-
-.bts-unified .sustainability-feature-links a:hover {
-  background: #eaf3fa;
-}
-
-.sustainability-feature-links a:focus-visible {
-  outline: 2px solid #02559b;
-  outline-offset: -3px;
+html[lang="th"] body.bts-unified[data-path] .sustainability-feature-action[data-bts-cta] {
+  font-size: 22px;
 }
 
 html[lang="en"] .bts-unified .sustainability-feature-copy h2 {
-  font: 700 clamp(30px, 3.1vw, 52px)/1.14 Mulish, sans-serif;
+  font: 700 clamp(30px, 3.6vw, 52px)/1.14 Mulish, sans-serif;
 }
 
 html[lang="en"] .bts-unified .sustainability-feature-copy p {
   font: 400 17px/1.55 Mulish, sans-serif;
 }
 
-html[lang="en"] .bts-unified .sustainability-feature-links a {
-  font: 700 15px/1.4 Mulish, sans-serif;
-}
-
 @media (max-width: 760px) {
   .bts-unified .sustainability-feature {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .sustainability-feature-copy {
-    padding: 29px var(--sustainability-gutter);
+    min-height: 420px;
+    padding: 36px 22px;
   }
 
   .sustainability-feature-image {
-    height: clamp(192px, 43vw, 280px);
-    min-height: 0;
+    object-position: 22% 68%;
   }
 
-  .sustainability-feature-links {
-    grid-template-columns: minmax(0, 1fr);
+  .sustainability-feature::before {
+    background:
+      linear-gradient(0deg, #06182df5 2%, #06182dc4 48%, transparent 87%),
+      linear-gradient(90deg, #06182d70, transparent 80%);
   }
 
-  .bts-unified .sustainability-feature-links a {
-    min-height: 52px;
-    padding-inline: 0;
-  }
-
-  .sustainability-feature-links a + a {
-    border-inline-start: 0;
-    border-block-start: 1px solid #d2e0eb;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bts-unified .sustainability-feature-links a {
-    transition: none;
+  .bts-unified .sustainability-feature-copy p {
+    font-size: 22px;
   }
 }
