@@ -158,7 +158,7 @@ def focus_investor_documents(section):
   intro_copy.decompose()
 
 def arrange_finance_highlight(section, language):
- """Use equal columns for revenue and its unframed reporting period."""
+ """Place the unframed period left of the revenue card."""
  finance = section.select_one('.investor-overview-finance')
  if finance is None:
   return
@@ -170,8 +170,10 @@ def arrange_finance_highlight(section, language):
  if period is not None:
   primary.insert_after(period.extract())
  label = primary.select_one('.investor-overview-primary-label')
- if label is not None:
-  label.decompose()
+ if label is None:
+  label = BeautifulSoup('<span class="investor-overview-primary-label"></span>', 'html.parser').span
+  primary.insert(0, label)
+ label.string = 'รายได้รวม' if language == 'th' else 'Total Revenue'
  value = primary.select_one('strong')
  if value is not None:
   unit = primary.select_one('.investor-overview-unit')
@@ -338,7 +340,7 @@ for f in (R/'dist').rglob('*.html'):
   section.decompose()
  for n in s.select('link[href^="/bts-editorial.css"]'):n.decompose()
  body_path = s.body.get('data-path', '') if s.body else ''
- stylesheet_version = 61 if body_path in ('/th/home', '/en/home') else 56
+ stylesheet_version = 62 if body_path in ('/th/home', '/en/home') else 56
  s.head.append(s.new_tag('link',rel='stylesheet',href=f'/bts-editorial.css?v={stylesheet_version}'))
  # Turn the homepage sustainability module into a full-bleed editorial scene.
  if body_path in ('/th/home', '/en/home'):

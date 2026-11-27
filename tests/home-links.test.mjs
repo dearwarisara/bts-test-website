@@ -10,7 +10,7 @@ for(const lang of ['th','en']){
   assert.doesNotMatch(html,/class="finance-glass"|class="investor-night"/);
   assert.ok(scene.includes('id="publications"'));
   assert.match(scene,/<a\b[^>]*class="investor-overview-primary"[\s\S]*?<\/a>\s*<span class="investor-overview-period">/);
-  assert.doesNotMatch(scene,/investor-overview-primary-label/);
+  assert.match(scene,/<span class="investor-overview-primary-label">\s*(?:รายได้รวม|Total Revenue)\s*<\/span>/);
   for(const value of ['7,492','2,822','(388)']) assert.ok(scene.includes(value));
   for(const asset of ['ir/connected-city-v1.webp','financial-architecture-panel.png']){
    assert.ok(scene.includes(`/assets/${asset}`));

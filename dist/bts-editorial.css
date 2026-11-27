@@ -2257,7 +2257,7 @@ html[lang="en"] .news-timeline-entry time strong {
   }
 }
 
-/* Revenue shares its row equally with the reporting period. */
+/* Reporting period and revenue share an equal-width row. */
 .investor-overview-finance {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2271,42 +2271,45 @@ html[lang="en"] .news-timeline-entry time strong {
   padding: 0;
 }
 .investor-overview-primary {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 0;
   min-height: 0;
   padding: 8px 16px;
   text-align: center;
 }
-.investor-overview-primary strong { font-size: 69px; }
-.investor-overview-unit { display: block; font-size: 17px; }
+.investor-overview-primary-label { flex-basis: auto; padding: 0; font-size: 19px; line-height: 1; }
+.investor-overview-primary strong { font-size: 54px; }
+.investor-overview-unit { display: block; font-size: 15px; }
 .investor-overview-period {
   display: grid;
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
-  place-items: center;
-  padding: 0 16px;
+  place-items: center start;
+  padding: 0 8px;
   background: transparent;
   border: 0;
   color: #e6f2fb;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1.18;
-  text-align: center;
+  text-align: left;
   white-space: normal;
 }
 .investor-overview-secondary { grid-column: 1 / -1; grid-row: 3; margin-top: 0; }
 @media (max-width: 1050px) {
-  .investor-overview-period { font-size: 24px; }
-  .investor-overview-primary strong { font-size: 60px; }
+  .investor-overview-period { font-size: 34px; }
+  .investor-overview-primary strong { font-size: 50px; }
 }
 @media (max-width: 760px) {
   .investor-overview-finance { grid-template-rows: auto 108px auto; gap: 10px; }
   .investor-overview-finance-head { align-self: auto; }
-  .investor-overview-period { font-size: 20px; padding: 0 5px; }
+  .investor-overview-period { font-size: 30px; padding: 0 5px; }
   .investor-overview-primary { min-height: 108px; padding: 8px; }
-  .investor-overview-primary strong { font-size: clamp(43px, 11vw, 58px); }
-  .investor-overview-unit { font-size: 15px; }
+  .investor-overview-primary-label { font-size: 17px; }
+  .investor-overview-primary strong { font-size: clamp(46px, 11vw, 52px); }
+  .investor-overview-unit { font-size: 14px; }
 }
